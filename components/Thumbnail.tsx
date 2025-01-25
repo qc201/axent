@@ -12,10 +12,21 @@ type Props = {
 export default function Thumbnail({ imgsrc, title, imgalt, pagelink }: Props) {
   const img1 = "/";
   return (
-    <div className="flex flex-col items-center mt-5">
-      <Image src={imgsrc} alt={imgalt} width="200" height="200" />
-      <div className="font-custom text-sm font-thin">
-        <Link href={pagelink}>{title}</Link>
+    <div className="group flex flex-col items-center mt-5">
+      <div className="overflow-hidden">
+        <Image
+          src={imgsrc}
+          alt={imgalt}
+          width="200"
+          height="200"
+          sizes="(max-width: 640px) 150px, (max-width: 1024px) 300px, 600px"
+          className="object-cover group-hover:scale-110 transition-all duration-1000 cursor-pointer"
+        />
+      </div>
+      <div className="text-primary font-custom text-sm font-thin transition-all duration-500">
+        <span className="bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-500 ease-out">
+          <span>{title}</span>
+        </span>
       </div>
     </div>
   );

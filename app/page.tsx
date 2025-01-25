@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <PageWrapper>
-      <main className="bg-white"></main>
+      <main className=""></main>
     </PageWrapper>
   );
 }

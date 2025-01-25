@@ -1,21 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --customtest: url("/sli-collection/sli-line-2.jpg");
+  --sli5400header: url("/sli-collection/sli-line-3.jpg");
+  --sli5400mid: url("/sli-4000/SLi4000.png");
+  --slt700header: url("/slt-collection/slt-collection-cover-header.png");
+  --slt600header: url("/slt-collection/slt-line-4.png");
+  --slt500header: url("/slt-collection/slt-line-5-169.png");
+  --studioRock: url("/header/sli_rock_scene.png");
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+/* each section stick on top */
+/* .qc-home-container {
+  width: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+}
+
+.qc-home-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.qc-home-section-container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+} */
+
+/* test text animation */
+.collection-title {
+  color: black;
+  font-size: 80px;
+  font-weight: bolder;
+  position: relative;
+}
+
+.collection-title::before {
+  content: "TextAnimation";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #eeea06;
+  width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 5px solid #eeea06;
+  animation: move 2s linear 1s 1;
+  filter: drop-shadow(0 0 50px #eeea06);
+}
+
+/* navbar dropdown start */
+/* .products-dropdown:hover {
+  display: flex;
+}
+.products-dropdown {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+  width: 100vw;
+  align-items: start;
+  justify-content: space-around;
+  padding: 1vh 20vw;
+  transition: opacity 0.3s ease-in;
+  left:0;
+  top:40px;
+  z-index: 1000;
+  position: fixed;
+} */
+
+/* .support-dropdown {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1vh 20vw;
+}
+
+.about-dropdown {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1vh 20vw;
+} */
+
+/* navbar dropdown end */
+
+/* product detail page paragraph animation start */
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(10px); /* Move a little */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Stop at the moved position */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-paragraph {
+  opacity: 0;
+  animation: fadeInRight 3s ease-out 0.5s forwards;
+}
+
+/* product detail page paragraph animation end */
+
+@layer components {
+  /* veritical image 9:16,placed on left, takes 1/2 viewport width && margin left 2 on small screen, takes 1/2 viewport width && margin left 5 on large screen */
+  .v-l-parent {
+    @apply flex justify-start pt-5;
+  }
+  .v-l-half {
+    @apply w-1/2 pl-2 md:pl-5;
+  }
+  /* veritical image 9:16,placed on right, takes 1/2 viewport width && margin right 2 on small screen, takes 1/2 viewport width && margin right 5 on large screen */
+  .v-r-parent {
+    @apply flex justify-end pt-5;
+  }
+  .v-r-half {
+    @apply w-1/2 pr-2 md:pr-5;
+  }
+  /* horizontal image 16:9 on left, takes 1/2 viewport width && margin left 2 on small screen, takes 1/2 viewport width && margin left 5 on large screen */
+  .h-l-parent {
+    @apply flex justify-start pt-5;
+  }
+  .h-l-half {
+    @apply w-1/2 pl-2 md:pl-5;
+  }
+  .h-l-full {
+    @apply w-full px-2 md:w-1/2 md:pl-5;
+  }
+  .h-l-80p {
+    @apply w-full px-2 md:w-4/5 md:pl-5;
+  }
+  /* horizontal image 16:9 on right, takes 1/2 viewport width && margin right 2 on small screen, takes 1/2 viewport width && margin right 5 on large screen */
+  .h-r-parent {
+    @apply flex justify-end pt-5;
+  }
+  .h-r-half {
+    @apply w-1/2 pr-2 md:pr-5;
+  }
+  .h-r-full {
+    @apply w-full px-2 md:w-1/2 md:pr-5;
+  }
+  .h-r-80p {
+    @apply w-full px-2 md:w-4/5 md:pr-5;
+  }
+  .form-label {
+    @apply block text-sm font-medium leading-6;
+  }
+  .form-control {
+    @apply rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6;
+  }
+  .blog-title {
+  }
+  .blog-content {
+  }
+}
+
+.rating {
+  width: auto; /* Set width to auto to allow stars to align to the left */
+  margin: 0; /* Remove margin to align to the left */
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.rating input {
+  float: left; /* Float stars to the left */
+  opacity: 0;
+  position: absolute;
+}
+
+.rating a,
+.rating label {
+  float: left; /* Float stars to the left */
+  color: #aaa;
+  text-decoration: none;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+/* .rating label:hover ~ label,
+.rating input:focus ~ label,
+.rating label:hover,
+.rating a:hover,
+.rating a:hover ~ a,
+.rating a:focus,
+.rating a:focus ~ a {
+  color: orange;
+  cursor: pointer;
+} */
+
+.rating2 {
+  direction: rtl; /* Set direction to right-to-left for inactive stars */
+}
+
+.rating2 a {
+  float: none; /* Remove float to allow stars to align to the left */
+}
+
+.rating a.active {
+  /* Float active stars to the left */
+  float: left;
+  color: orange; /* Add your desired styles for the active state */
+}
+.rating a.inactive {
+  /* Float active stars to the left */
+  float: left;
 }

@@ -1,281 +1,181 @@
 "use client";
-import { Fragment } from "react";
-import { Menu, Transition } from "@headlessui/react";
+import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import Link from "next/link";
+import { AnimatePresence, motion } from "framer-motion";
+import Thumbnail from "../components/Thumbnail";
+import { useState, useEffect, useRef } from "react";
 
 function classNames(
-    ...classes: (string | boolean | undefined | null)[]
+  ...classes: (string | boolean | undefined | null)[]
 ): string {
-    return classes.filter(Boolean).join(" ");
+  return classes.filter(Boolean).join(" ");
 }
-export default function Example() {
-    const sliLinks: string[][] = [
-        ["SLI", "/products/sli"],
-        ["5400", "/products/sli/sli5400"],
-        ["5200", "/products/sli/sli5200"],
-        ["4000", "/products/sli/sli4000"],
-        ["3000", "/products/sli/sli3000"],
-        ["2000", "/products/sli/sli2000"],
-        ["1010", "/products/sli/sli1010"],
-        ["1000", "/products/sli/sli1000"],
-    ];
-    const sltLinks: string[][] = [
-        ["SLT", "/products/slt"],
-        ["700", "/products/slt/slt700"],
-        ["600", "/products/slt/slt600"],
-        ["500", "/products/slt/slt500"],
-    ];
-    const slsLinks: string[][] = [
-        ["SLS", "/products/sls"],
-        ["803", "/products/sls/sls803"],
-        ["802", "/products/sls/sls802"],
-        ["800", "/products/sls/sls800"],
-    ];
-    const supportLinks: string[][] = [
-        ["Warranty registration", "/support/warranty"],
-        ["Download center", "/support/manuals"],
-        ["Contact us", "/about/contact"],
-    ];
-    const aboutLinks: string[][] = [
-        ["About STUDIOLUX", "/about/company"],
-        ["Contact us", "/about/contact"],
-        ["Blogs", "/about/blogs"],
-    ];
-    return (
-        <div className=" z-50 fixed top-0 left-0 bg-white w-screen max-h-[60px]">
-            <div className="flex flex-row justify-around items-center">
-                <Link href="/" className="p-0 m-0">
-                    LOGO
-                </Link>
-                {/* products */}
-                <Menu as="div" className="inline-block text-left">
-                    <div>
-                        <Menu.Button className="inline-flex w-full text-sm font-custom text-primary">
-                            PRODUCTS
-                        </Menu.Button>
-                    </div>
 
-                    <Transition
-                        as={Fragment}
-                        enter="transition ease-in-out duration-300 transform"
-                        enterFrom="-translate-y-full"
-                        enterTo="translate-y-0"
-                        leave="transition-opacity duration-300"
-                        leaveFrom="opacity-100"
-                        leaveTo="opacity-0"
-                    >
-                        <Menu.Items className=" absolute pt-10 left-0 w-screen origin-top-right bg-white opacity-60">
-                            <div className="flex flex-row w-full items-start justify-around mt-2">
-                                <div className="flex flex-col justify-start items-start">
-                                    {sliLinks.map(([label, href], index) => (
-                                        <Menu.Item key={index}>
-                                            {({ active, close }) => (
-                                                <div className="relative">
-                                                    <Link
-                                                        href={href}
-                                                        onClick={() => {
-                                                            close();
-                                                        }}
-                                                        className={classNames(
-                                                            active ? "text-black" : "text-primary",
-                                                            "font-custom"
-                                                        )}
-                                                    >
-                                                        {label}
-                                                    </Link>
-                                                    {active && (
-                                                        <span className="absolute top-0 left-full ml-1 mt-0 inline-block">
-                                                            <svg
-                                                                className="fill-primary h-6 w-6"
-                                                                viewBox="0 0 16 16"
-                                                            >
-                                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                                                            </svg>
-                                                        </span>
-                                                    )}
-                                                </div>
-                                            )}
-                                        </Menu.Item>
-                                    ))}
-                                </div>
-                                {/* slt */}
-                                <div className="flex flex-col justify-start items-start">
-                                    {sltLinks.map(([label, href], index) => (
-                                        <Menu.Item key={index}>
-                                            {({ active, close }) => (
-                                                <div className="relative">
-                                                    <Link
-                                                        href={href}
-                                                        onClick={() => {
-                                                            close();
-                                                        }}
-                                                        className={classNames(
-                                                            active ? "text-black" : "text-primary",
-                                                            "font-custom"
-                                                        )}
-                                                    >
-                                                        {label}
-                                                    </Link>
-                                                    {active && (
-                                                        <span className="absolute top-0 left-full ml-1 mt-0 inline-block">
-                                                            <svg
-                                                                className="fill-primary h-6 w-6"
-                                                                viewBox="0 0 16 16"
-                                                            >
-                                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                                                            </svg>
-                                                        </span>
-                                                    )}
-                                                </div>
-                                            )}
-                                        </Menu.Item>
-                                    ))}
-                                </div>
-                                {/* sls */}
-                                <div className="flex flex-col justify-start items-start">
-                                    {slsLinks.map(([label, href], index) => (
-                                        <Menu.Item key={index}>
-                                            {({ active, close }) => (
-                                                <div className="relative">
-                                                    <Link
-                                                        href={href}
-                                                        onClick={() => {
-                                                            close();
-                                                        }}
-                                                        className={classNames(
-                                                            active ? "text-black" : "text-primary",
-                                                            "font-custom"
-                                                        )}
-                                                    >
-                                                        {label}
-                                                    </Link>
-                                                    {active && (
-                                                        <span className="absolute top-0 left-full ml-1 mt-0 inline-block">
-                                                            <svg
-                                                                className="fill-primary h-6 w-6"
-                                                                viewBox="0 0 16 16"
-                                                            >
-                                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                                                            </svg>
-                                                        </span>
-                                                    )}
-                                                </div>
-                                            )}
-                                        </Menu.Item>
-                                    ))}
-                                </div>
-                            </div>
-                        </Menu.Items>
-                    </Transition>
-                </Menu>
-                {/* support */}
-                <Menu as="div" className="inline-block text-left">
-                    <div>
-                        <Menu.Button className="inline-flex w-full text-sm font-custom text-primary">
-                            SUPPORT
-                        </Menu.Button>
-                    </div>
+const productLinks = [
+  { href: "/settings", label: "Settings" },
+  { href: "/support", label: "Support" },
+  { href: "/license", label: "License" },
+];
 
-                    <Transition
-                        as={Fragment}
-                        enter="transition ease-in-out duration-300 transform"
-                        enterFrom="-translate-y-full"
-                        enterTo="translate-y-0"
-                        leave="transition-opacity duration-300"
-                        leaveFrom="opacity-100"
-                        leaveTo="opacity-0"
-                    >
-                        <Menu.Items className=" absolute pt-10 left-0 w-screen origin-top-right bg-white opacity-60">
-                            <div className="flex flex-row w-full items-start justify-around mt-2">
-                                {supportLinks.map(([label, href], index) => (
-                                    <Menu.Item key={index}>
-                                        {({ active, close }) => (
-                                            <div className="relative">
-                                                <Link
-                                                    href={href}
-                                                    onClick={() => {
-                                                        close();
-                                                    }}
-                                                    className={classNames(
-                                                        active ? "text-black" : "text-primary",
-                                                        "font-custom"
-                                                    )}
-                                                >
-                                                    {label}
-                                                </Link>
-                                                {active && (
-                                                    <span className="absolute top-0 left-full ml-1 mt-0 inline-block">
-                                                        <svg
-                                                            className="fill-primary h-6 w-6"
-                                                            viewBox="0 0 16 16"
-                                                        >
-                                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                                                        </svg>
-                                                    </span>
-                                                )}
-                                            </div>
-                                        )}
-                                    </Menu.Item>
-                                ))}
-                            </div>
-                        </Menu.Items>
-                    </Transition>
-                </Menu>
+export default function Navbar() {
+  const [activeMenu, setActiveMenu] = useState<number | null>(null);
+  const menuRefs = useRef<(HTMLDivElement | null)[]>([]); // Reference for each menu component
+  // Toggle logic for opening/closing menus
+  const handleMenuToggle = (menuId: number) => {
+    setActiveMenu((prev) => (prev === menuId ? null : menuId)); // Close the menu if it's already open, otherwise open it
+  };
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      menuRefs.current.every(
+        (ref) => ref && !ref.contains(event.target as Node)
+      )
+    ) {
+      setActiveMenu(null);
+    }
+  };
 
-                {/* about */}
-                <Menu as="div" className="inline-block text-left">
-                    <div>
-                        <Menu.Button className="inline-flex w-full text-sm font-custom text-primary">
-                            ABOUT US
-                        </Menu.Button>
-                    </div>
+  useEffect(() => {
+    // Set up event listener for clicks outside
+    document.addEventListener("click", handleClickOutside);
 
-                    <Transition
-                        as={Fragment}
-                        enter="transition ease-in-out duration-300 transform"
-                        enterFrom="-translate-y-full"
-                        enterTo="translate-y-0"
-                        leave="transition-opacity duration-300"
-                        leaveFrom="opacity-100"
-                        leaveTo="opacity-0"
-                    >
-                        <Menu.Items className="absolute pt-10 left-0 w-screen origin-top-right bg-white opacity-60">
-                            <div className="flex flex-row w-full items-start justify-around mt-2">
-                                {aboutLinks.map(([label, href], index) => (
-                                    <Menu.Item key={index}>
-                                        {({ active, close }) => (
-                                            <div className="relative">
-                                                <Link
-                                                    href={href}
-                                                    onClick={() => {
-                                                        close();
-                                                    }}
-                                                    className={classNames(
-                                                        active ? "text-black" : "text-primary",
-                                                        "font-custom"
-                                                    )}
-                                                >
-                                                    {label}
-                                                </Link>
-                                                {active && (
-                                                    <span className="absolute top-0 left-full ml-1 mt-0 inline-block">
-                                                        <svg
-                                                            className="fill-primary h-6 w-6"
-                                                            viewBox="0 0 16 16"
-                                                        >
-                                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                                                        </svg>
-                                                    </span>
-                                                )}
-                                            </div>
-                                        )}
-                                    </Menu.Item>
-                                ))}
-                            </div>
-                        </Menu.Items>
-                    </Transition>
-                </Menu>
+    return () => {
+      // Clean up event listener on component unmount
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+  return (
+    <div className=" z-50 fixed top-0 left-0 bg-white w-screen max-h-[60px]">
+      <div className="hidden md:flex flex-row justify-around items-center text-sm text-primary font-custom font-extralight">
+        <Link href="/" className="p-0 m-0">
+          LOGO
+        </Link>
+        {/* PRODUCTS dropdown */}
+        {/* Menu 1 */}
+        <Menu
+          as="div"
+          open={activeMenu === 1}
+          onClose={() => setActiveMenu(null)}
+        >
+          {({ open }) => (
+            <div ref={(el) => (menuRefs.current[0] = el)}>
+              <MenuButton
+                onClick={() => handleMenuToggle(1)}
+                className={`${
+                  open ? "bg-gray-500" : ""
+                } data-[active]:bg-gray-500`}
+              >
+                MENU 1
+              </MenuButton>
+              <AnimatePresence>
+                {open && (
+                  <MenuItems
+                    anchor="bottom"
+                    className="w-screen bg-gray-500"
+                    static
+                    as={motion.div}
+                    initial={{ opacity: 0, y: -50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -50 }}
+                  >
+                    {productLinks.map((link) => (
+                      <MenuItem
+                        key={link.href}
+                        className="block data-[focus]:bg-blue-100"
+                      >
+                        <a href={link.href}>{link.label}</a>
+                      </MenuItem>
+                    ))}
+                  </MenuItems>
+                )}
+              </AnimatePresence>
             </div>
-        </div>
-    );
+          )}
+        </Menu>
+
+        {/* Menu 2 */}
+        <Menu
+          as="div"
+          open={activeMenu === 2}
+          onClose={() => setActiveMenu(null)}
+        >
+          {({ open }) => (
+            <div ref={(el) => (menuRefs.current[1] = el)}>
+              <MenuButton
+                onClick={() => handleMenuToggle(2)}
+                className={`${
+                  open ? "bg-gray-500" : ""
+                } data-[active]:bg-gray-500`}
+              >
+                MENU 2
+              </MenuButton>
+              <AnimatePresence>
+                {open && (
+                  <MenuItems
+                    anchor="bottom"
+                    className="w-screen bg-gray-500"
+                    static
+                    as={motion.div}
+                    initial={{ opacity: 0, y: -50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -50 }}
+                  >
+                    {productLinks.map((link) => (
+                      <MenuItem
+                        key={link.href}
+                        className="block data-[focus]:bg-blue-100"
+                      >
+                        <a href={link.href}>{link.label}</a>
+                      </MenuItem>
+                    ))}
+                  </MenuItems>
+                )}
+              </AnimatePresence>
+            </div>
+          )}
+        </Menu>
+
+        {/* Menu 3 */}
+        <Menu
+          as="div"
+          open={activeMenu === 3}
+          onClose={() => setActiveMenu(null)}
+        >
+          {({ open }) => (
+            <div ref={(el) => (menuRefs.current[2] = el)}>
+              <MenuButton
+                onClick={() => handleMenuToggle(3)}
+                className={`${
+                  open ? "bg-gray-500" : ""
+                } data-[active]:bg-gray-500`}
+              >
+                MENU 3
+              </MenuButton>
+              <AnimatePresence>
+                {open && (
+                  <MenuItems
+                    anchor="bottom"
+                    className="w-screen bg-gray-500"
+                    static
+                    as={motion.div}
+                    initial={{ opacity: 0, y: -50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -50 }}
+                  >
+                    {productLinks.map((link) => (
+                      <MenuItem
+                        key={link.href}
+                        className="block data-[focus]:bg-blue-100"
+                      >
+                        <a href={link.href}>{link.label}</a>
+                      </MenuItem>
+                    ))}
+                  </MenuItems>
+                )}
+              </AnimatePresence>
+            </div>
+          )}
+        </Menu>
+      </div>
+    </div>
+  );
 }

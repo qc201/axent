@@ -11,16 +11,16 @@ export default function Intelligent() {
   return (
     <div className="flex flex-row">
       <CollectionCover
-        imgUrl={intelligentData[0].imgSrc}
-        imgAlt={intelligentData[0].imgAlt}
+        imgUrl={intelligentData[0].coverSrc}
+        imgAlt={intelligentData[0].coverAlt}
         linkTo="/products/sli/sli5200"
         width={500}
         height={400}
         model="SLi5200"
       />
       <CollectionCover
-        imgUrl={intelligentData[1].imgSrc}
-        imgAlt={intelligentData[1].imgAlt}
+        imgUrl={intelligentData[1].coverSrc}
+        imgAlt={intelligentData[1].coverAlt}
         linkTo="/products/sli/sli5200"
         width={500}
         height={400}

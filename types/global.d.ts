@@ -22,6 +22,8 @@ export type ProductInfo = {
   };
   imgSrc: string;
   imgAlt: string;
+  coverSrc: string;
+  coverAlt: string;
   specification: string | null;
   manual: string | null;
 };

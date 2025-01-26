@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,7 +9,6 @@ type Props = {
 };
 
 export default function Thumbnail({ imgsrc, title, imgalt, pagelink }: Props) {
-  const img1 = "/";
   return (
     <div className="group flex flex-col items-center mt-5">
       <div className="overflow-hidden">

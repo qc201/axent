@@ -49,7 +49,7 @@ const productLinks = [
   },
 ];
 
-const supporttLinks = [
+const supportLinks = [
   {
     href: "/support/dealer",
     label: "Find a dealer",
@@ -90,8 +90,8 @@ const companyLinks = [
   },
   {
     href: "/company/contact",
-    label: "Contact us",
-    pagelink: "/company/contact",
+    label: "Reference",
+    pagelink: "/company/reference",
   },
 ];
 
@@ -111,6 +111,12 @@ export default function Navbar() {
       setActiveMenu(null);
     }
   };
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Function to toggle the state
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   useEffect(() => {
     // Set up event listener for clicks outside
@@ -124,191 +130,280 @@ export default function Navbar() {
 
   const [showInput, setShowInput] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [isProductLinksVisible, setIsProductLinksVisible] = useState(false);
+
+  const handleProductClick = () => {
+    setIsProductLinksVisible(!isProductLinksVisible);
+  };
+  const [isSupportLinksVisible, setIsSupportLinksVisible] = useState(false);
+
+  const handleSupportClick = () => {
+    setIsSupportLinksVisible(!isSupportLinksVisible);
+  };
+
+  const [isCompanyLinksVisible, setIsCompanyLinksVisible] = useState(false);
+
+  const handleCompanyClick = () => {
+    setIsCompanyLinksVisible(!isCompanyLinksVisible);
+  };
 
   return (
-    <div className=" z-50 fixed top-0 left-0 bg-white w-screen max-h-[60px] p-5">
-      <div className="flex flex-row justify-around items-center text-sm text-primary font-custom font-extralight">
-        <Link href="/" className="p-0 m-0">
-          LOGO
-        </Link>
-        {/* PRODUCT SUPPORT ABOUT US WILL HIDDEN ON CELLPHONE SCREEN */}
-        <div className="hidden sm:flex flex-row justify-between gap-4 text-sm text-primary font-custom font-extralight">
-          {/* PRODUCTS dropdown */}
-          <Menu
-            as="div"
-            open={activeMenu === 1}
-            onClose={() => setActiveMenu(null)}
-          >
-            {({ open }) => (
-              <div ref={(el) => (menuRefs.current[0] = el)}>
-                <MenuButton
-                  onClick={() => handleMenuToggle(1)}
-                  className={`${
-                    open ? "font-thin" : ""
-                  } data-[active]:font-extrabold`}
-                >
-                  PRODUCTS
-                </MenuButton>
-                <AnimatePresence>
-                  {open && (
-                    <MenuItems
-                      anchor="bottom"
-                      className="w-screen bg-white bg-opacity-70 flex flex-wrap justify-around"
-                      static
-                      as={motion.div}
-                      initial={{ opacity: 0, y: -50 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -50 }}
-                    >
-                      {productLinks.map((link) => (
-                        <MenuItem key={link.href}>
-                          <Link href={link.href}>
-                            <Thumbnail
-                              imgsrc={link.imgsrc}
-                              imgalt={link.imgalt}
-                              title={link.title}
-                              pagelink={link.pagelink}
-                            />
-                          </Link>
-                        </MenuItem>
-                      ))}
-                    </MenuItems>
-                  )}
-                </AnimatePresence>
-              </div>
-            )}
-          </Menu>
+    <div>
+      <div className=" z-50 fixed top-0 left-0 bg-white w-screen max-h-[60px] p-5">
+        <div className="flex flex-row justify-around items-center text-sm text-primary font-custom font-extralight">
+          <Link href="/" className="p-0 m-0">
+            LOGO
+          </Link>
+          {/* PRODUCT SUPPORT ABOUT US WILL HIDDEN ON CELLPHONE SCREEN */}
+          <div className="hidden  sm:flex sm:flex-row justify-between gap-4 text-sm text-primary font-custom font-extralight">
+            {/* PRODUCTS dropdown */}
+            <Menu
+              as="div"
+              open={activeMenu === 1}
+              onClose={() => setActiveMenu(null)}
+            >
+              {({ open }) => (
+                <div ref={(el) => (menuRefs.current[0] = el)}>
+                  <MenuButton
+                    onClick={() => handleMenuToggle(1)}
+                    className={`${
+                      open ? "font-thin" : ""
+                    } data-[active]:font-extrabold`}
+                  >
+                    PRODUCTS
+                  </MenuButton>
+                  <AnimatePresence>
+                    {open && (
+                      <MenuItems
+                        anchor="bottom"
+                        className="w-screen bg-white bg-opacity-70 flex flex-wrap justify-around"
+                        static
+                        as={motion.div}
+                        initial={{ opacity: 0, y: -50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -50 }}
+                      >
+                        {productLinks.map((link) => (
+                          <MenuItem key={link.href}>
+                            <Link href={link.href}>
+                              <Thumbnail
+                                imgsrc={link.imgsrc}
+                                imgalt={link.imgalt}
+                                title={link.title}
+                                pagelink={link.pagelink}
+                              />
+                            </Link>
+                          </MenuItem>
+                        ))}
+                      </MenuItems>
+                    )}
+                  </AnimatePresence>
+                </div>
+              )}
+            </Menu>
 
-          {/* SUPPORT DROPDOWN */}
-          <Menu
-            as="div"
-            open={activeMenu === 2}
-            onClose={() => setActiveMenu(null)}
-          >
-            {({ open }) => (
-              <div ref={(el) => (menuRefs.current[1] = el)}>
-                <MenuButton
-                  onClick={() => handleMenuToggle(2)}
-                  className={`${
-                    open ? "font-thin" : ""
-                  } data-[active]:font-extrabold`}
-                >
-                  SUPPORT
-                </MenuButton>
-                <AnimatePresence>
-                  {open && (
-                    <MenuItems
-                      anchor="bottom"
-                      className="w-screen text-primary bg-white bg-opacity-70 flex flex-wrap justify-around py-5"
-                      static
-                      as={motion.div}
-                      initial={{ opacity: 0, y: -50 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -50 }}
-                    >
-                      {supporttLinks.map((link) => (
-                        <MenuItem key={link.href}>
-                          <div className="group font-thin">
-                            <span className="bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-500 ease-out">
-                              <a href={link.href}>{link.label}</a>
-                            </span>
-                          </div>
-                        </MenuItem>
-                      ))}
-                    </MenuItems>
-                  )}
-                </AnimatePresence>
-              </div>
-            )}
-          </Menu>
+            {/* SUPPORT DROPDOWN */}
+            <Menu
+              as="div"
+              open={activeMenu === 2}
+              onClose={() => setActiveMenu(null)}
+            >
+              {({ open }) => (
+                <div ref={(el) => (menuRefs.current[1] = el)}>
+                  <MenuButton
+                    onClick={() => handleMenuToggle(2)}
+                    className={`${
+                      open ? "font-thin" : ""
+                    } data-[active]:font-extrabold`}
+                  >
+                    SUPPORT
+                  </MenuButton>
+                  <AnimatePresence>
+                    {open && (
+                      <MenuItems
+                        anchor="bottom"
+                        className="w-screen text-primary bg-white bg-opacity-70 flex flex-wrap justify-around py-5"
+                        static
+                        as={motion.div}
+                        initial={{ opacity: 0, y: -50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -50 }}
+                      >
+                        {supportLinks.map((link) => (
+                          <MenuItem key={link.href}>
+                            <div className="group font-thin">
+                              <span className="bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-500 ease-out">
+                                <a href={link.href}>{link.label}</a>
+                              </span>
+                            </div>
+                          </MenuItem>
+                        ))}
+                      </MenuItems>
+                    )}
+                  </AnimatePresence>
+                </div>
+              )}
+            </Menu>
 
-          {/* COMPANY */}
-          <Menu
-            as="div"
-            open={activeMenu === 2}
-            onClose={() => setActiveMenu(null)}
-          >
-            {({ open }) => (
-              <div ref={(el) => (menuRefs.current[1] = el)}>
-                <MenuButton
-                  onClick={() => handleMenuToggle(2)}
-                  className={`${
-                    open ? "font-thin" : ""
-                  } data-[active]:font-extrabold`}
-                >
-                  COMPANY
-                </MenuButton>
-                <AnimatePresence>
-                  {open && (
-                    <MenuItems
-                      anchor="bottom"
-                      className="w-screen text-primary bg-white bg-opacity-70 flex flex-wrap justify-around py-5"
-                      static
-                      as={motion.div}
-                      initial={{ opacity: 0, y: -50 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -50 }}
-                    >
-                      {companyLinks.map((link) => (
-                        <MenuItem
-                          key={link.href}
-                          className="font-thin duration-1000"
-                        >
-                          <div className="group font-thin">
-                            <span className="bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-500 ease-out">
-                              <a href={link.href}>{link.label}</a>
-                            </span>
-                          </div>
-                        </MenuItem>
-                      ))}
-                    </MenuItems>
-                  )}
-                </AnimatePresence>
-              </div>
-            )}
-          </Menu>
-        </div>
-        {/* end of product support about */}
-
-        <div className="flex flex-reverse gap-1 sm:gap-4 items-baseline">
-          {/* LOCATION ICON */}
-          <div className="hidden sm:flex">
-            <Link href="/support/dealer">
-              <Image
-                src="/icons/location-svgrepo-com.svg"
-                alt="Example Icon"
-                width={25}
-                height={25}
-                loading="eager"
-              />
-            </Link>
+            {/* COMPANY */}
+            <Menu
+              as="div"
+              open={activeMenu === 2}
+              onClose={() => setActiveMenu(null)}
+            >
+              {({ open }) => (
+                <div ref={(el) => (menuRefs.current[1] = el)}>
+                  <MenuButton
+                    onClick={() => handleMenuToggle(2)}
+                    className={`${
+                      open ? "font-thin" : ""
+                    } data-[active]:font-extrabold`}
+                  >
+                    COMPANY
+                  </MenuButton>
+                  <AnimatePresence>
+                    {open && (
+                      <MenuItems
+                        anchor="bottom"
+                        className="w-screen text-primary bg-white bg-opacity-70 flex flex-wrap justify-around py-5"
+                        static
+                        as={motion.div}
+                        initial={{ opacity: 0, y: -50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -50 }}
+                      >
+                        {companyLinks.map((link) => (
+                          <MenuItem
+                            key={link.href}
+                            className="font-thin duration-1000"
+                          >
+                            <div className="group font-thin">
+                              <span className="bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-500 ease-out">
+                                <a href={link.href}>{link.label}</a>
+                              </span>
+                            </div>
+                          </MenuItem>
+                        ))}
+                      </MenuItems>
+                    )}
+                  </AnimatePresence>
+                </div>
+              )}
+            </Menu>
           </div>
+          {/* end of product support about */}
 
-          {/* SEARCH ICON */}
-          <div>
-            <Link href="/support/search">
-              <Image
-                src="/icons/search-svgrepo-com.svg"
-                alt="Example Icon"
-                width={25}
-                height={25}
-                loading="eager"
-              />
-            </Link>
-          </div>
+          <div className="flex flex-reverse gap-1 sm:gap-4 items-baseline">
+            {/* LOCATION ICON */}
+            <div className="hidden sm:flex">
+              <Link href="/support/dealer">
+                <Image
+                  src="/icons/location-svgrepo-com.svg"
+                  alt="Example Icon"
+                  width={25}
+                  height={25}
+                  loading="eager"
+                />
+              </Link>
+            </div>
 
-          {/* MENU ICON */}
-          <div>
-            <Image
-              src="/icons/menu-hamburger-svgrepo-com.svg"
-              alt="Example Icon"
-              width={25}
-              height={25}
-              loading="eager"
-            />
+            {/* SEARCH ICON */}
+            <div>
+              <Link href="/support/search">
+                <Image
+                  src="/icons/search-svgrepo-com.svg"
+                  alt="Example Icon"
+                  width={25}
+                  height={25}
+                  loading="eager"
+                />
+              </Link>
+            </div>
+
+            <div>
+              {/* Hamburger/Close Icon */}
+              <div className="sm:hidden" onClick={toggleMenu}>
+                {isOpen ? (
+                  <Image
+                    src="/icons/close-circle-svgrepo-com.svg"
+                    alt="Close"
+                    width={25}
+                    height={25}
+                    loading="eager"
+                  />
+                ) : (
+                  <Image
+                    src="/icons/menu-hamburger-svgrepo-com.svg"
+                    alt="Hamburger"
+                    width={25}
+                    height={25}
+                    loading="eager"
+                  />
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      {/* Mobile View Menu */}
+
+      {isOpen && (
+        <div className="absolute w-1/2 h-screen top-14 right-0 text-start bg-white  opacity-70 z-50">
+          <div className="flex flex-col pl-3 pt-5 font-custom text-primary text-lg">
+            <div
+              className="font-black"
+              onClick={handleProductClick}
+              style={{ cursor: "pointer" }}
+            >
+              Products
+            </div>
+            {isProductLinksVisible &&
+              productLinks.map((link) => (
+                <Link
+                  className="font-thin"
+                  href={link.pagelink}
+                  key={link.label}
+                >
+                  {link.title}
+                </Link>
+              ))}
+            <div
+              className="font-black"
+              onClick={handleSupportClick}
+              style={{ cursor: "pointer" }}
+            >
+              Support
+            </div>
+            {isSupportLinksVisible &&
+              supportLinks.map((link) => (
+                <Link
+                  className="font-thin"
+                  href={link.pagelink}
+                  key={link.label}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            <div
+              className="font-black"
+              onClick={handleCompanyClick}
+              style={{ cursor: "pointer" }}
+            >
+              Company
+            </div>
+            {isCompanyLinksVisible &&
+              companyLinks.map((link) => (
+                <Link
+                  className="font-thin"
+                  href={link.pagelink}
+                  key={link.label}
+                >
+                  {link.label}
+                </Link>
+              ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

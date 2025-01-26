@@ -4,47 +4,37 @@ import HeaderVideo from "@/components/HeaderVideo";
 import SeriesContainer from "@/components/SeriesContainer";
 import CardLeftText from "@/components/CardLeftText";
 import CardRightText from "@/components/CardRightText";
+import VideoCardTextLeft from "@/components/VideoCardTextLeft";
+import VideoCardTextRight from "@/components/VideoCardTextRight";
 
 export default function Home() {
-  /**
-   * all video/image source should be replaced once vimeo setup
-   * down below 6 constance
-   */
-  const video1src: string =
-    "https://player.vimeo.com/video/898219112?badge=0&autopause=0&player_id=0&app_id=58479&muted=1&autoplay=1&controls=0&loop=1&picture-in-picture";
-  const video2src: string =
-    "https://player.vimeo.com/video/898219070?badge=0&autopause=0&player_id=0&app_id=58479&muted=1&autoplay=1&controls=0&loop=1&picture-in-picture";
-  const video3src: string =
-    "https://player.vimeo.com/video/898219138?badge=0&autopause=0&player_id=0&app_id=58479&muted=1&autoplay=1&controls=0&loop=1&picture-in-picture";
-
+  const video1src = "/videos/Kirin.mp4";
+  const video2src = "/videos/one_dial.mp4";
+  const video3src = "/videos/hygienic.mp4";
   return (
     <PageWrapper>
       <main className="snap-y">
         <HeaderVideo />
         <SeriesContainer />
-        {/* <div className="qc-home-section-container relative">
-          <CardLeftText
-            title="F4 BASED PLATFORM"
-            description="Developed in house, our new technology features a single board computer controller module for our intelligent toilets."
-            videosrc={video1src}
-          />
+        <div className="felx flex justify-center items-center h-[200px] w-screen bg-center pt-30 bg-techStyle bg-fixed bg-cover bg-no-repeat sm:h-[400px] sm:w-screen">
+          <div className=" text-primary font-custom font-black text-2xl sm:text-4xl">
+            Intelligent Technologies
+          </div>
         </div>
-
-        <div className="qc-home-section-container">
-          <CardRightText
-            title="SPRAY TECHNIQUE"
-            description="Silver wand spray module is crafted around ultimate user comfort and spotless cleaning."
-            videosrc={video2src}
-          />
+        <div className="text-primary font-thin font-custom  pt-10 sm:px-40 sm:pt-20 text-xl">
+          AXENT, with its ultimate technologies, continuously overturns,
+          surpasses, leads, and rewrites the history of the bathroom industry.
         </div>
-
-        <div className="qc-home-section-container">
-          <CardLeftText
-            title="POWERFUL DEODORIZER"
-            description="Expels unpleasant odors rapidly contributing to an enhanced bathroom experience."
-            videosrc={video3src}
-          />
-        </div> */}
+        <VideoCardTextLeft
+          title="0000000000000"
+          description="Expels unpleasant odors rapidly contributing to an enhanced bathroom experience."
+          videosrc={video3src}
+        />
+        <VideoCardTextRight
+          title="0000000000000"
+          description="Expels unpleasant odors rapidly contributing to an enhanced bathroom experience."
+          videosrc={video3src}
+        />
       </main>
     </PageWrapper>
   );

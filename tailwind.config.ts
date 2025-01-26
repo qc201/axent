@@ -34,6 +34,10 @@ const config: Config = {
         "text-reveal": "text-reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s",
         "bg-img-appear": "img-flip 1s  cubic-bezier(0.77, 0, 0.175, 1) 0.5s",
       },
+      backgroundImage: {
+        designers: 'url("../public/products_img/designer1920_1080.png")',
+        techStyle: 'url("../public/products_img/tech_style.jpg")',
+      },
       fontFamily: {
         custom: ["Inter", "sans-serif"],
       },

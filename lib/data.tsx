@@ -1,0 +1,92 @@
+import { ProductInfo } from "@/types/global";
+export const data: ProductInfo[] = [
+  {
+    id: 1,
+    sku: "E414-02",
+    collection: null,
+    category: "intelligent",
+    name: "AXENT.ONE C PLUS Intelligent Toilet",
+    aliases: "one-c-plus",
+    subtitle: "Ingelligent toilet with KIRIN Flush System",
+    details:
+      "The AXENT.ONE C+ intelligent toilet refines intuitive design and adaptable technology. This award-winning intelligent toilet is equipped with the latest smart-ware technology customize your AXENT.ONE C+ functions with the swipe of a sensor or click of a button. The AXENT.ONE C+ is paired with the Kirin flushing system. This tankless design and powerful flushing efficiency lends to the AXENT.ONE C+ one-of-a-kind water conservation benefits.",
+    features: {
+      dimensions: "L 281/2” x W 157/8” x H 191/4”",
+      weight: "110lbs",
+      material: "Vitreous China and Easy Clean Antibacterial Glaze",
+      color: "White and Chrome Trim",
+      water: "SingleFlush1.0GPF(3.8LPF)",
+    },
+    configuration: {
+      outlook: [
+        "Customizable Integrated Bidet Seat",
+        "Floor mounted/ Siphonic",
+        '12" Rough In',
+        "Elongated Bowl Shape",
+        "ADA Height Toilet Bowl",
+      ],
+      watertank: [
+        "Kirin Flush System",
+        "Patented Tankless Technology",
+        "Manual and Remote Activated Flushing",
+        "Smart Phone App Enabled Control",
+      ],
+      cleaning: [
+        "Deodorizer",
+        "Warm Air Dryer",
+        "Instantly Warm Water Temperature",
+        "Adjustable Shower Flow and Masaging",
+      ],
+      seatlid: [
+        "Adjustable Self-Warming Seat",
+        "Automated Hands-Free, Soft-Closing Seat and Lid",
+        "Easy Clean Antibacterial Coating",
+      ],
+    },
+    imgSrc: "/products_img/one-c-plus-p.png",
+    imgAlt: "one-c-plus",
+    specification: null,
+    manual: null,
+  },
+  {
+    id: 2,
+    sku: "E310-E291-U1",
+    collection: null,
+    category: "intelligent",
+    name: "AXENT.ONE PLUS Intelligent Toilet",
+    aliases: "one-plus",
+    subtitle: "Ingelligent toilet with KIRIN Flush System",
+    details:
+      "The AXENT.ONE C+ intelligent toilet refines intuitive design and adaptable technology. This award-winning intelligent toilet is equipped with the latest smart-ware technology customize your AXENT.ONE C+ functions with the swipe of a sensor or click of a button. The AXENT.ONE C+ is paired with the Kirin flushing system. This tankless design and powerful flushing efficiency lends to the AXENT.ONE C+ one-of-a-kind water conservation benefits.",
+    features: {
+      dimensions: "L 23.35” x W 14.57” x H 15.63”",
+      weight: "88.2lbs",
+      material: "Vitreous China and Polypropylene",
+      color: "White",
+      water: "Dual Flush Capability",
+    },
+    configuration: {
+      outlook: [
+        "Customizable Integrated Bidet Seat",
+        "Intuitive Night Light",
+        "Elongated Bowl Shape",
+        "ADA Height Toilet Bowl",
+      ],
+      watertank: ["Manual Activated Flushing", "Rimless Flush Design"],
+      cleaning: [
+        "Deodorizer",
+        "Warm Air Dryer",
+        "Instantly Warm Water Temperature",
+        "Adjustable Shower Flow and Masaging",
+      ],
+      seatlid: [
+        "Adjustable Self-Warming Seat",
+        "Easy Clean Antibacterial Coating",
+      ],
+    },
+    imgSrc: "/products_img/one-plus-p.png",
+    imgAlt: "one-plus",
+    specification: null,
+    manual: null,
+  },
+];

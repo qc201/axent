@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const productLinks = [
   {
-    href: "/intelligent",
+    href: "/bathroom/intelligent",
     label: "intelligent toilet",
     imgsrc: "/nav_img/intelligent.jpg",
     imgalt: "intelligent",
@@ -16,7 +16,7 @@ const productLinks = [
     pagelink: "/intelligent",
   },
   {
-    href: "/reguar",
+    href: "/bathroom/reguar",
     label: "regular toilet",
     imgsrc: "/nav_img/regular.jpg",
     imgalt: "regular toilet",
@@ -24,7 +24,7 @@ const productLinks = [
     pagelink: "/reguar",
   },
   {
-    href: "/mint",
+    href: "/bathroom/mint",
     label: "mint line",
     imgsrc: "/nav_img/mint.png",
     imgalt: "mint line",
@@ -32,7 +32,7 @@ const productLinks = [
     pagelink: "/mint",
   },
   {
-    href: "/basin",
+    href: "/bathroom/basin",
     label: "basins",
     imgsrc: "/nav_img/basins.jpg",
     imgalt: "",
@@ -40,7 +40,7 @@ const productLinks = [
     pagelink: "/basin",
   },
   {
-    href: "/parts",
+    href: "/bathroom/parts",
     label: "parts",
     imgsrc: "/nav_img/parts.jpg",
     imgalt: "parts",

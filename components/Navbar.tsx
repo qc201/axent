@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Thumbnail from "../components/Thumbnail";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import useOutsideClick from "@/lib/useOutsideClick";
 
 const productLinks = [
   {
@@ -13,7 +14,7 @@ const productLinks = [
     imgsrc: "/nav_img/intelligent.jpg",
     imgalt: "intelligent",
     title: "Intelligent Toilets & Seats",
-    pagelink: "/intelligent",
+    pagelink: "/bathroom/intelligent",
   },
   {
     href: "/bathroom/reguar",
@@ -21,7 +22,7 @@ const productLinks = [
     imgsrc: "/nav_img/regular.jpg",
     imgalt: "regular toilet",
     title: "Toilets",
-    pagelink: "/reguar",
+    pagelink: "/bathroom/reguar",
   },
   {
     href: "/bathroom/mint",
@@ -29,7 +30,7 @@ const productLinks = [
     imgsrc: "/nav_img/mint.png",
     imgalt: "mint line",
     title: "MINT",
-    pagelink: "/mint",
+    pagelink: "/bathroom/mint",
   },
   {
     href: "/bathroom/basin",
@@ -37,7 +38,7 @@ const productLinks = [
     imgsrc: "/nav_img/basins.jpg",
     imgalt: "",
     title: "Washbasins & Vanities",
-    pagelink: "/basin",
+    pagelink: "/bathroom/basin",
   },
   {
     href: "/bathroom/parts",
@@ -45,7 +46,7 @@ const productLinks = [
     imgsrc: "/nav_img/parts.jpg",
     imgalt: "parts",
     title: "Parts & Seats",
-    pagelink: "/parts",
+    pagelink: "/bathroom/parts",
   },
 ];
 
@@ -98,6 +99,7 @@ const companyLinks = [
 export default function Navbar() {
   const [activeMenu, setActiveMenu] = useState<number | null>(null);
   const menuRefs = useRef<(HTMLDivElement | null)[]>([]); // Reference for each menu component
+  const mobileMenuRef = useRef(null); //ref for mobil navbar
   // Toggle logic for opening/closing menus
   const handleMenuToggle = (menuId: number) => {
     setActiveMenu((prev) => (prev === menuId ? null : menuId)); // Close the menu if it's already open, otherwise open it
@@ -117,7 +119,11 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
+  // function close mobil navbar
+  const handleClickOutsideMobil = () => {
+    setIsOpen(false);
+  };
+  useOutsideClick(mobileMenuRef, handleClickOutsideMobil);
   useEffect(() => {
     // Set up event listener for clicks outside
     document.addEventListener("click", handleClickOutside);
@@ -148,7 +154,7 @@ export default function Navbar() {
   };
 
   return (
-    <div>
+    <div ref={mobileMenuRef}>
       <div className=" z-50 fixed top-0 left-0 bg-white w-screen max-h-[60px] p-5">
         <div className="flex flex-row justify-around items-center text-sm text-primary font-custom font-extralight">
           <Link href="/" className="p-0 m-0">
@@ -360,6 +366,7 @@ export default function Navbar() {
             {isProductLinksVisible &&
               productLinks.map((link) => (
                 <Link
+                  onClick={toggleMenu}
                   className="font-thin"
                   href={link.pagelink}
                   key={link.label}
@@ -377,6 +384,7 @@ export default function Navbar() {
             {isSupportLinksVisible &&
               supportLinks.map((link) => (
                 <Link
+                  onClick={toggleMenu}
                   className="font-thin"
                   href={link.pagelink}
                   key={link.label}
@@ -394,6 +402,7 @@ export default function Navbar() {
             {isCompanyLinksVisible &&
               companyLinks.map((link) => (
                 <Link
+                  onClick={toggleMenu}
                   className="font-thin"
                   href={link.pagelink}
                   key={link.label}

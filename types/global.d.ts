@@ -9,21 +9,21 @@ export type ProductInfo = {
   details: string;
   features: {
     dimensions: string;
-    weight: string;
+    weight?: string;
     material: string;
     color: string;
-    water: string;
+    water?: string | null;
   };
-  configuration: {
-    outlook: string[];
-    watertank: string[];
-    cleaning: string[];
-    seatlid: string[];
+  configuration?: {
+    outlook?: string[];
+    watertank?: string[];
+    cleaning?: string[];
+    seatlid?: string[];
   };
   imgSrc: string;
   imgAlt: string;
   coverSrc: string;
-  coverAlt: string;
+  sketchImg?: string[];
   specification: string | null;
   manual: string | null;
 };

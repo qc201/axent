@@ -661,4 +661,68 @@ export const data: ProductInfo[] = [
     specification: null,
     manual: null,
   },
+  {
+    id: 20,
+    sku: "T0151, T0159, T0167",
+    collection: "mint",
+    category: "mint",
+    name: "Batik Bathtub",
+    aliases: "batik",
+    subtitle: "Elegant Simplicity, Tailored to Your Taste",
+    details:
+      "The bathtub boasts a plump and rounded silhouette, exuding elegance and grandeur. The ultra-thin edge of the bathtub adds to its aesthetic appeal, creating a more spacious and airy ambiance.",
+    features: {
+      dimensions: "?",
+      weight: "?",
+      material: "?",
+      color: "?",
+    },
+    configuration: {
+      outlook: [
+        "Indulgent Soaking, Tailored to Your Desire",
+        "Durability, Skin-friendliness",
+        "Long-lasting Warmth Retention",
+      ],
+    },
+    imgSrc: "/products_img/batik-p.png",
+    imgAlt: "batik tub",
+    coverSrc: "/products_img/batik-1.jpg",
+    sketchImg: [
+      "/products_img/batik-s-1.png",
+      "/products_img/batik-s-2.png",
+      "/products_img/batik-s-3.png",
+    ],
+    specification: null,
+    manual: null,
+  },
+  {
+    id: 21,
+    sku: "T0151, T0159, T0167",
+    collection: "mint",
+    category: "mint",
+    name: "RINA LUXURY",
+    aliases: "rina",
+    subtitle: "Purified Water Nourishing Beauty and Revitalizing Skin",
+    details:
+      "Embedded within the shower head, the filter is rich in Vitamin C, effectively neutralizing chlorine in tap water to purify and protect every inch of your skin. The scientific blend of Vitamin C in the filter and hyaluronic acid, known as the Hydration Bomb, enhances skin's antioxidant capacity and moisture retention, rescuing parched skin and leaving it bouncy and vibrant.",
+    features: {
+      dimensions: "?",
+      weight: "?",
+      material: "?",
+      color: "?",
+    },
+    configuration: {
+      outlook: [
+        "Skin-refreshing Micro-bubble Water For a Deep Cleanse",
+        "Unleashing the Essence of Vitamin C Healthy Skin Begins with Your Bath",
+        "Switching Seamlessly Among Three Splash",
+      ],
+    },
+    imgSrc: "/products_img/rina-PK.png",
+    imgAlt: "rina shower head",
+    coverSrc: "/products_img/rina-cover.png",
+    sketchImg: ["/products_img/rina-s-1.png", "/products_img/rina-s-2.png"],
+    specification: null,
+    manual: null,
+  },
 ];

@@ -8,7 +8,7 @@ export type ProductInfo = {
   subtitle: string;
   details: string;
   features: {
-    dimensions: string;
+    dimensions?: string;
     weight?: string;
     material: string;
     color: string;

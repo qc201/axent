@@ -37,6 +37,7 @@ const config: Config = {
       backgroundImage: {
         designers: 'url("../public/products_img/designer1920_1080.png")',
         techStyle: 'url("../public/products_img/tech_style.jpg")',
+        intelligentHeader: 'url("../public/live_img/intelligent-header-1024_600.png")'
       },
       fontFamily: {
         custom: ["Inter", "sans-serif"],

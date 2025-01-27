@@ -155,7 +155,7 @@ export default function Navbar() {
 
   return (
     <div ref={mobileMenuRef}>
-      <div className=" z-50 fixed top-0 left-0 bg-white w-screen max-h-[60px] p-5">
+      <div className=" z-50 fixed top-0 left-0 bg-white w-screen h-12 px-5 pt-5 pb-12">
         <div className="flex flex-row justify-around items-center text-sm text-primary font-custom font-extralight">
           <Link href="/" className="p-0 m-0">
             LOGO

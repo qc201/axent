@@ -182,7 +182,7 @@ export default function Navbar() {
                     {open && (
                       <MenuItems
                         anchor="bottom"
-                        className="w-screen bg-white bg-opacity-70 flex flex-wrap justify-around"
+                        className="pt-5 w-screen bg-white bg-opacity-70 flex flex-wrap justify-around"
                         static
                         as={motion.div}
                         initial={{ opacity: 0, y: -50 }}
@@ -228,7 +228,7 @@ export default function Navbar() {
                     {open && (
                       <MenuItems
                         anchor="bottom"
-                        className="w-screen text-primary bg-white bg-opacity-70 flex flex-wrap justify-around py-5"
+                        className="pt-10 w-screen text-primary bg-white bg-opacity-70 flex flex-wrap justify-around py-5"
                         static
                         as={motion.div}
                         initial={{ opacity: 0, y: -50 }}
@@ -271,7 +271,7 @@ export default function Navbar() {
                     {open && (
                       <MenuItems
                         anchor="bottom"
-                        className="w-screen text-primary bg-white bg-opacity-70 flex flex-wrap justify-around py-5"
+                        className="pt-10 w-screen text-primary bg-white bg-opacity-70 flex flex-wrap justify-around py-5"
                         static
                         as={motion.div}
                         initial={{ opacity: 0, y: -50 }}

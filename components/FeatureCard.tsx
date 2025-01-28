@@ -15,6 +15,7 @@ type Props = {
     color: string;
     consumption?: string;
     configurations?: string[];
+    sku: string;
 };
 
 export default function FeatureCard({
@@ -27,6 +28,7 @@ export default function FeatureCard({
     weight,
     finish,
     color,
+    sku,
     consumption = "",
     configurations = [],
 }: Props) {
@@ -48,7 +50,9 @@ export default function FeatureCard({
                     <PdfViewer pdfUrl="" title="USER MANUAL" />
                 </div>
                 <ul className="list-disc list-inside md:space-y-2">
+                    <li className="">SKU: {sku}</li>
                     <li className="">Dimensions: {dimensions}</li>
+
                     <li className="">Weight: {weight}</li>
                     {collectionName === "SLi Collection" && (
                         <li className="">

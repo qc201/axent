@@ -28,7 +28,7 @@ export default function Intelligent() {
           <CollectionCover
             imgUrl={intelligentData[0].coverSrc}
             imgAlt={intelligentData[0].imgAlt}
-            linkTo="/products/sli/sli5400"
+            linkTo="/bathroom/intelligent/one-c-plus"
             width={1500}
             height={500}
           model={intelligentData[0].name}

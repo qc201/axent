@@ -23,7 +23,7 @@ export type ProductInfo = {
   imgSrc: string;
   imgAlt: string;
   coverSrc: string;
-  sketchImg?: string[];
+  sketchImg: string[];
   specification: string | null;
   manual: string | null;
 };

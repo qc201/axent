@@ -364,6 +364,10 @@ export const data: ProductInfo[] = [
       cleaning: ["Entire Trapway Glazing"],
       seatlid: ["Comfortable Antibacterial Seat"],
     },
+    sketchImg: [
+      "/products_img/mint-one-s-1.png",
+      "/products_img/mint-one-s-2.png",
+    ],
     imgSrc: "/products_img/stella-p.jpg",
     imgAlt: "stella",
     coverSrc: "/products_img/stella-p.jpg",
@@ -556,6 +560,10 @@ export const data: ProductInfo[] = [
       color:
         "space silver, Champagne Gold, Rose Gold, White, Matt Black, Meteorite Grey",
     },
+    sketchImg: [
+      "/products_img/mint-one-s-1.png",
+      "/products_img/mint-one-s-2.png",
+    ],
     imgSrc: "/products_img/primus-color-strip-rose.png",
     imgAlt: "primus-color-strip",
     coverSrc: "/products_img/primus-color-strip-gold.png",

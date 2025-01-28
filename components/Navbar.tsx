@@ -17,12 +17,12 @@ const productLinks = [
     pagelink: "/bathroom/intelligent",
   },
   {
-    href: "/bathroom/reguar",
+    href: "/bathroom/regular",
     label: "regular toilet",
     imgsrc: "/nav_img/regular.jpg",
     imgalt: "regular toilet",
     title: "Toilets",
-    pagelink: "/bathroom/reguar",
+    pagelink: "/bathroom/regular",
   },
   {
     href: "/bathroom/mint",

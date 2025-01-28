@@ -37,7 +37,7 @@ export default function CollectionCover({
           />
           {/*  */}
           <div className="opacity-30 sm:opacity-0 group-hover:opacity-80 transition-opacity ease-in-out duration-500 absolute z-50 cursor-pointer">
-            <p className=" text-sm text-primary py-2 px-4 font-custom font-thin bg-white rounded-3xl md:text-lg">
+            <p className=" text-xs text-primary py-2 px-4 font-custom font-thin bg-white rounded-3xl md:text-lg">
               VIEW {model}
             </p>
           </div>

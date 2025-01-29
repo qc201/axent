@@ -37,10 +37,13 @@ const config: Config = {
       backgroundImage: {
         designers: 'url("../public/products_img/designer1920_1080.png")',
         techStyle: 'url("../public/products_img/tech_style.jpg")',
-        intelligentHeader: 'url("../public/live_img/intelligent-header-1024_600.png")',
+        intelligentHeader:
+          'url("../public/live_img/intelligent-header-1024_600.png")',
         regularHeader: 'url("../public/products_img/primus-1-1024_600.png")',
         basinHeader: 'url("../public/live_img/basin-header-1024_600.png")',
         partsHeader: 'url("../public/live_img/parts-header-1024_600.png")',
+        mintHeader: 'url("../public/live_img/mint-header-1024_600.png")',
+        tubGril: 'url("../public/live_img/mint-tub-girl-pink.png")',
       },
       fontFamily: {
         custom: ["Inter", "sans-serif"],

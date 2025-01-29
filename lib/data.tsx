@@ -381,8 +381,9 @@ export const data: ProductInfo[] = [
       seatlid: ["Comfortable Antibacterial Seat"],
     },
     sketchImg: [
-      "/products_img/mint-one-s-1.png",
-      "/products_img/mint-one-s-2.png",
+      "/products_img/stella-s-1.png",
+      "/products_img/stella-s-2.png",
+      "/products_img/stella-s-3.png",
     ],
     imgSrc: "/products_img/stella-p.jpg",
     imgAlt: "stella",

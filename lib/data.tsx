@@ -250,7 +250,7 @@ export const data: ProductInfo[] = [
     category: "regular",
     name: "Primus Tankless Toilet",
     aliases: "primus",
-    subtitle: "Primus Tankless Toilet With Kirin System",
+    subtitle: "Minimalist Lifestyle with Kirin Flush",
     details:
       "Adopting an aesthetically pleasing streamlined design and a sleek flat white exterior, it aligns with modern home aesthetics. The efficient Kirin Flush System ensures pristine cleanliness after every use, offering the enjoyment of a comfortable life.",
     features: {

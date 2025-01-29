@@ -26,7 +26,7 @@ export default function Regular() {
         <CollectionCover
           imgUrl={regularData[0].coverSrc}
           imgAlt={regularData[0].imgAlt}
-          linkTo="/products/sli/sli5400"
+          linkTo="/bathroom/regular/primus"
           width={1500}
           height={500}
           model={regularData[0].name}

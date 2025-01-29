@@ -614,8 +614,6 @@ export const data: ProductInfo[] = [
         "Patented Tankless Technology",
         "Manual and Remote Activated Flushing",
         "Smart Phone App Enabled Control",
-        "Smart Phone App Enabled Control",
-        "Manual and Remote Activated Flushing",
       ],
       cleaning: [
         "Deodorizer",
@@ -635,6 +633,7 @@ export const data: ProductInfo[] = [
     sketchImg: [
       "/products_img/mint-one-s-1.png",
       "/products_img/mint-one-s-2.png",
+      "/products_img/mint-one-s-3.png",
     ],
     specification: null,
     manual: null,

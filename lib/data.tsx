@@ -180,8 +180,9 @@ export const data: ProductInfo[] = [
     category: "intelligent",
     name: "INFINITY",
     aliases: "infinity",
-    subtitle: "",
-    details: "",
+    subtitle: "Kirin Flush: Ultimate Assurance in All-round Performance",
+    details:
+      "The revolutionary Kirin Pressure-assisted Flush System adopts cutting-edge technology that redefines global standards. By harnessing air energy, it achieves double-low net flushing with triple cleanliness, freeing the user from any flushing anxiety. The ONE.DIAL and small remote controller offer peace of mind at all times.",
     features: {
       dimensions: "L 20-1/5” x W 14-4/5” x H 3-3/4”",
       weight: "7.75lbs",
@@ -189,7 +190,22 @@ export const data: ProductInfo[] = [
       color: "White",
       water: "20-100psi",
     },
-    imgSrc: "/products_img/infinity-gold.jpg",
+    configuration: {
+      outlook: [
+        "Smart Temperature Sensing System",
+        "Full-process Smart Sensing, Convenience for All",
+        "Nozzle UV Sterilization Technology",
+        "Versatile Control Options",
+        "Intelligent Night Light",
+      ],
+      watertank: [
+        "Bubble Care for Cleanness and Comfort",
+        "Antibacterial Seat",
+      ],
+      cleaning: ["Men's Auto Flush", "Warm Air Dryer"],
+      seatlid: ["Soft-close Lid and Seat"],
+    },
+    imgSrc: "/products_img/infinity-black.jpg",
     imgAlt: "infinity",
     coverSrc: "/products_img/infinity-cover.jpg",
     sketchImg: [
@@ -753,8 +769,7 @@ export const data: ProductInfo[] = [
     imgSrc: "/products_img/meta-1.jpg",
     imgAlt: "meta",
     coverSrc: "/products_img/meta-cover.png",
-    sketchImg: [
-    ],
+    sketchImg: [],
     specification: null,
     manual: null,
   },

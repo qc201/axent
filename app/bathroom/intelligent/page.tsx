@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { data } from "../../../lib/data"; //all product data in lib
 import { ProductInfo } from "@/types/global";
 import CollectionCover from "@/components/CollectionCover";
@@ -31,29 +31,29 @@ export default function Intelligent() {
             linkTo="/bathroom/intelligent/one-c-plus"
             width={1500}
             height={500}
-          model={intelligentData[0].name}
+            model={intelligentData[0].name}
           />
 
           <div className="flex flex-row items-end justify-between gap-1">
             {/* axent-1-p */}
-          <CollectionCover
-            imgUrl={intelligentData[1].coverSrc}
-            imgAlt={intelligentData[1].imgAlt}
+            <CollectionCover
+              imgUrl={intelligentData[1].coverSrc}
+              imgAlt={intelligentData[1].imgAlt}
               linkTo="/bathroom/intelligent/one-plus"
               width={600}
-            height={400}
-          model={intelligentData[1].name}
-        />
+              height={400}
+              model={intelligentData[1].name}
+            />
             {/* mint-1 */}
-        <CollectionCover
+            <CollectionCover
               imgUrl={intelligentData[6].coverSrc}
               imgAlt={intelligentData[6].imgAlt}
-          linkTo="/products/sli/sli4000"
+              linkTo="/products/sli/sli4000"
               width={600}
-          height={300}
+              height={300}
               model={intelligentData[6].name}
-            /></div>
-
+            />
+          </div>
         </div>
 
         {/* image 4 mint-2*/}
@@ -66,46 +66,50 @@ export default function Intelligent() {
               width={1200}
               height={300}
               model={intelligentData[7].name}
-            /></div></div>
+            />
+          </div>
+        </div>
         {/* image 5 infinity */}
         <div className="flex items-start justify-start pt-5">
-        <CollectionCover
-          imgUrl={intelligentData[4].coverSrc}
-          imgAlt={intelligentData[4].imgAlt}
-          linkTo="/products/sli/sli4000"
+          <CollectionCover
+            imgUrl={intelligentData[4].coverSrc}
+            imgAlt={intelligentData[4].imgAlt}
+            linkTo="/bathroom/intelligent/infinity"
             width={600}
-          height={300}
-          model={intelligentData[4].aliases}
-          /></div>
+            height={300}
+            model={intelligentData[4].aliases}
+          />
+        </div>
 
         {/* image 6 novia */}
         <div className="flex items-end justify-end">
           <div className="basis-2/3">
             <CollectionCover
-          imgUrl={intelligentData[5].coverSrc}
-          imgAlt={intelligentData[5].imgAlt}
-          linkTo="/products/sli/sli4000"
+              imgUrl={intelligentData[5].coverSrc}
+              imgAlt={intelligentData[5].imgAlt}
+              linkTo="/products/sli/sli4000"
               width={800}
-          height={300}
-          model={intelligentData[5].aliases}
-        />
+              height={300}
+              model={intelligentData[5].aliases}
+            />
           </div>
         </div>
 
         {/* image 7 meta */}
         <div className="flex items-start justify-start">
           <div className="basis-2/3">
-        <CollectionCover
+            <CollectionCover
               imgUrl={intelligentData[8].coverSrc}
               imgAlt={intelligentData[8].imgAlt}
-          linkTo="/products/sli/sli4000"
+              linkTo="/products/sli/sli4000"
               width={800}
-          height={300}
+              height={300}
               model={intelligentData[8].name}
-            /></div></div>
+            />
+          </div>
+        </div>
         <div className="flex flex-row">
           <div className="basis-1/2">
-
             {/* image8-9 seats*/}
             <CollectionCover
               imgUrl={intelligentData[2].coverSrc}
@@ -114,7 +118,8 @@ export default function Intelligent() {
               width={400}
               height={300}
               model={intelligentData[2].name}
-            /></div>
+            />
+          </div>
           <div className="basis-1/2">
             <CollectionCover
               imgUrl={intelligentData[3].coverSrc}
@@ -123,9 +128,9 @@ export default function Intelligent() {
               width={400}
               height={300}
               model={intelligentData[3].name}
-            /></div>
+            />
+          </div>
         </div>
-
       </div>
     </div>
   );

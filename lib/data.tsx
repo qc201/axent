@@ -577,10 +577,7 @@ export const data: ProductInfo[] = [
       color:
         "space silver, Champagne Gold, Rose Gold, White, Matt Black, Meteorite Grey",
     },
-    sketchImg: [
-      "/products_img/mint-one-s-1.png",
-      "/products_img/mint-one-s-2.png",
-    ],
+    sketchImg: [],
     imgSrc: "/products_img/primus-color-strip-rose.png",
     imgAlt: "primus-color-strip",
     coverSrc: "/products_img/primus-color-strip-gold.png",
@@ -634,7 +631,7 @@ export const data: ProductInfo[] = [
     },
     imgSrc: "/products_img/mint-one-p.png",
     imgAlt: "mint-one-1",
-    coverSrc: "/products_img/mint-one-1.png",
+    coverSrc: "/products_img/mint-one-2.png",
     sketchImg: [
       "/products_img/mint-one-s-1.png",
       "/products_img/mint-one-s-2.png",
@@ -677,7 +674,7 @@ export const data: ProductInfo[] = [
     },
     imgSrc: "/products_img/mint-two-BK.png",
     imgAlt: "mint-two",
-    coverSrc: "/products_img/mint-two-cover.jpg",
+    coverSrc: "/products_img/mint-two-2.png",
     sketchImg: [
       "/products_img/mint-two-s-1.png",
       "/products_img/mint-two-s-2.png",
@@ -711,7 +708,7 @@ export const data: ProductInfo[] = [
     },
     imgSrc: "/products_img/batik-p.png",
     imgAlt: "batik tub",
-    coverSrc: "/products_img/batik-1.jpg",
+    coverSrc: "/products_img/batik-cover.png",
     sketchImg: [
       "/products_img/batik-s-1.png",
       "/products_img/batik-s-2.png",
@@ -745,7 +742,7 @@ export const data: ProductInfo[] = [
     },
     imgSrc: "/products_img/rina-PK.png",
     imgAlt: "rina shower head",
-    coverSrc: "/products_img/rina-cover.png",
+    coverSrc: "/products_img/rina-1.png",
     sketchImg: ["/products_img/rina-s-1.png", "/products_img/rina-s-2.png"],
     specification: null,
     manual: null,

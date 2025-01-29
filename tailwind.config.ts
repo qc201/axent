@@ -44,6 +44,9 @@ const config: Config = {
         partsHeader: 'url("../public/live_img/parts-header-1024_600.png")',
         mintHeader: 'url("../public/live_img/mint-header-1024_600.png")',
         tubGril: 'url("../public/live_img/mint-tub-girl-pink.png")',
+        toiletGril: 'url("../public/live_img/mint-toilet-girl-gray.png")',
+        greenBg: 'url("../public/live_img/mint-tub-white-green-background.png")',
+        mintGreen: 'url("../public/live_img/mint-green-background.png")',
       },
       fontFamily: {
         custom: ["Inter", "sans-serif"],

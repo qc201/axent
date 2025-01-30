@@ -16,6 +16,8 @@ type Props = {
     consumption?: string;
     configurations?: string[];
     sku: string;
+    overFlow?: string;
+    drainageMode?: string;
 };
 
 export default function FeatureCard({
@@ -29,6 +31,8 @@ export default function FeatureCard({
     finish,
     color,
     sku,
+    overFlow,
+    drainageMode,
     consumption = "",
     configurations = [],
 }: Props) {
@@ -53,24 +57,22 @@ export default function FeatureCard({
                     <li className="">SKU: {sku}</li>
                     <li className="">Dimensions: {dimensions}</li>
 
-                    <li className="">Weight: {weight}</li>
-                    {collectionName === "SLi Collection" && (
-                        <li className="">
-                            Material Finish: Vitreous China, ABS Scratch Resistant Lid and
-                            Micro Shield
-                            <span>
-                                <sup>TM</sup>
-                            </span>{" "}
-                            Antibacterial Glaze.
-                        </li>
+                    {weight !== "?" && <li className="">Weight: {weight}</li>}
+                    {overFlow !== undefined && (
+                        <li className="">Overflow Hole: {overFlow}</li>
                     )}
-                    {collectionName !== "SLi Collection" && (
-                        <li className="">Material Finish: {finish}</li>
+                    {drainageMode !== undefined && (
+                        <li className="">Drainage Mode: {drainageMode}</li>
                     )}
+
+
+                    <li className="">Material Finish: {finish}</li>
+
                     <li className="">Color: {color}</li>
                     {consumption !== "" && (
                         <li className="">Water Consumption: {consumption}</li>
                     )}
+
                     <hr className="mt-10" />
                     {configurations !== undefined && configurations.length > 0 && (
                         <ul className="grid grid-cols-2 text-sm pt-10 md:pt-0">

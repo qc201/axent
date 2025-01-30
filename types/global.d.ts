@@ -13,6 +13,8 @@ export type ProductInfo = {
     material: string;
     color: string;
     water?: string | null;
+    overFlow?: string;
+    drainageMode?: string;
   };
   configuration?: {
     outlook?: string[];

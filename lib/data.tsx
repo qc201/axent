@@ -693,10 +693,12 @@ export const data: ProductInfo[] = [
     details:
       "The bathtub boasts a plump and rounded silhouette, exuding elegance and grandeur. The ultra-thin edge of the bathtub adds to its aesthetic appeal, creating a more spacious and airy ambiance.",
     features: {
-      dimensions: "?",
+      dimensions: "52.8Gal, 55.5Gal, 66Gal",
       weight: "?",
-      material: "?",
-      color: "?",
+      material: "Acrylic",
+      color: "white, blue, black",
+      overFlow: "Yes",
+      drainageMode: "Flip-over type"
     },
     configuration: {
       outlook: [

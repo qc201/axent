@@ -96,7 +96,7 @@ export default function MintTwo() {
                     />
                 </div>
                 <div className="flex flex-row justify-between overflow-hidden">
-                    <div className="w-full sm:w-1/4 h-80">
+                    <div className="w-full sm:w-1/3 h-80">
                         <Image
                             src={"/products_img/mint-two-5.png"}
                             alt={mintTwoData.name}
@@ -105,7 +105,7 @@ export default function MintTwo() {
                             className=" w-full h-full object-cover"
                         />
                     </div>
-                    <div className="w-full sm:w-1/4 h-80">
+                    <div className="w-full sm:w-1/3 h-80">
                         <Image
                             src={"/products_img/mint-two-6.png"}
                             alt={mintTwoData.name}
@@ -113,7 +113,7 @@ export default function MintTwo() {
                             height={300}
                             className="w-full h-full object-cover"
                         /></div>
-                    <div className="w-full sm:w-1/4">
+                    <div className="w-full sm:w-1/3">
                         <MaskText
                             className="text-sm sm:my-1 w-full flex flex-col items-start justify-start font-thin"
                             phrases={[

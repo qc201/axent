@@ -22,9 +22,10 @@ export default function Thumbnail({ imgsrc, title, imgalt, pagelink }: Props) {
         />
       </div>
       <div className="text-primary font-custom text-sm font-thin transition-all duration-500">
+        <Link href={pagelink}>
         <span className="bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-500 ease-out">
           <span>{title}</span>
-        </span>
+          </span></Link>
       </div>
     </div>
   );

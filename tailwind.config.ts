@@ -48,7 +48,7 @@ const config: Config = {
         greenBg:
           'url("../public/live_img/mint-tub-white-green-background.png")',
         mintGreen: 'url("../public/live_img/mint-green-background.png")',
-        noviaHeader: 'url("../public/products_img/novia-cover.jpg")',
+        noviaHeader: 'url("../public/products_img/novia-cover-1024_600.png")',
         noviaTub: 'url("../public/products_img/novia-5.png")',
         noviaBlackWhite: 'url("../public/products_img/novia-6.png")',
       },

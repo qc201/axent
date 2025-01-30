@@ -49,7 +49,7 @@ export default function Regular() {
           <CollectionCover
             imgUrl={regularData[1].coverSrc}
             imgAlt={regularData[1].imgAlt}
-            linkTo="/products/sli/sli5400"
+            linkTo="/bathroom/regular/peninsula"
             width={400}
             height={700}
             model={regularData[1].name}
@@ -59,7 +59,7 @@ export default function Regular() {
           <CollectionCover
             imgUrl={regularData[2].coverSrc}
             imgAlt={regularData[2].imgAlt}
-            linkTo="/products/sli/sli5400"
+            linkTo="/bathroom/regular/alton"
             width={400}
             height={700}
             model={regularData[2].name}
@@ -70,7 +70,7 @@ export default function Regular() {
           <CollectionCover
             imgUrl={regularData[4].coverSrc}
             imgAlt={regularData[4].imgAlt}
-            linkTo="/products/sli/sli5400"
+            linkTo="/bathroom/regular/reuss"
             width={500}
             height={700}
             model={regularData[4].name}

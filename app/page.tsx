@@ -13,8 +13,8 @@ export default function Home() {
     <main className="snap-y">
       <HeaderVideo />
       <SeriesContainer />
-      <div className="felx justify-center items-center h-[200px] w-screen bg-center pt-30 bg-techStyle bg-fixed bg-cover bg-no-repeat sm:h-[400px] sm:w-screen">
-        <div className=" text-white font-custom font-black text-2xl sm:text-4xl">
+      <div className="flex justify-center items-center h-[200px] w-screen bg-center pt-30 bg-techStyle bg-fixed bg-cover bg-no-repeat sm:h-[400px] sm:w-screen">
+        <div className=" text-white font-custom font-black text-2xl sm:text-4xl ">
           Intelligent Technologies
         </div>
       </div>

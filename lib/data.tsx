@@ -154,7 +154,7 @@ export const data: ProductInfo[] = [
     aliases: "electric-seat",
     subtitle: "INTELLIGENT E-BIDET SEAT",
     details:
-      "The SLIMS intelligent bidet seat offers instant seat and water warming, a luxurious and adjustable cleansing shower spray, and a soft-closing seat all in a low-profile and minimalistic style. The SLIMS’ gentle showering function can be customized with the turn of a conveniently located dial.",
+      "All of the cleansing benefits of an intelligent toilet in a convenient and compact intelligent bidet seat design. The U/V-Shape intelligent bidet seat offers instant seat and water warming, a luxurious and adjustable cleansing shower spray, and a soft-closing seat all in a low-profile and minimalistic style. The gentle showering function can be customized with the turn of a conveniently located dial.",
     features: {
       dimensions: "L 20-1/5” x W 14-4/5” x H 3-3/4”",
       weight: "7.75lbs",

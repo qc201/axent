@@ -86,127 +86,128 @@ export default function Novia() {
 
         <div className="grid sm:grid-cols-4 grid-cols-3 overflow-hidden">
           {/*shower*/}
-            <CollectionCover
-            className="w-full sm:h-[300px] h-[200px] object-cover"
+          <CollectionCover
             imgUrl="/products_img/novia-shower-gun.png"
               imgAlt="novia shower product"
               linkTo="/bathroom/novia"
             width={300}
             height={300}
               model="NOVIA SHOWER"
+            className="w-full sm:h-[300px] h-[200px] object-cover"
             />
 
           {/*mixer*/}
 
-            <CollectionCover
-            className="w-full sm:h-[300px] h-[200px] object-cover"
+          <CollectionCover
             imgUrl="/products_img/novia-mixer-gun.png"
               imgAlt="novia shower product"
               linkTo="/bathroom/novia"
             width={300}
             height={300}
               model="NOVIA MIXER"
+            className="w-full sm:h-[300px] h-[200px] object-cover"
             />
 
           {/*soap*/}
 
-            <CollectionCover
-            className="w-full sm:h-[300px] h-[200px] object-cover"
+          <CollectionCover
             imgUrl="/products_img/novia-soap-dish-gun.png"
               imgAlt="novia shower product"
               linkTo="/bathroom/novia"
             width={300}
             height={300}
-              model="NOVIA MIXER"
+            model="NOVIA SOAP DISH"
+            className="w-full sm:h-[300px] h-[200px] object-cover"
             />
 
           {/*tissue holder*/}
 
-            <CollectionCover
-            className="w-full sm:h-[300px] h-[200px] object-cover"
+          <CollectionCover
             imgUrl="/products_img/novia-tissue-holder-gun.png"
               imgAlt="novia shower product"
               linkTo="/bathroom/novia"
             width={300}
             height={300}
-              model="NOVIA MIXER"
+            model="NOVIA TISSUE HOLDER"
+            className="w-full sm:h-[300px] h-[200px] object-cover"
             />
 
           {/*shelf*/}
-            <CollectionCover
-            className="w-full sm:h-[300px] h-[200px] object-cover"
+          <CollectionCover
             imgUrl="/products_img/novia-shelf-gun.png"
               imgAlt="novia shower product"
               linkTo="/bathroom/novia"
             width={300}
             height={300}
               model="NOVIA MIXER"
+            className="w-full sm:h-[300px] h-[200px] object-cover"
             />
 
           {/*couple*/}
-            <CollectionCover
-            className="w-full sm:h-[300px] h-[200px] object-cover"
+          <CollectionCover
             imgUrl="/products_img/novia-couple-gun.png"
               imgAlt="novia shower product"
               linkTo="/bathroom/novia"
             width={300}
             height={300}
-              model="NOVIA MIXER"
+            model="NOVIA COUPLE"
+            className="w-full sm:h-[300px] h-[200px] object-cover"
             />
 
           {/*bath towel holder*/}
-            <CollectionCover
-            className="w-full sm:h-[300px] h-[200px] object-cover"
+          <CollectionCover
             imgUrl="/products_img/novia-bath-towel-gun.png"
               imgAlt="novia shower product"
               linkTo="/bathroom/novia"
             width={300}
             height={300}
-              model="NOVIA MIXER"
+            model="NOVIA BATH TOWEL"
+            className="w-full sm:h-[300px] h-[200px] object-cover"
             />
 
           {/* towel racks*/}
-            <CollectionCover
-            className="w-full sm:h-[300px] h-[200px] object-cover"
+          <CollectionCover
             imgUrl="/products_img/novia-towel-rack-gun.png"
               imgAlt="novia shower product"
               linkTo="/bathroom/novia"
             width={300}
             height={300}
-              model="NOVIA MIXER"
+            model="NOVIA TOWEL RACK"
+            className="w-full sm:h-[300px] h-[200px] object-cover"
             />
 
           {/* cabinet*/}
-            <CollectionCover
-            className="w-full sm:h-[300px] h-[200px] object-cover"
+          <CollectionCover
             imgUrl="/products_img/novia-bath-cabinet-gold.png"
               imgAlt="novia shower product"
               linkTo="/bathroom/novia"
             width={300}
             height={300}
-              model="NOVIA MIXER"
+            model="NOVIA CABINET"
+            className="w-full sm:h-[300px] h-[200px] object-cover"
             />
 
           {/* intelligent toilet*/}
-            <CollectionCover
-            className="w-full sm:h-[300px] h-[200px] object-cover"
+          <CollectionCover
             imgUrl="/products_img/novia-intelligent-toilet-gold.png"
               imgAlt="novia shower product"
               linkTo="/bathroom/novia"
             width={300}
             height={300}
-              model="NOVIA MIXER"
+            model="NOVIA INTELLIGENT TOILET"
+            className="w-full sm:h-[300px] h-[200px] object-cover"
             />
 
           {/* wall hang toilet*/}
             <CollectionCover
-            className="w-full sm:h-[300px] h-[200px] object-cover"
+
             imgUrl="/products_img/novia-wall-hang-white.png"
               imgAlt="novia shower product"
               linkTo="/bathroom/novia"
             width={300}
             height={300}
-              model="NOVIA MIXER"
+            model="NOVIA TOILET"
+            className="w-full sm:h-[300px] h-[200px] object-cover"
           />
         </div>
       </div>

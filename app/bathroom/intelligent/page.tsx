@@ -48,7 +48,7 @@ export default function Intelligent() {
             <CollectionCover
               imgUrl={intelligentData[6].coverSrc}
               imgAlt={intelligentData[6].imgAlt}
-              linkTo="/products/sli/sli4000"
+              linkTo="/bathroom/mint/mint-one"
               width={600}
               height={300}
               model={intelligentData[6].name}
@@ -62,7 +62,7 @@ export default function Intelligent() {
             <CollectionCover
               imgUrl={intelligentData[7].coverSrc}
               imgAlt={intelligentData[7].imgAlt}
-              linkTo="/products/sli/sli4000"
+              linkTo="/bathroom/mint/mint-two"
               width={1200}
               height={300}
               model={intelligentData[7].name}
@@ -101,7 +101,7 @@ export default function Intelligent() {
             <CollectionCover
               imgUrl={intelligentData[8].coverSrc}
               imgAlt={intelligentData[8].imgAlt}
-              linkTo="/products/sli/sli4000"
+              linkTo="/bathroom/meta"
               width={800}
               height={300}
               model={intelligentData[8].name}
@@ -114,7 +114,7 @@ export default function Intelligent() {
             <CollectionCover
               imgUrl={intelligentData[2].coverSrc}
               imgAlt={intelligentData[2].imgAlt}
-              linkTo="/products/sli/sli4000"
+              linkTo="/bathroom/intelligent/milton"
               width={400}
               height={300}
               model={intelligentData[2].name}
@@ -124,7 +124,7 @@ export default function Intelligent() {
             <CollectionCover
               imgUrl={intelligentData[3].coverSrc}
               imgAlt={intelligentData[3].imgAlt}
-              linkTo="/products/sli/sli4000"
+              linkTo="/bathroom/intelligent/electric-seat"
               width={400}
               height={300}
               model={intelligentData[3].name}

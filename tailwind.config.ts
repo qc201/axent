@@ -45,8 +45,12 @@ const config: Config = {
         mintHeader: 'url("../public/live_img/mint-header-1024_600.png")',
         tubGril: 'url("../public/live_img/mint-tub-girl-pink.png")',
         toiletGril: 'url("../public/live_img/mint-toilet-girl-gray.png")',
-        greenBg: 'url("../public/live_img/mint-tub-white-green-background.png")',
+        greenBg:
+          'url("../public/live_img/mint-tub-white-green-background.png")',
         mintGreen: 'url("../public/live_img/mint-green-background.png")',
+        noviaHeader: 'url("../public/products_img/novia-cover.jpg")',
+        noviaTub: 'url("../public/products_img/novia-5.png")',
+        noviaBlackWhite: 'url("../public/products_img/novia-6.png")',
       },
       fontFamily: {
         custom: ["Inter", "sans-serif"],

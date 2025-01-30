@@ -354,7 +354,7 @@ export default function Navbar() {
       {/* Mobile View Menu */}
 
       {isOpen && (
-        <div className="absolute w-1/2 h-screen top-14 right-0 text-start bg-white  opacity-70 z-50">
+        <div className="fixed w-1/2 h-screen top-14 right-0 text-start bg-white  opacity-70 z-50">
           <div className="flex flex-col pl-3 pt-5 font-custom text-primary text-lg">
             <div
               className="font-black"

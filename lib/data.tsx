@@ -698,7 +698,7 @@ export const data: ProductInfo[] = [
       material: "Acrylic",
       color: "white, blue, black",
       overFlow: "Yes",
-      drainageMode: "Flip-over type"
+      drainageMode: "Flip-over type",
     },
     configuration: {
       outlook: [
@@ -729,19 +729,22 @@ export const data: ProductInfo[] = [
     details:
       "Embedded within the shower head, the filter is rich in Vitamin C, effectively neutralizing chlorine in tap water to purify and protect every inch of your skin. The scientific blend of Vitamin C in the filter and hyaluronic acid, known as the Hydration Bomb, enhances skin's antioxidant capacity and moisture retention, rescuing parched skin and leaving it bouncy and vibrant.",
     features: {
-      dimensions: "?",
+      dimensions: '10.24" *  4.72" * 1.97"',
       weight: "?",
       material: "?",
-      color: "?",
+      color: "Icy Moldy Pink, Fine Floral White, Mocha Beige, Ice Crystal Blue",
     },
     configuration: {
       outlook: [
+        "Bubble Water",
+        "VC Nutrient Solution",
+        "Fragrance Essential Oil",
         "Skin-refreshing Micro-bubble Water For a Deep Cleanse",
         "Unleashing the Essence of Vitamin C Healthy Skin Begins with Your Bath",
         "Switching Seamlessly Among Three Splash",
       ],
     },
-    imgSrc: "/products_img/rina-PK.png",
+    imgSrc: "/products_img/rina-4-color.png",
     imgAlt: "rina shower head",
     coverSrc: "/products_img/rina-1.png",
     sketchImg: ["/products_img/rina-s-1.png", "/products_img/rina-s-2.png"],

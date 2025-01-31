@@ -1,8 +1,8 @@
 'use client'
 import { data } from "../../../lib/data"; //all product data in lib
 import { ProductInfo } from "@/types/global";
-import CollectionCover from "@/components/CollectionCover";
 import MaskText from "@/components/MaskText";
+import ProductCover from "@/components/ProductCover";
 
 export default function Basin() {
   // Filter the data where the category is "regular"
@@ -22,46 +22,59 @@ export default function Basin() {
           className="text-6xl text-white font-extrabold"
         />
       </div>
-      <div className="flex flex-col gap-5 pt-10 mx-10 sm:mx-60">
-        <div className="flex flex-row items-center justify-between">
+      <div className="grid grid-cols-2  gap-6">
 
-          <CollectionCover
+        {/* one c above counter sq*/}
+        <div className="flex flex-col h-full">
+          <ProductCover
             imgUrl={basinData[0].coverSrc}
             imgAlt={basinData[0].imgAlt}
-            linkTo="/products/sli/sli5400"
-            width={1500}
+            linkTo="/bathroom/basin/one-square"
+            width={500}
             height={500}
             model={basinData[0].name}
-          />
-          <CollectionCover
-            imgUrl={basinData[1].coverSrc}
-            imgAlt={basinData[1].imgAlt}
-            linkTo="/products/sli/sli5400"
-            width={1500}
-            height={500}
-            model={basinData[1].name}
+            className="w-full h-full"
+            sku={basinData[0].sku}
           />
         </div>
-        <div className="flex flex-row items-center justify-between">
-          <CollectionCover
+
+        {/* one c above counter rd */}
+        <div className="flex flex-col h-full">
+          <ProductCover
+            imgUrl={basinData[1].coverSrc}
+            imgAlt={basinData[1].imgAlt}
+            linkTo="/bathroom/basin/one-round"
+            width={500}
+            height={500}
+            model={basinData[1].name}
+            sku={basinData[1].sku}
+          /></div>
+
+        {/* one c above counter rect  */}
+        <div className="flex flex-col h-full">
+          <ProductCover
             imgUrl={basinData[2].coverSrc}
             imgAlt={basinData[2].imgAlt}
-            linkTo="/products/sli/sli5400"
-            width={1500}
+            linkTo="/bathroom/basin/one-rect"
+            width={500}
             height={500}
             model={basinData[2].name}
-          />
-          <CollectionCover
+            sku={basinData[2].sku}
+          /></div>
+
+        {/* annie */}
+        <div className="flex flex-col h-full">
+          <ProductCover
             imgUrl={basinData[3].coverSrc}
             imgAlt={basinData[3].imgAlt}
-            linkTo="/products/sli/sli5400"
-            width={1500}
+            linkTo="/bathroom/basin/annie"
+            width={500}
             height={500}
             model={basinData[3].name}
+            sku={basinData[3].sku}
           /></div>
+        {/* reuss */}
       </div>
-
-
 
     </div>
 

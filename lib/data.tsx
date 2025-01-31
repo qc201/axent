@@ -272,7 +272,7 @@ export const data: ProductInfo[] = [
     },
     imgSrc: "/products_img/primus-sliver.jpg",
     imgAlt: "primus",
-    coverSrc: "/products_img/primus-2.jpg",
+    coverSrc: "/products_img/primus-sq.png",
     sketchImg: [
       "/products_img/primus-s-1.png",
       "/products_img/primus-s-2.png",
@@ -290,7 +290,7 @@ export const data: ProductInfo[] = [
     aliases: "peninsula",
     subtitle: "Two-Piece Toilet",
     details:
-      "The Peninsula Toilet features elegant curves while conveying a charming traditional frankness. Our Peninsula Close Coupled Toilet is equipped with a bottom inlet, vertical outlet, 1.28 GPF (4.8 L) flush, Easy Clean antibacterial glaze, a silent seat and a 12” rough-in dimension.",
+      "The Peninsula collection features elegant curves while conveying a charming traditional frankness. Our Peninsula close coupled toilet is equipped with a bottom inlet, vertical outlet, 1.28GPF (4.8L) flush, Easy Clean antibacterial glaze, a silent seat and a 12” rough-in dimension.",
     features: {
       dimensions: "L 28 3/16” x W 17 3/4” x H 31 1/4”",
       weight: "82.9lbs",
@@ -312,7 +312,7 @@ export const data: ProductInfo[] = [
     },
     imgSrc: "/products_img/peninsula-p.png",
     imgAlt: "peninsula",
-    coverSrc: "/products_img/peninsula-2.jpg",
+    coverSrc: "/products_img/peninsula-sq.png",
     sketchImg: [
       "/products_img/peninsula-s-1.png",
       "/products_img/peninsula-s-2.png",
@@ -349,7 +349,7 @@ export const data: ProductInfo[] = [
     },
     imgSrc: "/products_img/alton-p.jpg",
     imgAlt: "alton",
-    coverSrc: "/products_img/alton-p.jpg",
+    coverSrc: "/products_img/alton-sq.png",
     sketchImg: [
       "/products_img/alton-s-1.png",
       "/products_img/alton-s-2.png",
@@ -387,7 +387,7 @@ export const data: ProductInfo[] = [
     ],
     imgSrc: "/products_img/stella-p.jpg",
     imgAlt: "stella",
-    coverSrc: "/products_img/stella-p.jpg",
+    coverSrc: "/products_img/stella-sq.png",
     specification: null,
     manual: null,
   },
@@ -551,9 +551,9 @@ export const data: ProductInfo[] = [
       ],
       watertank: ["Rimles flush design"],
     },
-    imgSrc: "/products_img/reuss-p.jpg",
+    imgSrc: "/products_img/reuss-sq.png",
     imgAlt: "stella",
-    coverSrc: "/products_img/reuss-2.jpg",
+    coverSrc: "/products_img/reuss-sq.png",
     sketchImg: [
       "/products_img/reuss-s-1.png",
       "/products_img/reuss-s-2.png",

@@ -14,38 +14,7 @@ export default function Home() {
   return (
     <main>
       <HeaderVideo />
-      <div className="bg-primary flex flex-row flex-wrap gap-5 items-center justify-center">
-        <InfoCard
-          imgsrc={regularData[0].coverSrc}
-          imgalt=""
-          title="AXENT.ONE PLUS"
-          pagelink=""
-        />
-        <InfoCard
-          imgsrc={regularData[1].coverSrc}
-          imgalt=""
-          title="AXENT.ONE C PLUS"
-          pagelink=""
-        />
-        <InfoCard
-          imgsrc={regularData[2].coverSrc}
-          imgalt=""
-          title="PRIMUS"
-          pagelink=""
-        />
-        <InfoCard
-          imgsrc={regularData[3].coverSrc}
-          imgalt=""
-          title="PRIMUS"
-          pagelink=""
-        />
-        <InfoCard
-          imgsrc={regularData[4].coverSrc}
-          imgalt=""
-          title="PRIMUS"
-          pagelink=""
-        />
-      </div>
+
       {/* <div className="flex justify-center items-center h-[200px] w-screen bg-center pt-30 bg-techStyle bg-fixed bg-cover bg-no-repeat sm:h-[400px] sm:w-screen">
         <div className=" text-white font-custom font-black text-2xl sm:text-4xl ">
           Intelligent Technologies

@@ -15,7 +15,7 @@ export default function InfoCard({ name, imgUrl, linkTo, sku }: Props) {
         <div>
           <div className="relative h-48 m-2.5 overflow-hidden text-white">
             <img
-              className="transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-110"
+              className="transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-90"
               src={imgUrl}
               alt={sku}
             />

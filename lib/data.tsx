@@ -45,7 +45,7 @@ export const data: ProductInfo[] = [
     },
     imgSrc: "/products_img/one-c-plus-p.png",
     imgAlt: "one-c-plus",
-    coverSrc: "/products_img/one-c-plus-2.png",
+    coverSrc: "/products_img/one-c-plus-sq.png",
     sketchImg: [
       "/products_img/one-c-plus-s-1.png",
       "/products_img/one-c-plus-s-2.png",
@@ -91,7 +91,7 @@ export const data: ProductInfo[] = [
     },
     imgSrc: "/products_img/one-plus-p.png",
     imgAlt: "one-plus",
-    coverSrc: "/products_img/one-plus-1.png",
+    coverSrc: "/products_img/one-plus-sq.png",
     sketchImg: [
       "/products_img/one-plus-s-1.png",
       "/products_img/one-plus-s-2.png",
@@ -135,7 +135,7 @@ export const data: ProductInfo[] = [
     },
     imgSrc: "/products_img/milton-p.png",
     imgAlt: "milgon seat",
-    coverSrc: "/products_img/milton-p.png",
+    coverSrc: "/products_img/milton-sq.png",
     sketchImg: [
       "/products_img/milton-s-1.png",
       "/products_img/milton-s-2.png",
@@ -164,7 +164,7 @@ export const data: ProductInfo[] = [
     },
     imgSrc: "/products_img/electric-seat-u.png",
     imgAlt: "U/V Shape Electric Bidet Seat",
-    coverSrc: "/products_img/electric-seat-u-1.jpg",
+    coverSrc: "/products_img/electric-seat-sq.png",
     sketchImg: [
       "/products_img/electric-seat-s-1.png",
       "/products_img/electric-seat-s-2.png",
@@ -207,7 +207,7 @@ export const data: ProductInfo[] = [
     },
     imgSrc: "/products_img/infinity-black.jpg",
     imgAlt: "infinity",
-    coverSrc: "/products_img/infinity-cover.jpg",
+    coverSrc: "/products_img/infinity-sq.png",
     sketchImg: [
       "/products_img/electric-seat-s-1.png",
       "/products_img/electric-seat-s-2.png",
@@ -629,7 +629,7 @@ export const data: ProductInfo[] = [
     },
     imgSrc: "/products_img/mint-one-p.png",
     imgAlt: "mint-one-1",
-    coverSrc: "/products_img/mint-one-2.png",
+    coverSrc: "/products_img/mint-one-sq.png",
     sketchImg: [
       "/products_img/mint-one-s-1.png",
       "/products_img/mint-one-s-2.png",
@@ -673,7 +673,7 @@ export const data: ProductInfo[] = [
     },
     imgSrc: "/products_img/mint-two-BK.png",
     imgAlt: "mint-two",
-    coverSrc: "/products_img/mint-two-2.png",
+    coverSrc: "/products_img/mint-two-sq.png",
     sketchImg: [
       "/products_img/mint-two-s-1.png",
       "/products_img/mint-two-s-2.png",

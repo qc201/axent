@@ -4,7 +4,7 @@ import DocCard from "@/components/DocCard";
 import MaskText from "@/components/MaskText";
 import { data } from "@/lib/data";
 
-export default function Download() {
+export default function Tutorials() {
   return (
     <div className="pt-16 flex flex-col justify-center items-center">
       <MaskText

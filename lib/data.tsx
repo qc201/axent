@@ -554,7 +554,7 @@ export const data: ProductInfo[] = [
     },
     imgSrc: "/products_img/bidet-seat-p.jpg",
     imgAlt: "bidet-seat",
-    coverSrc: "/products_img/bidet-seat-1.jpg",
+    coverSrc: "/products_img/bidet-seat-sq.png",
     sketchImg: [
       "/products_img/bidet-seat-s-1.png",
       "/products_img/bidet-seat-s-2.png",
@@ -764,7 +764,7 @@ export const data: ProductInfo[] = [
     },
     imgSrc: "/products_img/batik-p.png",
     imgAlt: "batik tub",
-    coverSrc: "/products_img/batik-cover.png",
+    coverSrc: "/products_img/batik-sq.png",
     sketchImg: [
       "/products_img/batik-s-1.png",
       "/products_img/batik-s-2.png",

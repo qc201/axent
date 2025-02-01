@@ -24,6 +24,9 @@ export default function OnePlus() {
         sketchImgs={onePlusData.sketchImg}
       />
       <FeatureCard
+        spec={onePlusData.specification}
+        manual={onePlusData.manual}
+        install={onePlusData.install}
         sku={onePlusData.sku}
         collectionName={
           onePlusData.collection === null ? "" : onePlusData.collection
@@ -51,7 +54,7 @@ export default function OnePlus() {
       />
       {/* live image and video */}
       <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm sm:text-2xl">
-        <PageVideo videoUrl="/videos/one-plus-video.mp4" />
+        <PageVideo videoUrl="https://player.vimeo.com/video/1052444433?h=f2ae321d97" />
         <MaskText
           className="mx-5 my-5 sm:mx-20 sm:my-10"
           phrases={[
@@ -77,7 +80,7 @@ export default function OnePlus() {
 
         <div className="pt-10 flex flex-col sm:flex-row-reverse  w-full justify-between sm:items-start">
           <div className="basis-2/3">
-            <PageVideo videoUrl="/videos/hygienic.mp4" />
+            <PageVideo videoUrl="https://player.vimeo.com/video/1052444501?h=f50df54449" />
           </div>
           <MaskText
             className="basis-2/3 my-5  sm:my-10"

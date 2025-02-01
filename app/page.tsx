@@ -2,10 +2,9 @@ import HeaderVideo from "@/components/HeaderVideo";
 import SeriesContainer from "@/components/SeriesContainer";
 import VideoCardTextLeft from "@/components/VideoCardTextLeft";
 import VideoCardTextRight from "@/components/VideoCardTextRight";
-import InfoCard from "@/components/InfoCard";
 import { ProductInfo } from "@/types/global";
 import { data } from "@/lib/data";
-
+import RevealCard from "@/components/RevealCard";
 const regularData = data.filter((d: ProductInfo) => d.category === "regular");
 export default function Home() {
   const video1src =
@@ -17,7 +16,7 @@ export default function Home() {
   return (
     <main>
       <HeaderVideo />
-
+      <SeriesContainer />
       <div className="flex justify-center items-center h-[200px] w-screen bg-center pt-30 bg-techStyle bg-fixed bg-cover bg-no-repeat sm:h-[400px] sm:w-screen">
         <div className=" text-white font-custom font-black text-2xl sm:text-4xl ">
           Intelligent Technologies

@@ -23,12 +23,15 @@ export default function OneCPlus() {
         sketchImgs={oneCPlusData.sketchImg}
       />
       <FeatureCard
+        spec={oneCPlusData.specification}
+        manual={oneCPlusData.manual}
+        install={oneCPlusData.install}
         sku={oneCPlusData.sku}
         collectionName={
           oneCPlusData.collection === null ? "" : oneCPlusData.collection
         }
         productImgUrl={oneCPlusData.imgSrc}
-        productImgAlt="sli 1000"
+        productImgAlt={oneCPlusData.name}
         productImgHeight={500}
         productImgWidth={500}
         dimensions={
@@ -53,7 +56,7 @@ export default function OneCPlus() {
 
       {/* live image and video */}
       <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm sm:text-2xl">
-        <PageVideo videoUrl="/videos/one-c-plus-video.mp4" />
+        {/* <PageVideo videoUrl="https://player.vimeo.com/video/1052444453?h=ee7556a879" /> */}
         <MaskText
           className="mx-5 my-5 sm:mx-20 sm:my-10"
           phrases={[

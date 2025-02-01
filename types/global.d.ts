@@ -26,6 +26,7 @@ export type ProductInfo = {
   imgAlt: string;
   coverSrc: string;
   sketchImg: string[];
-  specification: string | null;
-  manual: string | null;
+  specification: string;
+  manual: string;
+  install: string;
 };

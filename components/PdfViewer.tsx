@@ -19,7 +19,7 @@ const PdfViewer: React.FC<PdfViewerProps> = ({
   };
 
   return (
-    pdfUrl !== null && (
+    pdfUrl !== "" && (
       <div className="group p-1">
         <div className="flex bg-primary items-center justify-center">
           <button

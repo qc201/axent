@@ -22,6 +22,9 @@ export default function Rina() {
         sketchImgs={rinaData.sketchImg}
       />
       <FeatureCard
+        spec={rinaData.specification}
+        manual={rinaData.manual}
+        install={rinaData.install}
         sku={rinaData.sku}
         collectionName={rinaData.collection === null ? "" : rinaData.collection}
         productImgUrl={rinaData.imgSrc}

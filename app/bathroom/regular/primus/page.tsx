@@ -23,6 +23,9 @@ export default function Primus() {
         sketchImgs={primusData.sketchImg}
       />
       <FeatureCard
+        spec={primusData.specification}
+        manual={primusData.manual}
+        install={primusData.install}
         sku={primusData.sku}
         collectionName={
           primusData.collection === null ? "" : primusData.collection
@@ -90,7 +93,7 @@ export default function Primus() {
         </div>
         <div className="pt-10 flex flex-col sm:flex-row-reverse  w-full justify-between sm:items-start">
           <div className="basis-2/3">
-            <PageVideo videoUrl="/videos/kirin-presure.mp4" />
+            <PageVideo videoUrl="https://player.vimeo.com/video/1052444445?h=d6ff2856e4" />
           </div>
           <MaskText
             className="basis-2/3 my-5 "

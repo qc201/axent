@@ -22,6 +22,9 @@ export default function Infinity() {
         sketchImgs={infinityData.sketchImg}
       />
       <FeatureCard
+        spec={infinityData.specification}
+        manual={infinityData.manual}
+        install={infinityData.install}
         sku={infinityData.sku}
         collectionName={
           infinityData.collection === null ? "" : infinityData.collection

@@ -23,6 +23,9 @@ export default function Stella() {
         sketchImgs={stellaData.sketchImg}
       />
       <FeatureCard
+        spec={stellaData.specification}
+        manual={stellaData.manual}
+        install={stellaData.install}
         sku={stellaData.sku}
         collectionName={
           stellaData.collection === null ? "" : stellaData.collection
@@ -52,7 +55,7 @@ export default function Stella() {
       <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm sm:text-2xl">
         <div className="pt-10 flex flex-col sm:flex-row-reverse  w-full justify-between sm:items-start">
           <div className="basis-2/3">
-            <PageVideo videoUrl="/videos/kirin-presure.mp4" />
+            <PageVideo videoUrl="https://player.vimeo.com/video/1052444445?h=d6ff2856e4" />
           </div>
           <MaskText
             className="basis-2/3 my-5 "

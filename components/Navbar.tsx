@@ -98,8 +98,8 @@ const companyLinks = [
 
 export default function Navbar() {
   const [activeMenu, setActiveMenu] = useState<number | null>(null);
-  const menuRefs = useRef<(HTMLDivElement | null)[]>([]); // Reference for each menu component
-  const mobileMenuRef = useRef(null); //ref for mobil navbar
+  const menuRefs = useRef<(HTMLDivElement | null)[]>([]);// Reference for each menu component
+  const mobileMenuRef = useRef<HTMLDivElement>(null!) //ref for mobil navbar
   // Toggle logic for opening/closing menus
   const handleMenuToggle = (menuId: number) => {
     setActiveMenu((prev) => (prev === menuId ? null : menuId)); // Close the menu if it's already open, otherwise open it
@@ -163,24 +163,19 @@ export default function Navbar() {
           {/* PRODUCT SUPPORT ABOUT US WILL HIDDEN ON CELLPHONE SCREEN */}
           <div className="hidden  sm:flex sm:flex-row justify-between gap-4 text-sm text-primary font-custom font-extralight">
             {/* PRODUCTS dropdown */}
-            <Menu
-              as="div"
-              open={activeMenu === 1}
-              onClose={() => setActiveMenu(null)}
-            >
+            <Menu as="div">
               {({ open }) => (
-                <div ref={(el) => (menuRefs.current[0] = el)}>
+                <div ref={(el) => { menuRefs.current[0] = el; }}>
                   <MenuButton
-                    onClick={() => handleMenuToggle(1)}
-                    className={`${
-                      open ? "font-thin" : ""
-                    } data-[active]:font-extrabold`}
+                    onClick={() => handleMenuToggle(1)} // Toggle the products menu with id 1
+                    className={`${open ? "font-thin" : ""
+                      } data-[active]:font-extrabold`}
                   >
                     PRODUCTS
                   </MenuButton>
                   <AnimatePresence>
                     {open && (
-                      <MenuItems
+                      <Menu.Items
                         anchor="bottom"
                         className="pt-5 w-screen bg-white bg-opacity-70 flex flex-wrap justify-around"
                         static
@@ -190,7 +185,7 @@ export default function Navbar() {
                         exit={{ opacity: 0, y: -50 }}
                       >
                         {productLinks.map((link) => (
-                          <MenuItem key={link.href}>
+                          <Menu.Item key={link.href}>
                             <Link href={link.href}>
                               <Thumbnail
                                 imgsrc={link.imgsrc}
@@ -199,9 +194,9 @@ export default function Navbar() {
                                 pagelink={link.pagelink}
                               />
                             </Link>
-                          </MenuItem>
+                          </Menu.Item>
                         ))}
-                      </MenuItems>
+                      </Menu.Items>
                     )}
                   </AnimatePresence>
                 </div>
@@ -209,24 +204,19 @@ export default function Navbar() {
             </Menu>
 
             {/* SUPPORT DROPDOWN */}
-            <Menu
-              as="div"
-              open={activeMenu === 2}
-              onClose={() => setActiveMenu(null)}
-            >
+            <Menu as="div">
               {({ open }) => (
-                <div ref={(el) => (menuRefs.current[1] = el)}>
-                  <MenuButton
-                    onClick={() => handleMenuToggle(2)}
-                    className={`${
-                      open ? "font-thin" : ""
-                    } data-[active]:font-extrabold`}
+                <div ref={(el) => { menuRefs.current[0] = el; }}>
+                  <Menu.Button
+                    onClick={() => handleMenuToggle(1)} // Toggle support menu with id 1
+                    className={`${open ? "font-thin" : ""
+                      } data-[active]:font-extrabold`}
                   >
                     SUPPORT
-                  </MenuButton>
+                  </Menu.Button>
                   <AnimatePresence>
                     {open && (
-                      <MenuItems
+                      <Menu.Items
                         anchor="bottom"
                         className="pt-10 w-screen text-primary bg-white bg-opacity-70 flex flex-wrap justify-around py-5"
                         static
@@ -236,40 +226,35 @@ export default function Navbar() {
                         exit={{ opacity: 0, y: -50 }}
                       >
                         {supportLinks.map((link) => (
-                          <MenuItem key={link.href}>
+                          <Menu.Item key={link.href}>
                             <div className="group font-thin">
                               <span className="bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-500 ease-out">
                                 <a href={link.href}>{link.label}</a>
                               </span>
                             </div>
-                          </MenuItem>
+                          </Menu.Item>
                         ))}
-                      </MenuItems>
+                      </Menu.Items>
                     )}
                   </AnimatePresence>
                 </div>
               )}
             </Menu>
 
-            {/* COMPANY */}
-            <Menu
-              as="div"
-              open={activeMenu === 2}
-              onClose={() => setActiveMenu(null)}
-            >
+            {/* COMPANY DROPDOWN */}
+            <Menu as="div">
               {({ open }) => (
-                <div ref={(el) => (menuRefs.current[1] = el)}>
-                  <MenuButton
-                    onClick={() => handleMenuToggle(2)}
-                    className={`${
-                      open ? "font-thin" : ""
-                    } data-[active]:font-extrabold`}
+                <div ref={(el) => { menuRefs.current[0] = el; }}>
+                  <Menu.Button
+                    onClick={() => handleMenuToggle(2)} // Toggle company menu with id 2
+                    className={`${open ? "font-thin" : ""
+                      } data-[active]:font-extrabold`}
                   >
                     COMPANY
-                  </MenuButton>
+                  </Menu.Button>
                   <AnimatePresence>
                     {open && (
-                      <MenuItems
+                      <Menu.Items
                         anchor="bottom"
                         className="pt-10 w-screen text-primary bg-white bg-opacity-70 flex flex-wrap justify-around py-5"
                         static
@@ -279,18 +264,15 @@ export default function Navbar() {
                         exit={{ opacity: 0, y: -50 }}
                       >
                         {companyLinks.map((link) => (
-                          <MenuItem
-                            key={link.href}
-                            className="font-thin duration-1000"
-                          >
-                            <div className="group font-thin">
+                          <Menu.Item key={link.href}>
+                            <div className="group font-thin duration-1000">
                               <span className="bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-500 ease-out">
                                 <a href={link.href}>{link.label}</a>
                               </span>
                             </div>
-                          </MenuItem>
+                          </Menu.Item>
                         ))}
-                      </MenuItems>
+                      </Menu.Items>
                     )}
                   </AnimatePresence>
                 </div>

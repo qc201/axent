@@ -2,9 +2,9 @@ import ButtonCard from "./ButtonCard";
 
 export default function SeriesContainer() {
   return (
-    <div className="snap-y snap-mandatory overflow-y-scroll bg-primary flex flex-col sm:gap-10 sm:flex-row justify-center gap-0 relative sm:py-20">
+    <div className=" bg-primary flex flex-col sm:gap-10 sm:flex-row justify-center gap-0 relative sm:py-20">
       <ButtonCard
-        imgsrc="/series_img/one-plus-600_800.png"
+        imgsrc="/series_img/one-plus-feature.png"
         imgalt=""
         title="AXENT.ONE PLUS"
         pagelink=""

@@ -2,9 +2,7 @@
 import ProductSketch from "@/components/ProductSketch";
 import FeatureCard from "@/components/FeatureCard";
 import { data } from "../../../../lib/data"; //all product data in lib
-import { ProductInfo } from "@/types/global";
 import Image from "next/image";
-import PageVideo from "@/components/PageVideo";
 import MaskText from "@/components/MaskText";
 
 export default function Milton() {

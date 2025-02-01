@@ -1,23 +1,62 @@
-import Link from "next/link";
-import { PageWrapper } from "@/components/PageWrapper";
+
+
 import HeaderVideo from "@/components/HeaderVideo";
 import SeriesContainer from "@/components/SeriesContainer";
 import VideoCardTextLeft from "@/components/VideoCardTextLeft";
 import VideoCardTextRight from "@/components/VideoCardTextRight";
+import InfoCard from "@/components/InfoCard";
+import {
+  ProductInfo
+} from "@/types/global";
+import { data } from "@/lib/data";
 
+
+const regularData = data.filter((d: ProductInfo) => d.category === "regular");
 export default function Home() {
   const video1src = "/videos/Kirin.mp4";
   const video2src = "/videos/one_dial.mp4";
   const video3src = "/videos/hygienic.mp4";
   return (
-    <main className="snap-y">
+    <main >
       <HeaderVideo />
-      <SeriesContainer />
-      <div className="flex justify-center items-center h-[200px] w-screen bg-center pt-30 bg-techStyle bg-fixed bg-cover bg-no-repeat sm:h-[400px] sm:w-screen">
+      <div className="bg-white -mt-10 mx-auto w-fit grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-6">
+        <InfoCard
+          imgsrc={regularData[0].coverSrc}
+          imgalt=""
+          title="AXENT.ONE PLUS"
+          pagelink=""
+        />
+        <InfoCard
+          imgsrc={regularData[1].coverSrc}
+          imgalt=""
+          title="AXENT.ONE C PLUS"
+          pagelink=""
+        />
+        <InfoCard
+          imgsrc={regularData[2].coverSrc}
+          imgalt=""
+          title="PRIMUS"
+          pagelink=""
+        />
+        <InfoCard
+          imgsrc={regularData[3].coverSrc}
+          imgalt=""
+          title="PRIMUS"
+          pagelink=""
+        />
+        <InfoCard
+          imgsrc={regularData[4].coverSrc}
+          imgalt=""
+          title="PRIMUS"
+          pagelink=""
+        />
+
+      </div>
+      {/* <div className="flex justify-center items-center h-[200px] w-screen bg-center pt-30 bg-techStyle bg-fixed bg-cover bg-no-repeat sm:h-[400px] sm:w-screen">
         <div className=" text-white font-custom font-black text-2xl sm:text-4xl ">
           Intelligent Technologies
         </div>
-      </div>
+      </div> */}
       <div className="text-primary font-thin font-custom  pt-10 sm:px-40 sm:pt-20 text-xl">
         AXENT, with its ultimate technologies, continuously overturns,
         surpasses, leads, and rewrites the history of the bathroom industry.

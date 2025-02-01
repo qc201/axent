@@ -4,7 +4,7 @@ import Image from "next/image";
 import PdfViewer from "./PdfViewer";
 
 type Props = {
-    collectionName: string;
+    collectionName?: string;
     productImgUrl: string;
     productImgAlt: string;
     productImgHeight: number;

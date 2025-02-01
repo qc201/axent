@@ -8,28 +8,28 @@ import Image from "next/image";
 export default function Mint() {
   // Filter the data where the category is "mint" and line is "mint"
   const mintData = data.filter((d: ProductInfo) => d.category === "mint" || d.collection === "mint");
-  console.log(mintData.length);
+
 
 
   // category page will have x-axis margin of 40 for computer, 10 for cellphone
 
   return (
     <div>
-      <div className="font-custom flex items-center justify-center bg-fixed bg-mintHeader w-screen bg-cover bg-center bg-no-repeat sm:min-h-[1000px] min-h-[600px]">
+      <div className="flex items-center justify-center font-custom bg-mintHeader w-screen bg-cover bg-center bg-no-repeat sm:min-h-[1000px] min-h-[600px] sm:bg-fixed">
         <MaskText
           phrases={["AXENT-MINT"]}
-          className="text-6xl text-white font-extrabold "
+          className="text-6xl text-white font-extrabold items-center justify-center"
         />
       </div>
       <MaskText
-        className="flex flex-col pt-10 mx-5 sm:mx-20 text-primary font-custom font-thin sm:text-xl text-lg"
+        className="relative -z-40 flex flex-col pt-10 mx-5 sm:mx-20 text-primary font-custom font-thin sm:text-xl text-lg"
         phrases={[
           "AXENT-Mint inherits the AXENT Group's philosophy of combining aesthetics with cutting edge technology. ",
           "We cater to the needs of vibrant people in this new era. With a consumer-centric approach,",
           "we tailor high-quality smart home products to allow a refined sense of harmony into daily life.",
         ]}
       />
-      <div className="sm:mt-10 font-custom flex items-center justify-center bg-fixed bg-tubGril w-screen bg-cover bg-center bg-no-repeat sm:min-h-[1000px] min-h-[600px]">
+      <div className="flex items-center justify-center font-custom bg-tubGril w-screen bg-cover bg-center bg-no-repeat sm:min-h-[1000px] min-h-[600px] sm:bg-fixed">
         <MaskText
           phrases={["LOHAS Aesthetics"]}
           className="text-6xl text-white font-extrabold"
@@ -37,7 +37,7 @@ export default function Mint() {
       </div>
 
       {/* girl in yellow outfit with toilet  */}
-      <div className="bg-toiletGril bg-cover bg-fixed bg-center  bg-no-repeat sm:min-h-[1000px] min-h-[600px]">
+      <div className="bg-toiletGril sm:flex block -z-10 bg-cover sm:bg-fixed  bg-center  bg-no-repeat sm:min-h-[1000px] min-h-[600px]">
         <div className="flex sm:justify-start sm:items-end justify-center items-center">
           <div className="sm:w-1/2 w-full">
             <MaskText

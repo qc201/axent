@@ -1,10 +1,9 @@
 "use client";
-import { data } from "../../../lib/data"; //all product data in lib
-import { ProductInfo } from "@/types/global";
+
 import CollectionCover from "@/components/CollectionCover";
 import MaskText from "@/components/MaskText";
 import Image from "next/image";
-import ButtonCard from "@/components/ButtonCard";
+
 
 export default function Novia() {
 

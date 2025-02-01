@@ -59,7 +59,7 @@ export default function OnePlus() {
           ]}
         />
 
-        <div className="flex flex-col sm:flex-row w-full justify-between sm:items-start">
+        <div className="flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
           <Image
             src={"/products_img/one-plus-flush.png"}
             alt={onePlusData.name}
@@ -70,7 +70,6 @@ export default function OnePlus() {
           <MaskText
             className=" my-5  sm:my-10"
             phrases={[
-              "AXENT.INFINITY Infinity Flush System",
               "Powerful Flush, Ultra-quiet, Bacteria-free, Always clean, Dual-flush with First-class Water Efficiency.",
             ]}
           />

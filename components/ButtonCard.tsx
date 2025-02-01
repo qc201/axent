@@ -10,7 +10,7 @@ type Props = {
 
 export default function ButtonCard({ imgsrc, title, imgalt, pagelink }: Props) {
   return (
-    <div className="group flex flex-col items-center snap-start sticky top-0">
+    <div className="group flex flex-col items-center top-0">
       <div className="overflow-hidden">
         <Image
           src={imgsrc}

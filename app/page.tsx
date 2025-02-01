@@ -1,15 +1,10 @@
-
-
 import HeaderVideo from "@/components/HeaderVideo";
 import SeriesContainer from "@/components/SeriesContainer";
 import VideoCardTextLeft from "@/components/VideoCardTextLeft";
 import VideoCardTextRight from "@/components/VideoCardTextRight";
 import InfoCard from "@/components/InfoCard";
-import {
-  ProductInfo
-} from "@/types/global";
+import { ProductInfo } from "@/types/global";
 import { data } from "@/lib/data";
-
 
 const regularData = data.filter((d: ProductInfo) => d.category === "regular");
 export default function Home() {
@@ -17,9 +12,9 @@ export default function Home() {
   const video2src = "/videos/one_dial.mp4";
   const video3src = "/videos/hygienic.mp4";
   return (
-    <main >
+    <main>
       <HeaderVideo />
-      <div className="bg-white -mt-10 mx-auto w-fit grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-6">
+      <div className="bg-primary flex flex-row flex-wrap gap-5 items-center justify-center">
         <InfoCard
           imgsrc={regularData[0].coverSrc}
           imgalt=""
@@ -50,7 +45,6 @@ export default function Home() {
           title="PRIMUS"
           pagelink=""
         />
-
       </div>
       {/* <div className="flex justify-center items-center h-[200px] w-screen bg-center pt-30 bg-techStyle bg-fixed bg-cover bg-no-repeat sm:h-[400px] sm:w-screen">
         <div className=" text-white font-custom font-black text-2xl sm:text-4xl ">

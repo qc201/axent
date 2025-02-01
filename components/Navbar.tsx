@@ -98,8 +98,8 @@ const companyLinks = [
 
 export default function Navbar() {
   const [activeMenu, setActiveMenu] = useState<number | null>(null);
-  const menuRefs = useRef<(HTMLDivElement | null)[]>([]);// Reference for each menu component
-  const mobileMenuRef = useRef<HTMLDivElement>(null!) //ref for mobil navbar
+  const menuRefs = useRef<(HTMLDivElement | null)[]>([]); // Reference for each menu component
+  const mobileMenuRef = useRef<HTMLDivElement>(null!); //ref for mobil navbar
   // Toggle logic for opening/closing menus
   const handleMenuToggle = (menuId: number) => {
     setActiveMenu((prev) => (prev === menuId ? null : menuId)); // Close the menu if it's already open, otherwise open it
@@ -157,19 +157,30 @@ export default function Navbar() {
     <div ref={mobileMenuRef}>
       <div className=" z-50 fixed top-0 left-0 bg-white w-screen h-12 px-5 pt-5 pb-12">
         <div className="flex flex-row justify-around items-center text-sm text-primary font-custom font-extralight">
-          <Link href="/" className="p-0 m-0">
-            LOGO
+          <Link href="/" className="p-0 m-0 hover:scale-90 duration-500">
+            <Image
+              src="/icons/axent_logo.svg"
+              alt="Example Icon"
+              width={100}
+              height={100}
+              loading="eager"
+            />
           </Link>
           {/* PRODUCT SUPPORT ABOUT US WILL HIDDEN ON CELLPHONE SCREEN */}
           <div className="hidden  sm:flex sm:flex-row justify-between gap-4 text-sm text-primary font-custom font-extralight">
             {/* PRODUCTS dropdown */}
             <Menu as="div">
               {({ open }) => (
-                <div ref={(el) => { menuRefs.current[0] = el; }}>
+                <div
+                  ref={(el) => {
+                    menuRefs.current[0] = el;
+                  }}
+                >
                   <MenuButton
                     onClick={() => handleMenuToggle(1)} // Toggle the products menu with id 1
-                    className={`${open ? "font-thin" : ""
-                      } data-[active]:font-extrabold`}
+                    className={`${
+                      open ? "font-thin" : ""
+                    } data-[active]:font-extrabold`}
                   >
                     PRODUCTS
                   </MenuButton>
@@ -206,11 +217,16 @@ export default function Navbar() {
             {/* SUPPORT DROPDOWN */}
             <Menu as="div">
               {({ open }) => (
-                <div ref={(el) => { menuRefs.current[0] = el; }}>
+                <div
+                  ref={(el) => {
+                    menuRefs.current[0] = el;
+                  }}
+                >
                   <Menu.Button
                     onClick={() => handleMenuToggle(1)} // Toggle support menu with id 1
-                    className={`${open ? "font-thin" : ""
-                      } data-[active]:font-extrabold`}
+                    className={`${
+                      open ? "font-thin" : ""
+                    } data-[active]:font-extrabold`}
                   >
                     SUPPORT
                   </Menu.Button>
@@ -244,11 +260,16 @@ export default function Navbar() {
             {/* COMPANY DROPDOWN */}
             <Menu as="div">
               {({ open }) => (
-                <div ref={(el) => { menuRefs.current[0] = el; }}>
+                <div
+                  ref={(el) => {
+                    menuRefs.current[0] = el;
+                  }}
+                >
                   <Menu.Button
                     onClick={() => handleMenuToggle(2)} // Toggle company menu with id 2
-                    className={`${open ? "font-thin" : ""
-                      } data-[active]:font-extrabold`}
+                    className={`${
+                      open ? "font-thin" : ""
+                    } data-[active]:font-extrabold`}
                   >
                     COMPANY
                   </Menu.Button>

@@ -29,6 +29,9 @@ const config: Config = {
       15: "15",
       16: "16",
     },
+    variants: {
+      aspectRatio: ["responsive", "hover"],
+    },
     extend: {
       animation: {
         "text-reveal": "text-reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s",
@@ -62,6 +65,9 @@ const config: Config = {
   corePlugins: {
     aspectRatio: false,
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/aspect-ratio"),
+    // ...
+  ],
 };
 export default config;

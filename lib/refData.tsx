@@ -1,7 +1,7 @@
 import { RefInfo } from "@/types/global";
-export const data: RefInfo[] = [
+export const refData: RefInfo[] = [
   {
-    imgsrc: ["/reference_img/farmer-hotel-basedow_1.jpg", ""],
+    imgsrc: ["/reference_img/farmer-hotel-basedow_1.jpg"],
     title: "Farmer Hotel Basedow",
     location: "Mecklenburg-Vorpommern, Germany",
     description:
@@ -12,10 +12,10 @@ export const data: RefInfo[] = [
   },
   {
     imgsrc: [
-      "haitang-bay-mangrove-resort_1.jpg",
-      "haitang-bay-mangrove-resort_2.jpg",
-      "haitang-bay-mangrove-resort_3.jpg",
-      "haitang-bay-mangrove-resort_4.jpg",
+      "/reference_img/haitang-bay-mangrove-resort_1.jpg",
+      "/reference_img/haitang-bay-mangrove-resort_2.jpg",
+      "/reference_img/haitang-bay-mangrove-resort_3.jpg",
+      "/reference_img/haitang-bay-mangrove-resort_4.jpg",
     ],
     title: "Haitang Bay Mangrove Resort",
     location: "Sanya Bay, China",
@@ -35,15 +35,15 @@ export const data: RefInfo[] = [
   },
   {
     imgsrc: [
-      "bund-financial-center_1.jpg",
-      "bund-financial-center_2.jpg",
-      "bund-financial-center_3.jpg",
-      "bund-financial-center_4.jpg",
-      "bund-financial-center_5.jpg",
-      "bund-financial-center_6.jpg",
-      "bund-financial-center_7.jpg",
-      "bund-financial-center_8.jpg",
-      "bund-financial-center_9.jpg",
+      "/reference_img/bund-financial-center_1.jpg",
+      "/reference_img/bund-financial-center_2.jpg",
+      "/reference_img/bund-financial-center_3.jpg",
+      "/reference_img/bund-financial-center_4.jpg",
+      "/reference_img/bund-financial-center_5.jpg",
+      "/reference_img/bund-financial-center_6.jpg",
+      "/reference_img/bund-financial-center_7.jpg",
+      "/reference_img/bund-financial-center_8.jpg",
+      "/reference_img/bund-financial-center_9.jpg",
     ],
     title: "Bund Financial Center",
     location: "Shanghai, China",
@@ -70,17 +70,17 @@ export const data: RefInfo[] = [
   },
   {
     imgsrc: [
-      "ccg-schwarzwald_1.jpg",
-      "ccg-schwarzwald_2.jpg",
-      "ccg-schwarzwald_3.jpg",
-      "ccg-schwarzwald_4.jpg",
-      "ccg-schwarzwald_5.jpg",
-      "ccg-schwarzwald_6.jpg",
-      "ccg-schwarzwald_7.jpg",
-      "ccg-schwarzwald_8.jpg",
-      "ccg-schwarzwald_9.jpg",
-      "ccg-schwarzwald_10.jpg",
-      "ccg-schwarzwald_11.jpg",
+      "/reference_img/ccg-schwarzwald_1.jpg",
+      "/reference_img/ccg-schwarzwald_2.jpg",
+      "/reference_img/ccg-schwarzwald_3.jpg",
+      "/reference_img/ccg-schwarzwald_4.jpg",
+      "/reference_img/ccg-schwarzwald_5.jpg",
+      "/reference_img/ccg-schwarzwald_6.jpg",
+      "/reference_img/ccg-schwarzwald_7.jpg",
+      "/reference_img/ccg-schwarzwald_8.jpg",
+      "/reference_img/ccg-schwarzwald_9.jpg",
+      "/reference_img/ccg-schwarzwald_10.jpg",
+      "/reference_img/ccg-schwarzwald_11.jpg",
     ],
     title: "CCG Schwarzwald",
     location: "Shanghai, China",
@@ -96,7 +96,10 @@ export const data: RefInfo[] = [
     ],
   },
   {
-    imgsrc: ["nantong-orstar-city_1.jpg", "nantong-orstar-city_2.jpg"],
+    imgsrc: [
+      "/reference_img/nantong-orstar-city_1.jpg",
+      "/reference_img/nantong-orstar-city_2.jpg",
+    ],
     title: "Nantong Orstar City",
     location: "Nantong, China",
     description:
@@ -112,7 +115,7 @@ export const data: RefInfo[] = [
     ],
   },
   {
-    imgsrc: ["zhenru-orstar-city_1.jpg"],
+    imgsrc: ["/reference_img/zhenru-orstar-city_1.jpg"],
     title: "Zhenru Orstar City",
     location: "Shanghai, China",
     description:
@@ -122,7 +125,10 @@ export const data: RefInfo[] = [
     products: ["Yilia Recessed Bathtub"],
   },
   {
-    imgsrc: ["golden-mansion_1.jpg", "golden-mansion_2.jpg"],
+    imgsrc: [
+      "/reference_img/golden-mansion_1.jpg",
+      "/reference_img/golden-mansion_2.jpg",
+    ],
     title: "Golden Mansion",
     location: "Shanghai, China",
     description:
@@ -140,7 +146,10 @@ export const data: RefInfo[] = [
     ],
   },
   {
-    imgsrc: ["zhuhai-times-port_1.jpg", "zhuhai-times-port_2.jpg"],
+    imgsrc: [
+      "/reference_img/zhuhai-times-port_1.jpg",
+      "/reference_img/zhuhai-times-port_2.jpg",
+    ],
     title: "Zhuhai Times Port",
     location: "Zhuhai, China",
     description:
@@ -150,7 +159,7 @@ export const data: RefInfo[] = [
     products: ["Dune Close Coupled Toilet", "Milo Under Counter Basin"],
   },
   {
-    imgsrc: ["crape-myrtle-garden_1.jpg"],
+    imgsrc: ["/reference_img/crape-myrtle-garden_1.jpg"],
     title: "Crape Myrtle Garden",
     location: "Zhejiang, China",
     description:
@@ -161,11 +170,11 @@ export const data: RefInfo[] = [
   },
   {
     imgsrc: [
-      "taskin-city_1.jpg",
-      "taskin-city_2.jpg",
-      "taskin-city_3.jpg",
-      "taskin-city_4.jpg",
-      "taskin-city_5.jpg",
+      "/reference_img/taskin-city_1.jpg",
+      "/reference_img/taskin-city_2.jpg",
+      "/reference_img/taskin-city_3.jpg",
+      "/reference_img/taskin-city_4.jpg",
+      "/reference_img/taskin-city_5.jpg",
     ],
     title: "Taskin City",
     location: "Changsha, China",

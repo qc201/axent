@@ -1,73 +1,22 @@
 import React from "react";
+import { refData } from "@/lib/refData";
 import ReferenceCard from "@/components/ReferenceCard";
 
-export default function page() {
+export default function Reference() {
   return (
-    <div className="pt-16 sm:px-20 grid sm:grid-cols-2  sm:gap-1 grid-cols-1">
-      <ReferenceCard
-        imgsrc={"/live_img/mint-toilet-girl-gray.png"}
-        title={"Farmer Hotel Basedow"}
-        imgalt={"gril"}
-        description={"Each of the Farmer Hotel Basedow’s 34 suites offer "}
-        pagelink={"/pagelinl"}
-        category={"commercial"}
-        location="CHINA, SANGHAI"
-      />
-      <ReferenceCard
-        location="CHINA, SANGHAI"
-        imgsrc={"/live_img/intelligent-header-1024_600.png"}
-        title={"Farmer Hotel Basedow"}
-        imgalt={"gril"}
-        description={
-          "Each of the Farmer Hotel Basedow’s 34 suites offer soft-to-the-touch leather furniture, plush and inviting pillow top mattresses,  and the highest level of luxury with newly renovated spa-like bathrooms "
-        }
-        pagelink={"/pagelinl"}
-        category={"commercial"}
-      />
-      <ReferenceCard
-        location="CHINA, SANGHAI"
-        imgsrc={"/live_img/mint-toilet-girl-gray.png"}
-        title={"Farmer Hotel Basedow"}
-        imgalt={"gril"}
-        description={
-          "Each of the Farmer Hotel Basedow’s 34 suites offer soft-to-the-touch leather furniture, plush and inviting pillow top mattresses,  and the highest level of luxury with newly renovated spa-like bathrooms "
-        }
-        pagelink={"/pagelinl"}
-        category={"commercial"}
-      />
-      <ReferenceCard
-        location="CHINA, SANGHAI"
-        imgsrc={"/live_img/mint-toilet-girl-gray.png"}
-        title={"Farmer Hotel Basedow"}
-        imgalt={"gril"}
-        description={
-          "Each of the Farmer Hotel Basedow’s 34 suites offer soft-to-the-touch leather furniture, plush and inviting pillow top mattresses,  and the highest level of luxury with newly renovated spa-like bathrooms "
-        }
-        pagelink={"/pagelinl"}
-        category={"commercial"}
-      />
-      <ReferenceCard
-        location="CHINA, SANGHAI"
-        imgsrc={"/live_img/mint-toilet-girl-gray.png"}
-        title={"Farmer Hotel Basedow"}
-        imgalt={"gril"}
-        description={
-          "Each of the Farmer Hotel Basedow’s 34 suites offer soft-to-the-touch leather furniture, plush and inviting pillow top mattresses,  and the highest level of luxury with newly renovated spa-like bathrooms "
-        }
-        pagelink={"/pagelinl"}
-        category={"commercial"}
-      />
-      <ReferenceCard
-        location="CHINA, SANGHAI"
-        imgsrc={"/live_img/mint-toilet-girl-gray.png"}
-        title={"Farmer Hotel Basedow"}
-        imgalt={"gril"}
-        description={
-          "Each of the Farmer Hotel Basedow’s 34 suites offer soft-to-the-touch leather furniture, plush and inviting pillow top mattresses,  and the highest level of luxury with newly renovated spa-like bathrooms "
-        }
-        pagelink={"/pagelinl"}
-        category={"commercial"}
-      />
+    <div className="pt-16 sm:px-20 grid sm:grid-cols-2 sm:gap-5 grid-cols-1">
+      {refData.map((info, index) => (
+        <ReferenceCard
+          key={index}
+          imgsrc={info.imgsrc[0]}
+          title={info.title}
+          imgalt={info.title}
+          description={info.description}
+          pagelink={info.pagelink}
+          category={info.category}
+          location={info.location}
+        />
+      ))}
     </div>
   );
 }

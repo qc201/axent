@@ -27,16 +27,19 @@ export default function Home() {
         surpasses, leads, and rewrites the history of the bathroom industry.
       </div>
       <VideoCardTextRight
+        className="text-primary"
         title="Kirin Pressure-assisted Flush Technology"
         description="Incorporating advanced air-energy accumulator boosting technology, it ensures that every flush demonstrates exceptional power and force. With an ultra-low flushing volume of 3.8L / 1 Gal., it exemplifies its remarkable environmental protection and energy-saving characteristics. "
         videosrc={video1src}
       />
       <VideoCardTextLeft
+        className="text-primary"
         title="ONE.DIAL Technology"
         description="It is seamlessly integrated with the Intelligent toilet. The user can effortlessly adjust parameters such as water flow intensity and temperature during the flushing process by a simple twist and press of the control knob. "
         videosrc={video2src}
       />
       <VideoCardTextRight
+        className="text-primary"
         title="Intelligent Toilet Technology"
         description="It boasts intelligent features including rear wash and front wash, seat heating, off-seat auto flush, and proximity-activated lid opening. All these features comprehensively deliver a hygienic, comfortable, and convenient cleansing experience to users.​"
         videosrc={video3src}

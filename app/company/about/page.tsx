@@ -4,6 +4,8 @@ import React from "react";
 import Image from "next/image";
 import VideoCardTextLeft from "@/components/VideoCardTextLeft";
 import VideoCardTextRight from "@/components/VideoCardTextRight";
+import { refData } from "@/lib/refData";
+import ReferenceCard from "@/components/ReferenceCard";
 
 export default function About() {
   const video1src =
@@ -125,10 +127,12 @@ export default function About() {
 
       {/* technologies */}
       <div className="bg-primary pt-10">
-        <MaskText
-          phrases={["INTELLIGENT TECHNOLOGIES"]}
-          className="pb-10 sm:text-6xl text-3xl text-white font-extrabold"
-        />
+        <div className="flex items-center justify-center">
+          <MaskText
+            phrases={["INTELLIGENT TECHNOLOGIES"]}
+            className="pb-10 sm:text-6xl text-3xl text-white font-extrabold"
+          />
+        </div>
 
         <VideoCardTextRight
           className="text-white"
@@ -142,11 +146,11 @@ export default function About() {
           description="It is seamlessly integrated with the Intelligent toilet. The user can effortlessly adjust parameters such as water flow intensity and temperature during the flushing process by a simple twist and press of the control knob. "
           videosrc={video2src}
         />
-        <div className="sm:px-40 sm:flex sm:flex-row-reverse sm:gap-5 pt-10 font-custom">
+        <div className="sm:px-40 sm:flex sm:flex-row-reverse sm:gap-5 sm:pt-10 font-custom">
           <div className="sm:order-2 sm:w-3/5 relative w-full h-[200px] overflow-hidden sm:h-[360px]">
             <img
-              className="h-96 w-full object-contain"
-              src="/live_img/foam.png"
+              className="h-[300px] w-full object-contain"
+              src="/live_img/foam_16_9.png"
             />
           </div>
           <div className="sm:w-2/5 sm:order-1 font-custom text-white sm:text-end">
@@ -163,7 +167,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="pb-10 sm:px-40 sm:flex sm:flex-row items-end justify-between sm:gap-5 pt-5 font-custom">
+        <div className="pb-10 sm:px-40 sm:flex sm:flex-row items-end justify-between sm:gap-5 sm:pt-5 font-custom">
           <div className="sm:order-2 sm:w-3/5  sm:pl-20 relative w-full overflow-hidden h-[300px] sm:h-[360px]">
             <img
               className="h-96 w-full object-contain"
@@ -178,6 +182,30 @@ export default function About() {
               control offers ease of use and peace of mind to its users.
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="pt-40 sm:px-20">
+        <div className="flex items-center justify-center">
+          <MaskText
+            phrases={["References"]}
+            className="pb-10 sm:text-6xl text-3xl text-primary font-extrabold"
+          />
+        </div>
+
+        <div className="grid sm:grid-cols-2 sm:gap-5 grid-cols-1">
+          {refData.map((info, index) => (
+            <ReferenceCard
+              key={index}
+              imgsrc={info.imgsrc[0]}
+              title={info.title}
+              imgalt={info.title}
+              description={info.description}
+              pagelink={info.pagelink}
+              category={info.category}
+              location={info.location}
+            />
+          ))}
         </div>
       </div>
     </div>

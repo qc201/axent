@@ -20,9 +20,9 @@ export default function ReferenceCard({
   category,
   location,
 }: Props) {
-  const shortStr = description.slice(0, 50);
+  const shortStr = description.slice(0, 80);
   return (
-    <div className="group relative rounded overflow-hidden flex flex-col justify-center items-center sm:w-96 sm:h-96 mx-auto w-80 h-96 font-custom text-primary ">
+    <div className=" group cursor-pointer relative rounded overflow-hidden flex flex-col justify-center items-center sm:w-96 sm:h-96 mx-auto w-80 h-96 font-custom text-primary ">
       {" "}
       <Link href={pagelink}>
         <div className="sm:w-96 sm:h-80 h-60 overflow-hidden">
@@ -32,7 +32,7 @@ export default function ReferenceCard({
             alt={imgalt}
           />
         </div>
-        <div className="relative sm:w-80 w-72 bg-white pt-5 pb-16 sm:-mt-8 -mt-5 z-10 shadow-lg">
+        <div className="relative sm:w-80 m-10 px-1 flex flex-col items-center justify-center bg-white pt-5 pb-16 sm:-mt-8 -mt-5 z-10 shadow-lg">
           <div className="font-black text-lg inline-block hover:text-black transition-colors duration-500 ease-in-out mb-2">
             {title}
           </div>

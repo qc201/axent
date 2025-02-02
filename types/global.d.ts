@@ -30,3 +30,13 @@ export type ProductInfo = {
   manual: string;
   install: string;
 };
+
+export type RefInfo = {
+  imgsrc: string[];
+  title: string;
+  description: string;
+  pagelink: string;
+  category: string;
+  location: string;
+  products: string[];
+};

@@ -61,6 +61,7 @@ const config: Config = {
       },
       colors: {
         primary: "#393E46",
+        alarm: "#B8001F",
       },
     },
   },

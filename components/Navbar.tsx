@@ -90,7 +90,7 @@ const companyLinks = [
     pagelink: "/company/news",
   },
   {
-    href: "/company/contact",
+    href: "/company/reference",
     label: "Reference",
     pagelink: "/company/reference",
   },

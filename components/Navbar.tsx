@@ -36,7 +36,7 @@ const productLinks = [
     href: "/bathroom/basin",
     label: "basins",
     imgsrc: "/nav_img/basins.jpg",
-    imgalt: "",
+    imgalt: "basins",
     title: "Washbasins & Vanities",
     pagelink: "/bathroom/basin",
   },
@@ -52,9 +52,9 @@ const productLinks = [
 
 const supportLinks = [
   {
-    href: "/support/dealer",
+    href: "/support/contact",
     label: "Find a dealer",
-    pagelink: "/support/dealer",
+    pagelink: "/support/contact",
   },
   {
     href: "/support/download",

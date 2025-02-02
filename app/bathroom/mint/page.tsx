@@ -18,7 +18,7 @@ export default function Mint() {
       <div className="flex items-center justify-center font-custom bg-mintHeader w-screen bg-cover bg-center bg-no-repeat sm:min-h-[1000px] min-h-[600px] sm:bg-fixed">
         <MaskText
           phrases={["AXENT-MINT"]}
-          className="text-6xl text-white font-extrabold items-center justify-center"
+          className="sm:text-6xl text-3xl text-white font-extrabold items-center justify-center"
         />
       </div>
       <MaskText

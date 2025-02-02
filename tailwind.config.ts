@@ -54,6 +54,7 @@ const config: Config = {
         noviaTub: 'url("/products_img/novia-5.png")',
         noviaBlackWhite: 'url("/products_img/novia-6.png")',
         contactHeader: 'url("/live_img/contact-header.jpg")',
+        aboutHeader: 'url("/live_img/about-header.png")',
       },
       fontFamily: {
         custom: ["Inter", "sans-serif"],

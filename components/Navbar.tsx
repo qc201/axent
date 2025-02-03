@@ -360,6 +360,8 @@ export default function Navbar() {
         <motion.div
           initial={{ x: 200 }}
           animate={{ x: 0 }}
+          exit={{ x: -200 }}
+          transition={{ type: 'tween' }}
           className="fixed w-1/2 h-screen top-14 right-0 text-start bg-white  opacity-70 z-50"
         >
           <div className="flex flex-col pl-3 pt-5 font-custom text-primary text-lg">

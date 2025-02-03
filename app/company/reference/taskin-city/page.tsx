@@ -29,7 +29,7 @@ export default function TaskinCity() {
       <div className="sm:px-40 px-5 pb-10">
         <div className="font-black text-lg">Products used</div>
         {data.products.map((p, index) => (
-          <div className="font-thin text-lg">{p}</div>
+          <div key={index} className="font-thin text-lg">{p}</div>
         ))}
       </div>
     </div>

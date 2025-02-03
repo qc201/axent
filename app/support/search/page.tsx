@@ -157,7 +157,7 @@ export default function Search() {
               sku={d.sku}
             />
           ))
-        : keyword && <p>No matching products found.</p>}
+        : keyword && <p></p>}
     </div>
   );
 }

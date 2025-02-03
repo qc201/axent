@@ -65,7 +65,7 @@ export const data: ProductInfo[] = [
     aliases: "one-plus",
     subtitle: "Ingelligent toilet with KIRIN Flush System",
     details:
-      "The AXENT.ONE C+ intelligent toilet refines intuitive design and adaptable technology. This award-winning intelligent toilet is equipped with the latest smart-ware technology customize your AXENT.ONE C+ functions with the swipe of a sensor or click of a button. The AXENT.ONE C+ is paired with the Kirin flushing system. This tankless design and powerful flushing efficiency lends to the AXENT.ONE C+ one-of-a-kind water conservation benefits.",
+      "Inspired by our success and lessons learned in Europe and Asia\\’s notoriously condensed urban environments, we\\’re introducing North America\\’s most intuitive and space-saving toilet \\– the AXENT.ONE Plus wall-hung intelligent toilet.",
     features: {
       dimensions: "L 23.35” x W 14.57” x H 15.63”",
       weight: "88.2lbs",

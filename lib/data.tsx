@@ -663,7 +663,7 @@ export const data: ProductInfo[] = [
     sku: "TS026-3",
     collection: "mint",
     category: "intelligent",
-    name: "Mint.One Intelligent Toilet",
+    name: "Mint One Intelligent Toilet",
     aliases: "mint-one",
     subtitle: "Reshaping the Future of Intelligent Toilets",
     details:

@@ -29,6 +29,7 @@ export type ProductInfo = {
   specification: string;
   manual: string;
   install: string;
+  linkTo: string;
 };
 
 export type RefInfo = {

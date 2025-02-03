@@ -197,7 +197,7 @@ export default function Navbar() {
                       >
                         {productLinks.map((link) => (
                           <Menu.Item key={link.href}>
-                            <Link href={link.href}>
+                            <Link href={link.pagelink}>
                               <Thumbnail
                                 imgsrc={link.imgsrc}
                                 imgalt={link.imgalt}
@@ -242,7 +242,7 @@ export default function Navbar() {
                         exit={{ opacity: 0, y: -50 }}
                       >
                         {supportLinks.map((link) => (
-                          <Menu.Item key={link.href}>
+                          <Menu.Item key={link.label}>
                             <div className="group font-thin">
                               <span className="bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-500 ease-out">
                                 <a href={link.href}>{link.label}</a>
@@ -305,7 +305,7 @@ export default function Navbar() {
           <div className="flex flex-reverse gap-1 sm:gap-4 items-baseline">
             {/* LOCATION ICON */}
             <div className="hidden sm:flex">
-              <Link href="/support/dealer">
+              <Link href="/support/contact">
                 <Image
                   src="/icons/location-svgrepo-com.svg"
                   alt="Example Icon"

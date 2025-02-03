@@ -1,6 +1,7 @@
 import { ProductInfo } from "@/types/global";
 export const data: ProductInfo[] = [
   {
+    linkTo: "/bathroom/intelligent/one-c-plus",
     id: 1,
     sku: "E414-02",
     collection: null,
@@ -55,6 +56,7 @@ export const data: ProductInfo[] = [
     install: "/docs/one-c-plus_install.pdf",
   },
   {
+    linkTo: "/bathroom/intelligent/one-plus",
     id: 2,
     sku: "E310-E291-U1",
     collection: null,
@@ -104,6 +106,7 @@ export const data: ProductInfo[] = [
     install: "/docs/one-plus_install.pdf",
   },
   {
+    linkTo: "/bathroom/intelligent/milton",
     id: 3,
     sku: "E001-0201-U1",
     collection: null,
@@ -149,6 +152,7 @@ export const data: ProductInfo[] = [
     install: "/docs/milton_install.pdf",
   },
   {
+    linkTo: "/bathroom/intelligent/electric-seat",
     id: 4,
     sku: "FE105, FE106",
     collection: null,
@@ -178,6 +182,8 @@ export const data: ProductInfo[] = [
     install: "/docs/milton_install.pdf",
   },
   {
+    linkTo: "/bathroom/intelligent/infinity",
+
     id: 5,
     sku: "E661-0230H-U1",
     collection: "axent.one",
@@ -222,6 +228,8 @@ export const data: ProductInfo[] = [
     install: "",
   },
   {
+    linkTo: "/bathroom/novia",
+
     id: 6,
     sku: "",
     collection: "novia",
@@ -250,6 +258,7 @@ export const data: ProductInfo[] = [
     install: "",
   },
   {
+    linkTo: "/bathroom/regular/primus",
     id: 7,
     sku: "W431-04",
     collection: null,
@@ -289,6 +298,7 @@ export const data: ProductInfo[] = [
     install: "/docs/primus_install.pdf",
   },
   {
+    linkTo: "/bathroom/regular/peninsula",
     id: 8,
     sku: "W532-2020",
     collection: null,
@@ -330,6 +340,7 @@ export const data: ProductInfo[] = [
     install: "",
   },
   {
+    linkTo: "/bathroom/regular/alton",
     id: 9,
     sku: "W375-2025",
     collection: null,
@@ -368,6 +379,8 @@ export const data: ProductInfo[] = [
     install: "",
   },
   {
+    linkTo: "/bathroom/regular/stella",
+
     id: 10,
     sku: "W320-1131-U1",
     collection: null,
@@ -402,6 +415,7 @@ export const data: ProductInfo[] = [
     install: "",
   },
   {
+    linkTo: "/bathroom/basin/one-square",
     id: 11,
     sku: "L316-1101-U1",
     collection: null,
@@ -436,6 +450,7 @@ export const data: ProductInfo[] = [
     install: "",
   },
   {
+    linkTo: "/bathroom/basin/one-round",
     id: 12,
     sku: "L310-1101-U1",
     collection: null,
@@ -469,6 +484,7 @@ export const data: ProductInfo[] = [
     install: "",
   },
   {
+    linkTo: "/bathroom/basin/one-rect",
     id: 13,
     sku: "L017-4101-U1",
     collection: null,
@@ -503,6 +519,7 @@ export const data: ProductInfo[] = [
     install: "",
   },
   {
+    linkTo: "/bathroom/basin/annie",
     id: 14,
     sku: "L370-1101-U1",
     collection: null,
@@ -537,6 +554,7 @@ export const data: ProductInfo[] = [
     install: "",
   },
   {
+    linkTo: "/bathroom/parts/bidet-seat",
     id: 15,
     sku: "FB106, FB107 FB108",
     collection: null,
@@ -571,6 +589,7 @@ export const data: ProductInfo[] = [
     install: "",
   },
   {
+    linkTo: "/bathroom/regular/reuss",
     id: 16,
     sku: "W375-2025",
     collection: null,
@@ -609,6 +628,7 @@ export const data: ProductInfo[] = [
     install: "/docs/reuss_install.pdf",
   },
   {
+    linkTo: "/bathroom/parts/primus-color-strip",
     id: 17,
     sku: "W330-D003-U1, W330-D004-U1, W330-D005-U1, W330-D006-U1",
     collection: null,
@@ -638,6 +658,7 @@ export const data: ProductInfo[] = [
     install: "",
   },
   {
+    linkTo: "/bathroom/mint/mint-one",
     id: 18,
     sku: "TS026-3",
     collection: "mint",
@@ -693,6 +714,7 @@ export const data: ProductInfo[] = [
     install: "/docs/mint-one_install.pdf",
   },
   {
+    linkTo: "/bathroom/mint/mint-two",
     id: 19,
     sku: "TS036-3-BK, TS036-3-WT",
     collection: "mint",
@@ -738,6 +760,7 @@ export const data: ProductInfo[] = [
     install: "/docs/mint-two_install.pdf",
   },
   {
+    linkTo: "/bathroom/mint/batik",
     id: 20,
     sku: "T0151, T0159, T0167",
     collection: "mint",
@@ -775,6 +798,7 @@ export const data: ProductInfo[] = [
     install: "/docs/batik_install.pdf",
   },
   {
+    linkTo: "/bathroom/mint/rina",
     id: 21,
     sku: "T0151, T0159, T0167",
     collection: "mint",

@@ -12,10 +12,7 @@ export default function Contact() {
           className="sm:text-6xl text-2xl text-white font-extrabold items-center justify-center"
         />
       </div>
-      <div
-        bg-white
-        className="sm:p-40 flex flex-col items-center justify-center  font-custom bg-white  text-primary sm:text-lg text-sm font-thin min-h-[300px]"
-      >
+      <div className="sm:p-40 flex flex-col items-center justify-center  font-custom bg-white  text-primary sm:text-lg text-sm font-thin min-h-[300px]">
         <div className="flex flex-col items-start gap-2">
           <div className="flex flex-row">
             <Image

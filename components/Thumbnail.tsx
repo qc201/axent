@@ -21,11 +21,12 @@ export default function Thumbnail({ imgsrc, title, imgalt, pagelink }: Props) {
           className="object-cover group-hover:scale-110 transition-all duration-1000 cursor-pointer"
         />
       </div>
-      <div className="text-primary font-custom text-sm font-thin transition-all duration-500">
-        <Link href={pagelink}>
-        <span className="bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-500 ease-out">
-          <span>{title}</span>
-          </span></Link>
+      <div className="text-primary font-custom text-sm transition-all duration-500">
+        <div>
+          <span className="bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-500 ease-out">
+            <span>{title}</span>
+          </span>
+        </div>
       </div>
     </div>
   );

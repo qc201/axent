@@ -40,3 +40,12 @@ export type RefInfo = {
   location: string;
   products: string[];
 };
+
+export type BlogInfo = {
+  imgsrc: string;
+  releaseDate: string;
+  title: string;
+  location: string;
+  content: string[];
+  pagelink: string;
+};

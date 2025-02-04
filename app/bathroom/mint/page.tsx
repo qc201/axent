@@ -16,10 +16,20 @@ export default function Mint() {
   return (
     <div>
       <div className="flex items-center justify-center font-custom bg-mintHeader w-screen bg-cover bg-center bg-no-repeat sm:min-h-[1000px] min-h-[600px] sm:bg-fixed">
-        <MaskText
+        {/* <MaskText
           phrases={["AXENT-MINT"]}
           className="sm:text-6xl text-3xl text-white font-extrabold items-center justify-center"
+        /> */}
+        <div className="w-1/3">
+          <Image
+            src="/icons/mint_logo_white.svg"
+            alt="Example Icon"
+            width={500}
+            height={500}
+            loading="eager"
+            className="object-contain"
         />
+        </div>
       </div>
       <MaskText
         className="relative -z-40 flex flex-col pt-10 mx-5 sm:mx-20 text-primary font-custom font-thin sm:text-xl text-lg"

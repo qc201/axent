@@ -13,7 +13,7 @@ const productLinks = [
     label: "intelligent toilet",
     imgsrc: "/nav_img/intelligent.jpg",
     imgalt: "intelligent",
-    title: "Intelligent Toilets & Seats",
+    title: "Intelligent Toilets",
     pagelink: "/bathroom/intelligent",
   },
   {
@@ -27,9 +27,9 @@ const productLinks = [
   {
     href: "/bathroom/mint",
     label: "mint line",
-    imgsrc: "/nav_img/mint.png",
+    imgsrc: "/nav_img/bathtub.png",
     imgalt: "mint line",
-    title: "MINT",
+    title: "Bathtub",
     pagelink: "/bathroom/mint",
   },
   {
@@ -43,9 +43,9 @@ const productLinks = [
   {
     href: "/bathroom/parts",
     label: "parts",
-    imgsrc: "/nav_img/parts.jpg",
+    imgsrc: "/nav_img/seats.png",
     imgalt: "parts",
-    title: "Parts & Seats",
+    title: "Toilet Seats",
     pagelink: "/bathroom/parts",
   },
 ];
@@ -159,7 +159,7 @@ export default function Navbar() {
         <div className="flex flex-row justify-around items-center text-sm text-primary font-custom font-extralight">
           <Link href="/" className="p-0 m-0 hover:scale-90 duration-500">
             <Image
-              src="/icons/axent_logo.svg"
+              src="/icons/axent_switzerland_logo.svg"
               alt="Example Icon"
               width={100}
               height={100}

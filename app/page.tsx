@@ -52,7 +52,7 @@ export default function Home() {
 
         <RevealCard
           imgsrc={"/live_img/mint-header-1024_600.png"}
-          title={"MINT"}
+          title={"AXENT.MINT"}
           imgalt={"mint"}
           pagelink={"/bathroom/mint"}
           subTitle={

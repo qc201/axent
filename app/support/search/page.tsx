@@ -146,18 +146,19 @@ export default function Search() {
           </button>
         </div>
       </div>
-
-      {matchingIds.length > 0
-        ? fetchResult.map((d, index) => (
-            <InfoCard
-              key={d.id}
-              name={d.name}
-              imgUrl={d.coverSrc}
-              linkTo={d.linkTo}
-              sku={d.sku}
-            />
-          ))
-        : keyword && <p></p>}
+      <div className="w-fit gap-6 mx-auto grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 pb-20">
+        {matchingIds.length > 0
+          ? fetchResult.map((d, index) => (
+              <InfoCard
+                key={d.id}
+                name={d.name}
+                imgUrl={d.coverSrc}
+                linkTo={d.linkTo}
+                sku={d.sku}
+              />
+            ))
+          : keyword && <p></p>}
+      </div>
     </div>
   );
 }

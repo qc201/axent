@@ -6,6 +6,7 @@ import VideoCardTextLeft from "@/components/VideoCardTextLeft";
 import VideoCardTextRight from "@/components/VideoCardTextRight";
 import { refData } from "@/lib/refData";
 import ReferenceCard from "@/components/ReferenceCard";
+import PageVideo from "@/components/PageVideo";
 
 export default function About() {
   const video1src =
@@ -20,7 +21,7 @@ export default function About() {
         <div className="pr-5 flex flex-col text-end">
           <MaskText
             phrases={["BRAND STORY"]}
-            className="pb-10 sm:text-6xl text-3xl text-white font-extrabold items-center justify-center"
+            className="pb-10 sm:text-6xl text-3xl text-white font-extrabold font-custom items-center justify-center"
           />
           <MaskText
             phrases={[
@@ -35,7 +36,7 @@ export default function About() {
       </div>
 
       {/* honor */}
-      <div className="sm:px-40 px-5 py-10 text-primary sm:text-lg text-sm font-thin bg-white">
+      <div className="sm:px-40 px-5 py-10 text-primary sm:text-lg font-custom text-sm font-thin bg-white">
         <p>
           We see our story beginning with an innovative spirit and dedication to
           our philosophy of ”rethinking the bath”. When revolutionizing the
@@ -51,35 +52,34 @@ export default function About() {
           the city and nature. Our persistence in innovation stems from our deep
           understanding of customers and keen insights into the environment. We
           provide innovative applications for the ever-changing living
-          environment. With our expertise and exploratory spirit, AXENT&#39s
+          environment. With our expertise and exploratory spirit, AXENT's
           patented innovations and minimalist designs have become benchmarks in
           the industry.
         </p>
         <p>
           We believe that the pursuit of excellence is a manifestation of life
           attitude, rather than a mere quest for superiority. Originating from
-          &#34EXCEL- LENT,&#34 &#34AXENT&#34 integrates the ultimate spirit into every
-          product. Founded in Rapperswil, Switzerland, in 2008, AXENT adheres to
-          the brand philosophy of &#34Wisdom for Life,&#34 blending minimalist
-          aesthetics with ultimate technologies to offer a comprehensive range
-          of bathroom products, including cutting-edge smart toilets, bathtubs,
-          sanitary wares, bathroom furniture, hardware accessories, and
-          same-floor drainage systems. We create integrated smart bathroom
-          spaces, providing holistic smart bathroom solutions for users
-          worldwide.
+          EXCEL- LENT, AXENT integrates the ultimate spirit into every product.
+          Founded in Rapperswil, Switzerland, in 2008, AXENT adheres to the
+          brand philosophy of Wisdom for Life, blending minimalist aesthetics
+          with ultimate technologies to offer a comprehensive range of bathroom
+          products, including cutting-edge smart toilets, bathtubs, sanitary
+          wares, bathroom furniture, hardware accessories, and same-floor
+          drainage systems. We create integrated smart bathroom spaces,
+          providing holistic smart bathroom solutions for users worldwide.
         </p>
       </div>
       <div className="sm:p-20 p-5 flex sm:flex-row flex-col justify-between items-end bg-primary text-white">
         <div className="basis-1/2">
           <MaskText
             phrases={["BRAND HONORS"]}
-            className="pb-10 sm:text-6xl text-3xl text-white font-extrabold items-center justify-center"
+            className="pb-10 sm:text-6xl text-3xl text-white font-extrabold font-custom items-center justify-center"
           />
-          <p className="sm:text-lg text-sm font-thin">
-            AXENT&#39s products have garnered numerous prestigious awards,
+          <p className="sm:text-lg text-sm font-thin font-custom">
+            AXENT's products have garnered numerous prestigious awards,
             including the German iF Design Award, the Red Dot Design Award, the
             German Innovation Award, and the German ICONIC AWARDS. Since 2017,
-            AXENT has been featured in the &#34The Major German Brands&#34annual
+            AXENT has been featured in the The Major German Brands annual
             publication for eight consecutive years, which is the only bathroom
             brand to retain this honor year after year. In its more than ten
             years of existence, AXENT has continuously emerged as a prominent
@@ -104,19 +104,19 @@ export default function About() {
         <div className="pr-5 flex flex-col">
           <MaskText
             phrases={[" DESIGN AESTHETICS"]}
-            className="pb-10 sm:text-6xl text-3xl text-primary font-extrabold"
+            className="pb-10 sm:text-6xl text-3xl text-primary font-extrabold font-custom"
           />
         </div>
       </div>
       <div className="bg-white sm:p-20 p-5 ">
-        <p className="sm:text-lg text-sm font-thin">
-          AXENT embraces the brand philosophy and design principle of &#34LESS IS
-          MORE,&#34 integrating elegant Italian designs into its products and
+        <p className="sm:text-lg text-sm font-thin font-custom">
+          AXENT embraces the brand philosophy and design principle of LESS IS
+          MORE, integrating elegant Italian designs into its products and
           collaborating with internationally renowned designer teams to tailor
           high-end, private bathroom spaces for exclusive enjoyment. This
           cross-boundary collaboration not only ignites a dazzling spark between
           Western aesthetics and Eastern technologies but also profoundly
-          transforms people&#39s lifestyles. Our design team brings together a
+          transforms people's lifestyles. Our design team brings together a
           multitude of masterminds, including the principal collaborating design
           team of MATTEO THUN & ANTONIO RODRIGUEZ, Chief Design Officer Arthur
           Eisenkrein, as well as collaborating designers Steve Leung and Phoenix
@@ -185,6 +185,26 @@ export default function About() {
             </div>
           </div>
         </div>
+      </div>
+      {/* factory video */}
+      <div>
+        <div className="flex items-center justify-center">
+          <MaskText
+            phrases={["More than meets the eye"]}
+            className="pt-10 sm:text-6xl text-3xl text-primary font-extrabold"
+          />
+        </div>
+        <div className="py-10 sm:px-40 px-5 font-thin text-xl font-custom text-primary ">
+          The AXENT Group is wholly committed to creating a future where
+          beautifully crafted products bring an unimagined level of quality to
+          our lives. With 300 engineers in its research and development centre,
+          alongside 1200 employees, the AXENT Group is well positioned to
+          achieve its vision to become the world’s most innovative and reliable
+          provider of sanitary technology.
+        </div>
+        <PageVideo
+          videoUrl={"https://player.vimeo.com/video/1053219781?h=a0cb7a4a62"}
+        />
       </div>
 
       <div className="pt-40 sm:px-20">

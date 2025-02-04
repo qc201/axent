@@ -17,18 +17,71 @@ export default function Home() {
     <main>
       <HeaderVideo />
       <div className="grid sm:grid-cols-3 grid-cols-1  md:gap-1 sm:px-20 md:py-10">
-        <RevealCard imgsrc={"/series_img/one-c-plus-600_800.png"} title={"AXENT.ONE C PLUS"} imgalt={"AXENT.ONE C PLUS"} pagelink={"/bathroom/intelligent/one-c-plus"} subTitle={"Ingelligent toilet with KIRIN Flush System"} intro={"This award-winning intelligent toilet is equipped with the latest smart-ware technology customize your AXENT.ONE C+ functions with the swipe of a sensor or click of a button. "} />
+        <RevealCard
+          imgsrc={"/series_img/one-c-plus-600_800.png"}
+          title={"AXENT.ONE C PLUS"}
+          imgalt={"AXENT.ONE C PLUS"}
+          pagelink={"/bathroom/intelligent/one-c-plus"}
+          subTitle={"Ingelligent toilet with KIRIN Flush System"}
+          intro={
+            "This award-winning intelligent toilet is equipped with the latest smart-ware technology customize your AXENT.ONE C+ functions with the swipe of a sensor or click of a button. "
+          }
+        />
 
-        <RevealCard imgsrc={"/live_img/basin-header-1024_600.png"} title={"AXENT.ONE PLUS"} imgalt={"AXENT.ONE PLUS"} pagelink={"/bathroom/intelligent/one-plus"} subTitle={"Ingelligent toilet with KIRIN Flush System"} intro={"Inspired by our success and lessons learned in Europe and Asia&#39s notoriously condensed urban environments, we&#39re introducing North America&#39s most intuitive and space-saving toilet – the AXENT.ONE Plus wall-hung intelligent toilet."} />
+        <RevealCard
+          imgsrc={"/live_img/basin-header-1024_600.png"}
+          title={"AXENT.ONE PLUS"}
+          imgalt={"AXENT.ONE PLUS"}
+          pagelink={"/bathroom/intelligent/one-plus"}
+          subTitle={"Ingelligent toilet with KIRIN Flush System"}
+          intro={
+            "Inspired by our success and lessons learned in Europe and Asia's notoriously condensed urban environments, we are introducing North America's most intuitive and space-saving toilet – the AXENT.ONE Plus wall-hung intelligent toilet."
+          }
+        />
 
-        <RevealCard imgsrc={"/series_img/primus-600_800.png"} title={"Primus"} imgalt={"Primus"} pagelink={"/bathroom/regular/primus"} subTitle={"Minimalist Lifestyle with Kirin Flush"} intro={"Adopting an aesthetically pleasing streamlined design and a sleek flat white exterior, it aligns with modern home aesthetics. The efficient Kirin Flush System ensures pristine cleanliness after every use, offering the enjoyment of a comfortable life."} />
+        <RevealCard
+          imgsrc={"/series_img/primus-600_800.png"}
+          title={"Primus"}
+          imgalt={"Primus"}
+          pagelink={"/bathroom/regular/primus"}
+          subTitle={"Minimalist Lifestyle with Kirin Flush"}
+          intro={
+            "Adopting an aesthetically pleasing streamlined design and a sleek flat white exterior, it aligns with modern home aesthetics. The efficient Kirin Flush System ensures pristine cleanliness after every use, offering the enjoyment of a comfortable life."
+          }
+        />
 
-        <RevealCard imgsrc={"/live_img/mint-header-1024_600.png"} title={"MINT"} imgalt={"mint"} pagelink={"/bathroom/mint"} subTitle={"AXENT-Mint inherits the AXENT Group's philosophy of combining aesthetics with cutting edge technology."} intro={"AXENT-MINT embraces LOHAS aesthetics. We are optimistic, inclusive, and eager to explore new ideas. With diverse designs and colorful creativity, we shape a colorful world with AXENT-MINT characteristics."} />
+        <RevealCard
+          imgsrc={"/live_img/mint-header-1024_600.png"}
+          title={"MINT"}
+          imgalt={"mint"}
+          pagelink={"/bathroom/mint"}
+          subTitle={
+            "AXENT-Mint inherits the AXENT Group's philosophy of combining aesthetics with cutting edge technology."
+          }
+          intro={
+            "AXENT-MINT embraces LOHAS aesthetics. We are optimistic, inclusive, and eager to explore new ideas. With diverse designs and colorful creativity, we shape a colorful world with AXENT-MINT characteristics."
+          }
+        />
 
-        <RevealCard imgsrc={"/products_img/novia-cover-1024_600.png"} title={"NOVIA"} imgalt={"NOVIA"} pagelink={"/bathroom/novia"} subTitle={"The Faucet-Free Spa Experience of the Future"} intro={"A revolutionary masterpiece with a cool, sculpted profile and fully integrated, seamless intelligent functionality "} />
+        <RevealCard
+          imgsrc={"/products_img/novia-cover-1024_600.png"}
+          title={"NOVIA"}
+          imgalt={"NOVIA"}
+          pagelink={"/bathroom/novia"}
+          subTitle={"The Faucet-Free Spa Experience of the Future"}
+          intro={
+            "A revolutionary masterpiece with a cool, sculpted profile and fully integrated, seamless intelligent functionality "
+          }
+        />
 
-        <RevealCard imgsrc={"/products_img/meta-cover.png"} title={"META"} imgalt={"META"} pagelink={"/bathroom/meta"} subTitle={"COMING SOON..."} intro={" "} />
-
+        <RevealCard
+          imgsrc={"/products_img/meta-cover.png"}
+          title={"META"}
+          imgalt={"META"}
+          pagelink={"/bathroom/meta"}
+          subTitle={"COMING SOON..."}
+          intro={" "}
+        />
       </div>
       <div className="flex justify-center items-center h-[300px] w-screen bg-center pt-30 bg-techStyle sm:bg-fixed bg-cover bg-no-repeat sm:h-[400px] sm:w-screen">
         <div className=" text-white font-custom font-black text-2xl sm:text-4xl ">

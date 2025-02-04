@@ -1,7 +1,7 @@
 "use client";
 import { data } from "../../../lib/data"; //all product data in lib
 import { ProductInfo } from "@/types/global";
-import CollectionCover from "@/components/CollectionCover";
+import InfoCard from "@/components/InfoCard";
 import MaskText from "@/components/MaskText";
 
 export default function Parts() {
@@ -21,47 +21,16 @@ export default function Parts() {
           className="text-6xl text-white font-extrabold"
         />
       </div>
-      <div className="flex flex-col gap-5 pt-10 mx-10 sm:mx-60">
-        <CollectionCover
-          imgUrl="/products_img/primus-color-strip-black.png"
-          imgAlt={partsData[1].imgAlt}
-          linkTo="/products/sli/sli5400"
-          width={300}
-          height={500}
-          model={partsData[1].name}
-        />
-        <CollectionCover
-          imgUrl="/products_img/primus-color-strip-gold.png"
-          imgAlt={partsData[1].imgAlt}
-          linkTo="/products/sli/sli5400"
-          width={300}
-          height={500}
-          model={partsData[1].name}
-        />
-        <CollectionCover
-          imgUrl="/products_img/primus-color-strip-silver.png"
-          imgAlt={partsData[1].imgAlt}
-          linkTo="/products/sli/sli5400"
-          width={300}
-          height={500}
-          model={partsData[1].name}
-        />
-        <CollectionCover
-          imgUrl="/products_img/primus-color-strip-gray.png"
-          imgAlt={partsData[1].imgAlt}
-          linkTo="/products/sli/sli5400"
-          width={300}
-          height={500}
-          model={partsData[1].name}
-        />
-        <CollectionCover
-          imgUrl="/products_img/primus-color-strip-rose.png"
-          imgAlt={partsData[1].imgAlt}
-          linkTo="/products/sli/sli5400"
-          width={300}
-          height={500}
-          model={partsData[1].name}
-        />
+      <div className="grid sm:grid-cols-4 grid-cols-2  gap-6 sm:px-20 py-10">
+        {partsData.map((data, index) => (
+          <InfoCard
+            key={data.name}
+            name={data.name}
+            imgUrl={data.coverSrc}
+            linkTo={data.linkTo}
+            sku={data.sku}
+          />
+        ))}
       </div>
     </div>
   );

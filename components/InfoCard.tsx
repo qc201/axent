@@ -10,12 +10,12 @@ type Props = {
 
 export default function InfoCard({ name, imgUrl, linkTo, sku }: Props) {
   return (
-    <div className="group text-primary">
+    <div className="group text-primary font-custom">
       <div className="cursor-pointer relative flex flex-col my-6 bg-white shadow-sm sm:w-60 w-40 group-hover:shadow-2xl transition-shadow duration-300 h-full justify-between">
         <div>
           <div className="relative h-48 m-2.5 overflow-hidden text-white">
             <img
-              className="transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-90"
+              className="transition-transform  duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-75"
               src={imgUrl}
               alt={sku}
             />

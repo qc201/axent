@@ -20,7 +20,7 @@ export default function Regular() {
           className="text-6xl text-white font-extrabold"
         />
       </div>
-      <div className="grid sm:grid-cols-4 grid-cols-2  gap-6 sm:px-20 py-10">
+      <div className="grid sm:grid-cols-4 grid-cols-2  sm:gap-6 gap-2 sm:px-20 px-5 py-10">
         {/* primus */}
         <InfoCard
           name={regularData[0].name}

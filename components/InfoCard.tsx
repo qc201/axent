@@ -10,35 +10,35 @@ type Props = {
 
 export default function InfoCard({ name, imgUrl, linkTo, sku }: Props) {
   return (
-    <div className="group text-primary font-custom">
-      <div className="cursor-pointer relative flex flex-col my-6 bg-white shadow-sm sm:w-60 w-40 group-hover:shadow-2xl transition-shadow duration-300 h-full justify-between">
-        <div>
-          <div className="relative h-48 m-2.5 overflow-hidden text-white">
+
+    <div className="group text-primary font-custom"><Link href={linkTo}>
+      <div className="cursor-pointer relative flex flex-col my-6 bg-white shadow-sm sm:w-60 w-40 group-hover:shadow-2xl transition-shadow duration-300 h-full ">
+        <div className="h-3/5 ">
+          <div className="relative m-2.5 overflow-hidden text-white">
             <img
-              className="transition-transform  duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-75"
+              className="transition-transform  duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-90"
               src={imgUrl}
               alt={sku}
             />
           </div>
+
+        </div>
+        <div className="h-2/5 px-4 pb-4 pt-0 mt-0 flex flex-col items-center justify-between">
           <div className="px-4">
-            <h6 className="mb-0  group-hover:text-black sm:text-xl text-sm font-semibold">
+            <h6 className="mb-0  group-hover:text-black sm:text-lg text-sm font-semibold">
               {name}
             </h6>
-            <p className=" group-hover:text-black leading-normal sm:text-xl text-xs font-thin">
+            <p className=" group-hover:text-black leading-normal sm:text-sm text-xs font-thin">
               {sku}
             </p>
           </div>
-        </div>
-        <div className="visit px-4 pb-4 pt-0 mt-0 flex justify-center items-center">
-          <Link
-            href={linkTo}
-            className="rounded-md bg-primary py-2 px-4 border border-transparent text-center text-white transition-all shadow-md group-hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 group-hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none sm:text-sm text-xs font-semibold "
-            type="button"
+          <div
+            className="w-full rounded-md bg-primary  py-2 px-4 border border-transparent text-center text-white transition-all shadow-md group-hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 group-hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none sm:text-sm text-xs font-semibold "
           >
             Learn more
-          </Link>
+          </div>
         </div>
       </div>
-    </div>
+    </Link></div>
   );
 }

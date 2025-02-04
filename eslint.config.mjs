@@ -15,6 +15,7 @@ const eslintConfig = [
     rules: {
       "@typescript-eslint/no-unused-vars": "off", //unused type imported
       "@next/next/no-img-element": "off", // image rull
+      "react/no-unescaped-entities": "off", // escape '
     },
   },
 ];

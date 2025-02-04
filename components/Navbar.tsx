@@ -361,7 +361,7 @@ export default function Navbar() {
           initial={{ x: 200 }}
           animate={{ x: 0 }}
           exit={{ x: -200 }}
-          transition={{ type: 'tween' }}
+          transition={{ type: "tween" }}
           className="fixed w-1/2 h-screen top-14 right-0 text-start bg-white  opacity-70 z-50"
         >
           <div className="flex flex-col pl-3 pt-5 font-custom text-primary text-lg">
@@ -373,20 +373,22 @@ export default function Navbar() {
               Products
             </div>
             {isProductLinksVisible &&
-              productLinks.map((link) => (<motion.div
-                initial={{ y: -10, opacity: 0 }}
-                animate={{ y: 0, opacity: 100 }}
-                exit={{ y: -10, opacity: 0 }}
-                transition={{ type: 'tween' }}
-              >
-                <Link
-                  onClick={toggleMenu}
-                  className="font-thin py-2"
-                  href={link.pagelink}
-                  key={link.label}
+              productLinks.map((link, index) => (
+                <motion.div
+                  initial={{ y: -10, opacity: 0 }}
+                  animate={{ y: 0, opacity: 100 }}
+                  exit={{ y: -10, opacity: 0 }}
+                  transition={{ type: "tween" }}
                 >
-                  {link.title}
-                </Link></motion.div>
+                  <Link
+                    onClick={toggleMenu}
+                    className="font-thin py-2"
+                    href={link.pagelink}
+                    key={index}
+                  >
+                    {link.title}
+                  </Link>
+                </motion.div>
               ))}
             <div
               className="font-black pt-2"
@@ -396,20 +398,22 @@ export default function Navbar() {
               Support
             </div>
             {isSupportLinksVisible &&
-              supportLinks.map((link) => (<motion.div
-                initial={{ y: -10, opacity: 0 }}
-                animate={{ y: 0, opacity: 100 }}
-                exit={{ y: -10, opacity: 0 }}
-                transition={{ type: 'tween' }}
-              >
-                <Link
-                  onClick={toggleMenu}
-                  className="font-thin py-2"
-                  href={link.pagelink}
-                  key={link.label}
+              supportLinks.map((link, index) => (
+                <motion.div
+                  initial={{ y: -10, opacity: 0 }}
+                  animate={{ y: 0, opacity: 100 }}
+                  exit={{ y: -10, opacity: 0 }}
+                  transition={{ type: "tween" }}
                 >
-                  {link.label}
-                </Link></motion.div>
+                  <Link
+                    onClick={toggleMenu}
+                    className="font-thin py-2"
+                    href={link.pagelink}
+                    key={index}
+                  >
+                    {link.label}
+                  </Link>
+                </motion.div>
               ))}
             <div
               className="font-black pt-2"
@@ -419,20 +423,22 @@ export default function Navbar() {
               Company
             </div>
             {isCompanyLinksVisible &&
-              companyLinks.map((link) => (<motion.div
-                initial={{ y: -10, opacity: 0 }}
-                animate={{ y: 0, opacity: 100 }}
-                exit={{ y: -10, opacity: 0 }}
-                transition={{ type: 'tween' }}
-              >
-                <Link
-                  onClick={toggleMenu}
-                  className="font-thin py-2"
-                  href={link.pagelink}
-                  key={link.label}
+              companyLinks.map((link, index) => (
+                <motion.div
+                  initial={{ y: -10, opacity: 0 }}
+                  animate={{ y: 0, opacity: 100 }}
+                  exit={{ y: -10, opacity: 0 }}
+                  transition={{ type: "tween" }}
                 >
-                  {link.label}
-                </Link></motion.div>
+                  <Link
+                    onClick={toggleMenu}
+                    className="font-thin py-2"
+                    href={link.pagelink}
+                    key={index}
+                  >
+                    {link.label}
+                  </Link>
+                </motion.div>
               ))}
           </div>
         </motion.div>

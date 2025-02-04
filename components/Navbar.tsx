@@ -366,58 +366,73 @@ export default function Navbar() {
         >
           <div className="flex flex-col pl-3 pt-5 font-custom text-primary text-lg">
             <div
-              className="font-black"
+              className="font-black pt-2"
               onClick={handleProductClick}
               style={{ cursor: "pointer" }}
             >
               Products
             </div>
             {isProductLinksVisible &&
-              productLinks.map((link) => (
+              productLinks.map((link) => (<motion.div
+                initial={{ y: -10, opacity: 0 }}
+                animate={{ y: 0, opacity: 100 }}
+                exit={{ y: -10, opacity: 0 }}
+                transition={{ type: 'tween' }}
+              >
                 <Link
                   onClick={toggleMenu}
-                  className="font-thin"
+                  className="font-thin py-2"
                   href={link.pagelink}
                   key={link.label}
                 >
                   {link.title}
-                </Link>
+                </Link></motion.div>
               ))}
             <div
-              className="font-black"
+              className="font-black pt-2"
               onClick={handleSupportClick}
               style={{ cursor: "pointer" }}
             >
               Support
             </div>
             {isSupportLinksVisible &&
-              supportLinks.map((link) => (
+              supportLinks.map((link) => (<motion.div
+                initial={{ y: -10, opacity: 0 }}
+                animate={{ y: 0, opacity: 100 }}
+                exit={{ y: -10, opacity: 0 }}
+                transition={{ type: 'tween' }}
+              >
                 <Link
                   onClick={toggleMenu}
-                  className="font-thin"
+                  className="font-thin py-2"
                   href={link.pagelink}
                   key={link.label}
                 >
                   {link.label}
-                </Link>
+                </Link></motion.div>
               ))}
             <div
-              className="font-black"
+              className="font-black pt-2"
               onClick={handleCompanyClick}
               style={{ cursor: "pointer" }}
             >
               Company
             </div>
             {isCompanyLinksVisible &&
-              companyLinks.map((link) => (
+              companyLinks.map((link) => (<motion.div
+                initial={{ y: -10, opacity: 0 }}
+                animate={{ y: 0, opacity: 100 }}
+                exit={{ y: -10, opacity: 0 }}
+                transition={{ type: 'tween' }}
+              >
                 <Link
                   onClick={toggleMenu}
-                  className="font-thin"
+                  className="font-thin py-2"
                   href={link.pagelink}
                   key={link.label}
                 >
                   {link.label}
-                </Link>
+                </Link></motion.div>
               ))}
           </div>
         </motion.div>

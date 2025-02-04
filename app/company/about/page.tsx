@@ -51,16 +51,16 @@ export default function About() {
           the city and nature. Our persistence in innovation stems from our deep
           understanding of customers and keen insights into the environment. We
           provide innovative applications for the ever-changing living
-          environment. With our expertise and exploratory spirit, AXENT's
+          environment. With our expertise and exploratory spirit, AXENT&#39s
           patented innovations and minimalist designs have become benchmarks in
           the industry.
         </p>
         <p>
           We believe that the pursuit of excellence is a manifestation of life
           attitude, rather than a mere quest for superiority. Originating from
-          "EXCEL- LENT," "AXENT" integrates the ultimate spirit into every
+          &#34EXCEL- LENT,&#34 &#34AXENT&#34 integrates the ultimate spirit into every
           product. Founded in Rapperswil, Switzerland, in 2008, AXENT adheres to
-          the brand philosophy of "Wisdom for Life," blending minimalist
+          the brand philosophy of &#34Wisdom for Life,&#34 blending minimalist
           aesthetics with ultimate technologies to offer a comprehensive range
           of bathroom products, including cutting-edge smart toilets, bathtubs,
           sanitary wares, bathroom furniture, hardware accessories, and
@@ -76,10 +76,10 @@ export default function About() {
             className="pb-10 sm:text-6xl text-3xl text-white font-extrabold items-center justify-center"
           />
           <p className="sm:text-lg text-sm font-thin">
-            AXENT's products have garnered numerous prestigious awards,
+            AXENT&#39s products have garnered numerous prestigious awards,
             including the German iF Design Award, the Red Dot Design Award, the
             German Innovation Award, and the German ICONIC AWARDS. Since 2017,
-            AXENT has been featured in the "The Major German Brands” annual
+            AXENT has been featured in the &#34The Major German Brands&#34annual
             publication for eight consecutive years, which is the only bathroom
             brand to retain this honor year after year. In its more than ten
             years of existence, AXENT has continuously emerged as a prominent
@@ -110,13 +110,13 @@ export default function About() {
       </div>
       <div className="bg-white sm:p-20 p-5 ">
         <p className="sm:text-lg text-sm font-thin">
-          AXENT embraces the brand philosophy and design principle of "LESS IS
-          MORE," integrating elegant Italian designs into its products and
+          AXENT embraces the brand philosophy and design principle of &#34LESS IS
+          MORE,&#34 integrating elegant Italian designs into its products and
           collaborating with internationally renowned designer teams to tailor
           high-end, private bathroom spaces for exclusive enjoyment. This
           cross-boundary collaboration not only ignites a dazzling spark between
           Western aesthetics and Eastern technologies but also profoundly
-          transforms people's lifestyles. Our design team brings together a
+          transforms people&#39s lifestyles. Our design team brings together a
           multitude of masterminds, including the principal collaborating design
           team of MATTEO THUN & ANTONIO RODRIGUEZ, Chief Design Officer Arthur
           Eisenkrein, as well as collaborating designers Steve Leung and Phoenix
@@ -151,6 +151,7 @@ export default function About() {
             <img
               className="h-[300px] w-full object-contain"
               src="/live_img/foam_16_9.png"
+              alt="foam image"
             />
           </div>
           <div className="sm:w-2/5 sm:order-1 font-custom text-white sm:text-end">
@@ -172,6 +173,7 @@ export default function About() {
             <img
               className="h-96 w-full object-contain"
               src="/live_img/app.png"
+              alt="app image"
             />
           </div>
           <div className="sm:w-2/5 sm:order-1 font-custom text-white ">

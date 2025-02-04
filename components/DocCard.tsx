@@ -23,6 +23,7 @@ export default function DocCard({
       <img
         className="rounded-lg h-32 w-full object-contain hover:scale-105 duration-1000"
         src={imgUrl}
+        alt={name}
       />
 
       <div className="flex flex-col text-primary group-hover:text-black capitalize justify-center items-center">

@@ -21,7 +21,7 @@ export default function News() {
           title={data.title}
           location={data.location}
           content={data.content[0]}
-          pagelink={`\\news\\${data.pagelink}`}
+          pagelink={`\\company\\news\\${data.pagelink}`}
         />
       ))}
     </div>

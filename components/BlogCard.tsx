@@ -23,7 +23,7 @@ export default function BlogCard({
   return (
     <Link href={pagelink}>
       <div className=" group cursor-pointer relative rounded overflow-hidden flex sm:flex-row flex-col items-center mx-auto font-custom text-primary py-5">
-        <div className="sm:ml-10 sm:w-3/5 w-screen sm:h-96 overflow-hidden">
+        <div className="sm:ml-10 sm:w-3/5 w-screen sm:h-[40vh] overflow-hidden">
           <img
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             src={imgsrc}

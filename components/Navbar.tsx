@@ -375,6 +375,7 @@ export default function Navbar() {
             {isProductLinksVisible &&
               productLinks.map((link, index) => (
                 <motion.div
+                  key={index}
                   initial={{ y: -10, opacity: 0 }}
                   animate={{ y: 0, opacity: 100 }}
                   exit={{ y: -10, opacity: 0 }}
@@ -384,7 +385,6 @@ export default function Navbar() {
                     onClick={toggleMenu}
                     className="font-thin py-2"
                     href={link.pagelink}
-                    key={index}
                   >
                     {link.title}
                   </Link>
@@ -400,6 +400,7 @@ export default function Navbar() {
             {isSupportLinksVisible &&
               supportLinks.map((link, index) => (
                 <motion.div
+                  key={index}
                   initial={{ y: -10, opacity: 0 }}
                   animate={{ y: 0, opacity: 100 }}
                   exit={{ y: -10, opacity: 0 }}
@@ -409,7 +410,6 @@ export default function Navbar() {
                     onClick={toggleMenu}
                     className="font-thin py-2"
                     href={link.pagelink}
-                    key={index}
                   >
                     {link.label}
                   </Link>
@@ -425,6 +425,7 @@ export default function Navbar() {
             {isCompanyLinksVisible &&
               companyLinks.map((link, index) => (
                 <motion.div
+                  key={index}
                   initial={{ y: -10, opacity: 0 }}
                   animate={{ y: 0, opacity: 100 }}
                   exit={{ y: -10, opacity: 0 }}
@@ -434,7 +435,6 @@ export default function Navbar() {
                     onClick={toggleMenu}
                     className="font-thin py-2"
                     href={link.pagelink}
-                    key={index}
                   >
                     {link.label}
                   </Link>

@@ -15,10 +15,10 @@ export default function Parts() {
 
   return (
     <div>
-      <div className="flex items-center justify-center font-custom bg-fixed bg-partsHeader w-screen bg-cover bg-center bg-no-repeat sm:min-h-[1000px] min-h-[600px]">
+      <div className="flex items-center justify-center font-custom sm:bg-fixed bg-partsHeader w-screen bg-cover bg-center bg-no-repeat sm:min-h-[800px] min-h-[600px]">
         <MaskText
-          phrases={["Parts & Seats"]}
-          className="text-6xl text-white font-extrabold"
+          phrases={["Toilet Seats"]}
+          className="text-6xl text-white font-extrabold "
         />
       </div>
       <div className="grid sm:grid-cols-4 grid-cols-2  gap-6 sm:px-20 py-10">

@@ -72,9 +72,9 @@ const supportLinks = [
     pagelink: "/support/questions",
   },
   {
-    href: "/support/contact",
+    href: "/support/tech",
     label: "Get tech support",
-    pagelink: "/support/contact",
+    pagelink: "/support/tech",
   },
 ];
 

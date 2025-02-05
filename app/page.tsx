@@ -13,6 +13,8 @@ export default function Home() {
     "https://player.vimeo.com/video/1052444467?h=ab2b0d295e;badge=0&amp;player_id=0&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1";
   const video3src =
     "https://player.vimeo.com/video/1052444501?h=f50df54449;badge=0&amp;player_id=0&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1";
+  const video4src =
+    "https://player.vimeo.com/video/1053612766?h=0e8ac63f83;badge=0&amp;player_id=0&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1";
   return (
     <main>
       <HeaderVideo />
@@ -115,6 +117,12 @@ export default function Home() {
         title="Intelligent Toilet Technology"
         description="It boasts intelligent features including rear wash and front wash, seat heating, off-seat auto flush, and proximity-activated lid opening. All these features comprehensively deliver a hygienic, comfortable, and convenient cleansing experience to users.​"
         videosrc={video3src}
+      />
+      <VideoCardTextLeft
+        className="text-primary"
+        title="App Control"
+        description="Independently designed and developed by AXENT, this App is tailored for use with the smart toilet. The seamless remote control offers ease of use and peace of mind to its users."
+        videosrc={video4src}
       />
     </main>
   );

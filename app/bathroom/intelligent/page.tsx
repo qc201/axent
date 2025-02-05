@@ -17,7 +17,7 @@ export default function Intelligent() {
     <div>
       <div className="flex items-center justify-center font-custom sm:bg-fixed bg-intelligentHeader w-screen bg-cover bg-center bg-no-repeat sm:min-h-[1000px] min-h-[600px]">
         <MaskText
-          phrases={["Intelligent Toilets & Seats"]}
+          phrases={["Intelligent Toilets"]}
           className="text-6xl text-white font-extrabold"
         />
       </div>

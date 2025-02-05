@@ -53,7 +53,7 @@ export default function Primus() {
       />
       {/* live image and video */}
       <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm sm:text-2xl">
-        <div className="flex flex-row items-center justify-center">
+        <div className="flex sm:flex-row flex-col items-center justify-center">
           <Image
             className="w-full"
             src={"/products_img/primus-color-strip-black.png"}

@@ -22,6 +22,7 @@ export default function Infinity() {
         sketchImgs={infinityData.sketchImg}
       />
       <FeatureCard
+        unavailable={true}
         spec={infinityData.specification}
         manual={infinityData.manual}
         install={infinityData.install}

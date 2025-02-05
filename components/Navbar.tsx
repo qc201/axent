@@ -11,7 +11,7 @@ const productLinks = [
   {
     href: "/bathroom/intelligent",
     label: "intelligent toilet",
-    imgsrc: "/nav_img/intelligent.jpg",
+    imgsrc: "/nav_img/intelligent_infinity.png",
     imgalt: "intelligent",
     title: "Intelligent Toilets",
     pagelink: "/bathroom/intelligent",

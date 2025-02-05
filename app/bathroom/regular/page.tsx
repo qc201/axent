@@ -59,7 +59,7 @@ export default function Regular() {
           unavailable={true}
           name={regularData[4].name}
           imgUrl={regularData[4].coverSrc}
-          linkTo="/bathroom/regular/reuss"
+          linkTo="/bathroom/regular/studio"
           sku={regularData[4].sku}
         />
       </div>

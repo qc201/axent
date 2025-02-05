@@ -1,7 +1,7 @@
 export default function HeaderVideo() {
   //const videoUrl = "/videos/200911_Intro_1920x850.mp4";
   const videoUrl =
-    "https://player.vimeo.com/video/1052447153?h=a7582bca68&amp;badge=0&amp;player_id=0&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1";
+    "https://player.vimeo.com/video/1052447153?h=a7582bca68&amp;badge=0&amp;player_id=0&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1&autopause=0";
   return (
     <div className="w-full h-screen overflow-hidden">
       <div className="relative w-full h-full">

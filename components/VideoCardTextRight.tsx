@@ -4,19 +4,26 @@ type Props = {
   description: string;
   videosrc: string;
   className?: string;
+  id: string;
 };
 export default function VideoCardTextRight({
   title,
   description,
   videosrc,
   className,
+  id,
 }: Props) {
   return (
     <div className={classNames(className)}>
       <div className="pt-10 sm:px-40 sm:flex sm:flex-row sm:gap-5">
         <div className="sm:w-3/5 relative w-full h-[200px] overflow-hidden sm:h-[360px]">
           <div className="aspect-w-16 aspect-h-9">
-            <iframe src={videosrc} frameBorder="0" allow="autoplay"></iframe>
+            <iframe
+              id={id}
+              src={videosrc}
+              frameBorder="0"
+              allow="autoplay"
+            ></iframe>
           </div>
         </div>
         <div className="sm:w-2/5 font-custom  text-end sm:flex sm:flex-col">

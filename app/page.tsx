@@ -26,9 +26,11 @@ export default function Home() {
           intro={
             "This award-winning intelligent toilet is equipped with the latest smart-ware technology customize your AXENT.ONE C+ functions with the swipe of a sensor or click of a button. "
           }
+          available={true}
         />
 
         <RevealCard
+          available={true}
           imgsrc={"/live_img/basin-header-1024_600.png"}
           title={"AXENT.ONE PLUS"}
           imgalt={"AXENT.ONE PLUS"}
@@ -40,6 +42,7 @@ export default function Home() {
         />
 
         <RevealCard
+          available={true}
           imgsrc={"/series_img/primus-600_800.png"}
           title={"Primus"}
           imgalt={"Primus"}
@@ -51,6 +54,7 @@ export default function Home() {
         />
 
         <RevealCard
+          available={true}
           imgsrc={"/live_img/mint-header-1024_600.png"}
           title={"AXENT.MINT"}
           imgalt={"mint"}
@@ -64,6 +68,7 @@ export default function Home() {
         />
 
         <RevealCard
+          available={false}
           imgsrc={"/products_img/novia-cover-1024_600.png"}
           title={"NOVIA"}
           imgalt={"NOVIA"}
@@ -75,6 +80,7 @@ export default function Home() {
         />
 
         <RevealCard
+          available={false}
           imgsrc={"/products_img/meta-cover.png"}
           title={"META"}
           imgalt={"META"}

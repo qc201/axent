@@ -23,6 +23,7 @@ export default function Stella() {
         sketchImgs={stellaData.sketchImg}
       />
       <FeatureCard
+        unavailable={true}
         spec={stellaData.specification}
         manual={stellaData.manual}
         install={stellaData.install}

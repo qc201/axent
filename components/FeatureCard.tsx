@@ -21,6 +21,7 @@ type Props = {
   spec: string;
   manual: string;
   install: string;
+  unavailable?: boolean;
 };
 
 export default function FeatureCard({
@@ -41,10 +42,14 @@ export default function FeatureCard({
   spec,
   manual,
   install,
+  unavailable,
 }: Props) {
   return (
     <div className="flex flex-col pt-10 md:flex-row md:items-start md:px-5 md:pt-20">
       <div className="w-[100vw] md:w-[50vw] flex items-center justify-center">
+        <div className="relative">
+          {unavailable && <span className="bg-alarm z-20 text-white px-2 py-1 absolute top-0 right-0 text-xs  md:tex t-sm rounded-bl-md font-custom">coming soon</span>
+          }
         <Image
           src={productImgUrl}
           alt={productImgAlt}
@@ -52,7 +57,7 @@ export default function FeatureCard({
           height={productImgHeight}
           className="object-contain"
         />
-      </div>
+        </div></div>
 
       <div className="text-lg text-primary font-thin  md:text-xl md:w-1/2 md:ml-20">
         <div className="flex flex-col justify-between pb-10">

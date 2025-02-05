@@ -20,6 +20,7 @@ export default function Reuss() {
         sketchImgs={reussData.sketchImg}
       />
       <FeatureCard
+        unavailable={true}
         spec={reussData.specification}
         manual={reussData.manual}
         install={reussData.install}

@@ -23,6 +23,7 @@ export default function MintTwo() {
         sketchImgs={mintTwoData.sketchImg}
       />
       <FeatureCard
+        unavailable={mintTwoData.unavailable}
         spec={mintTwoData.specification}
         manual={mintTwoData.manual}
         install={mintTwoData.install}

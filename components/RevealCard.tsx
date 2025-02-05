@@ -8,6 +8,7 @@ type Props = {
   intro: string;
   imgalt: string;
   pagelink: string;
+  available: boolean;
 };
 export default function RevealCard({
   imgsrc,
@@ -15,11 +16,17 @@ export default function RevealCard({
   imgalt,
   pagelink,
   subTitle,
-  intro,
+  intro, available,
 }: Props) {
   return (
     <Link href={pagelink}>
       <div className="font-custom relative h-96 md:w-96 w-screen md:mt-20 px-5 mx-auto  py-8 group bg-gray-200 overflow-hidden shadow-xl">
+        {!available && <div className="absolute right-0 top-0 h-16 w-16 z-20">
+          <div
+            className="absolute transform rotate-45 bg-primary text-center text-white  py-1 right-[-35px] top-[32px] w-[170px] font-custom font-thin">
+            coming soon
+          </div>
+        </div>}
         <img
           src={imgsrc}
           alt={imgalt}

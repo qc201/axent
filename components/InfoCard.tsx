@@ -6,15 +6,20 @@ type Props = {
   imgUrl: string;
   linkTo: string;
   sku: string;
+  unavailable?: boolean;
 };
 
-export default function InfoCard({ name, imgUrl, linkTo, sku }: Props) {
+export default function InfoCard({ name, imgUrl, linkTo, sku, unavailable }: Props) {
   return (
 
     <div className="group text-primary font-custom"><Link href={linkTo}>
+
       <div className="cursor-pointer relative flex flex-col my-6 bg-white shadow-sm sm:w-60 w-40 group-hover:shadow-2xl transition-shadow duration-300 h-full ">
+        {unavailable && <span className="bg-primary z-20 text-white px-2 py-1 absolute top-0 right-0 text-xs  md:tex t-sm rounded-bl-md font-custom">coming soon</span>
+        }
         <div className="h-3/5 ">
           <div className="relative m-2.5 overflow-hidden text-white">
+
             <img
               className="transition-transform  duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-90"
               src={imgUrl}

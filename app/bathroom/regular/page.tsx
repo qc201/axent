@@ -31,6 +31,7 @@ export default function Regular() {
 
         {/* stella */}
         <InfoCard
+          unavailable={true}
           name={regularData[3].name}
           imgUrl={regularData[3].coverSrc}
           linkTo="/bathroom/regular/stella"
@@ -55,6 +56,7 @@ export default function Regular() {
 
         {/* reuss */}
         <InfoCard
+          unavailable={true}
           name={regularData[4].name}
           imgUrl={regularData[4].coverSrc}
           linkTo="/bathroom/regular/reuss"

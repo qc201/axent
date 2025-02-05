@@ -30,6 +30,7 @@ export default function Intelligent() {
             imgUrl={data.coverSrc}
             linkTo={data.linkTo}
             sku={data.sku}
+            unavailable={data.unavailable}
           />
         ))}
       </div>

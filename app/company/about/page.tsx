@@ -126,7 +126,7 @@ export default function About() {
       </div>
 
       {/* technologies */}
-      <div className="bg-primary pt-10">
+      {/* <div className="bg-primary pt-10">
         <div className="flex items-center justify-center">
           <MaskText
             phrases={["INTELLIGENT TECHNOLOGIES"]}
@@ -147,26 +147,8 @@ export default function About() {
           videosrc={video2src}
         />
         <div className="sm:px-40 sm:flex sm:flex-row-reverse sm:gap-5 sm:pt-10 font-custom">
-          <div className="sm:order-2 sm:w-3/5 relative w-full h-[200px] overflow-hidden sm:h-[360px]">
-            <img
-              className="h-[300px] w-full object-contain"
-              src="/live_img/foam_16_9.png"
-              alt="foam image"
-            />
-          </div>
-          <div className="sm:w-2/5 sm:order-1 font-custom text-white sm:text-end">
-            <div className="font-black text-xl py-2 sm:pb-5">FOAM GUARD</div>
-            <div className="font-thin text-xl ">
-              Upon sensing human touch, it automatically generates a layer of
-              dense foam to cover the water seal surface. This offers four-fold
-              protection—splash prevention, odor isolation, anti-contamination,
-              and bacteria suppression—ensuring comprehen- sive health
-              safeguarding for users. With a magnetic rear cover for easy
-              access, the system is compatible with various foamable liquids,
-              allowing users to customize their foam experience freely.
-            </div>
-          </div>
-        </div>
+
+
 
         <div className="pb-10 sm:px-40 sm:flex sm:flex-row items-end justify-between sm:gap-5 sm:pt-5 font-custom">
           <div className="sm:order-2 sm:w-3/5  sm:pl-20 relative w-full overflow-hidden h-[300px] sm:h-[360px]">
@@ -185,9 +167,13 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* factory video */}
       <div>
+
+        <PageVideo
+          videoUrl={"https://player.vimeo.com/video/1053219781?h=a0cb7a4a62"}
+        />
         <div className="flex items-center justify-center">
           <MaskText
             phrases={["More than meets the eye"]}
@@ -202,12 +188,9 @@ export default function About() {
           achieve its vision to become the world’s most innovative and reliable
           provider of sanitary technology.
         </div>
-        <PageVideo
-          videoUrl={"https://player.vimeo.com/video/1053219781?h=a0cb7a4a62"}
-        />
       </div>
 
-      <div className="pt-40 sm:px-20">
+      {/* <div className="pt-40 sm:px-20">
         <div className="flex items-center justify-center">
           <MaskText
             phrases={["References"]}
@@ -229,7 +212,7 @@ export default function About() {
             />
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

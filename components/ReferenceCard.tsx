@@ -9,6 +9,7 @@ type Props = {
   pagelink: string;
   category: string;
   location: string;
+
 };
 
 export default function ReferenceCard({

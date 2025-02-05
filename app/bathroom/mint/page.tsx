@@ -85,27 +85,18 @@ export default function Mint() {
 
       {/* view mint products section */}
       <div className="mt-10 sm:px-40">
-        <div className="flex flex-row sm:w-1/2">
-          {/* mint-one */}
+        
+       
+        {/* batik tub */}
+        <div className="sm:pt-10  flex flex-row items-center justify-between w-full">
           <CollectionCover
-            className="w-full object-cover"
-            imgUrl={mintData[0].coverSrc}
-            imgAlt={mintData[0].imgAlt}
-            linkTo="/bathroom/mint/mint-one"
-            width={600}
-            height={1024}
-            model={mintData[0].name}
-          />
-        </div>
-        {/* mint-two */}
-        <div className="sm:pt-10 flex flex-row items-end sm:justify-end">
-          <CollectionCover
-            imgUrl={mintData[1].coverSrc}
-            imgAlt={mintData[1].imgAlt}
-            linkTo="/bathroom/mint/mint-two"
-            width={600}
-            height={300}
-            model={mintData[1].name}
+            imgUrl="/products_img/batik-cover.png"
+            imgAlt={mintData[2].imgAlt}
+            linkTo="/bathroom/mint/batik"
+            width={1980}
+            height={600}
+            model={mintData[2].name}
+            className="w-full"
           />
         </div>
 
@@ -121,18 +112,7 @@ export default function Mint() {
           />
         </div>
 
-        {/* batik tub */}
-        <div className="sm:pt-10  flex flex-row items-center justify-between w-full">
-          <CollectionCover
-            imgUrl="/products_img/batik-cover.png"
-            imgAlt={mintData[2].imgAlt}
-            linkTo="/bathroom/mint/batik"
-            width={1980}
-            height={600}
-            model={mintData[2].name}
-            className="w-full"
-          />
-        </div>
+       
       </div>
     </div>
   );

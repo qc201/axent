@@ -30,6 +30,7 @@ export type ProductInfo = {
   manual: string;
   install: string;
   linkTo: string;
+  unavailable: boolean;
 };
 
 export type RefInfo = {

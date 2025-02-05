@@ -21,11 +21,11 @@ export default function BlogCard({
 }: Props) {
   const shortStr = content.slice(0, 50);
   return (
-    <Link href={pagelink}>
+
       <div className=" group cursor-pointer relative rounded overflow-hidden flex sm:flex-row flex-col items-center mx-auto font-custom text-primary py-5">
         <div className="sm:ml-10 sm:w-3/5 w-screen sm:h-[40vh] overflow-hidden">
           <img
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
             src={imgsrc}
             alt={title}
           />
@@ -41,6 +41,6 @@ export default function BlogCard({
           <p className="text-gray-500 text-sm text-thin">{shortStr} ...</p>
         </div>{" "}
       </div>
-    </Link>
+
   );
 }

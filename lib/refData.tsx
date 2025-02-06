@@ -13,7 +13,7 @@ export const refData: RefInfo[] = [
       ["Hotel AKA Alexandria brings a new level of style and sophistication to Old Town, a charming historic destination known for its boutique shopping, art galleries and waterfront dinning.  Designed by the world-renowned architect and designer Piero Lissoni, this tranquil urban retreat enhances your Alexandria Virginia experience.", "From the moment you step foot inside the newly reimagined property, you’ll discover an inspired balance of modern minimalism and refined mid-century elements.  The focal point is the floating staircase – A Lissoni signature – which shows off dark steel and unique lines as it ascends to the terrace level. The rooms and suites are no less impressive, offering residential style through luxurious amenities and furnishings by the world’s leading artisans. ", "Piero Lissoni has created an architectural gem that effortlessly blends modern design with charming brick-lined setting of Old Town, Alexandria.  The sleek lines, dark tones and rich materials of the common areas evoke Japanese minimalism. "],
     pagelink: "/company/reference/aka-alexandria-virginia",
     category: "HOSITALITY",
-    products: [
+    products: ["Axent Primus Tankless Toilet"
     ],
   },
   {
@@ -28,7 +28,7 @@ export const refData: RefInfo[] = [
     pagelink: "/company/reference/hotel-aka-nomad",
     category: "HOSITALITY",
     products: [
-      "AXENT Primus",
+      "AXENT Primus Tankless Toilet",
     ],
   },
   {
@@ -43,7 +43,7 @@ export const refData: RefInfo[] = [
     pagelink: "/company/reference/the-madrona-hotel",
     category: "HOSITALITY",
     products: [
-      "",
+      "Peninsula Two Piece Toilet",
     ],
   },
   {
@@ -58,7 +58,7 @@ export const refData: RefInfo[] = [
     pagelink: "/company/reference/nobu-hotel-chicago",
     category: "HOSITALITY",
     products: [
-      "",
+      "AXENT.ONE C PLUS Intelligent Toilet",
     ],
   },
 

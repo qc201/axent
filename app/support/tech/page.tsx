@@ -6,7 +6,7 @@ import { data } from "@/lib/data";
 
 export default function TechSupport() {
   return (
-    <div className="pt-16 flex flex-col justify-center items-center">
+    <div className="sm:px-0 px-10 pt-16 flex flex-col justify-center items-center">
       <MaskText
         phrases={["GET TECH SUPPORT"]}
         className="font-custom text-primary sm:text-5xl text-xl font-extrabold py-10"

@@ -52,4 +52,5 @@ export type BlogInfo = {
   location: string;
   content: string[];
   pagelink: string;
+  newsPage?: string;
 };

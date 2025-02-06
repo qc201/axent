@@ -3,6 +3,19 @@ import { BlogInfo } from "@/types/global";
 export const blogData: BlogInfo[] = [
   {
     imgsrc: "",
+    releaseDate: "Feb 5, 2025",
+    title:
+      "AXENT Switzerland to Showcase Innovative Bathroom Solutions at KBIS 2025 in Las Vegas",
+    location: "LAS VEGAS",
+    content: [
+      "AXENT Switzerland is excited to announce its participation in the upcoming Kitchen & Bath Industry Show (KBIS) 2025, scheduled from February 25 to 27 at the Las Vegas Convention Center. Attendees are invited to visit AXENT at Booth N2271 to explore the latest advancements in intelligent bathroom technology.",
+    ],
+    pagelink:
+      "axent-switzerland-to-showcase-innovative-bathroom-solutions-at-kbis-2025-in-las-vegas",
+    newsPage: ``,
+  },
+  {
+    imgsrc: "",
     releaseDate: "May 28, 2019",
     title:
       "American Society of Interior Designers Honor AXENT.ONE C Plus With 2019 Design Impact Award",
@@ -32,14 +45,14 @@ export const blogData: BlogInfo[] = [
       "AXENT Debuts AXENT.NOVIA Smart Bathtub and Announces North American Expansion at ISH 2019",
     location: "FRANKFURT, Germany",
     content: [
-      "AXENT Switzerland, a world leader in intelligent and innovative bathroom product development, debuted a completely integrated intelligent bathroom suite including the newly AXENT."
+      "AXENT Switzerland, a world leader in intelligent and innovative bathroom product development, debuted a completely integrated intelligent bathroom suite including the newly AXENT.",
     ],
     pagelink:
       "axent-debuts-axent-novia-smart-bathtub-and-announce-north-american-market-expansion-at-ish-2019",
   },
   {
-    imgsrc: "December 6, 2018",
-    releaseDate: "",
+    imgsrc: "",
+    releaseDate: "December 6, 2018",
     title:
       "Boundary of Freedom – AXENT Big Shot Talk at 2018 Guangzhou Design Week",
     location: "Guangzhou, China",
@@ -66,7 +79,7 @@ export const blogData: BlogInfo[] = [
     title: "AXENT.ONE Shines In The FARMER HOTEL BASEDOW",
     location: "",
     content: [
-      "The German coastline of the Baltic Sea is rich with dramatic cliffs and white sandy beaches, while inland lie romantic lakes, castles and modernized medieval villages nestled amongst gently undulating hills. Tucked alongside the scenic Lake Malchiner and Schloss Basedow (Castle Basedow), is the newly renovated Farmer Hotel Basedow. "
+      "The German coastline of the Baltic Sea is rich with dramatic cliffs and white sandy beaches, while inland lie romantic lakes, castles and modernized medieval villages nestled amongst gently undulating hills. Tucked alongside the scenic Lake Malchiner and Schloss Basedow (Castle Basedow), is the newly renovated Farmer Hotel Basedow. ",
     ],
     pagelink: "axent-one-shines-in-the-farmer-hotel-basedow",
   },
@@ -89,7 +102,6 @@ export const blogData: BlogInfo[] = [
     location: "Zurich",
     content: [
       "AXENT global team reunited with industry visionaries, partners, clients and distinguished guests to celebrate the company 10th anniversary in style at the castle-like Dolder Grand hotel. We thank Mrs. Corinna Kretschmar-Joehnk, (President, JOI-Design), Mr. Steve Leung (Founder, Steve Leung Design Group), Mr. Andrej Kupetz (Chairman, German Design Council), and Mr. Matteo Thun, for the forward-thinking presentations on future trends in the interior design and architectural industries.",
-
     ],
     pagelink: "celebrating-10-years-with-team-axent",
   },
@@ -112,7 +124,6 @@ export const blogData: BlogInfo[] = [
     location: "New York City",
     content: [
       "International Contemporary Furniture Fair (ICFF) attendees were introduced to the world first design-forward tankless intelligent toilet, the AXENT.ONEC+. The AXENT.ONE C+ redefines intuitive design and adaptable home technology. Each AXENT.ONE C+ intelligent toilet is designed to make life more comfortable with smart and personalized cleansing technologies free of the unnecessary bulkiness and lackluster design of traditional toilets and bidets.",
-
     ],
     pagelink: "axent-kicks-off-10-year-anniversary-celebration-in-thailand",
   },

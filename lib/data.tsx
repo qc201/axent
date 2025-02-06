@@ -373,7 +373,7 @@ export const data: ProductInfo[] = [
     ],
     specification: "/docs/peninsula_spec.pdf",
     manual: "",
-    install: "",
+    install: "/docs/peninsula_install.pdf",
   },
   {
     unavailable: false,

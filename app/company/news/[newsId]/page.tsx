@@ -9,11 +9,16 @@ type Params = {
   };
 };
 
-export default function NewsPage({ params: { newsId } }: Params) {
+export default async function NewsPage({
+  params,
+}: {
+  params: Promise<{ newsId: string }>;
+}) {
+  const { newsId } = await params;
   const pageHtml = getNews(newsId);
 
   if (!pageHtml?.newsPage) {
-    return <p>ops...</p>;
+    return <p>Loading...</p>;
   }
 
   return <>{parse(pageHtml.newsPage)}</>;

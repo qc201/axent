@@ -21,7 +21,7 @@ export default function Reference() {
             imgsrc={info.imgsrc[0]}
             title={info.title}
             imgalt={info.title}
-            description={info.description}
+            description={info.description[0]}
             pagelink={info.pagelink}
             category={info.category}
             location={info.location}

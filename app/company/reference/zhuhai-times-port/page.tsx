@@ -5,7 +5,7 @@ import Carousel from "@/components/Carousel";
 import MaskText from "@/components/MaskText";
 
 export default function ZhuhaiTimesPort() {
-  const data = refData[7];
+  const data = refData.find(d => d.id === 8)!;
   return (
     <div className="pt-16 font-custom text-primary">
       <div className="flex flex-col items-center justify-center">
@@ -24,7 +24,10 @@ export default function ZhuhaiTimesPort() {
 
       <div className="sm:px-40 px-5 py-10">
         <div className="font-black text-lg">Description</div>
-        <div className="font-thin text-lg">{data.description}</div>
+        {data.description.map((p, index) => (
+          <div key={index} className="font-thin text-lg"><div className="font-thin text-lg">{p}</div></div>
+        ))}
+
       </div>
       <div className="sm:px-40 px-5 pb-10">
         <div className="font-black text-lg">Products used</div>

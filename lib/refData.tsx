@@ -1,16 +1,80 @@
 import { RefInfo } from "@/types/global";
 export const refData: RefInfo[] = [
   {
+    id: 11,
+    imgsrc: [
+      "/reference_img/aka-alexandria-virginia_1.png",
+      "/reference_img/aka-alexandria-virginia_2.png",
+      "/reference_img/aka-alexandria-virginia_3.png",
+    ],
+    title: "AKA Alexandria Virginia",
+    location: "Virginia, United States",
+    description:
+      ["Hotel AKA Alexandria brings a new level of style and sophistication to Old Town, a charming historic destination known for its boutique shopping, art galleries and waterfront dinning.  Designed by the world-renowned architect and designer Piero Lissoni, this tranquil urban retreat enhances your Alexandria Virginia experience.", "From the moment you step foot inside the newly reimagined property, you’ll discover an inspired balance of modern minimalism and refined mid-century elements.  The focal point is the floating staircase – A Lissoni signature – which shows off dark steel and unique lines as it ascends to the terrace level. The rooms and suites are no less impressive, offering residential style through luxurious amenities and furnishings by the world’s leading artisans. ", "Piero Lissoni has created an architectural gem that effortlessly blends modern design with charming brick-lined setting of Old Town, Alexandria.  The sleek lines, dark tones and rich materials of the common areas evoke Japanese minimalism. "],
+    pagelink: "/company/reference/aka-alexandria-virginia",
+    category: "HOSITALITY",
+    products: [
+    ],
+  },
+  {
+    id: 12,
+    imgsrc: [
+      "/reference_img/hotel-aka-nomad_1.png",
+    ],
+    title: "Hotel AKA NoMad",
+    location: "New York, United States",
+    description:
+      ["The Madrona is one of those rare places that invites in the extraordinary each day. It’s unique history, natural beauty and seclusion will beckon to discerning seekers far and wide.", "Madrona guests get lost in the magic of their surroundings.  Whether waking up to misty mornings, aimlessly wandering the leafy pathways and storied hallways, reveling in a convivial feast with kindred spirits, or quietly sipping cocktails on the porch to a tangerine-hued sunsets, the stately manor welcomes curious travelers from all over for an experience filled with beauty, style and delight.  With a collection of classic hotel rooms and private bungalows the Madrona offers a uncommon hospitality experience."],
+    pagelink: "/company/reference/hotel-aka-nomad",
+    category: "HOSITALITY",
+    products: [
+      "AXENT Primus",
+    ],
+  },
+  {
+    id: 13,
+    imgsrc: [
+      "/reference_img/the-madrona-hotel_1.png",
+    ],
+    title: "The Madrona Hotel",
+    location: "California, United States",
+    description:
+      ["Hotel AKA NoMad offers luxury accommodations in the heart of Manhattan that combines sophisticated style, thoughtful design and high-end finishes.  Envisioned by renowned architect and designer Pierro Lissoni, the spaces range from comfortable guest rooms to expansive suites, each exuding a serene, residential ambience.  The NoMad allows you to enjoy an unparalleled New York City experience.  The décor is full of exquisite touches, such as furnishings by Divani and Porro, Shin beds with custom padded headboards.  The bathrooms are both striking and serene, featuring gorgeous ceramic tiles and limestone surfaces paired with fantini Fixtures, wood and door detail by Lualdi and last but certainly not least sleek tankless toilet design with the AXENT Primus.  Whether you’re gazing across the New York skyline sipping a morning expresso or streaming your favorite entertainment in the evening, this designer retreat will leave you feeling enriched and inspired."],
+    pagelink: "/company/reference/the-madrona-hotel",
+    category: "HOSITALITY",
+    products: [
+      "",
+    ],
+  },
+  {
+    id: 14,
+    imgsrc: [
+      "/reference_img/nobu-hotel-chicago_1.png",
+    ],
+    title: "Nobu Hotel Chicago",
+    location: "Illinois, United States",
+    description:
+      ["At the Nobu Chicago, Japanese Minimalism intertwines with modern design, creating an experience anchored in the west loop’s creative soul.  Experience iconic cuisine and renowned hospitality in a sanctuary elevated above the hustle bustle of Chicago’s Fulton Market neighborhood and overlooking the renowned restaurant row.  Nobu’s iconic menu of signature dishes and local specialties crafted by the world-renowned Chef Nobu Matsuhisa.  A design-forward atmosphere rooted in an unmistakable sense of place in Nobu Chicago. Thoughtful, attentive service infused with Omotenashi, the Japanese spirit of hospitality the Nobu Chicago is a one of a kind experience."],
+    pagelink: "/company/reference/nobu-hotel-chicago",
+    category: "HOSITALITY",
+    products: [
+      "",
+    ],
+  },
+
+  {
+    id: 1,
     imgsrc: ["/reference_img/farmer-hotel-basedow_1.jpg"],
     title: "Farmer Hotel Basedow",
     location: "Mecklenburg-Vorpommern, Germany",
     description:
-      "Each of the Farmer Hotel Basedow’s 34 suites offer soft-to-the-touch leather furniture, plush and inviting pillow top mattresses,  and the highest level of luxury with newly renovated spa-like bathrooms that include AXENT’s wall-hung AXENT.ONE  intelligent toilets. Inspired by growing popularity for “Japanese toilets,” shower toilets, and bidets, the hotel's management team decided to incorporate the AXENT.ONE intelligent toilet collection into their project due to its unmatched spa-like bathroom features and modern, elegant design. From gentle cleansing, to automatic lid opening and seat warming, theAXENT.ONE offers the most hygienic and comfortable cleansing experience available. The AXENT.ONE’s low-profile and minimalist design lends to the Farmer Hotel Basedow’s unique contemporary yet technology and comfort-driven style.",
+      ["Each of the Farmer Hotel Basedow’s 34 suites offer soft-to-the-touch leather furniture, plush and inviting pillow top mattresses,  and the highest level of luxury with newly renovated spa-like bathrooms that include AXENT’s wall-hung AXENT.ONE  intelligent toilets. Inspired by growing popularity for “Japanese toilets,” shower toilets, and bidets, the hotel's management team decided to incorporate the AXENT.ONE intelligent toilet collection into their project due to its unmatched spa-like bathroom features and modern, elegant design. From gentle cleansing, to automatic lid opening and seat warming, theAXENT.ONE offers the most hygienic and comfortable cleansing experience available. The AXENT.ONE’s low-profile and minimalist design lends to the Farmer Hotel Basedow’s unique contemporary yet technology and comfort-driven style."],
     pagelink: "/company/reference/farmer-hotel-basedow",
     category: "HOSITALITY",
     products: ["AXENT.ONE Wall-Mounted Toilet"],
   },
   {
+    id: 2,
     imgsrc: [
       "/reference_img/haitang-bay-mangrove-resort_1.jpg",
       "/reference_img/haitang-bay-mangrove-resort_2.jpg",
@@ -20,7 +84,7 @@ export const refData: RefInfo[] = [
     title: "Haitang Bay Mangrove Resort",
     location: "Sanya Bay, China",
     description:
-      "Haitang Bay Mangrove Resort Hotel - the third in the world, and China's first seven-star resort hotel. With a main building with a top height of 126 meters, gorgeous organic shapes and its location in the heart of Begonia Bay, this new addition to Sanya is quickly becoming a well-deserved new landmark.The hotel features a personal steward service for every room, seven differently themed swimming pools as well as an air bar on the top floor which is the tallest bar in Sanya. AXENT has equipped the Haitang Bay Mangrove Seven Star Resort with state-of-the-art sanitary equipment to make every guest's experience in the bathroom as unique as the rest of this seven-star experience.",
+      ["Haitang Bay Mangrove Resort Hotel - the third in the world, and China's first seven-star resort hotel. With a main building with a top height of 126 meters, gorgeous organic shapes and its location in the heart of Begonia Bay, this new addition to Sanya is quickly becoming a well-deserved new landmark.The hotel features a personal steward service for every room, seven differently themed swimming pools as well as an air bar on the top floor which is the tallest bar in Sanya. AXENT has equipped the Haitang Bay Mangrove Seven Star Resort with state-of-the-art sanitary equipment to make every guest's experience in the bathroom as unique as the rest of this seven-star experience."],
     pagelink: "/company/reference/haitang-bay-mangrove-resort",
     category: "HOSITALITY",
     products: [
@@ -34,6 +98,7 @@ export const refData: RefInfo[] = [
     ],
   },
   {
+    id: 3,
     imgsrc: [
       "/reference_img/bund-financial-center_1.jpg",
       "/reference_img/bund-financial-center_2.jpg",
@@ -48,7 +113,7 @@ export const refData: RefInfo[] = [
     title: "Bund Financial Center",
     location: "Shanghai, China",
     description:
-      "The Bund Financial Center is a highly prestigious development that occupies a prominent side on the Shanghai Bund. The 420,000-square-metre space with eight buildings called for high-quality sanitaryware, ideally by an internationally renowned brand. Products were required to match harmoniously with the color and tonality of the whole bathroom space. AXENT provided customized services by delivering fitted products according to requirements of the designer, including faucets, push plates, etc., to meet the customer's demands.",
+      ["The Bund Financial Center is a highly prestigious development that occupies a prominent side on the Shanghai Bund. The 420,000-square-metre space with eight buildings called for high-quality sanitaryware, ideally by an internationally renowned brand. Products were required to match harmoniously with the color and tonality of the whole bathroom space. AXENT provided customized services by delivering fitted products according to requirements of the designer, including faucets, push plates, etc., to meet the customer's demands."],
     pagelink: "/company/reference/bund-financial-center",
     category: "HOSITALITY",
     products: [
@@ -69,6 +134,7 @@ export const refData: RefInfo[] = [
     ],
   },
   {
+    id: 4,
     imgsrc: [
       "/reference_img/ccg-schwarzwald_1.jpg",
       "/reference_img/ccg-schwarzwald_2.jpg",
@@ -85,7 +151,7 @@ export const refData: RefInfo[] = [
     title: "CCG Schwarzwald",
     location: "Shanghai, China",
     description:
-      "The CCG Schwarzwald is a high end residential project located in Shanghai. One of the the property development requirements was that all the products should be imported from Germany or comply with German standards. The design style is very minimalistic, focusing on a high product quality and short delivery times. The quality of AXENT meets the German standard. AXENT developed the Dune series proucts and Dean counter top basin specially for the customer.",
+      ["The CCG Schwarzwald is a high end residential project located in Shanghai. One of the the property development requirements was that all the products should be imported from Germany or comply with German standards. The design style is very minimalistic, focusing on a high product quality and short delivery times. The quality of AXENT meets the German standard. AXENT developed the Dune series proucts and Dean counter top basin specially for the customer."],
     pagelink: "/company/reference/ccg-schwarzwald",
     category: "RESIDENAL",
     products: [
@@ -96,6 +162,7 @@ export const refData: RefInfo[] = [
     ],
   },
   {
+    id: 5,
     imgsrc: [
       "/reference_img/nantong-orstar-city_1.jpg",
       "/reference_img/nantong-orstar-city_2.jpg",
@@ -103,7 +170,7 @@ export const refData: RefInfo[] = [
     title: "Nantong Orstar City",
     location: "Nantong, China",
     description:
-      "The Nantong Orstar City Phase 2 project is intended to cater to commercial customers and also features modern high end apartments. The sanitary products were required to be inexpensive, user friendly and of a high quality. AXENT provided special product solutions for the project.",
+      ["The Nantong Orstar City Phase 2 project is intended to cater to commercial customers and also features modern high end apartments. The sanitary products were required to be inexpensive, user friendly and of a high quality. AXENT provided special product solutions for the project."],
     pagelink: "/company/reference/nantong-orstar-city",
     category: "COMMERCIAL",
     products: [
@@ -115,16 +182,18 @@ export const refData: RefInfo[] = [
     ],
   },
   {
+    id: 6,
     imgsrc: ["/reference_img/zhenru-orstar-city_1.jpg"],
     title: "Zhenru Orstar City",
     location: "Shanghai, China",
     description:
-      "Shanghai Zhenru's project Orstar City is a high-end commercial, luxury residential and urban auxiliary project and an important element in promoting the region and enhancing the area's urban function. The developers were looking for global leading design companies Round recessed bathtubs were needed to meet the design requirements. AXENT customized the required products according to the customer request and delivered a customized bathtub.",
+      ["Shanghai Zhenru's project Orstar City is a high-end commercial, luxury residential and urban auxiliary project and an important element in promoting the region and enhancing the area's urban function. The developers were looking for global leading design companies Round recessed bathtubs were needed to meet the design requirements. AXENT customized the required products according to the customer request and delivered a customized bathtub."],
     pagelink: "/company/reference/zhenru-orstar-city",
     category: "RESIDENAL",
     products: ["Yilia Recessed Bathtub"],
   },
   {
+    id: 7,
     imgsrc: [
       "/reference_img/golden-mansion_1.jpg",
       "/reference_img/golden-mansion_2.jpg",
@@ -132,7 +201,7 @@ export const refData: RefInfo[] = [
     title: "Golden Mansion",
     location: "Shanghai, China",
     description:
-      "The positioning of this Shanghai residential project is high-end, featuring generous and elegant living spaces. Products were required to reflect a sense of modest luxury, of differentiation and personalization as was requested by the customer. AXENT suggested to make use of its patented I-FLUSH technology to make for a unique user experience. Faucets adopted the golden circle finishing, reflecting the theme of modest luxury present throughout the space.",
+      ["The positioning of this Shanghai residential project is high-end, featuring generous and elegant living spaces. Products were required to reflect a sense of modest luxury, of differentiation and personalization as was requested by the customer. AXENT suggested to make use of its patented I-FLUSH technology to make for a unique user experience. Faucets adopted the golden circle finishing, reflecting the theme of modest luxury present throughout the space."],
     pagelink: "/company/reference/golden-mansion",
     category: "RESIDENAL",
     products: [
@@ -146,6 +215,7 @@ export const refData: RefInfo[] = [
     ],
   },
   {
+    id: 8,
     imgsrc: [
       "/reference_img/zhuhai-times-port_1.jpg",
       "/reference_img/zhuhai-times-port_2.jpg",
@@ -153,22 +223,24 @@ export const refData: RefInfo[] = [
     title: "Zhuhai Times Port",
     location: "Zhuhai, China",
     description:
-      "The Zhuhai Times Port makes every effort to become a regional benchmarking project. Their developer's preference of sanitary ware is a high-end brand and they assign great importance to product quality and an elegant appearance. AXENT recommended and equipped the building with cost-effective products which are simple, beautiful and comfortable.",
+      ["The Zhuhai Times Port makes every effort to become a regional benchmarking project. Their developer's preference of sanitary ware is a high-end brand and they assign great importance to product quality and an elegant appearance. AXENT recommended and equipped the building with cost-effective products which are simple, beautiful and comfortable."],
     pagelink: "/company/reference/zhuhai-times-port",
     category: "RESIDENAL",
     products: ["Dune Close Coupled Toilet", "Milo Under Counter Basin"],
   },
   {
+    id: 9,
     imgsrc: ["/reference_img/crape-myrtle-garden_1.jpg"],
     title: "Crape Myrtle Garden",
     location: "Zhejiang, China",
     description:
-      "The Crape Myrtle Garden is a relatively high-end full decoration residential project in Taizhou city for which the requirements on the products were very high. Prestigeous European brands provedmost popular among the project's clients, the style was to be simple and short delivery times were required. AXENT products conform with EU quality standards, our Vera Intelligent Seat shines with a with simple and beautiful appearance and humanized design in functions. In addition, it perfectly matches German brand products, winning recognition and praise from both customers and designers.",
+      ["The Crape Myrtle Garden is a relatively high-end full decoration residential project in Taizhou city for which the requirements on the products were very high. Prestigeous European brands provedmost popular among the project's clients, the style was to be simple and short delivery times were required. AXENT products conform with EU quality standards, our Vera Intelligent Seat shines with a with simple and beautiful appearance and humanized design in functions. In addition, it perfectly matches German brand products, winning recognition and praise from both customers and designers."],
     pagelink: "/company/reference/crape-myrtle-garden",
     category: "RESIDENAL",
     products: ["Vera Intelligent Seat"],
   },
   {
+    id: 10,
     imgsrc: [
       "/reference_img/taskin-city_1.jpg",
       "/reference_img/taskin-city_2.jpg",
@@ -179,7 +251,7 @@ export const refData: RefInfo[] = [
     title: "Taskin City",
     location: "Changsha, China",
     description:
-      "Set in a high-end urban context, Taskin City is designed all by international design teams in a simple and straightforward style. The customer required an international sanitary brand which creates products that are innovative, environmentally friendly and energy saving. AXENT's product quality esaily meets the standards set by international brands, we offer trademarked solutions such as A.S.T super water saving technology and S.A.G technology in order to ensure environmental protection and energy efficiency. Also, the minimalistic design style from Italy fots the style of the project prefectly.",
+      ["Set in a high-end urban context, Taskin City is designed all by international design teams in a simple and straightforward style. The customer required an international sanitary brand which creates products that are innovative, environmentally friendly and energy saving. AXENT's product quality esaily meets the standards set by international brands, we offer trademarked solutions such as A.S.T super water saving technology and S.A.G technology in order to ensure environmental protection and energy efficiency. Also, the minimalistic design style from Italy fots the style of the project prefectly."],
     pagelink: "/company/reference/taskin-city",
     category: "COMMERCIAL",
     products: [

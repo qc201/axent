@@ -356,13 +356,13 @@ export default function Navbar() {
       </div>
       {/* Mobile View Menu */}
 
-      {isOpen && (
+      <AnimatePresence> {isOpen && (
         <motion.div
           initial={{ x: 200 }}
           animate={{ x: 0 }}
-          exit={{ x: -200 }}
+          exit={{ x: 200, opacity: 0 }}
           transition={{ type: "tween" }}
-          className="fixed w-1/2 h-screen top-14 right-0 text-start bg-white  opacity-70 z-50"
+          className="fixed w-1/2 h-screen top-14 right-0 text-start bg-white  opacity-90 z-50"
         >
           <div className="flex flex-col pl-3 pt-5 font-custom text-primary text-lg">
             <div
@@ -372,6 +372,7 @@ export default function Navbar() {
             >
               Products
             </div>
+            <AnimatePresence>
             {isProductLinksVisible &&
               productLinks.map((link, index) => (
                 <motion.div
@@ -389,7 +390,7 @@ export default function Navbar() {
                     {link.title}
                   </Link>
                 </motion.div>
-              ))}
+              ))}</AnimatePresence>
             <div
               className="font-black pt-2"
               onClick={handleSupportClick}
@@ -397,6 +398,7 @@ export default function Navbar() {
             >
               Support
             </div>
+            <AnimatePresence>
             {isSupportLinksVisible &&
               supportLinks.map((link, index) => (
                 <motion.div
@@ -414,22 +416,22 @@ export default function Navbar() {
                     {link.label}
                   </Link>
                 </motion.div>
-              ))}
+              ))}</AnimatePresence>
             <div
               className="font-black pt-2"
               onClick={handleCompanyClick}
               style={{ cursor: "pointer" }}
             >
               Company
-            </div>
+            </div> <AnimatePresence>
             {isCompanyLinksVisible &&
               companyLinks.map((link, index) => (
                 <motion.div
                   key={index}
                   initial={{ y: -10, opacity: 0 }}
                   animate={{ y: 0, opacity: 100 }}
-                  exit={{ y: -10, opacity: 0 }}
                   transition={{ type: "tween" }}
+                  exit={{ y: -10, opacity: 0 }}
                 >
                   <Link
                     onClick={toggleMenu}
@@ -439,10 +441,10 @@ export default function Navbar() {
                     {link.label}
                   </Link>
                 </motion.div>
-              ))}
-          </div>
+              ))}</AnimatePresence>
+          </div> 
         </motion.div>
-      )}
+      )}</AnimatePresence>
     </div>
   );
 }

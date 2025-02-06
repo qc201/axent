@@ -34,9 +34,10 @@ export type ProductInfo = {
 };
 
 export type RefInfo = {
+  id: number;
   imgsrc: string[];
   title: string;
-  description: string;
+  description: string[];
   pagelink: string;
   category: string;
   location: string;

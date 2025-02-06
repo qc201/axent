@@ -160,7 +160,7 @@ export default function Navbar() {
           <Link href="/" className="p-0 m-0 hover:scale-90 duration-500">
             <Image
               src="/icons/axent_switzerland_logo.svg"
-              alt="Example Icon"
+              alt="brand logo"
               width={100}
               height={100}
               loading="eager"
@@ -180,7 +180,7 @@ export default function Navbar() {
                     onClick={() => handleMenuToggle(1)} // Toggle the products menu with id 1
                     className={`${
                       open ? "font-thin" : ""
-                    } data-[active]:font-extrabold`}
+                      } data-[active]:underline`}
                   >
                     PRODUCTS
                   </MenuButton>
@@ -226,7 +226,7 @@ export default function Navbar() {
                     onClick={() => handleMenuToggle(1)} // Toggle support menu with id 1
                     className={`${
                       open ? "font-thin" : ""
-                    } data-[active]:font-extrabold`}
+                      } data-[active]:underline`}
                   >
                     SUPPORT
                   </Menu.Button>
@@ -269,7 +269,7 @@ export default function Navbar() {
                     onClick={() => handleMenuToggle(2)} // Toggle company menu with id 2
                     className={`${
                       open ? "font-thin" : ""
-                    } data-[active]:font-extrabold`}
+                      } data-[active]:underline`}
                   >
                     COMPANY
                   </Menu.Button>

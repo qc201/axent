@@ -414,7 +414,7 @@ export const data: ProductInfo[] = [
     ],
     specification: "/docs/alton_spec.pdf",
     manual: "",
-    install: "",
+    install: "/docs/alton_install.pdf",
   },
   {
     unavailable: true,
@@ -835,7 +835,7 @@ export const data: ProductInfo[] = [
     id: 20,
     sku: "SKU: T0151 (51” Bathtub), T0159 (59” Bathtub), T0167 (67” Bathtub)",
     collection: "mint",
-    category: "mint",
+    category: "tub",
     name: "Batik Bathtub",
     aliases: "batik",
     subtitle: "Elegant Simplicity, Tailored to Your Taste",

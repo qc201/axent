@@ -62,7 +62,7 @@ export default function Mint() {
         </div>
       </div>
       {/* white tub by window with green background */}
-      <div className="flex items-center justify-center p-10">
+      {/* <div className="flex items-center justify-center p-10">
         <Image
           src={"/live_img/mint-tub-white-green-background.png"}
           alt={"white tub by window with green background"}
@@ -70,7 +70,7 @@ export default function Mint() {
           height={1024}
           className="sm:w-1/2 w-4/5 object-contain"
         />
-      </div>
+      </div> */}
 
       <MaskText
         className="flex flex-col pt-10 mx-5 sm:mx-20 text-primary font-custom font-black sm:text-xl text-lg"

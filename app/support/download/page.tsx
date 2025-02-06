@@ -13,7 +13,67 @@ export default function Download() {
       />
       <div className="w-fit gap-6 mx-auto grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2">
         {data.map((d, index) => {
-          if (d.specification !== "" || d.install !== "" || d.manual !== "")
+          if ((d.specification !== "" || d.install !== "" || d.manual !== "") && d.category === 'intelligent')
+            return (
+              <DocCard
+                key={index}
+                name={d.name}
+                sku={d.sku}
+                imgUrl={d.coverSrc}
+                spec={d.specification}
+                install={d.install}
+                manual={d.manual}
+              />
+            );
+        })}
+
+        {data.map((d, index) => {
+          if ((d.specification !== "" || d.install !== "" || d.manual !== "") && d.category === 'regular')
+            return (
+              <DocCard
+                key={index}
+                name={d.name}
+                sku={d.sku}
+                imgUrl={d.coverSrc}
+                spec={d.specification}
+                install={d.install}
+                manual={d.manual}
+              />
+            );
+        })}
+
+        {data.map((d, index) => {
+          if ((d.specification !== "" || d.install !== "" || d.manual !== "") && d.category === 'tub')
+            return (
+              <DocCard
+                key={index}
+                name={d.name}
+                sku={d.sku}
+                imgUrl={d.coverSrc}
+                spec={d.specification}
+                install={d.install}
+                manual={d.manual}
+              />
+            );
+        })}
+
+        {data.map((d, index) => {
+          if ((d.specification !== "" || d.install !== "" || d.manual !== "") && d.category === 'basin')
+            return (
+              <DocCard
+                key={index}
+                name={d.name}
+                sku={d.sku}
+                imgUrl={d.coverSrc}
+                spec={d.specification}
+                install={d.install}
+                manual={d.manual}
+              />
+            );
+        })}
+
+        {data.map((d, index) => {
+          if ((d.specification !== "" || d.install !== "" || d.manual !== "") && d.category === 'parts')
             return (
               <DocCard
                 key={index}

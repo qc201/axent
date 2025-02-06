@@ -20,7 +20,7 @@ const PdfViewer: React.FC<PdfViewerProps> = ({
 
   return (
     pdfUrl !== "" && (
-      <div className="group p-1">
+      <div className="group p-1 w-full">
         <div className="flex bg-primary items-center justify-center">
           <button
             className={`relative text-white font-custom font-black py-1 px-2 transition-transform duration-1000 ${fontSize}`}

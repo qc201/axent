@@ -770,7 +770,7 @@ export const data: ProductInfo[] = [
       "/products_img/mint-one-s-3.png",
     ],
     specification: "/docs/mint-one_spec.pdf",
-    manual: "",
+    manual: "/docs/mint-one_manual.pdf",
     install: "/docs/mint-one_install.pdf",
   },
   {

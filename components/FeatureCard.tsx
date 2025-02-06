@@ -22,6 +22,7 @@ type Props = {
   manual: string;
   install: string;
   unavailable?: boolean;
+  capacity?: string;
 };
 
 export default function FeatureCard({
@@ -43,21 +44,26 @@ export default function FeatureCard({
   manual,
   install,
   unavailable,
+  capacity,
 }: Props) {
   return (
     <div className="flex flex-col pt-10 md:flex-row md:items-start md:px-5 md:pt-20">
       <div className="w-[100vw] md:w-[50vw] flex items-center justify-center">
         <div className="relative">
-          {unavailable && <span className="bg-alarm z-20 text-white px-2 py-1 absolute top-0 right-0 text-xs  md:tex t-sm rounded-bl-md font-custom">coming soon</span>
-          }
-        <Image
-          src={productImgUrl}
-          alt={productImgAlt}
-          width={productImgWidth}
-          height={productImgHeight}
-          className="object-contain"
-        />
-        </div></div>
+          {unavailable && (
+            <span className="bg-alarm z-20 text-white px-2 py-1 absolute top-0 right-0 text-xs  md:tex t-sm rounded-bl-md font-custom">
+              coming soon
+            </span>
+          )}
+          <Image
+            src={productImgUrl}
+            alt={productImgAlt}
+            width={productImgWidth}
+            height={productImgHeight}
+            className="object-contain"
+          />
+        </div>
+      </div>
 
       <div className="text-lg text-primary font-thin  md:text-xl md:w-1/2 md:ml-20">
         <div className="flex flex-col justify-between pb-10">
@@ -69,7 +75,8 @@ export default function FeatureCard({
           <li className="">SKU: {sku}</li>
           <li className="">Dimensions: {dimensions}</li>
 
-          {weight !== "?" && <li className="">Weight: {weight}</li>}
+          {weight !== "" && <li className="">Weight: {weight}</li>}
+          {capacity !== undefined && <li className="">Capacity: {capacity}</li>}
           {overFlow !== undefined && (
             <li className="">Overflow Hole: {overFlow}</li>
           )}

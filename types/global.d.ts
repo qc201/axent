@@ -10,6 +10,7 @@ export type ProductInfo = {
   features: {
     dimensions?: string;
     weight?: string;
+    capacity?: string;
     material: string;
     color: string;
     water?: string | null;

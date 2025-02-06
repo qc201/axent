@@ -53,6 +53,11 @@ export default function Batik() {
             ? ""
             : batikData.features.weight
         }
+        capacity={
+          batikData.features.capacity === undefined
+            ? ""
+            : batikData.features.capacity
+        }
         finish={batikData.features.material}
         color={batikData.features.color}
         consumption={

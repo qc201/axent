@@ -54,42 +54,66 @@ export default function Primus() {
       {/* live image and video */}
       <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm sm:text-2xl">
         <div className="flex sm:flex-row flex-col items-center justify-center">
-          <Image
-            className="w-full"
-            src={"/products_img/primus-color-strip-black.png"}
-            alt={primusData.name}
-            width={200}
-            height={200}
-          />
-          <Image
-            className="w-full"
-            src={"/products_img/primus-color-strip-gold.png"}
-            alt={primusData.name}
-            width={200}
-            height={200}
-          />
-          <Image
-            className="w-full"
-            src={"/products_img/primus-color-strip-silver.png"}
-            alt={primusData.name}
-            width={220}
-            height={200}
-          />
-          <Image
-            className="w-full"
-            src={"/products_img/primus-color-strip-gray.png"}
-            alt={primusData.name}
-            width={220}
-            height={200}
-          />
-
-          <Image
-            className="w-full"
-            src={"/products_img/primus-color-strip-rose.png"}
-            alt={primusData.name}
-            width={220}
-            height={200}
-          />
+          <div className="flex flex-col justify-center items-center">
+            <Image
+              className="w-full"
+              src={"/products_img/primus-color-strip-black.png"}
+              alt={primusData.name}
+              width={200}
+              height={200}
+            />
+            <div className="text-xs font-custom font-thin text-primary">
+              W330-D005(Mate Black)
+            </div>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <Image
+              className="w-full"
+              src={"/products_img/primus-color-strip-gold.png"}
+              alt={primusData.name}
+              width={200}
+              height={200}
+            />
+            <div className="text-xs font-custom font-thin text-primary">
+              W330-D002(Champagne Gold)
+            </div>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <Image
+              className="w-full"
+              src={"/products_img/primus-color-strip-silver.png"}
+              alt={primusData.name}
+              width={220}
+              height={200}
+            />
+            <div className="text-xs font-custom font-thin text-primary">
+              W330-D004(White)
+            </div>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <Image
+              className="w-full"
+              src={"/products_img/primus-color-strip-gray.png"}
+              alt={primusData.name}
+              width={220}
+              height={200}
+            />
+            <div className="text-xs font-custom font-thin text-primary">
+              W330-D001(Space Silver)
+            </div>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <Image
+              className="w-full"
+              src={"/products_img/primus-color-strip-rose.png"}
+              alt={primusData.name}
+              width={220}
+              height={200}
+            />
+            <div className="text-xs font-custom font-thin text-primary">
+              W330-D003(Rose Gold)
+            </div>
+          </div>
         </div>
         <div className="pt-10 flex flex-col sm:flex-row-reverse  w-full justify-between sm:items-start">
           <div className="basis-2/3">

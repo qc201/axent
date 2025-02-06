@@ -62,7 +62,7 @@ export default function Stella() {
             className="basis-2/3 my-5 "
             phrases={[
               "Kirin Pressure-assisted Flush System",
-              "Stella One-piece Toilet ensures precise and powerful flushes regardless of water pressure while effectively conserving water resources.",
+              "REGATTA One-piece Toilet ensures precise and powerful flushes regardless of water pressure while effectively conserving water resources.",
             ]}
           />
         </div>

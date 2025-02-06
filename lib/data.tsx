@@ -206,7 +206,7 @@ export const data: ProductInfo[] = [
     sku: "coming soon",
     collection: "axent.one",
     category: "intelligent",
-    name: "INFINITY",
+    name: "AXENT.INFINITY Intelligent Toilet",
     aliases: "infinity",
     subtitle: "Kirin Flush: Ultimate Assurance in All-round Performance",
     details:
@@ -337,7 +337,7 @@ export const data: ProductInfo[] = [
     sku: "W532-2020",
     collection: null,
     category: "regular",
-    name: "PENINSULA",
+    name: "PENINSULA Two Piece Toilet",
     aliases: "peninsula",
     subtitle: "Two-Piece Toilet",
     details:
@@ -382,7 +382,7 @@ export const data: ProductInfo[] = [
     sku: "W375-2020",
     collection: null,
     category: "regular",
-    name: "ALTON",
+    name: "ALTON One Piece Toilet",
     aliases: "alton",
     subtitle: "ONE-PIECE TOILET",
     details:
@@ -424,7 +424,7 @@ export const data: ProductInfo[] = [
     sku: "W320-1131-U1",
     collection: null,
     category: "regular",
-    name: "REGATTA One-piece Toilet",
+    name: "REGATTA One Piece Skirted Toilet",
     aliases: "stella",
     subtitle: "Elegantly Practical, Seamlessly Perfect",
     details:
@@ -648,9 +648,9 @@ export const data: ProductInfo[] = [
     sku: "W390-2025",
     collection: null,
     category: "regular",
-    name: "STUDIO",
+    name: "STUDIO One Piece Skirted Toilet",
     aliases: "reuss",
-    subtitle: "ONE-PIECE SKIRTED TOILET",
+    subtitle: "ONE PIECE SKIRTED TOILET",
     details:
       "Rich with soft angles and full curves, the Studio Toilet epitomizes a balanced union between modern and classic design. The Studio One-Piece Skirted Toilet includes a rimless flush design, a bottom inlet with a vertical outlet, a 1.28 GPF (4.8L) flush, 12” rough-in and is protected with an Easy Clean glaze for easy lifetime maintenance.",
     features: {

@@ -26,7 +26,6 @@ export const refData: RefInfo[] = [
       "/reference_img/hotel-aka-nomad_1.png",
       "/reference_img/hotel-aka-nomad_2.png",
       "/reference_img/hotel-aka-nomad_3.png",
-      "/reference_img/hotel-aka-nomad_4.png",
     ],
     title: "Hotel AKA NoMad",
     location: "New York, United States",

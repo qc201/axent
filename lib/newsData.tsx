@@ -40,7 +40,7 @@ export const newsData: BlogInfo[] = [
     imgsrc: "/blog_img/kbis2024.png",
     releaseDate: "Feb 27, 2024",
     title:
-      "AXENT Switzerland to Unveil Cutting-Edge Bathroom Innovations at KBIS 2025 in Las Vegas",
+      "AXENT Switzerland to Unveil Cutting-Edge Bathroom Innovations at KBIS 2024 in Las Vegas",
     location: "LAS VEGAS",
     content: [
       "The Kitchen & Bath Industry Show (KBIS) 2024, held in Las Vegas, Nevada, marked a significant milestone as the largest annual kitchen and bath event to date. The show featured a record-breaking number of exhibitors and attendees, highlighting the industry's latest innovations and trends. ",
@@ -68,13 +68,15 @@ export const newsData: BlogInfo[] = [
         trends.
       </div>
 
-      <div className=""aspect-w-16 aspect-h-9 sm:w-[80vw] w-screen"">
+      
           <iframe
             src="https://player.vimeo.com/video/1054334050?h=775685778c"
             frameBorder="0"
             allow="fullscreen"
+            width="800" 
+            height="500"
           ></iframe>
-      </div>
+     
       <div className="news-content pt-10 font-thin text-lg">
         Building on the enthusiasm from previous years, AXENT returns to KBIS
         with a range of innovative products designed to enhance modern living.

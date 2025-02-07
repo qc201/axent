@@ -5,7 +5,7 @@ export default function NewsPreview() {
   const title = slugify(
     "AXENT Switzerland Showcases Innovative Bathroom Solutions at ICFF 2022 in New York"
   );
-  console.log(title);
+  // console.log(title);
   return (
     <div className="news-container sm:px-60 px-5 sm:pt-16 pt-20 font-custom text-primary flex flex-col justify-center items-center">
       <div className="title pt-20 font-extrabold text-3xl ">

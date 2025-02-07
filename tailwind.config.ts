@@ -2,9 +2,9 @@ import type { Config } from "tailwindcss";
 const withMT = require("@material-tailwind/react/utils/withMT");
 const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx,html}",
+    "./components/*.{js,ts,jsx,tsx,mdx,html}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx,html}",
     "./node_modules/tw-elements-react/dist/js/**/*.js",
   ],
   theme: {

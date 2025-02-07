@@ -1,7 +1,8 @@
-"use client";
+
 
 import parse from "html-react-parser";
 import getNews from "@/lib/getNews";
+import Image from "next/image";
 
 type Params = {
   params: {

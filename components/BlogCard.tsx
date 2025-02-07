@@ -1,6 +1,5 @@
 import React from "react";
-import Link from "next/link";
-import slugify from "@/lib/slugify";
+
 
 type Props = {
   imgsrc: string;

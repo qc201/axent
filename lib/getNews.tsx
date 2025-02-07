@@ -1,6 +1,6 @@
 import React from "react";
-import { blogData } from "./blogData";
+import { newsData } from "./newsData";
 
 export default function getNews(newsId: string) {
-  return blogData.find((d) => d.pagelink === newsId);
+  return newsData.find((d) => d.pagelink === newsId);
 }

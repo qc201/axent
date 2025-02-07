@@ -3,19 +3,6 @@ import { BlogInfo } from "@/types/global";
 export const blogData: BlogInfo[] = [
   {
     imgsrc: "",
-    releaseDate: "Feb 5, 2025",
-    title:
-      "AXENT Switzerland to Showcase Innovative Bathroom Solutions at KBIS 2025 in Las Vegas",
-    location: "LAS VEGAS",
-    content: [
-      "AXENT Switzerland is excited to announce its participation in the upcoming Kitchen & Bath Industry Show (KBIS) 2025, scheduled from February 25 to 27 at the Las Vegas Convention Center. Attendees are invited to visit AXENT at Booth N2271 to explore the latest advancements in intelligent bathroom technology.",
-    ],
-    pagelink:
-      "axent-switzerland-to-showcase-innovative-bathroom-solutions-at-kbis-2025-in-las-vegas",
-    newsPage: ``,
-  },
-  {
-    imgsrc: "",
     releaseDate: "May 28, 2019",
     title:
       "American Society of Interior Designers Honor AXENT.ONE C Plus With 2019 Design Impact Award",

@@ -11,13 +11,15 @@ export default function PageVideo({ videoUrl }: Prop) {
           allow="autoplay"
         ></iframe>
       </div>
-      {/* <video
+    </div>
+  );
+}
+
+
+    {/* <video
         className=" w-full h-full object-contain"
         autoPlay
         loop
         muted
         src={videoUrl}
       /> */}
-    </div>
-  );
-}

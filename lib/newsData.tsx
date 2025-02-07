@@ -52,14 +52,13 @@ export const newsData: BlogInfo[] = [
         AXENT Switzerland to Unveil Cutting-Edge Bathroom Innovations at KBIS
         2024 in Las Vegas
       </div>
-      <div className="cover-img pt-10 sm:w-full w-screen flex flex-col items-center ">
-        <img
-          src="/blog_img/kbis2024.png"
-          alt="cover image"
-          className="w-full h-full object-contain"
-        />
-      </div>
-
+<iframe
+            src="https://player.vimeo.com/video/1054334050?h=775685778c"
+            frameBorder="0"
+            allow="fullscreen"
+            width="800" 
+            height="500"
+          ></iframe>
       <div className="news-content pt-10 font-thin text-lg">
         The Kitchen & Bath Industry Show (KBIS) 2024, held in Las Vegas, Nevada,
         marked a significant milestone as the largest annual kitchen and bath
@@ -69,13 +68,7 @@ export const newsData: BlogInfo[] = [
       </div>
 
       
-          <iframe
-            src="https://player.vimeo.com/video/1054334050?h=775685778c"
-            frameBorder="0"
-            allow="fullscreen"
-            width="800" 
-            height="500"
-          ></iframe>
+          
      
       <div className="news-content pt-10 font-thin text-lg">
         Building on the enthusiasm from previous years, AXENT returns to KBIS
@@ -108,15 +101,17 @@ export const newsData: BlogInfo[] = [
       <div className="title pt-20 font-extrabold text-3xl ">
         AXENT Switzerland Debuts at 2023 Palm Springs Modernism Show
       </div>
-      <div className="pt-10 flex justify-center font-custom text-primary">
-        <div className="aspect-w-16 aspect-h-9 sm:w-[80vw] w-screen">
+  
+   
           <iframe
             src="https://player.vimeo.com/video/1054352184"
             frameBorder="0"
             allow="fullscreen"
+            width="800" 
+            height="500"
           ></iframe>
-        </div>
-      </div>
+   
+
 
       <div className="news-content pt-10 font-thin text-lg">
         AXENT Switzerland made its inaugural appearance at the Palm Springs
@@ -150,15 +145,17 @@ export const newsData: BlogInfo[] = [
       <div className="title pt-20 font-extrabold text-3xl ">
         AXENT Switzerland Showcases Innovative Bathroom Solutions at KBIS 2023
       </div>
-      <div className="pt-10 flex justify-center font-custom text-primary">
-        <div className="aspect-w-16 aspect-h-9 sm:w-[80vw] w-screen">
+
+       
           <iframe
             src="https://player.vimeo.com/video/1054353382"
             frameBorder="0"
             allow="fullscreen"
+            width="800" 
+            height="500"
           ></iframe>
-        </div>
-      </div>
+      
+
       <div className="news-content pt-10 font-thin text-lg">
         AXENT Switzerland made a notable appearance at the Kitchen & Bath
         Industry Show (KBIS) 2023, held in Las Vegas, Nevada. The company
@@ -189,15 +186,16 @@ export const newsData: BlogInfo[] = [
         AXENT Switzerland Showcases Innovative Bathroom Solutions at ICFF 2022
         in New York
       </div>
-      <div className="pt-10 flex justify-center font-custom text-primary">
-        <div className="aspect-w-9 aspect-h-16 sm:w-[30vw] w-screen">
+   
           <iframe
             src="https://player.vimeo.com/video/1054354106"
             frameBorder="0"
             allow="fullscreen"
+            width="800" 
+            height="500"
           ></iframe>
-        </div>
-      </div>
+       
+      
 
       <div className="news-content pt-10 font-thin text-lg">
         AXENT Switzerland participated in the International Contemporary

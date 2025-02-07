@@ -2,6 +2,7 @@
 import ProductSketch from "@/components/ProductSketch";
 import FeatureCard from "@/components/FeatureCard";
 import { data } from "../../../../lib/data"; //all product data in lib
+import Image from "next/image";
 
 export default function BidetSeat() {
   const bidentSeatData = data[14];
@@ -50,6 +51,26 @@ export default function BidetSeat() {
         }
         configurations={combinedValues}
       />
+      <div className="flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end">
+        <Image
+          className="w-1/2 h-full object-cover"
+          src={"/products_img/bidet-seat-fb106-3.png"}
+          alt={bidentSeatData.name}
+          width={1080}
+          height={1080}
+        />
+
+      </div>
+      <div className="flex flex-col sm:flex-row w-full justify-between sm:items-start">
+        <Image
+          className="w-1/2 h-full object-contain"
+          src={"/products_img/bidet-seat-fb106-1.png"}
+          alt={bidentSeatData.name}
+          width={1080}
+          height={1920}
+        />
+      </div>
+
     </div>
   );
 }

@@ -2,7 +2,7 @@
 import ProductSketch from "@/components/ProductSketch";
 import FeatureCard from "@/components/FeatureCard";
 import { data } from "../../../../lib/data"; //all product data in lib
-
+import Image from "next/image";
 import MaskText from "@/components/MaskText";
 
 export default function ElectricSeat() {
@@ -57,13 +57,20 @@ export default function ElectricSeat() {
 
       {/* live image and video */}
       <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm sm:text-2xl">
-        <div className="pt-10 flex flex-col sm:flex-row-reverse  w-full justify-between sm:items-end">
+        <div className="pt-10 flex flex-col sm:flex-row  w-full justify-between sm:items-end">
           <MaskText
             className="my-5  sm:my-10"
             phrases={[
               "Intelligent Technology for 180° Degrees of Clean",
               "The Milton intelligent bidet seat offers fully customizable rear and front cleansing options. Additional oscillating, pulsating massage and aerated bubbly water infusion technology are just a few of the customizable features you can personalize and program into your Milton intelligent bidet.",
             ]}
+          />
+          <Image
+            className="w-1/2 h-full object-cover"
+            src={"/products_img/electric-seat-1.png"}
+            alt={electricSeatData.name}
+            width={1080}
+            height={1080}
           />
         </div>
 

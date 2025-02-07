@@ -54,6 +54,26 @@ export default function OneSquare() {
         }
         configurations={combinedValues}
       />
+      <div className="flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end">
+        <Image
+          className="w-full h-full object-contain"
+          src={"/products_img/one-square-2.png"}
+          alt={oneSquareData.name}
+          width={1080}
+          height={1920}
+        />
+
+      </div>
+      <div className="pt-10 flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end">
+        <Image
+          className="w-1/2 h-full object-contain"
+          src={"/products_img/one-square-1.png"}
+          alt={oneSquareData.name}
+          width={1080}
+          height={1920}
+        />
+      </div>
+
     </div>
   );
 }

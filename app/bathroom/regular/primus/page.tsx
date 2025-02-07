@@ -161,6 +161,16 @@ export default function Primus() {
             ]}
           />
         </div>
+
+        <div className="flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
+          <Image
+            className="w-full"
+            src={"/products_img/primus-3.png"}
+            alt={primusData.name}
+            width={400}
+            height={500}
+          />
+        </div>
       </div>
     </div>
   );

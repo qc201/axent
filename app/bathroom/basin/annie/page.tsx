@@ -2,6 +2,7 @@
 import ProductSketch from "@/components/ProductSketch";
 import FeatureCard from "@/components/FeatureCard";
 import { data } from "../../../../lib/data"; //all product data in lib
+import Image from "next/image";
 
 export default function Annie() {
   const annieData = data[13];
@@ -48,6 +49,26 @@ export default function Annie() {
         }
         configurations={combinedValues}
       />
+
+      <div className="flex flex-col sm:flex-row w-full justify-between sm:items-start">
+        <Image
+          className="w-1/2 h-full object-contain"
+          src={"/products_img/annie-2.png"}
+          alt={annieData.name}
+          width={1080}
+          height={1920}
+        />
+      </div>
+      <div className="flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end">
+        <Image
+          className="w-1/2 h-full object-contain"
+          src={"/products_img/annie-1.png"}
+          alt={annieData.name}
+          width={1080}
+          height={1920}
+        />
+
+      </div>
     </div>
   );
 }

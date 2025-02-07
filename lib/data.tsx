@@ -169,7 +169,7 @@ export const data: ProductInfo[] = [
   },
   {
     unavailable: false,
-    linkTo: "/bathroom/intelligent/electric-seat",
+    linkTo: "/bathroom/parts/electric-seat",
     id: 4,
     sku: "FE105 (U-Shaped)",
     collection: null,

@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Contact() {
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="flex  flex-grow items-center justify-center font-custom bg-contactHeader w-screen bg-cover bg-center bg-no-repeat sm:min-h-[300px] min-h-[50vh] sm:bg-fixed">
+      <div className="flex  flex-grow items-center justify-center font-custom bg-contactHeader w-screen bg-cover sm:bg-center bg-top bg-no-repeat sm:min-h-[300px] min-h-[20vh] sm:bg-fixed">
         <div className=" flex items-center justify-center">
           <MaskText
             phrases={["Contact us"]}

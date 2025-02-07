@@ -10,6 +10,10 @@ export default function Loading() {
         visible: {
             opacity: 1,
             transition: { duration: 2 }
+        },
+        exit: {
+            opacity: 0,
+            transition: { duration: 2 }
         }
     }
     return (

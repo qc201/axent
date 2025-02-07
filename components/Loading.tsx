@@ -15,7 +15,11 @@ export default function Loading() {
                 ease: "easeInOut",
                 repeat: Infinity,
                 repeatType: "reverse",
-            }
+            },
+        },
+        exit: {
+            opacity: 0,
+            transition: { duration: 2 }
         }
     }
 

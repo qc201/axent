@@ -52,7 +52,6 @@ export const newsData: BlogInfo[] = [
         AXENT Switzerland to Unveil Cutting-Edge Bathroom Innovations at KBIS
         2024 in Las Vegas
       </div>
-
       <div className="cover-img pt-10 sm:w-full w-screen flex flex-col items-center ">
         <img
           src="/blog_img/kbis2024.png"
@@ -69,7 +68,7 @@ export const newsData: BlogInfo[] = [
         trends.
       </div>
 
-      <div className="videoWrapper">
+      <div className=""aspect-w-16 aspect-h-9 sm:w-[80vw] w-screen"">
           <iframe
             src="https://player.vimeo.com/video/1054334050?h=775685778c"
             frameBorder="0"

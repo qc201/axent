@@ -103,7 +103,8 @@ export const newsData: BlogInfo[] = [
         AXENT Switzerland Debuts at 2023 Palm Springs Modernism Show
       </div>
   
-   
+   <div className="pt-10 relative w-full h-full overflow-hidden">
+        <div className="aspect-w-16 aspect-h-9">
           <iframe
             src="https://player.vimeo.com/video/1054352184"
             frameBorder="0"
@@ -111,7 +112,8 @@ export const newsData: BlogInfo[] = [
             width="800" 
             height="500"
           ></iframe>
-   
+   </div>
+      </div>
 
 
       <div className="news-content pt-10 font-thin text-lg">
@@ -146,7 +148,8 @@ export const newsData: BlogInfo[] = [
       <div className="title pt-20 font-extrabold text-3xl ">
         AXENT Switzerland Showcases Innovative Bathroom Solutions at KBIS 2023
       </div>
-
+<div className="pt-10 relative w-full h-full overflow-hidden">
+        <div className="aspect-w-16 aspect-h-9">
        
           <iframe
             src="https://player.vimeo.com/video/1054353382"
@@ -156,7 +159,8 @@ export const newsData: BlogInfo[] = [
             height="500"
           ></iframe>
       
-
+  </div>
+      </div>
       <div className="news-content pt-10 font-thin text-lg">
         AXENT Switzerland made a notable appearance at the Kitchen & Bath
         Industry Show (KBIS) 2023, held in Las Vegas, Nevada. The company
@@ -187,7 +191,8 @@ export const newsData: BlogInfo[] = [
         AXENT Switzerland Showcases Innovative Bathroom Solutions at ICFF 2022
         in New York
       </div>
-   
+   <div className="pt-10 relative w-full h-full overflow-hidden">
+        <div className="aspect-w-16 aspect-h-9">
           <iframe
             src="https://player.vimeo.com/video/1054354106"
             frameBorder="0"
@@ -196,7 +201,8 @@ export const newsData: BlogInfo[] = [
             height="500"
           ></iframe>
        
-      
+       </div>
+      </div>
 
       <div className="news-content pt-10 font-thin text-lg">
         AXENT Switzerland participated in the International Contemporary

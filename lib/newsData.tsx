@@ -52,14 +52,17 @@ export const newsData: BlogInfo[] = [
         AXENT Switzerland to Unveil Cutting-Edge Bathroom Innovations at KBIS
         2024 in Las Vegas
       </div>
-      <div className="videoWrapper">
-<iframe
+      <div className="pt-10 relative w-full h-full overflow-hidden">
+        <div className="aspect-w-16 aspect-h-9">
+          <iframe
             src="https://player.vimeo.com/video/1054334050?h=775685778c"
             frameBorder="0"
             allow="fullscreen"
-            width="800" 
+            width="800"
             height="500"
-          ></iframe></div>
+          ></iframe>
+        </div>
+      </div>
       <div className="news-content pt-10 font-thin text-lg">
         The Kitchen & Bath Industry Show (KBIS) 2024, held in Las Vegas, Nevada,
         marked a significant milestone as the largest annual kitchen and bath
@@ -68,9 +71,6 @@ export const newsData: BlogInfo[] = [
         trends.
       </div>
 
-      
-          
-     
       <div className="news-content pt-10 font-thin text-lg">
         Building on the enthusiasm from previous years, AXENT returns to KBIS
         with a range of innovative products designed to enhance modern living.

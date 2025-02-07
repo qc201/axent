@@ -69,14 +69,12 @@ export const newsData: BlogInfo[] = [
         trends.
       </div>
 
-      <div className="pt-10 flex justify-center font-custom text-primary">
-        <div className="aspect-w-16 aspect-h-9 sm:w-[60vw] w-screen">
+      <div className="videoWrapper">
           <iframe
             src="https://player.vimeo.com/video/1054334050?h=775685778c"
             frameBorder="0"
             allow="fullscreen"
           ></iframe>
-        </div>
       </div>
       <div className="news-content pt-10 font-thin text-lg">
         Building on the enthusiasm from previous years, AXENT returns to KBIS

@@ -11,7 +11,7 @@ const productLinks = [
   {
     href: "/bathroom/intelligent",
     label: "intelligent toilet",
-    imgsrc: "/nav_img/intelligent_infinity.png",
+    imgsrc: "/nav_img/intelligent_infinity-200_100.png",
     imgalt: "intelligent",
     title: "Intelligent Toilets",
     pagelink: "/bathroom/intelligent",
@@ -19,7 +19,7 @@ const productLinks = [
   {
     href: "/bathroom/regular",
     label: "regular toilet",
-    imgsrc: "/nav_img/regular.jpg",
+    imgsrc: "/nav_img/regular-200_100.png",
     imgalt: "regular toilet",
     title: "Toilets",
     pagelink: "/bathroom/regular",
@@ -27,7 +27,7 @@ const productLinks = [
   {
     href: "/bathroom/mint",
     label: "mint line",
-    imgsrc: "/nav_img/bathtub.png",
+    imgsrc: "/nav_img/bathtub-200_100.png",
     imgalt: "mint line",
     title: "Bathtub",
     pagelink: "/bathroom/mint",
@@ -35,7 +35,7 @@ const productLinks = [
   {
     href: "/bathroom/basin",
     label: "basins",
-    imgsrc: "/nav_img/basins.jpg",
+    imgsrc: "/nav_img/basins-200_100.png",
     imgalt: "basins",
     title: "Washbasins & Vanities",
     pagelink: "/bathroom/basin",
@@ -43,7 +43,7 @@ const productLinks = [
   {
     href: "/bathroom/parts",
     label: "parts",
-    imgsrc: "/nav_img/seats.png",
+    imgsrc: "/nav_img/seats-200_100.png",
     imgalt: "parts",
     title: "Toilet Seats",
     pagelink: "/bathroom/parts",
@@ -188,12 +188,13 @@ export default function Navbar() {
                     {open && (
                       <Menu.Items
                         anchor="bottom"
-                        className="pt-5 w-screen bg-white bg-opacity-70 flex flex-wrap justify-around"
+                        className="pt-5 px-[10vw] w-screen bg-white bg-opacity-70 flex flex-wrap justify-around"
                         static
                         as={motion.div}
                         initial={{ opacity: 0, y: -50 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        animate={{ opacity: 1, y: 0, transition: { type: "tween", duration: 0.5, ease: "easeOut" } }}
                         exit={{ opacity: 0, y: -50 }}
+
                       >
                         {productLinks.map((link) => (
                           <Menu.Item key={link.href}>
@@ -238,7 +239,7 @@ export default function Navbar() {
                         static
                         as={motion.div}
                         initial={{ opacity: 0, y: -50 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        animate={{ opacity: 1, y: 0, transition: { type: "tween", duration: 0.5, ease: "easeOut" } }}
                         exit={{ opacity: 0, y: -50 }}
                       >
                         {supportLinks.map((link) => (
@@ -281,7 +282,7 @@ export default function Navbar() {
                         static
                         as={motion.div}
                         initial={{ opacity: 0, y: -50 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        animate={{ opacity: 1, y: 0, transition: { type: "tween", duration: 0.5, ease: "easeOut" } }}
                         exit={{ opacity: 0, y: -50 }}
                       >
                         {companyLinks.map((link) => (

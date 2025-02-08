@@ -14,7 +14,7 @@ export default function Basin() {
 
   return (
     <div>
-      <div className="flex items-center justify-center font-custom sm:bg-fixed bg-basinHeader w-screen bg-cover bg-left sm:bg-center  bg-no-repeat sm:min-h-[1000px] min-h-[600px]">
+      <div className="flex items-center justify-center font-custom sm:bg-fixed bg-basinHeader w-screen bg-cover bg-right sm:bg-center  bg-no-repeat sm:min-h-[1000px] min-h-[600px]">
         <MaskText
           phrases={["Washbasins & Vanities"]}
           className="text-6xl text-white font-extrabold"

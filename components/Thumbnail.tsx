@@ -16,8 +16,7 @@ export default function Thumbnail({ imgsrc, title, imgalt, pagelink }: Props) {
           src={imgsrc}
           alt={imgalt}
           width="200"
-          height="200"
-          sizes="(max-width: 640px) 150px, (max-width: 1024px) 300px, 600px"
+          height="100"
           className="object-cover group-hover:scale-110 transition-all duration-1000 cursor-pointer"
         />
       </div>

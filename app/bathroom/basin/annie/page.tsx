@@ -52,7 +52,7 @@ export default function Annie() {
 
       <div className="flex flex-col sm:flex-row w-full justify-between sm:items-start">
         <Image
-          className="w-1/2 h-full object-contain"
+          className="sm:w-1/2 w-screen h-full object-contain"
           src={"/products_img/annie-2.png"}
           alt={annieData.name}
           width={1080}
@@ -61,7 +61,7 @@ export default function Annie() {
       </div>
       <div className="flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end">
         <Image
-          className="w-1/2 h-full object-contain"
+          className="sm:w-1/2 w-screen h-full object-contain"
           src={"/products_img/annie-1.png"}
           alt={annieData.name}
           width={1080}

@@ -8,13 +8,13 @@ import RevealCard from "@/components/RevealCard";
 const regularData = data.filter((d: ProductInfo) => d.category === "regular");
 export default function Home() {
   const video1src =
-    "https://player.vimeo.com/video/1052444481?h=106f7e854f;badge=0&amp;player_id=1&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1&autopause=0";
+    "https://player.vimeo.com/video/1052444481?h=106f7e854f;badge=0&amp;player_id=1&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1&autopause=0&dnt=1";
   const video2src =
-    "https://player.vimeo.com/video/1052444467?h=ab2b0d295e;badge=0&amp;player_id=2&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1&autopause=0";
+    "https://player.vimeo.com/video/1052444467?h=ab2b0d295e;badge=0&amp;player_id=2&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1&autopause=0&dnt=1";
   const video3src =
-    "https://player.vimeo.com/video/1052444501?h=f50df54449;badge=0&amp;player_id=3&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1&autopause=0";
+    "https://player.vimeo.com/video/1052444501?h=f50df54449;badge=0&amp;player_id=3&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1&autopause=0&dnt=1";
   const video4src =
-    "https://player.vimeo.com/video/1053612766?h=0e8ac63f83;badge=0&amp;player_id=4&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1&autopause=0";
+    "https://player.vimeo.com/video/1053612766?h=0e8ac63f83;badge=0&amp;player_id=4&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1&autopause=0&dnt=1";
 
   return (
     <main>

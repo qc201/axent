@@ -4,7 +4,7 @@ import Loading from './Loading';
 
 export default function HeaderVideo() {
   const videoUrl =
-    "https://player.vimeo.com/video/1052447153?h=a7582bca68&amp;badge=0&amp;player_id=0&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1&autopause=0";
+    "https://player.vimeo.com/video/1052447153?h=a7582bca68&amp;badge=0&amp;player_id=0&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1&autopause=0&dnt=1";
 
   const [isLoading, setIsLoading] = useState(true);
 

@@ -984,7 +984,7 @@ export const data: ProductInfo[] = [
     sku: "FE106 (V-Shaped)",
     collection: null,
     category: "parts",
-    name: "LITE V-Shape Electric Bidet Seat",
+    name: "LITE V Shaped Electric Bidet Seat",
     aliases: "electric-seat-fe106",
     subtitle: "INTELLIGENT E-BIDET SEAT",
     details:

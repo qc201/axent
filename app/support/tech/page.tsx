@@ -28,7 +28,7 @@ export default function TechSupport() {
       Message: ${message}
     `;
 
-    const mailtoLink = `mailto:your-email@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:support@axentproducts.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     window.open(mailtoLink, "_blank");
   };

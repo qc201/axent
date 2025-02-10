@@ -65,7 +65,7 @@ export default function MintTwo() {
           <MaskText
             className=" my-5  sm:my-10"
             phrases={[
-              "Upgrade of Foam Guard Black Technology",
+              "Foam Guard Technology",
               "More Than Just an Odor, Splash, and Residue Barrier",
             ]}
           />

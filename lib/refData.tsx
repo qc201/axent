@@ -30,8 +30,7 @@ export const refData: RefInfo[] = [
     title: "Hotel AKA NoMad",
     location: "New York, United States",
     description: [
-      "The Madrona is one of those rare places that invites in the extraordinary each day. It’s unique history, natural beauty and seclusion will beckon to discerning seekers far and wide.",
-      "Madrona guests get lost in the magic of their surroundings.  Whether waking up to misty mornings, aimlessly wandering the leafy pathways and storied hallways, reveling in a convivial feast with kindred spirits, or quietly sipping cocktails on the porch to a tangerine-hued sunsets, the stately manor welcomes curious travelers from all over for an experience filled with beauty, style and delight.  With a collection of classic hotel rooms and private bungalows the Madrona offers a uncommon hospitality experience.",
+      "Hotel AKA NoMad offers luxury accommodations in the heart of Manhattan that combines sophisticated style, thoughtful design and high-end finishes.  Envisioned by renowned architect and designer Pierro Lissoni, the spaces range from comfortable guest rooms to expansive suites, each exuding a serene, residential ambience.  The NoMad allows you to enjoy an unparalleled New York City experience.  The décor is full of exquisite touches, such as furnishings by Divani and Porro, Shin beds with custom padded headboards.  The bathrooms are both striking and serene, featuring gorgeous ceramic tiles and limestone surfaces paired with fantini Fixtures, wood and door detail by Lualdi and last but certainly not least sleek tankless toilet design with the AXENT Primus.  Whether you’re gazing across the New York skyline sipping a morning expresso or streaming your favorite entertainment in the evening, this designer retreat will leave you feeling enriched and inspired.",
     ],
     pagelink: "/company/reference/hotel-aka-nomad",
     category: "HOSITALITY",
@@ -43,7 +42,8 @@ export const refData: RefInfo[] = [
     title: "The Madrona Hotel",
     location: "California, United States",
     description: [
-      "Hotel AKA NoMad offers luxury accommodations in the heart of Manhattan that combines sophisticated style, thoughtful design and high-end finishes.  Envisioned by renowned architect and designer Pierro Lissoni, the spaces range from comfortable guest rooms to expansive suites, each exuding a serene, residential ambience.  The NoMad allows you to enjoy an unparalleled New York City experience.  The décor is full of exquisite touches, such as furnishings by Divani and Porro, Shin beds with custom padded headboards.  The bathrooms are both striking and serene, featuring gorgeous ceramic tiles and limestone surfaces paired with fantini Fixtures, wood and door detail by Lualdi and last but certainly not least sleek tankless toilet design with the AXENT Primus.  Whether you’re gazing across the New York skyline sipping a morning expresso or streaming your favorite entertainment in the evening, this designer retreat will leave you feeling enriched and inspired.",
+      "The Madrona is one of those rare places that invites in the extraordinary each day. It’s unique history, natural beauty and seclusion will beckon to discerning seekers far and wide.",
+      "Madrona guests get lost in the magic of their surroundings.  Whether waking up to misty mornings, aimlessly wandering the leafy pathways and storied hallways, reveling in a convivial feast with kindred spirits, or quietly sipping cocktails on the porch to a tangerine-hued sunsets, the stately manor welcomes curious travelers from all over for an experience filled with beauty, style and delight.  With a collection of classic hotel rooms and private bungalows the Madrona offers a uncommon hospitality experience."
     ],
     pagelink: "/company/reference/the-madrona-hotel",
     category: "HOSITALITY",

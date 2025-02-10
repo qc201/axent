@@ -178,7 +178,7 @@ export const data: ProductInfo[] = [
     aliases: "electric-seat",
     subtitle: "INTELLIGENT E-BIDET SEAT",
     details:
-      "All of the cleansing benefits of an intelligent toilet in a convenient and compact intelligent bidet seat design. The U/V-Shape intelligent bidet seat offers instant seat and water warming, a luxurious and adjustable cleansing shower spray, and a soft-closing seat all in a low-profile and minimalistic style. The gentle showering function can be customized with the turn of a conveniently located dial.",
+      "All of the cleansing benefits of an intelligent toilet in a convenient and compact intelligent bidet seat design. The SLIMS intelligent bidet seat offers instant seat and water warming, a luxurious and adjustable cleansing shower spray, and a soft-closing seat all in a low-profile and minimalistic style. The SLIMS’ gentle showering function can be customized with the turn of a conveniently located dial.",
     features: {
       dimensions: "L 20-1/5” x W 14-4/5” x H 3-3/4”",
       weight: "7.75lbs",
@@ -614,7 +614,7 @@ export const data: ProductInfo[] = [
     category: "parts",
     name: "TELESCOPING ELONGATED BIDET SEAT",
     aliases: "bidet-seat",
-    subtitle: "with V-shape and U-shape options",
+    subtitle: "",
     details:
       "This powerless bidet seat offers luxurious rear and front washing, gentle massaging, a soft/slow-closing seat and lid, the highest quality antibacterial nozzle and easy function management without any need for electricity. You can conveniently adjust the water flow of the shower to your preference(s) with the easy adjustment of a conveniently located side dial. And for extra convenient cleaning, the seat and lid are easily removed within seconds.",
     features: {
@@ -800,7 +800,7 @@ export const data: ProductInfo[] = [
         "Smart Phone App Enabled Control",
       ],
       cleaning: [
-        "Upgrade of Foam Guard Black Technology",
+        "Foam Guard Technology",
         "Intelligent Control System",
       ],
       seatlid: [
@@ -814,7 +814,7 @@ export const data: ProductInfo[] = [
         "Night Light",
         "Warm Air Dryer",
         "Deodorizer",
-        "LED Temperature Display",
+        "LED Temperature Display", "ADA Heigh",
       ],
     },
     imgSrc: "/products_img/mint-two-BK.png",
@@ -833,7 +833,7 @@ export const data: ProductInfo[] = [
     unavailable: false,
     linkTo: "/bathroom/mint/batik",
     id: 20,
-    sku: "SKU: T0151 (51” Bathtub), T0159 (59” Bathtub), T0167 (67” Bathtub)",
+    sku: "T0151 (51” Bathtub), T0159 (59” Bathtub), T0167 (67” Bathtub)",
     collection: "mint",
     category: "tub",
     name: "Batik Bathtub",
@@ -913,7 +913,7 @@ export const data: ProductInfo[] = [
     category: "parts",
     name: "TRADITIONAL ELONGATED BIDET SEAT",
     aliases: "bidet-seat",
-    subtitle: "with V-shape and U-shape options",
+    subtitle: "",
     details:
       "This powerless bidet seat features rear wash, front wash, slow closing and an antibacterial nozzle – and it functions completely without electricity. Controlled by a discrete side knob, you can conveniently adjust the water flow to your preference(s). And for extra convenient cleaning, the seat and lid are easily removed within seconds.",
     features: {
@@ -949,7 +949,7 @@ export const data: ProductInfo[] = [
     category: "parts",
     name: "ROUND FRONT BIDET SEAT",
     aliases: "bidet-seat",
-    subtitle: "with V-shape and U-shape options",
+    subtitle: "",
     details:
       "This powerless bidet seat features rear wash, front wash, slow closing and an antibacterial nozzle – and it functions completely without electricity. Controlled by a discrete side knob, you can conveniently adjust the water flow to your preference(s). And for extra convenient cleaning, the seat and lid are easily removed within seconds.",
     features: {
@@ -978,7 +978,7 @@ export const data: ProductInfo[] = [
   },
   {
     unavailable: false,
-    linkTo: "/bathroom/intelligent/electric-seat",
+    linkTo: "/bathroom/parts/electric-seat",
     id: 24,
     sku: "FE106",
     collection: null,
@@ -1004,6 +1004,37 @@ export const data: ProductInfo[] = [
       "/products_img/electric-seat-s-3.png",
     ],
     specification: "/docs/electric-seat-FE106_spec.pdf",
+    manual: "/docs/electric-seat_manual.pdf",
+    install: "",
+  },
+  {
+    unavailable: false,
+    linkTo: "/bathroom/parts/electric-seat-fe106",
+    id: 25,
+    sku: "FE106 (V-Shaped)",
+    collection: null,
+    category: "parts",
+    name: "LITE V-Shape Electric Bidet Seat",
+    aliases: "electric-seat-fe106",
+    subtitle: "INTELLIGENT E-BIDET SEAT",
+    details:
+      "All of the cleansing benefits of an intelligent toilet in a convenient and compact intelligent bidet seat design. The V-Shape intelligent bidet seat offers instant seat and water warming, a luxurious and adjustable cleansing shower spray, and a soft-closing seat all in a low-profile and minimalistic style. The gentle showering function can be customized with the turn of a conveniently located dial.",
+    features: {
+      dimensions: "L 20-1/5” x W 14-4/5” x H 3-3/4”",
+      weight: "7.75lbs",
+      material: "Polypropylene",
+      color: "White",
+      water: "20-100psi",
+    },
+    imgSrc: "/products_img/electric-seat-u.png",
+    imgAlt: "U/V Shape Electric Bidet Seat",
+    coverSrc: "/products_img/electric-seat-sq.png",
+    sketchImg: [
+      "/products_img/electric-seat-s-1.png",
+      "/products_img/electric-seat-s-2.png",
+      "/products_img/electric-seat-s-3.png",
+    ],
+    specification: "/docs/electric-seat-FE105_spec.pdf",
     manual: "/docs/electric-seat_manual.pdf",
     install: "",
   },

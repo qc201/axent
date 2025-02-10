@@ -15,12 +15,57 @@ export default function Batik() {
   ];
   return (
     <div className="pt-20 sm:pt-16 sm:px-[10vw]">
-      <ProductSketch
-        title={batikData.name}
-        subtitle={batikData.subtitle}
-        description={batikData.details}
-        sketchImgs={batikData.sketchImg}
-      />
+      <div className="bg-white pt-10">
+        <div className="relative font-custom">
+          <MaskText
+            phrases={["Batik Bathtub"]}
+            className="text-3xl sm:text-6xl text-primary font-extrabold md:pl-10"
+          />
+          <MaskText
+            phrases={["Elegant Simplicity, Tailored to Your Taste"]}
+            className="text-lg sm:text-3xl text-primary font-bold md:pl-10"
+          />
+        </div>
+        <div className="flex flex-row justify-around items-center px-10 md:px-20">
+
+          <div className="flex justify-cente " >
+            <Image
+              src="/products_img/batik-s-t0151.png"
+              alt={"ProductSketch"}
+              width={1600}
+              height={900}
+              className="w-auto"
+            />
+          </div>
+          <div className="flex justify-cente border-l border-gray-400" >
+            <Image
+              src="/products_img/batik-s-t0159.png"
+              alt={"ProductSketch"}
+              width={1600}
+              height={900}
+              className="w-auto"
+            />
+          </div>
+          <div className="flex justify-cente border-l border-gray-400" >
+            <Image
+              src="/products_img/batik-s-t0167.png"
+              alt={"ProductSketch"}
+              width={1600}
+              height={900}
+              className="w-auto"
+            />
+          </div>
+
+
+
+        </div>
+        <div className="flex w-full px-1 md:px-5">
+          <p className="text-l text-primary font-thin md:text-xl md:pt-10">
+            {batikData.details}
+          </p>
+        </div>
+      </div>
+
       <FeatureCard
         spec={batikData.specification}
         manual={batikData.manual}

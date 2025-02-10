@@ -5,8 +5,11 @@ import { data } from "../../../../lib/data"; //all product data in lib
 import Image from "next/image";
 import MaskText from "@/components/MaskText";
 
-export default function ElectricSeat() {
-  const electricSeatData = data[3];
+export default function ElectricSeatFE106() {
+  const electricSeatData = data.find(d => d.id === 25);
+  if (!electricSeatData) {
+    throw new Error("Data with ID 25 is missing!");
+  }
   const combinedValues = [
     ...(electricSeatData.configuration?.outlook ?? []),
     ...(electricSeatData.configuration?.watertank ?? []),
@@ -62,7 +65,7 @@ export default function ElectricSeat() {
             className="my-5  sm:my-10"
             phrases={[
               "Intelligent Technology for 180° Degrees of Clean",
-              "The SLIMS intelligent bidet seat offers fully customizable rear and front cleansing options. Additional shower oscillation, pulsating massage and aerated bubbly water infusion technology are just a few of the features you can personalize with the turn of the SLIMS dial.",
+              "The V-Shape intelligent bidet seat offers fully customizable rear and front cleansing options. Additional shower oscillation, pulsating massage and aerated bubbly water infusion technology are just a few of the features you can personalize with the turn of the dial.",
             ]}
           />
           <Image
@@ -79,7 +82,7 @@ export default function ElectricSeat() {
             className="w-full sm:ml-10  my-5  sm:my-10"
             phrases={[
               "Instant Comfort",
-              "Unlike clunky bidet models that require big water reservoirs for heating bidet water, the SLIMS intelligent bidet seat features instant water heating technology that lends to the SLIMS minimalist profile. This instant water-warming technology also improves. Your water use efficiency while ensuring a luxurious and comfortably warm cleansing experience.",
+              "Unlike clunky bidet models that require big water reservoirs for heating bidet water, the V-Shape intelligent bidet seat features instant water heating technology that lends to the V-Shape minimalist profile. This instant water-warming technology also improves. Your water use efficiency while ensuring a luxurious and comfortably warm cleansing experience.",
             ]}
           />
         </div>

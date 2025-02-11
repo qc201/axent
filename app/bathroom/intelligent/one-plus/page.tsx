@@ -68,10 +68,10 @@ export default function OnePlus() {
             alt={onePlusData.name}
             width={500}
             height={400}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover basis-1/2"
           />
           <MaskText
-            className=" my-5  sm:my-10"
+            className=" my-5  sm:my-10 text-end"
             phrases={[
               "Powerful Flush, Ultra-quiet, Bacteria-free, Always clean, Dual-flush with First-class Water Efficiency.",
             ]}

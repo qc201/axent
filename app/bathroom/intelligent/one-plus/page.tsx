@@ -74,7 +74,7 @@ export default function OnePlus() {
           </div>
           <div className="basis-1/2">
             <MaskText
-              className=" my-5  sm:my-10 text-end"
+              className=" my-5  sm:my-10 sm:text-end sm:mx-0 mx-5"
               phrases={[
                 "Powerful Flush, Ultra-quiet, Bacteria-free, Always clean, Dual-flush with First-class Water Efficiency.",
               ]}
@@ -83,11 +83,11 @@ export default function OnePlus() {
         </div>
 
         <div className="pt-10 flex flex-col sm:flex-row-reverse  w-full justify-between sm:items-start">
-          <div className="basis-2/3">
+          <div className="sm:basis-2/3">
             <PageVideo videoUrl="https://player.vimeo.com/video/1052444501?h=f50df54449" />
           </div>
           <MaskText
-            className="basis-2/3 my-5  sm:my-10"
+            className="sm:basis-2/3 my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "Gentle Cleansing, Intimate Understanding",
               "Five Cleansing Modes, Warm Air Dry, Eco-friendly & Energy-saving Seat, Bubble Care.",
@@ -103,7 +103,7 @@ export default function OnePlus() {
             height={600}
           />
           <MaskText
-            className="w-full sm:ml-10  my-5  sm:my-10"
+            className="w-full sm:ml-10  my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               " Always Clean, Freshness Abounds",
               "Triple-Barrier Nanotechnology, Antibacterial Nozzle. Intelligent Deodorization with Pure Diatomaceous Earth. Rimfree Ceramic Design. Dual Antibacterial Protection",
@@ -119,7 +119,7 @@ export default function OnePlus() {
             height={600}
           />
           <MaskText
-            className="w-full  my-5  sm:my-10"
+            className="w-full  my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               " Wireless Dual Controls, Thoughtful Care",
               "App control and a wireless multifunction remote control. A nighttime guard without disruption to sleep, it automatically turns on/off according to the ambient light.",

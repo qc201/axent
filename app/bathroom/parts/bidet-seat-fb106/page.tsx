@@ -53,7 +53,7 @@ export default function BidetSeatFB106() {
       />
       <div className="flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end">
         <Image
-          className="w-1/2 h-full object-cover"
+          className="sm:w-1/2 h-full object-cover"
           src={"/products_img/bidet-seat-fb106-3.png"}
           alt={bidentSeatData.name}
           width={1080}
@@ -62,7 +62,7 @@ export default function BidetSeatFB106() {
       </div>
       <div className="flex flex-col sm:flex-row w-full justify-between sm:items-start">
         <Image
-          className="w-1/2 h-full object-contain"
+          className="sm:w-1/2 h-full object-contain"
           src={"/products_img/bidet-seat-fb106-1.png"}
           alt={bidentSeatData.name}
           width={1080}

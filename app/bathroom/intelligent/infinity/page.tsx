@@ -71,7 +71,7 @@ export default function Infinity() {
             height={600}
           />
           <MaskText
-            className="my-5  sm:my-10"
+            className="my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "Kirin Pressure-assisted Flush System",
               "Harnessing cutting-edge air-energy accumulator technology, integrated with dual-efficiency water-saving design, it guaran- tees a powerful flush with every use. Boasting a remarkably low water consumption of just 1 Gal per flush, it embodies the principles of environmental protection and energy conservation.",
@@ -87,7 +87,7 @@ export default function Infinity() {
             height={600}
           />
           <MaskText
-            className="w-full sm:ml-10  my-5  sm:my-10"
+            className="w-full sm:ml-10  my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "Unlimited Flushes Without Power",
               "Even during power outages, the AXENT.Infinity Intelligent Toilet maintains operational continuity through its built-in mechanical structure, ensuring continuous flushing and uncompromised convenience.",
@@ -104,7 +104,7 @@ export default function Infinity() {
             className="w-full h-full object-cover"
           />
           <MaskText
-            className=" my-5  sm:my-10"
+            className=" my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               " People-centric Design: Quality in Every Detail",
               "Bubble Care for Cleanness and Comfort. Antibacterial Seat. Intelligent Night Light. Soft-close Lid and Seat",

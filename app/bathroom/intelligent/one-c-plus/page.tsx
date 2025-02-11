@@ -72,7 +72,7 @@ export default function OneCPlus() {
             height={400}
           />
           <MaskText
-            className="  my-5  sm:my-10"
+            className="my-5  sm:my-10 sm:mx-0 mx-5 sm:ml-10"
             phrases={[
               "Air-pressurized Powerful Flush",
               "AXENT Kirin Pressure-assisted Flush System functions well in high-rise buildings, old construc- tions, and water usage peaks. Each Flush requires only 1 Gal of water, much lower than international standards. It flushes normally even during power outages.",
@@ -88,7 +88,7 @@ export default function OneCPlus() {
             height={400}
           />
           <MaskText
-            className=" my-5  sm:my-10"
+            className=" my-5  sm:my-10 sm:mx-0 mx-5 sm:mr-10"
             phrases={[
               "People-centric Smart Controls",
               "Auto open and seat adjustment means convenience and hygiene without bending over. The ONE.DIAL simplifies operations, making it easy for the elderly and children to use.",
@@ -104,7 +104,7 @@ export default function OneCPlus() {
             height={600}
           />
           <MaskText
-            className="w-full sm:ml-10  my-5  sm:my-10"
+            className="w-full sm:ml-10  my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "Intelligent Cleansing for Ultimate Comfort",
               "AXENT Bubble Care Technology mixes water and air in a perfect ratio for gentle skin care. Five cleansing modes cater to diverse needs, ensuring thorough cleanliness and comfort. The four-barrier nozzle effectively eliminates bacteria, guaranteeing safe cleansing.",
@@ -120,7 +120,7 @@ export default function OneCPlus() {
             height={400}
           />
           <MaskText
-            className=" my-5  sm:my-10"
+            className=" my-5  sm:my-10 sm:mr-10 sm:mx-0 mx-5"
             phrases={[
               "Thoughtful Care, Just for You",
               "Warm air drying with a delicate touch, five-grade adjustable air temperature.With five seat temperature settings and eco-friendly seat heating functions, it autonomously learns user habits to deliver personalized warmth. Intelligent deodorization with diatomaceous earth, providing powerful purification and ensuring freshness at all times.",
@@ -136,7 +136,7 @@ export default function OneCPlus() {
             height={600}
           />
           <MaskText
-            className="w-full sm:ml-10  my-5  sm:my-10"
+            className="w-full sm:ml-10 my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "Safe, Convenient and Gentle Protection",
               "A nighttime guard with gentle light and without disruption to sleep. Wireless Dual Controls (App Control and Remote Control) put all functions at your fingertips. IPX4 waterproof and moisture-resistant features provide quadruple protection for electricity and water usage, ensuring comprehensive safety.",

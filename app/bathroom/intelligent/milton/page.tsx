@@ -61,7 +61,7 @@ export default function Milton() {
             height={600}
           />
           <MaskText
-            className="my-5  sm:my-10"
+            className="my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "Intelligent Technology for 180° Degrees of Clean",
               "The Milton intelligent bidet seat offers fully customizable rear and front cleansing options. Additional oscillating, pulsating massage and aerated bubbly water infusion technology are just a few of the customizable features you can personalize and program into your Milton intelligent bidet.",
@@ -77,7 +77,7 @@ export default function Milton() {
             height={600}
           />
           <MaskText
-            className="w-full sm:ml-10  my-5  sm:my-10"
+            className="w-full sm:ml-10  my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "Instant Comfort",
               "Unlike clunky bidet models that require tank water heating systems, the Milton intelligent bidet seat features instant water heating technology to reduce your water demands while ensuring a luxurious and comfortably warm bidet cleansing experience. This instant heating technology also lends its space-saving benefits to the Milton’s slim, modern design.",
@@ -94,7 +94,7 @@ export default function Milton() {
             className="w-full h-full object-contain"
           />
           <MaskText
-            className=" my-5  sm:my-10"
+            className=" my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "Expertly Designed for Durability",
               "From heavy load-bearing lids to quick release and easy to clean bidet seats, the Milton is expertly designed to meet all of your bathroom needs.",
@@ -109,7 +109,7 @@ export default function Milton() {
             height={600}
           />
           <MaskText
-            className="w-full sm:ml-10  my-5  sm:my-10"
+            className="w-full sm:ml-10  my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "Eco-Friendly",
               "AXENT’s bidet solutions reduce your dependence on toilet paper-a known contaminant of harmful chemicals responsible for clogging up toilets and community sewer systems alike. AXENT’s intelligent bidet seats offer a gentler, more simple and sanitary solution for bathroom cleansing with the feel good benefit of reducing one’s impact on the environment.",

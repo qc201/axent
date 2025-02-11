@@ -147,7 +147,7 @@ export default function Batik() {
             height={400}
           />
           <MaskText
-            className=" my-5  sm:my-10"
+            className=" my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "Elegant Simplicity, Tailored to Your Taste",
               "The bathtub boasts a plump and rounded silhouette, exuding elegance and grandeur. The ultra-thin edge of the bathtub adds to its aesthetic appeal, creating a more spacious and airy ambiance. Crafted from a single mold, its seamless design prevents dirt and grime from accumulating, making it easy to clean.",
@@ -163,7 +163,7 @@ export default function Batik() {
             height={300}
           />
           <MaskText
-            className="w-full sm:ml-10  my-5  sm:my-10"
+            className="w-full sm:ml-10  my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "Indulgent Soaking, Tailored to Your Desire",
               "Designed specifically for relaxation, the bathtub ensures every part of your body is thoroughly pampered. With a strip-shaped overflow drain, it prevents water from spilling over.",
@@ -179,7 +179,7 @@ export default function Batik() {
             height={400}
           />
           <MaskText
-            className="sm:mr-5 my-5  sm:my-10"
+            className="sm:mr-5 my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "Durability, Skin-friendliness, Long-lasting Warmth Retention",
               "Crafted from high-quality acrylic material specifically certified for bathtubs by the EU, it boasts a smooth and soft texture that is both skin-friendly and slip-resistant. With exceptional weather resistance, it retains its pristine whiteness and sturdy construction even after prolonged use. Our proprietary, high-quality resin ensures superior thermal insulation, locking in warmth for an extended period.",

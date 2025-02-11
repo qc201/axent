@@ -57,7 +57,7 @@ export default function Rina() {
             height={1080}
           />
           <MaskText
-            className=" my-5  sm:my-10"
+            className=" my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "Switching Seamlessly Among Three Splash",
               "Enjoy the Skin-refreshing Micro-bubble Water that deeply hydrates your skin, the Fine Shower Water that offers a delicate touch, and the invigorating Cleansing Water that provides robust cleaning power. Bid farewell to monotonous shower routines, and embrace the multifaceted joys of bathing.",
@@ -73,7 +73,7 @@ export default function Rina() {
             height={400}
           />
           <MaskText
-            className=" my-5  sm:my-10"
+            className=" my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               " Perfume Co-created by International Perfume Masters Embrace Moments of Healing",
               "As the perfume blends with the water, it gently diffuses across your skin. A subtle aroma envelops every inch of your skin, immersing you in a bath of scent and soothing the fatigue of the day.",
@@ -89,7 +89,7 @@ export default function Rina() {
             height={300}
           />
           <MaskText
-            className="w-full sm:ml-10  my-5  sm:my-10"
+            className="w-full sm:ml-10  my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               'To help women better cleanse their skin during bathing, MINT has developed “Micro-grade or Nano-grade Bubble Water" with a diameter as minute as 0.001mm. It is as delicate as mist, gentle and non-irritatin',
               "A lot of fine, dense water droplets emerge to create a refreshing surge that invigorates the senses. Simulta- neously, the skin becomes tender, revealing a unique sense of purity.",

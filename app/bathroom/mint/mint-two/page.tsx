@@ -63,7 +63,7 @@ export default function MintTwo() {
             height={400}
           />
           <MaskText
-            className=" my-5  sm:my-10"
+            className=" my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "Foam Guard Technology",
               "More Than Just an Odor, Splash, and Residue Barrier",
@@ -79,7 +79,7 @@ export default function MintTwo() {
             height={300}
           />
           <MaskText
-            className="w-full sm:ml-10  my-5  sm:my-10"
+            className="w-full sm:ml-10  my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "Hands-free",
               "Precision microwave sensing technology ensures accurate distance recognition, avoiding unnecessary touches. Approach the toilet, and the lid raises effortlessly, moving with fluid grace. Thoughtful considerations extend to an automatic flush upon leaving the seat or triggering, catering to every conceivable need.",
@@ -97,7 +97,7 @@ export default function MintTwo() {
             ]}
           />
         </div>
-        <div className="flex flex-row justify-between overflow-hidden">
+        <div className="pt-10 flex flex-row justify-between overflow-hidden">
           <div className="w-full sm:w-1/3 h-80">
             <Image
               src={"/products_img/mint-two-5.png"}

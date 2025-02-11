@@ -116,11 +116,11 @@ export default function Primus() {
           </div>
         </div>
         <div className="pt-10 flex flex-col sm:flex-row-reverse  w-full justify-between sm:items-start">
-          <div className="basis-2/3">
+          <div className="sm:basis-2/3">
             <PageVideo videoUrl="https://player.vimeo.com/video/1052444445?h=d6ff2856e4" />
           </div>
           <MaskText
-            className="basis-2/3 my-5 "
+            className="sm:basis-2/3 my-5 sm:mx-0 mx-5"
             phrases={[
               "Kirin Pressure-assisted Flush System",
               "Equipped with the efficient Kirin Flush System, it effortlessly tackles all stains to ensure pristine cleanli- ness after every use.",
@@ -129,7 +129,7 @@ export default function Primus() {
         </div>
 
         <div className="flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
-          <div className="basis-1/2">
+          <div className="sm:basis-1/2">
             <Image
               className="w-full"
               src={"/products_img/primus-hand.png"}
@@ -138,9 +138,9 @@ export default function Primus() {
               height={500}
             />
           </div>
-          <div className="basis-1/2">
+          <div className="sm:basis-1/2 pt-10">
             <MaskText
-              className="w-full "
+              className="w-full sm:mx-0 mx-5"
               phrases={[
                 "Antibacterial Easy-to-clean Glaze",
                 "The seat surface, made of antibacterial material, maintains cleanliness and hygiene even after prolonged use, providing you with greater peace of mind.",
@@ -150,7 +150,7 @@ export default function Primus() {
         </div>
 
         <div className="pt-10 flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end">
-          <div className="w-1/2">
+          <div className="sm:w-1/2 w-full">
             <Image
               className="w-full object-contain"
               src={"/products_img/primus-seat.png"}
@@ -159,7 +159,7 @@ export default function Primus() {
               height={500}
             />
           </div>
-          <div className="w-1/2 text-start">
+          <div className="sm:w-1/2 pt-10 text-start sm:mx-0 mx-5 ">
             <MaskText
               className="w-full"
               phrases={[

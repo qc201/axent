@@ -812,7 +812,7 @@ export const data: ProductInfo[] = [
         "Warm Air Dryer",
         "Deodorizer",
         "LED Temperature Display",
-        "ADA Heigh",
+        "ADA Height",
       ],
     },
     imgSrc: "/products_img/mint-two-BK.png",

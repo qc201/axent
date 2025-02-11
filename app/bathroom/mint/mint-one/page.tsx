@@ -62,7 +62,7 @@ export default function MintOne() {
             height={400}
           />
           <MaskText
-            className=" my-5  sm:my-10"
+            className=" my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "A Minimalist Exterior Eternally Elegant and Stylish",
               "The flat-panel design exudes a bold sense of avant-garde aesthetics, while the subtly curved ceramic body infuses the rectilinear form with a touch of softness and elegance. Adorned with silver accents against a pristine white backdrop, the overall meticulous design resembles a treasure of artistic merit.",
@@ -71,9 +71,10 @@ export default function MintOne() {
         </div>
 
         <div className="sm:mt-10">
-          <PageVideo videoUrl="https://player.vimeo.com/video/1052444481?h=106f7e854f" />
+          <div className="sm:px-[10vw] w-screen ">
+            <PageVideo videoUrl="https://player.vimeo.com/video/1052444481?h=106f7e854f" /></div>
           <MaskText
-            className="sm:mx-20 sm:my-10 sm:text-4xl my-1 w-full flex flex-col items-start justify-start font-black"
+            className="sm:mx-20 sm:my-20  mx-5 sm:text-4xl my-1 w-full flex flex-col items-start justify-start font-black"
             phrases={[
               "Kirin Pressure-assisted Flush Technology",
               "A Leap in Performance Across All Dimensions",
@@ -89,7 +90,7 @@ export default function MintOne() {
             height={600}
           />
           <MaskText
-            className="w-full sm:ml-10  my-5  sm:my-10"
+            className="w-full sm:ml-10  my-5  sm:my-10 sm:mx-0 mx-5"
             phrases={[
               "Experience Effortless Grace",
               "Embrace Intelligent Living Instantly",

@@ -72,7 +72,7 @@ export const data: ProductInfo[] = [
     aliases: "one-plus",
     subtitle: "Ingelligent toilet with KIRIN Flush System",
     details:
-      "Inspired by our success and lessons learned in Europe and Asia\\’s notoriously condensed urban environments, we\\’re introducing North America\\’s most intuitive and space-saving toilet \\– the AXENT.ONE Plus wall-hung intelligent toilet.",
+      "Inspired by our success and lessons learned in Europe and Asia’s notoriously condensed urban environments, we’re introducing North America’s most intuitive and space-saving toilet – the AXENT.ONE Plus wall-hung intelligent toilet.",
     features: {
       dimensions: "L 23.35” x W 14.57” x H 15.63”",
       weight: "88.2lbs",
@@ -840,7 +840,7 @@ export const data: ProductInfo[] = [
     details:
       "The bathtub boasts a plump and rounded silhouette, exuding elegance and grandeur. The ultra-thin edge of the bathtub adds to its aesthetic appeal, creating a more spacious and airy ambiance.",
     features: {
-      dimensions: "52.8Gal, 55.5Gal, 66Gal",
+      dimensions: "See above",
       capacity: "52.8 GAL (T0151),  55.5 GAL (T0159), 66 GAL (T0167)",
       material: "Acrylic",
       color: "Coming Soon",

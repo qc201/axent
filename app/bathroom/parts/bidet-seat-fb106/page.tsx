@@ -4,7 +4,7 @@ import FeatureCard from "@/components/FeatureCard";
 import { data } from "../../../../lib/data"; //all product data in lib
 import Image from "next/image";
 
-export default function BidetSeat() {
+export default function BidetSeatFB106() {
   const bidentSeatData = data[14];
   const combinedValues = [
     ...(bidentSeatData.configuration?.outlook ?? []),
@@ -59,7 +59,6 @@ export default function BidetSeat() {
           width={1080}
           height={1080}
         />
-
       </div>
       <div className="flex flex-col sm:flex-row w-full justify-between sm:items-start">
         <Image
@@ -70,7 +69,6 @@ export default function BidetSeat() {
           height={1920}
         />
       </div>
-
     </div>
   );
 }

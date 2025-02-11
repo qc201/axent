@@ -6,7 +6,7 @@ import Image from "next/image";
 import MaskText from "@/components/MaskText";
 
 export default function ElectricSeatFE106() {
-  const electricSeatData = data.find(d => d.id === 25);
+  const electricSeatData = data.find((d) => d.id === 25);
   if (!electricSeatData) {
     throw new Error("Data with ID 25 is missing!");
   }
@@ -70,7 +70,7 @@ export default function ElectricSeatFE106() {
           />
           <Image
             className="w-1/2 h-full object-cover"
-            src={"/products_img/electric-seat-1.png"}
+            src={"/products_img/electric-seat-fe106-1.png"}
             alt={electricSeatData.name}
             width={1080}
             height={1080}

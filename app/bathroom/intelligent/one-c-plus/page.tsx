@@ -80,7 +80,7 @@ export default function OneCPlus() {
           />
         </div>
 
-        <div className="flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end">
+        <div className="pt-10 flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end">
           <Image
             src={"/products_img/one-c-plus-one-dial.png"}
             alt={oneCPlusData.name}

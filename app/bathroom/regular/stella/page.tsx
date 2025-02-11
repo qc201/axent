@@ -68,20 +68,24 @@ export default function Stella() {
         </div>
 
         <div className="flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
-          <Image
-            className="w-full"
-            src={"/products_img/stella-3.png"}
-            alt={stellaData.name}
-            width={400}
-            height={500}
-          />
-          <MaskText
-            className="w-full sm:ml-10"
-            phrases={[
-              "Antibacterial Easy-to-clean Glaze",
-              "Integrated with nano-grade antibacterial technology, The glaze can effectively eliminate harmful bacteria and will resist dirt accumulation while maintaining a hygienic toilet interior.",
-            ]}
-          />
+          <div className="w-1/2">
+            <Image
+              className="w-full"
+              src={"/products_img/stella-3.png"}
+              alt={stellaData.name}
+              width={400}
+              height={500}
+            />
+          </div>
+          <div className="w-1/2">
+            <MaskText
+              className="w-full sm:ml-10"
+              phrases={[
+                "Antibacterial Easy-to-clean Glaze",
+                "Integrated with nano-grade antibacterial technology, The glaze can effectively eliminate harmful bacteria and will resist dirt accumulation while maintaining a hygienic toilet interior.",
+              ]}
+            />
+          </div>
         </div>
       </div>
     </div>

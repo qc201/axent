@@ -27,8 +27,7 @@ export default function Batik() {
           />
         </div>
         <div className="flex flex-row justify-around items-center px-10 md:px-20">
-
-          <div className="flex justify-cente " >
+          <div className="flex justify-cente ">
             <Image
               src="/products_img/batik-s-t0151.png"
               alt={"ProductSketch"}
@@ -37,7 +36,7 @@ export default function Batik() {
               className="w-auto"
             />
           </div>
-          <div className="flex justify-cente border-l border-gray-400" >
+          <div className="flex justify-cente border-l border-gray-400">
             <Image
               src="/products_img/batik-s-t0159.png"
               alt={"ProductSketch"}
@@ -46,7 +45,7 @@ export default function Batik() {
               className="w-auto"
             />
           </div>
-          <div className="flex justify-cente border-l border-gray-400" >
+          <div className="flex justify-cente border-l border-gray-400">
             <Image
               src="/products_img/batik-s-t0167.png"
               alt={"ProductSketch"}
@@ -55,9 +54,6 @@ export default function Batik() {
               className="w-auto"
             />
           </div>
-
-
-
         </div>
         <div className="flex w-full px-1 md:px-5">
           <p className="text-l text-primary font-thin md:text-xl md:pt-10">
@@ -159,7 +155,7 @@ export default function Batik() {
           />
         </div>
 
-        <div className="flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
+        <div className="pt-10 flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
           <Image
             src={"/products_img/batik-3.png"}
             alt={batikData.name}
@@ -183,7 +179,7 @@ export default function Batik() {
             height={400}
           />
           <MaskText
-            className=" my-5  sm:my-10"
+            className="sm:mr-5 my-5  sm:my-10"
             phrases={[
               "Durability, Skin-friendliness, Long-lasting Warmth Retention",
               "Crafted from high-quality acrylic material specifically certified for bathtubs by the EU, it boasts a smooth and soft texture that is both skin-friendly and slip-resistant. With exceptional weather resistance, it retains its pristine whiteness and sturdy construction even after prolonged use. Our proprietary, high-quality resin ensures superior thermal insulation, locking in warmth for an extended period.",

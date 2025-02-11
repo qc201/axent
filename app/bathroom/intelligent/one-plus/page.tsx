@@ -63,19 +63,23 @@ export default function OnePlus() {
         />
 
         <div className="flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
-          <Image
-            src={"/products_img/one-plus-flush.png"}
-            alt={onePlusData.name}
-            width={500}
-            height={400}
-            className="w-full h-full object-cover basis-1/2"
-          />
-          <MaskText
-            className=" my-5  sm:my-10 text-end"
-            phrases={[
-              "Powerful Flush, Ultra-quiet, Bacteria-free, Always clean, Dual-flush with First-class Water Efficiency.",
-            ]}
-          />
+          <div className="basis-1/2">
+            <Image
+              src={"/products_img/one-plus-flush.png"}
+              alt={onePlusData.name}
+              width={500}
+              height={400}
+              className="w-full h-full object-cover "
+            />
+          </div>
+          <div className="basis-1/2">
+            <MaskText
+              className=" my-5  sm:my-10 text-end"
+              phrases={[
+                "Powerful Flush, Ultra-quiet, Bacteria-free, Always clean, Dual-flush with First-class Water Efficiency.",
+              ]}
+            />
+          </div>
         </div>
 
         <div className="pt-10 flex flex-col sm:flex-row-reverse  w-full justify-between sm:items-start">

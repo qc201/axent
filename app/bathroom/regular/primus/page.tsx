@@ -129,40 +129,48 @@ export default function Primus() {
         </div>
 
         <div className="flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
-          <Image
-            className="w-full"
-            src={"/products_img/primus-hand.png"}
-            alt={primusData.name}
-            width={400}
-            height={500}
-          />
-          <MaskText
-            className="w-full sm:ml-10"
-            phrases={[
-              "Antibacterial Easy-to-clean Glaze",
-              "The seat surface, made of antibacterial material, maintains cleanliness and hygiene even after prolonged use, providing you with greater peace of mind.",
-            ]}
-          />
+          <div className="basis-1/2">
+            <Image
+              className="w-full"
+              src={"/products_img/primus-hand.png"}
+              alt={primusData.name}
+              width={400}
+              height={500}
+            />
+          </div>
+          <div className="basis-1/2">
+            <MaskText
+              className="w-full "
+              phrases={[
+                "Antibacterial Easy-to-clean Glaze",
+                "The seat surface, made of antibacterial material, maintains cleanliness and hygiene even after prolonged use, providing you with greater peace of mind.",
+              ]}
+            />
+          </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end sm:text-end">
-          <Image
-            className="w-full"
-            src={"/products_img/primus-seat.png"}
-            alt={primusData.name}
-            width={400}
-            height={500}
-          />
-          <MaskText
-            className="w-full sm:ml-10"
-            phrases={[
-              "Entire Trap-way Glazing",
-              "The interior walls of the entire Trap-way are coated with a smooth glaze, thus reducing residue and facilitating smoother flushing and easier maintenance.",
-            ]}
-          />
+        <div className="pt-10 flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end">
+          <div className="w-1/2">
+            <Image
+              className="w-full object-contain"
+              src={"/products_img/primus-seat.png"}
+              alt={primusData.name}
+              width={400}
+              height={500}
+            />
+          </div>
+          <div className="w-1/2 text-start">
+            <MaskText
+              className="w-full"
+              phrases={[
+                "Entire Trap-way Glazing",
+                "The interior walls of the entire Trap-way are coated with a smooth glaze, thus reducing residue and facilitating smoother flushing and easier maintenance.",
+              ]}
+            />
+          </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
+        <div className="pt-10 flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
           <Image
             className="w-full"
             src={"/products_img/primus-3.png"}

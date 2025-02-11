@@ -3,7 +3,7 @@
 # image 
 .png 
 .jpg
-
+.open-next
 
 # dependencies
 /node_modules

@@ -48,10 +48,10 @@ export default function FeatureCard({
 }: Props) {
   return (
     <div className="flex flex-col pt-10 md:flex-row md:items-start md:px-5 md:pt-20">
-      <div className="w-[100vw] md:w-[50vw] flex items-center justify-center">
+      <div className="w-full md:max-w-[50%] flex items-center justify-center">
         <div className="relative">
           {unavailable && (
-            <span className="bg-alarm z-20 text-white px-2 py-1 absolute top-0 right-0 text-xs  md:tex t-sm rounded-bl-md font-custom">
+            <span className="bg-alarm z-20 text-white px-2 py-1 absolute top-0 right-0 text-xs  md:text-sm rounded-bl-md font-custom">
               coming soon
             </span>
           )}

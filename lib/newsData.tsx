@@ -13,7 +13,7 @@ export const newsData: BlogInfo[] = [
     ],
     pagelink:
       "axent-switzerland-to-showcase-innovative-bathroom-solutions-at-kbis-2025-in-las-vegas",
-    newsPage: `<div className="news-container sm:px-60 px-5 sm:pt-16 pt-20 font-custom text-primary flex flex-col justify-center items-center">
+    newsPage: `<div className="news-container md:px-60 px-5 md:pt-16 pt-20 font-custom text-primary flex flex-col justify-center items-center">
       <div className="title pt-20 font-extrabold text-3xl ">
   
         AXENT Switzerland to Showcase Innovative Bathroom Solutions at KBIS 2025 in Las Vegas
@@ -47,7 +47,7 @@ export const newsData: BlogInfo[] = [
     ],
     pagelink:
       "axent-switzerland-to-unveil-cutting-edge-bathroom-innovations-at-kbis-2024-in-las-vegas",
-    newsPage: `<div className="news-container sm:px-60 px-5 sm:pt-16 pt-20 font-custom text-primary flex flex-col justify-center items-center">
+    newsPage: `<div className="news-container md:px-60 px-5 md:pt-16 pt-20 font-custom text-primary flex flex-col justify-center items-center">
       <div className="title pt-20 font-extrabold text-3xl ">
         AXENT Switzerland to Unveil Cutting-Edge Bathroom Innovations at KBIS
         2024 in Las Vegas
@@ -98,7 +98,7 @@ export const newsData: BlogInfo[] = [
       "AXENT Switzerland made its inaugural appearance at the Palm Springs Modernism Show, a prominent event celebrating mid-century modern architecture and design. ",
     ],
     pagelink: "axent-switzerland-debuts-at-2023-palm-springs-modernism-show",
-    newsPage: `<div className="news-container sm:px-60 px-5 sm:pt-16 pt-20 font-custom text-primary flex flex-col justify-center items-center">
+    newsPage: `<div className="news-container md:px-60 px-5 md:pt-16 pt-20 font-custom text-primary flex flex-col justify-center items-center">
       <div className="title pt-20 font-extrabold text-3xl ">
         AXENT Switzerland Debuts at 2023 Palm Springs Modernism Show
       </div>
@@ -144,7 +144,7 @@ export const newsData: BlogInfo[] = [
     ],
     pagelink:
       "axent-switzerland-showcases-innovative-bathroom-solutions-at-kbis-2023",
-    newsPage: `<div className="news-container sm:px-60 px-5 sm:pt-16 pt-20 font-custom text-primary flex flex-col justify-center items-center">
+    newsPage: `<div className="news-container md:px-60 px-5 md:pt-16 pt-20 font-custom text-primary flex flex-col justify-center items-center">
       <div className="title pt-20 font-extrabold text-3xl ">
         AXENT Switzerland Showcases Innovative Bathroom Solutions at KBIS 2023
       </div>
@@ -186,7 +186,7 @@ export const newsData: BlogInfo[] = [
     ],
     pagelink:
       "axent-switzerland-showcases-innovative-bathroom-solutions-at-icff-2022-in-new-york",
-    newsPage: `<div className="news-container sm:px-60 px-5 sm:pt-16 pt-20 font-custom text-primary flex flex-col justify-center items-center">
+    newsPage: `<div className="news-container md:px-60 px-5 md:pt-16 pt-20 font-custom text-primary flex flex-col justify-center items-center">
       <div className="title pt-20 font-extrabold text-3xl ">
         AXENT Switzerland Showcases Innovative Bathroom Solutions at ICFF 2022
         in New York

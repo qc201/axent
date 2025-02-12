@@ -8,11 +8,11 @@ import { newsData } from "@/lib/newsData";
 
 export default function News() {
   return (
-    <div className="pt-16 bg-white sm:px-20 flex flex-col gap-2">
+    <div className="pt-16 bg-white md:px-20 flex flex-col gap-2">
       <div className="flex flex-col items-center justify-center">
         <MaskText
           phrases={["Newsroom"]}
-          className="pt-10 pb-5 sm:text-6xl text-3xl text-primary font-extrabold items-center justify-center"
+          className="pt-10 pb-5 md:text-6xl text-3xl text-primary font-extrabold items-center justify-center"
         />
       </div>
       {newsData.map((data, index) => (

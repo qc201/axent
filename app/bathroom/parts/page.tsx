@@ -21,7 +21,7 @@ export default function Parts() {
           className="text-6xl text-white font-extrabold "
         />
       </div>
-      <div className="grid sm:grid-cols-4 grid-cols-2  gap-6 sm:px-20 py-10">
+      <div className="grid md:grid-cols-4 grid-cols-2  gap-6 md:px-20 sm:px-10 px-5 py-10">
         {partsData.map((data, index) => (
           <InfoCard
             key={data.name}

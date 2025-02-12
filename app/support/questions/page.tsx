@@ -5,7 +5,7 @@ import MaskText from "@/components/MaskText";
 
 export default function Questions() {
   return (
-    <div className="flex flex-col sm:px-40 px-5 pt-16">
+    <div className="flex flex-col md:px-40 px-5 pt-16">
       <MaskText
         phrases={["Introducing intelligent toilets"]}
         className="font-custom text-primary sm:text-5xl text-xl font-extrabold py-10"

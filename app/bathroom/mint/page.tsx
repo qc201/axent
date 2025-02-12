@@ -15,7 +15,7 @@ export default function Mint() {
 
   return (
     <div>
-      <div className="flex items-center justify-center font-custom bg-mintHeader w-screen bg-cover bg-center bg-no-repeat sm:min-h-[1000px] min-h-[600px] sm:bg-fixed">
+      <div className="flex items-center justify-center font-custom bg-mintHeader w-screen bg-cover bg-center bg-no-repeat md:min-h-[1000px] min-h-[600px] md:bg-fixed">
         {/* <MaskText
           phrases={["AXENT-MINT"]}
           className="sm:text-6xl text-3xl text-white font-extrabold items-center justify-center"
@@ -28,18 +28,18 @@ export default function Mint() {
             height={500}
             loading="eager"
             className="object-contain"
-        />
+          />
         </div>
       </div>
       <MaskText
-        className="relative -z-40 flex flex-col pt-10 mx-5 sm:mx-20 text-primary font-custom font-thin sm:text-xl text-lg"
+        className="relative -z-40 flex flex-col pt-10 mx-5 md:mx-20 text-primary font-custom font-thin sm:text-xl text-lg"
         phrases={[
           "AXENT-Mint inherits the AXENT Group's philosophy of combining aesthetics with cutting edge technology. ",
           "We cater to the needs of vibrant people in this new era. With a consumer-centric approach,",
           "we tailor high-quality smart home products to allow a refined sense of harmony into daily life.",
         ]}
       />
-      <div className="flex items-center justify-center font-custom bg-tubGril w-screen bg-cover bg-center bg-no-repeat sm:min-h-[1000px] min-h-[600px] sm:bg-fixed">
+      <div className="flex items-center justify-center font-custom bg-tubGril w-screen bg-cover bg-center bg-no-repeat md:min-h-[1000px] min-h-[600px] sm:bg-fixed">
         <MaskText
           phrases={["LOHAS Aesthetics"]}
           className="text-6xl text-white font-extrabold"
@@ -47,11 +47,11 @@ export default function Mint() {
       </div>
 
       {/* girl in yellow outfit with toilet  */}
-      <div className="bg-toiletGril sm:flex block -z-10 bg-cover sm:bg-fixed  bg-center  bg-no-repeat sm:min-h-[1000px] min-h-[600px]">
+      <div className="bg-toiletGril md:flex block  bg-cover sm:bg-fixed  bg-center  bg-no-repeat md:min-h-[1000px] min-h-[600px]">
         <div className="flex sm:justify-start sm:items-end justify-center items-center">
-          <div className="sm:w-1/2 w-full">
+          <div className="md:w-1/2 w-full">
             <MaskText
-              className="w-full flex flex-col sm:items-start sm:justify-start justify-center items-center gap-5 pt-10  sm:mx-20 text-primary font-custom font-thin sm:text-xl text-lg"
+              className="w-full flex flex-col md:items-start md:justify-start justify-center items-center gap-5 pt-10  md:mx-20 mx-5 text-primary font-custom font-thin md:text-xl text-lg"
               phrases={[
                 "AXENT-MINT embraces LOHAS aesthetics. We are optimistic, inclusive, and eager to explore new ideas. With diverse designs and colorful creativity, we shape a colorful world with AXENT-MINT characteristics. ",
                 "Who says bathroom spaces can only be plain and ordinary?",
@@ -73,22 +73,20 @@ export default function Mint() {
       </div> */}
 
       <MaskText
-        className="flex flex-col pt-10 mx-5 sm:mx-20 text-primary font-custom font-black sm:text-xl text-lg"
+        className="flex flex-col pt-10 mx-5 md:mx-20 text-primary font-custom font-black md:text-xl text-lg"
         phrases={["Color Philosophy"]}
       />
       <MaskText
-        className="flex flex-col mx-5 sm:mx-20 text-primary font-custom font-thin sm:text-xl text-lg"
+        className="flex flex-col mx-5 md:mx-20 text-primary font-custom font-thin md:text-xl text-lg"
         phrases={[
           "Color symbolizes one's passion for life. Stimulating the brain through visual nerves, it secretes dopamine, a neurotransmitter that brings joy. Refraining from the monotonous visual expression of traditional bathroom products,AXENT-MINT aims to bring more vitality to life and make every day colorful.",
         ]}
       />
 
       {/* view mint products section */}
-      <div className="mt-10 sm:px-40">
-        
-       
+      <div className="mt-10 md:px-40">
         {/* batik tub */}
-        <div className="sm:pt-10  flex flex-row items-center justify-between w-full">
+        <div className="md:pt-10  flex flex-row items-center justify-between w-full">
           <CollectionCover
             imgUrl="/products_img/batik-cover.png"
             imgAlt={mintData[2].imgAlt}
@@ -111,8 +109,6 @@ export default function Mint() {
             model={mintData[3].name}
           />
         </div>
-
-       
       </div>
     </div>
   );

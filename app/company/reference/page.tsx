@@ -6,7 +6,7 @@ import MaskText from "@/components/MaskText";
 
 export default function Reference() {
   return (
-    <div className="pt-40 sm:px-40 ">
+    <div className="pt-40 md:px-40 ">
       <div className="flex items-center justify-center">
         <MaskText
           phrases={["References"]}
@@ -14,7 +14,7 @@ export default function Reference() {
         />
       </div>
 
-      <div className="grid sm:grid-cols-2 sm:gap-5 grid-cols-1">
+      <div className="grid md:grid-cols-2 md:gap-5 grid-cols-1">
         {refData.map((info, index) => (
           <ReferenceCard
             key={index}

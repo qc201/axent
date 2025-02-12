@@ -1,5 +1,3 @@
-
-
 import parse from "html-react-parser";
 import getNews from "@/lib/getNews";
 import Image from "next/image";
@@ -22,5 +20,5 @@ export default async function NewsPage({
     return <p>Loading...</p>;
   }
 
-  return <>{parse(pageHtml.newsPage)}</>;
+  return <div className="md:px-40">{parse(pageHtml.newsPage)}</div>;
 }

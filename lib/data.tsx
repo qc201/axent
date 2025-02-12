@@ -880,8 +880,8 @@ export const data: ProductInfo[] = [
       "Embedded within the shower head, the filter is rich in Vitamin C, effectively neutralizing chlorine in tap water to purify and protect every inch of your skin. The scientific blend of Vitamin C in the filter and hyaluronic acid, known as the Hydration Bomb, enhances skin's antioxidant capacity and moisture retention, rescuing parched skin and leaving it bouncy and vibrant.",
     features: {
       dimensions: '10.24" *  4.72" * 1.97"',
-      weight: "?",
-      material: "?",
+      weight: "",
+      material: "",
       color: "Icy Moldy Pink, Fine Floral White, Mocha Beige, Ice Crystal Blue",
     },
     configuration: {

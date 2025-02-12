@@ -84,7 +84,7 @@ export default function FeatureCard({
             <li className="">Drainage Mode: {drainageMode}</li>
           )}
 
-          <li className="">Material Finish: {finish}</li>
+{finish !== "" && <li className="">Material Finish: {finish}</li>}
 
           <li className="">Color: {color}</li>
           {consumption !== "" && (

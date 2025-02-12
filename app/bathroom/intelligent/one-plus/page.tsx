@@ -16,7 +16,7 @@ export default function OnePlus() {
     ...(onePlusData.configuration?.seatlid ?? []),
   ];
   return (
-    <div className="pt-20 sm:pt-16 sm:px-[10vw]">
+    <div className="pt-20 md:pt-16 md:px-[10vw]">
       <ProductSketch
         title={onePlusData.name}
         subtitle={onePlusData.subtitle}
@@ -53,16 +53,16 @@ export default function OnePlus() {
         configurations={combinedValues}
       />
       {/* live image and video */}
-      <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm sm:text-2xl">
+      <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm md:text-2xl">
         <PageVideo videoUrl="https://player.vimeo.com/video/1052444433?h=f2ae321d97" />
         <MaskText
-          className="mx-5 my-5 sm:mx-20 sm:my-10"
+          className="mx-5 my-5 md:mx-20 md:my-10"
           phrases={[
             "True excellence is an inherent uniqueness. The AXENT.ONE Intelligent Toilet revolutionizes convenience with its ONE.DIAL, allowing for seamless adjustment of water flow and temperature during the flushing process —as intuitive as turning the crown of a Swiss watch.",
           ]}
         />
 
-        <div className="flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
+        <div className="flex flex-col md:flex-row w-full justify-between md:items-end md:text-end">
           <div className="basis-1/2">
             <Image
               src={"/products_img/one-plus-flush.png"}
@@ -74,7 +74,7 @@ export default function OnePlus() {
           </div>
           <div className="basis-1/2">
             <MaskText
-              className=" my-5  sm:my-10 sm:text-end sm:mx-0 mx-5"
+              className=" my-5  md:my-10 md:text-end md:mx-0 mx-5"
               phrases={[
                 "Powerful Flush, Ultra-quiet, Bacteria-free, Always clean, Dual-flush with First-class Water Efficiency.",
               ]}
@@ -82,12 +82,12 @@ export default function OnePlus() {
           </div>
         </div>
 
-        <div className="pt-10 flex flex-col sm:flex-row-reverse  w-full justify-between sm:items-start">
-          <div className="sm:basis-2/3">
+        <div className="pt-10 flex flex-col md:flex-row-reverse  w-full justify-between md:items-start">
+          <div className="md:basis-2/3">
             <PageVideo videoUrl="https://player.vimeo.com/video/1052444501?h=f50df54449" />
           </div>
           <MaskText
-            className="sm:basis-2/3 my-5  sm:my-10 sm:mx-0 mx-5"
+            className="md:basis-2/3 my-5  md:my-10 md:mx-0 mx-5"
             phrases={[
               "Gentle Cleansing, Intimate Understanding",
               "Five Cleansing Modes, Warm Air Dry, Eco-friendly & Energy-saving Seat, Bubble Care.",
@@ -95,31 +95,39 @@ export default function OnePlus() {
           />
         </div>
 
-        <div className="flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
-          <Image
-            src={"/products_img/one-plus-4.png"}
-            alt={onePlusData.name}
-            width={600}
-            height={600}
-          />
-          <MaskText
-            className="w-full sm:ml-10  my-5  sm:my-10 sm:mx-0 mx-5"
-            phrases={[
-              " Always Clean, Freshness Abounds",
-              "Triple-Barrier Nanotechnology, Antibacterial Nozzle. Intelligent Deodorization with Pure Diatomaceous Earth. Rimfree Ceramic Design. Dual Antibacterial Protection",
-            ]}
-          />
+        <div className="flex flex-col md:flex-row w-full justify-between md:items-end md:text-end">
+          <div className="md:w-2/3">
+            <Image
+              src={"/products_img/one-plus-4.png"}
+              alt={onePlusData.name}
+              width={600}
+              height={600}
+              className="w-full object-cover"
+            />
+          </div>
+          <div className="md:w-1/3">
+            <MaskText
+              className="w-full md:ml-10  my-5  md:my-10 md:mx-0 mx-5"
+              phrases={[
+                " Always Clean, Freshness Abounds",
+                "Triple-Barrier Nanotechnology, Antibacterial Nozzle. Intelligent Deodorization with Pure Diatomaceous Earth. Rimfree Ceramic Design. Dual Antibacterial Protection",
+              ]}
+            />
+          </div>
         </div>
 
-        <div className="pt-10 flex flex-col sm:flex-row-reverse w-full justify-between sm:items-start">
-          <Image
-            src={"/products_img/one-c-plus-safe.png"}
-            alt={onePlusData.name}
-            width={500}
-            height={600}
-          />
+        <div className="pt-10 flex flex-col md:flex-row-reverse w-full justify-between md:items-start">
+          <div className="md:w-screen">
+            <Image
+              src={"/products_img/one-c-plus-safe.png"}
+              alt={onePlusData.name}
+              width={500}
+              height={600}
+              className="object-cover w-full"
+            />
+          </div>
           <MaskText
-            className="w-full  my-5  sm:my-10 sm:mx-0 mx-5"
+            className=" my-5  md:my-10 md:mx-0 mx-5"
             phrases={[
               " Wireless Dual Controls, Thoughtful Care",
               "App control and a wireless multifunction remote control. A nighttime guard without disruption to sleep, it automatically turns on/off according to the ambient light.",

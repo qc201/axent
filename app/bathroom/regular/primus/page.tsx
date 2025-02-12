@@ -15,7 +15,7 @@ export default function Primus() {
     ...(primusData.configuration?.seatlid ?? []),
   ];
   return (
-    <div className="pt-20 sm:pt-16 sm:px-[10vw]">
+    <div className="pt-20 md:pt-16 md:px-[10vw]">
       <ProductSketch
         title={primusData.name}
         subtitle={primusData.subtitle}
@@ -52,8 +52,8 @@ export default function Primus() {
         configurations={combinedValues}
       />
       {/* live image and video */}
-      <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm sm:text-2xl">
-        <div className="flex sm:flex-row flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm md:text-2xl">
+        <div className="flex md:flex-row flex-col items-center justify-center">
           <div className="flex flex-col justify-center items-center">
             <Image
               className="w-full"
@@ -115,12 +115,12 @@ export default function Primus() {
             </div>
           </div>
         </div>
-        <div className="pt-10 flex flex-col sm:flex-row-reverse  w-full justify-between sm:items-start">
-          <div className="sm:basis-2/3">
+        <div className="pt-10 flex flex-col md:flex-row-reverse  w-full justify-between md:items-start">
+          <div className="md:basis-2/3">
             <PageVideo videoUrl="https://player.vimeo.com/video/1052444445?h=d6ff2856e4" />
           </div>
           <MaskText
-            className="sm:basis-2/3 my-5 sm:mx-0 mx-5"
+            className="md:basis-2/3 my-5 md:mx-0 mx-5"
             phrases={[
               "Kirin Pressure-assisted Flush System",
               "Equipped with the efficient Kirin Flush System, it effortlessly tackles all stains to ensure pristine cleanli- ness after every use.",
@@ -128,8 +128,8 @@ export default function Primus() {
           />
         </div>
 
-        <div className="flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
-          <div className="sm:basis-1/2">
+        <div className="flex flex-col md:flex-row w-full justify-between md:items-end md:text-end">
+          <div className="md:basis-1/2">
             <Image
               className="w-full"
               src={"/products_img/primus-hand.png"}
@@ -138,9 +138,9 @@ export default function Primus() {
               height={500}
             />
           </div>
-          <div className="sm:basis-1/2 pt-10">
+          <div className="md:basis-1/2 pt-10">
             <MaskText
-              className="w-full sm:mx-0 mx-5"
+              className="w-full md:mx-0 mx-5"
               phrases={[
                 "Antibacterial Easy-to-clean Glaze",
                 "The seat surface, made of antibacterial material, maintains cleanliness and hygiene even after prolonged use, providing you with greater peace of mind.",
@@ -149,8 +149,8 @@ export default function Primus() {
           </div>
         </div>
 
-        <div className="pt-10 flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end">
-          <div className="sm:w-1/2 w-full">
+        <div className="pt-10 flex flex-col md:flex-row-reverse w-full justify-between md:items-end">
+          <div className="md:w-1/2 w-full">
             <Image
               className="w-full object-contain"
               src={"/products_img/primus-seat.png"}
@@ -159,7 +159,7 @@ export default function Primus() {
               height={500}
             />
           </div>
-          <div className="sm:w-1/2 pt-10 text-start sm:mx-0 mx-5 ">
+          <div className="md:w-1/2 pt-10 text-start md:mx-0 mx-5 ">
             <MaskText
               className="w-full"
               phrases={[
@@ -170,7 +170,7 @@ export default function Primus() {
           </div>
         </div>
 
-        <div className="pt-10 flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
+        <div className="pt-10 flex flex-col md:flex-row w-full justify-between md:items-end md:text-end">
           <Image
             className="w-full"
             src={"/products_img/primus-3.png"}

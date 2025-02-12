@@ -15,7 +15,7 @@ export default function Stella() {
     ...(stellaData.configuration?.seatlid ?? []),
   ];
   return (
-    <div className="pt-20 sm:pt-16 sm:px-[10vw]">
+    <div className="pt-20 md:pt-16 md:px-[10vw]">
       <ProductSketch
         title={stellaData.name}
         subtitle={stellaData.subtitle}
@@ -53,13 +53,13 @@ export default function Stella() {
         configurations={combinedValues}
       />
       {/* live image and video */}
-      <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm sm:text-2xl">
-        <div className="pt-10 flex flex-col sm:flex-row-reverse  w-full justify-between sm:items-start">
-          <div className="sm:basis-2/3">
+      <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm md:text-2xl">
+        <div className="pt-10 flex flex-col md:flex-row-reverse  w-full justify-between md:items-start">
+          <div className="md:basis-2/3">
             <PageVideo videoUrl="https://player.vimeo.com/video/1052444445?h=d6ff2856e4" />
           </div>
           <MaskText
-            className="sm:basis-2/3 my-5 sm:mx-0 mx-5"
+            className="md:basis-2/3 my-5 md:mx-0 mx-5"
             phrases={[
               "Kirin Pressure-assisted Flush System",
               "REGATTA One-piece Toilet ensures precise and powerful flushes regardless of water pressure while effectively conserving water resources.",
@@ -67,8 +67,8 @@ export default function Stella() {
           />
         </div>
 
-        <div className="flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
-          <div className="sm:w-1/2">
+        <div className="flex flex-col md:flex-row w-full justify-between md:items-end md:text-end">
+          <div className="md:w-1/2">
             <Image
               className="w-full"
               src={"/products_img/stella-3.png"}
@@ -77,9 +77,9 @@ export default function Stella() {
               height={500}
             />
           </div>
-          <div className="sm:w-1/2">
+          <div className="md:w-1/2">
             <MaskText
-              className="w-full sm:ml-10 sm:mx-0 mx-5"
+              className="w-full md:ml-10 md:mx-0 mx-5"
               phrases={[
                 "Antibacterial Easy-to-clean Glaze",
                 "Integrated with nano-grade antibacterial technology, The glaze can effectively eliminate harmful bacteria and will resist dirt accumulation while maintaining a hygienic toilet interior.",

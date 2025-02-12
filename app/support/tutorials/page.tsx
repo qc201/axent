@@ -11,7 +11,7 @@ export default function Tutorials() {
         phrases={["AXENT.ONE Intelligent Toilet Video Tutorials"]}
         className="font-custom text-primary sm:text-5xl text-xl font-extrabold py-10"
       />
-      <div className="w-fit gap-6 mx-auto grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2">
+      <div className="w-fit gap-6 mx-auto grid grid-cols-1 lg:grid-cols-3">
         <VideoCard
           title={"AXENT.ONE"}
           description={"Operation"}

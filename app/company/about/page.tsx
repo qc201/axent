@@ -17,7 +17,7 @@ export default function About() {
     "https://player.vimeo.com/video/1052444501?h=f50df54449;badge=0&amp;player_id=0&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1";
   return (
     <div>
-      <div className="font-custom bg-aboutHeader w-screen bg-cover bg-center bg-no-repeat sm:min-h-[1000px] min-h-[600px] sm:bg-fixed flex items-center justify-end">
+      <div className="font-custom bg-aboutHeader w-screen bg-cover bg-center bg-no-repeat md:min-h-[1000px] lg:bg-fixed flex items-center justify-end">
         <div className="pr-5 flex flex-col text-end">
           <MaskText
             phrases={["BRAND STORY"]}
@@ -36,7 +36,7 @@ export default function About() {
       </div>
 
       {/* honor */}
-      <div className="sm:px-40 px-5 py-10 text-primary sm:text-lg font-custom text-sm font-thin bg-white">
+      <div className="md:px-40 px-5 py-10 text-primary md:text-lg text-sm font-thin font-custom bg-white">
         <p>
           We see our story beginning with an innovative spirit and dedication to
           our philosophy of ”rethinking the bath”. When revolutionizing the
@@ -69,13 +69,13 @@ export default function About() {
           providing holistic smart bathroom solutions for users worldwide.
         </p>
       </div>
-      <div className="sm:p-20 p-5 flex sm:flex-row flex-col justify-between items-end bg-primary text-white">
+      <div className="md:p-20 p-5 flex md:flex-row flex-col justify-between items-end bg-primary text-white">
         <div className="basis-1/2">
           <MaskText
             phrases={["BRAND HONORS"]}
-            className="pb-10 sm:text-6xl text-3xl text-white font-extrabold font-custom items-center justify-center"
+            className="pb-10 md:text-6xl text-3xl text-white font-extrabold font-custom items-center justify-center"
           />
-          <p className="sm:text-lg text-sm font-thin font-custom">
+          <p className="md:text-lg text-sm font-thin font-custom">
             AXENT's products have garnered numerous prestigious awards,
             including the German iF Design Award, the Red Dot Design Award, the
             German Innovation Award, and the German ICONIC AWARDS. Since 2017,
@@ -100,16 +100,16 @@ export default function About() {
         </div>
       </div>
       {/* designer */}
-      <div className="font-custom bg-designers w-screen bg-cover bg-center bg-no-repeat sm:min-h-[1000px] min-h-[300px] sm:bg-fixed flex items-end justify-end">
+      <div className="font-custom bg-designers w-screen  lg:bg-cover bg-contain md:bg-center bg-top bg-no-repeat md:min-h-[1000px] min-h-[300px] lg:bg-fixed flex items-end justify-end">
         <div className="pr-5 flex flex-col">
           <MaskText
             phrases={[" DESIGN AESTHETICS"]}
-            className="pb-10 sm:text-6xl text-3xl text-primary font-extrabold font-custom"
+            className="pb-10 md:text-6xl text-3xl text-primary font-extrabold font-custom"
           />
         </div>
       </div>
-      <div className="bg-white sm:p-20 p-5 ">
-        <p className="sm:text-lg text-sm font-thin font-custom">
+      <div className="bg-white md:p-20 p-5 ">
+        <p className="md:text-lg text-sm font-thin font-custom">
           AXENT embraces the brand philosophy and design principle of LESS IS
           MORE, integrating elegant Italian designs into its products and
           collaborating with internationally renowned designer teams to tailor
@@ -170,17 +170,16 @@ export default function About() {
       </div> */}
       {/* factory video */}
       <div>
-
         <PageVideo
           videoUrl={"https://player.vimeo.com/video/1053219781?h=a0cb7a4a62"}
         />
         <div className="flex items-center justify-center">
           <MaskText
             phrases={["More than meets the eye"]}
-            className="pt-10 sm:text-6xl text-3xl text-primary font-extrabold"
+            className="pt-10 md:text-6xl text-3xl text-primary font-extrabold"
           />
         </div>
-        <div className="py-10 sm:px-40 px-5 font-thin text-xl font-custom text-primary ">
+        <div className="md:px-20 px-5 py-10 text-primary md:text-lg text-sm font-thin font-custom">
           The AXENT Group is wholly committed to creating a future where
           beautifully crafted products bring an unimagined level of quality to
           our lives. With 300 engineers in its research and development centre,

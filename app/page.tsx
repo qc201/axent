@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <main>
       <HeaderVideo />
-      <div className="grid sm:grid-cols-3 grid-cols-1  md:gap-1 sm:px-20 md:py-10">
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1  md:px-20 md:pt-10 md:mb-10 sm:mb-5">
         <RevealCard
           imgsrc={"/series_img/one-c-plus-600_800.png"}
           title={"AXENT.ONE C PLUS"}
@@ -92,12 +92,12 @@ export default function Home() {
           intro={" "}
         />
       </div>
-      <div className="flex justify-center items-center h-[300px] w-screen bg-center pt-30 bg-techStyle sm:bg-fixed bg-cover bg-no-repeat sm:h-[400px] sm:w-screen">
+      <div className="pt-10 flex justify-center items-center h-[300px] w-screen bg-center pt-30 bg-techStyle sm:bg-fixed bg-cover bg-no-repeat sm:h-[400px] sm:w-screen">
         <div className=" text-white font-custom font-black text-2xl sm:text-4xl ">
           Intelligent Technologies
         </div>
       </div>
-      <div className="text-primary font-thin font-custom  pt-10 sm:px-40 sm:pt-20 text-xl">
+      <div className="text-primary font-thin font-custom  pt-10 md:px-40 sm:px-5 md:pt-20 text-xl">
         AXENT, with its ultimate technologies, continuously overturns,
         surpasses, leads, and rewrites the history of the bathroom industry.
       </div>

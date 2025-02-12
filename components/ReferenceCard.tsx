@@ -9,7 +9,6 @@ type Props = {
   pagelink: string;
   category: string;
   location: string;
-
 };
 
 export default function ReferenceCard({
@@ -23,17 +22,17 @@ export default function ReferenceCard({
 }: Props) {
   const shortStr = description.slice(0, 80);
   return (
-    <div className=" group cursor-pointer relative rounded overflow-hidden flex flex-col justify-center items-center sm:w-96 sm:h-96 mx-auto w-80 h-96 font-custom text-primary ">
+    <div className=" group cursor-pointer relative rounded overflow-hidden flex flex-col justify-center items-center md:w-96 mx-auto w-80 h-96 font-custom text-primary ">
       {" "}
       <Link href={pagelink}>
-        <div className="sm:w-96 sm:h-80 h-60 overflow-hidden">
+        <div className="md:w-96 md:h-80 h-60 overflow-hidden">
           <img
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             src={imgsrc}
             alt={imgalt}
           />
         </div>
-        <div className="relative sm:w-80 m-10 px-1 flex flex-col items-center justify-center bg-white pt-5 pb-16 sm:-mt-8 -mt-5 z-10 shadow-lg">
+        <div className="relative md:w-80 m-10 px-1 flex flex-col items-center justify-center bg-white pt-5 pb-16 md:-mt-8 -mt-5 z-10 shadow-lg">
           <div className="font-black text-lg inline-block hover:text-black transition-colors duration-500 ease-in-out mb-2">
             {title}
           </div>

@@ -16,17 +16,19 @@ export default function RevealCard({
   imgalt,
   pagelink,
   subTitle,
-  intro, available,
+  intro,
+  available,
 }: Props) {
   return (
     <Link href={pagelink}>
-      <div className="font-custom relative h-96 md:w-96 w-screen md:mt-20 px-5 mx-auto  py-8 group bg-gray-200 overflow-hidden shadow-xl">
-        {!available && <div className="absolute right-0 top-0 h-16 w-16 z-20">
-          <div
-            className="absolute transform rotate-45 bg-primary text-center text-white  py-1 right-[-35px] top-[32px] w-[170px] font-custom font-thin">
-            coming soon
+      <div className="font-custom relative h-96 md:w-96 sm:w-64 w-screen md:mt-10 sm:mt-5 md:px-5 mx-auto  py-8 group bg-gray-200 overflow-hidden shadow-xl">
+        {!available && (
+          <div className="absolute right-0 top-0 h-16 w-16 z-20">
+            <div className="absolute transform rotate-45 bg-primary text-center text-white  py-1 right-[-35px] top-[32px] w-[170px] font-custom font-thin">
+              coming soon
+            </div>
           </div>
-        </div>}
+        )}
         <img
           src={imgsrc}
           alt={imgalt}
@@ -40,7 +42,7 @@ export default function RevealCard({
           </p>
           <p className="hidden group-hover:block text-sm font-thin">{intro}</p>
         </div>
-        <div className="absolute inset-x-5 bottom-8 py-3 rounded-xs font-black bg-white shadow-lg sm:hidden transition duration-200 hover:bg-gray-300 group-hover:block">
+        <div className="absolute inset-x-5 bottom-8 py-3 rounded-xs font-black bg-white shadow-lg md:hidden transition duration-200 hover:bg-gray-300 group-hover:block">
           <div className="flex flex-row items-center justify-center">
             Learn more
           </div>

@@ -5,33 +5,37 @@ import Carousel from "@/components/Carousel";
 import MaskText from "@/components/MaskText";
 
 export default function CrapeMyrtleGarden() {
-  const data = refData.find(d => d.id === 9)!;
+  const data = refData.find((d) => d.id === 9)!;
   return (
     <div className="pt-16 font-custom text-primary">
       <div className="flex flex-col items-center justify-center">
         <MaskText
           phrases={[data.title]}
-          className="pt-10 pb-5 sm:text-6xl text-3xl text-primary font-extrabold items-center justify-center"
+          className="pt-10 pb-5 md:text-6xl text-3xl text-primary font-extrabold items-center justify-center"
         />
         <div className="font-thin text-lg">
           {data.location} {" | "} {data.category}
         </div>
       </div>
 
-      <div className="pt-16 sm:px-40">
+      <div className="pt-16 md:px-40">
         <Carousel images={data.imgsrc} />
       </div>
 
-      <div className="sm:px-40 px-5 py-10">
+      <div className="md:px-40 px-5 py-10">
         <div className="font-black text-lg">Description</div>
         {data.description.map((p, index) => (
-          <div key={index} className="font-thin text-lg"><div className="font-thin text-lg">{p}</div></div>
+          <div key={index} className="font-thin text-lg">
+            <div className="font-thin text-lg">{p}</div>
+          </div>
         ))}
       </div>
-      <div className="sm:px-40 px-5 pb-10">
+      <div className="md:px-40 px-5 pb-10">
         <div className="font-black text-lg">Products used</div>
         {data.products.map((p, index) => (
-          <div key={index} className="font-thin text-lg">{p}</div>
+          <div key={index} className="font-thin text-lg">
+            {p}
+          </div>
         ))}
       </div>
     </div>

@@ -14,7 +14,7 @@ export default function Rina() {
     ...(rinaData.configuration?.seatlid ?? []),
   ];
   return (
-    <div className="pt-20 sm:pt-16 sm:px-[10vw]">
+    <div className="pt-20 md:pt-16 md:px-[10vw]">
       <ProductSketch
         title={rinaData.name}
         subtitle={rinaData.subtitle}
@@ -48,8 +48,8 @@ export default function Rina() {
       />
 
       {/* live image and video */}
-      <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm sm:text-2xl">
-        <div className="sm:pt-10 flex flex-col w-full justify-between sm:items-center">
+      <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm md:text-2xl">
+        <div className="md:pt-10 flex flex-col w-full justify-between md:items-center">
           <Image
             src={"/products_img/rina-1.png"}
             alt={rinaData.name}
@@ -57,7 +57,7 @@ export default function Rina() {
             height={1080}
           />
           <MaskText
-            className=" my-5  sm:my-10 sm:mx-0 mx-5"
+            className=" my-5  md:my-10 md:mx-0 mx-5"
             phrases={[
               "Switching Seamlessly Among Three Splash",
               "Enjoy the Skin-refreshing Micro-bubble Water that deeply hydrates your skin, the Fine Shower Water that offers a delicate touch, and the invigorating Cleansing Water that provides robust cleaning power. Bid farewell to monotonous shower routines, and embrace the multifaceted joys of bathing.",
@@ -65,7 +65,7 @@ export default function Rina() {
           />
         </div>
 
-        <div className="flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end">
+        <div className="flex flex-col md:flex-row-reverse w-full justify-between md:items-end">
           <Image
             src={"/products_img/rina-3.png"}
             alt={rinaData.name}
@@ -73,7 +73,7 @@ export default function Rina() {
             height={400}
           />
           <MaskText
-            className=" my-5  sm:my-10 sm:mx-0 mx-5"
+            className=" my-5  md:my-10 md:mx-0 mx-5"
             phrases={[
               " Perfume Co-created by International Perfume Masters Embrace Moments of Healing",
               "As the perfume blends with the water, it gently diffuses across your skin. A subtle aroma envelops every inch of your skin, immersing you in a bath of scent and soothing the fatigue of the day.",
@@ -81,7 +81,7 @@ export default function Rina() {
           />
         </div>
 
-        <div className="sm:pt-10 flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
+        <div className="md:pt-10 flex flex-col md:flex-row w-full justify-between md:items-end md:text-end">
           <Image
             src={"/products_img/rina-cover.png"}
             alt={rinaData.name}
@@ -89,7 +89,7 @@ export default function Rina() {
             height={300}
           />
           <MaskText
-            className="w-full sm:ml-10  my-5  sm:my-10 sm:mx-0 mx-5"
+            className="w-full md:ml-10  my-5  md:my-10 md:mx-0 mx-5"
             phrases={[
               'To help women better cleanse their skin during bathing, MINT has developed “Micro-grade or Nano-grade Bubble Water" with a diameter as minute as 0.001mm. It is as delicate as mist, gentle and non-irritatin',
               "A lot of fine, dense water droplets emerge to create a refreshing surge that invigorates the senses. Simulta- neously, the skin becomes tender, revealing a unique sense of purity.",

@@ -17,7 +17,7 @@ export default function About() {
     "https://player.vimeo.com/video/1052444501?h=f50df54449;badge=0&amp;player_id=0&amp;app_id=58479&muted=1&autoplay=1&controls=0&loop=1";
   return (
     <div>
-      <div className="font-custom bg-aboutHeader w-screen bg-cover bg-center bg-no-repeat sm:min-h-[1000px] min-h-[600px] sm:bg-fixed flex items-center justify-end">
+      <div className="font-custom bg-aboutHeader w-screen bg-cover bg-center bg-no-repeat md:min-h-[1000px] lg:bg-fixed flex items-center justify-end">
         <div className="pr-5 flex flex-col text-end">
           <MaskText
             phrases={["BRAND STORY"]}
@@ -100,7 +100,7 @@ export default function About() {
         </div>
       </div>
       {/* designer */}
-      <div className="font-custom bg-designers w-screen bg-cover bg-center bg-no-repeat md:min-h-[1000px] min-h-[300px] md:bg-fixed flex items-end justify-end">
+      <div className="font-custom bg-designers w-screen sm:bg-contain bg-cover bg-center bg-no-repeat md:min-h-[1000px] min-h-[300px] lg:bg-fixed flex items-end justify-end">
         <div className="pr-5 flex flex-col">
           <MaskText
             phrases={[" DESIGN AESTHETICS"]}

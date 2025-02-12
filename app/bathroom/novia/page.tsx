@@ -8,7 +8,7 @@ export default function Novia() {
   // category page will have x-axis margin of 40 for computer, 10 for cellphone
   return (
     <div>
-      <div className="font-custom flex flex-col items-center justify-center md:bg-fixed bg-noviaHeader w-screen bg-cover bg-center bg-no-repeat md:min-h-[1000px] min-h-[600px]">
+      <div className="font-custom flex flex-col items-center justify-center md:bg-fixed bg-noviaHeader w-screen md:bg-cover bg-contain bg-center bg-no-repeat md:min-h-[1000px] min-h-[300px]">
         <MaskText
           phrases={["AXENT.NOVIA"]}
           className="md:text-6xl text-4xl text-white font-extrabold "
@@ -34,10 +34,10 @@ export default function Novia() {
         />
       </div>
 
-      <div className="md:mt-10 font-custom flex items-center justify-center bg-fixed bg-noviaTub w-screen bg-cover bg-center bg-no-repeat md:min-h-[1000px] min-h-[600px]">
+      <div className="md:mt-10 font-custom flex items-center justify-center md:bg-fixed bg-noviaTub w-screen md:bg-cover bg-contain bg-center bg-no-repeat md:min-h-[1000px] min-h-[700px]">
         <MaskText
           phrases={["A bathtub with more than meets the eye"]}
-          className="text-6xl text-white font-extrabold"
+          className="md:text-6xl text-xl text-white font-extrabold"
         />
       </div>
 
@@ -57,7 +57,7 @@ export default function Novia() {
       </div>
 
       {/* novia tub in black and white background */}
-      <div className="bg-noviaBlackWhite bg-cover bg-fixed bg-center  bg-no-repeat md:min-h-[600px] min-h-[600px]">
+      <div className="bg-noviaBlackWhite bg-cover md:bg-fixed bg-center  bg-no-repeat md:min-h-[600px] min-h-[600px]">
         <div className="flex justify-start items-end">
           <div className="w-2/5 ">
             <MaskText

@@ -14,7 +14,7 @@ export default function Infinity() {
     ...(infinityData.configuration?.seatlid ?? []),
   ];
   return (
-    <div className="pt-20 sm:pt-16 sm:px-[10vw]">
+    <div className="pt-20 md:pt-16 md:px-[10vw]">
       <ProductSketch
         title={infinityData.name}
         subtitle={infinityData.subtitle}
@@ -54,7 +54,7 @@ export default function Infinity() {
         configurations={combinedValues}
       />
       {/* live image and video */}
-      <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm sm:text-2xl">
+      <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm md:text-2xl">
         <Image
           className="pt-10 w-screen"
           src={"/products_img/infinity-1.png"}
@@ -63,7 +63,7 @@ export default function Infinity() {
           height={600}
         />
 
-        <div className="pt-10 flex flex-col sm:flex-row-reverse  w-full justify-between sm:items-end">
+        <div className="pt-10 flex flex-col md:flex-row-reverse  w-full justify-between md:items-end">
           <Image
             src={"/products_img/tech_style.jpg"}
             alt={infinityData.name}
@@ -71,7 +71,7 @@ export default function Infinity() {
             height={600}
           />
           <MaskText
-            className="my-5  sm:my-10 sm:mx-0 mx-5"
+            className="my-5  md:my-10 md:mx-0 mx-5"
             phrases={[
               "Kirin Pressure-assisted Flush System",
               "Harnessing cutting-edge air-energy accumulator technology, integrated with dual-efficiency water-saving design, it guaran- tees a powerful flush with every use. Boasting a remarkably low water consumption of just 1 Gal per flush, it embodies the principles of environmental protection and energy conservation.",
@@ -79,7 +79,7 @@ export default function Infinity() {
           />
         </div>
 
-        <div className="pt-10 flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
+        <div className="pt-10 flex flex-col md:flex-row w-full justify-between md:items-end md:text-end">
           <Image
             src={"/products_img/infinity-cover.jpg"}
             alt={infinityData.name}
@@ -87,7 +87,7 @@ export default function Infinity() {
             height={600}
           />
           <MaskText
-            className="w-full sm:ml-10  my-5  sm:my-10 sm:mx-0 mx-5"
+            className="w-full md:ml-10  my-5  md:my-10 md:mx-0 mx-5"
             phrases={[
               "Unlimited Flushes Without Power",
               "Even during power outages, the AXENT.Infinity Intelligent Toilet maintains operational continuity through its built-in mechanical structure, ensuring continuous flushing and uncompromised convenience.",
@@ -95,7 +95,7 @@ export default function Infinity() {
           />
         </div>
 
-        <div className="pt-10 flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end">
+        <div className="pt-10 flex flex-col md:flex-row-reverse w-full justify-between md:items-end">
           <Image
             src={"/products_img/infinity-3.png"}
             alt={infinityData.name}
@@ -104,7 +104,7 @@ export default function Infinity() {
             className="w-full h-full object-cover"
           />
           <MaskText
-            className=" my-5  sm:my-10 sm:mx-0 mx-5"
+            className=" my-5  md:my-10 md:mx-0 mx-5"
             phrases={[
               " People-centric Design: Quality in Every Detail",
               "Bubble Care for Cleanness and Comfort. Antibacterial Seat. Intelligent Night Light. Soft-close Lid and Seat",

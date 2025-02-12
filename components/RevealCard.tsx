@@ -42,7 +42,7 @@ export default function RevealCard({
           </p>
           <p className="hidden group-hover:block text-sm font-thin">{intro}</p>
         </div>
-        <div className="absolute inset-x-5 bottom-8 py-3 rounded-xs font-black bg-white shadow-lg sm:hidden transition duration-200 hover:bg-gray-300 group-hover:block">
+        <div className="absolute inset-x-5 bottom-8 py-3 rounded-xs font-black bg-white shadow-lg md:hidden transition duration-200 hover:bg-gray-300 group-hover:block">
           <div className="flex flex-row items-center justify-center">
             Learn more
           </div>

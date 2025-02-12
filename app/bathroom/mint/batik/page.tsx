@@ -14,16 +14,16 @@ export default function Batik() {
     ...(batikData.configuration?.seatlid ?? []),
   ];
   return (
-    <div className="pt-20 sm:pt-16 sm:px-[10vw]">
+    <div className="pt-20 md:pt-16 md:px-[10vw]">
       <div className="bg-white pt-10">
         <div className="relative font-custom">
           <MaskText
             phrases={["Batik Bathtub"]}
-            className="text-3xl sm:text-6xl text-primary font-extrabold md:pl-10"
+            className="text-3xl md:text-6xl text-primary font-extrabold md:pl-10"
           />
           <MaskText
             phrases={["Elegant Simplicity, Tailored to Your Taste"]}
-            className="text-lg sm:text-3xl text-primary font-bold md:pl-10"
+            className="text-lg md:text-3xl text-primary font-bold md:pl-10"
           />
         </div>
         <div className="flex flex-row justify-around items-center px-10 md:px-20">
@@ -108,9 +108,9 @@ export default function Batik() {
       />
 
       {/* live image and video */}
-      <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm sm:text-2xl">
+      <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm md:text-2xl">
         <div className="flex flex-row justify-between overflow-hidden">
-          <div className="w-full sm:w-1/3 h-80">
+          <div className="w-full md:w-1/3 md:h-80">
             <Image
               src={"/products_img/batik-blue.png"}
               alt={batikData.name}
@@ -119,7 +119,7 @@ export default function Batik() {
               className=" w-full h-full object-contain"
             />
           </div>
-          <div className="w-full sm:w-1/3 h-80">
+          <div className="w-full md:w-1/3 md:h-80">
             <Image
               src={"/products_img/batik-black.png"}
               alt={batikData.name}
@@ -128,7 +128,7 @@ export default function Batik() {
               className="w-full h-full object-contain"
             />
           </div>
-          <div className="w-full sm:w-1/3 h-80">
+          <div className="w-full md:w-1/3 md:h-80">
             <Image
               src={"/products_img/batik-p.png"}
               alt={batikData.name}
@@ -139,7 +139,7 @@ export default function Batik() {
           </div>
         </div>
 
-        <div className="sm:pt-10 flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end">
+        <div className="md:pt-10 flex flex-col md:flex-row-reverse w-full justify-between md:items-end">
           <Image
             src={"/products_img/batik-2.png"}
             alt={batikData.name}
@@ -147,7 +147,7 @@ export default function Batik() {
             height={400}
           />
           <MaskText
-            className=" my-5  sm:my-10 sm:mx-0 mx-5"
+            className=" my-5  md:my-10 md:mx-0 mx-5"
             phrases={[
               "Elegant Simplicity, Tailored to Your Taste",
               "The bathtub boasts a plump and rounded silhouette, exuding elegance and grandeur. The ultra-thin edge of the bathtub adds to its aesthetic appeal, creating a more spacious and airy ambiance. Crafted from a single mold, its seamless design prevents dirt and grime from accumulating, making it easy to clean.",
@@ -155,7 +155,7 @@ export default function Batik() {
           />
         </div>
 
-        <div className="pt-10 flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
+        <div className="pt-10 flex flex-col md:flex-row w-full justify-between md:items-end md:text-end">
           <Image
             src={"/products_img/batik-3.png"}
             alt={batikData.name}
@@ -163,7 +163,7 @@ export default function Batik() {
             height={300}
           />
           <MaskText
-            className="w-full sm:ml-10  my-5  sm:my-10 sm:mx-0 mx-5"
+            className="w-full md:ml-10  my-5  md:my-10 md:mx-0 mx-5"
             phrases={[
               "Indulgent Soaking, Tailored to Your Desire",
               "Designed specifically for relaxation, the bathtub ensures every part of your body is thoroughly pampered. With a strip-shaped overflow drain, it prevents water from spilling over.",
@@ -171,7 +171,7 @@ export default function Batik() {
           />
         </div>
 
-        <div className="flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end">
+        <div className="flex flex-col md:flex-row-reverse w-full justify-between md:items-end">
           <Image
             src={"/products_img/batik-1.png"}
             alt={batikData.name}
@@ -179,7 +179,7 @@ export default function Batik() {
             height={400}
           />
           <MaskText
-            className="sm:mr-5 my-5  sm:my-10 sm:mx-0 mx-5"
+            className="md:mr-5 my-5  md:my-10 md:mx-0 mx-5"
             phrases={[
               "Durability, Skin-friendliness, Long-lasting Warmth Retention",
               "Crafted from high-quality acrylic material specifically certified for bathtubs by the EU, it boasts a smooth and soft texture that is both skin-friendly and slip-resistant. With exceptional weather resistance, it retains its pristine whiteness and sturdy construction even after prolonged use. Our proprietary, high-quality resin ensures superior thermal insulation, locking in warmth for an extended period.",

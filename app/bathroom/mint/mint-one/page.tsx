@@ -15,7 +15,7 @@ export default function MintOne() {
     ...(mintOneData.configuration?.seatlid ?? []),
   ];
   return (
-    <div className="pt-20 sm:pt-16 sm:px-[10vw]">
+    <div className="pt-20 md:pt-16 md:px-[10vw]">
       <ProductSketch
         title={mintOneData.name}
         subtitle={mintOneData.subtitle}
@@ -53,8 +53,8 @@ export default function MintOne() {
       />
 
       {/* live image and video */}
-      <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm sm:text-2xl">
-        <div className="sm:pt-10 flex flex-col sm:flex-row-reverse w-full justify-between sm:items-end">
+      <div className="flex flex-col items-center justify-center font-custom font-thin text-primary text-sm md:text-2xl">
+        <div className="md:pt-10 flex flex-col md:flex-row-reverse w-full justify-between md:items-end">
           <Image
             src={"/products_img/mint-one-3.png"}
             alt={mintOneData.name}
@@ -62,7 +62,7 @@ export default function MintOne() {
             height={400}
           />
           <MaskText
-            className=" my-5  sm:my-10 sm:mx-0 mx-5"
+            className=" my-5  md:my-10 md:mx-0 mx-5"
             phrases={[
               "A Minimalist Exterior Eternally Elegant and Stylish",
               "The flat-panel design exudes a bold sense of avant-garde aesthetics, while the subtly curved ceramic body infuses the rectilinear form with a touch of softness and elegance. Adorned with silver accents against a pristine white backdrop, the overall meticulous design resembles a treasure of artistic merit.",
@@ -70,11 +70,12 @@ export default function MintOne() {
           />
         </div>
 
-        <div className="sm:mt-10">
-          <div className="sm:px-[10vw] w-screen ">
-            <PageVideo videoUrl="https://player.vimeo.com/video/1052444481?h=106f7e854f" /></div>
+        <div className="md:mt-10">
+          <div className="md:px-[10vw] w-screen ">
+            <PageVideo videoUrl="https://player.vimeo.com/video/1052444481?h=106f7e854f" />
+          </div>
           <MaskText
-            className="sm:mx-20 sm:my-20  mx-5 sm:text-4xl my-1 w-full flex flex-col items-start justify-start font-black"
+            className="md:mx-20 md:my-20  mx-5 md:text-4xl my-1 w-full flex flex-col items-start justify-start font-black"
             phrases={[
               "Kirin Pressure-assisted Flush Technology",
               "A Leap in Performance Across All Dimensions",
@@ -82,7 +83,7 @@ export default function MintOne() {
           />
         </div>
 
-        <div className="flex flex-col sm:flex-row w-full justify-between sm:items-end sm:text-end">
+        <div className="flex flex-col md:flex-row w-full justify-between md:items-end md:text-end">
           <Image
             src={"/products_img/mint-one-4.png"}
             alt={mintOneData.name}
@@ -90,7 +91,7 @@ export default function MintOne() {
             height={600}
           />
           <MaskText
-            className="w-full sm:ml-10  my-5  sm:my-10 sm:mx-0 mx-5"
+            className="w-full md:ml-10  my-5  md:my-10 md:mx-0 mx-5"
             phrases={[
               "Experience Effortless Grace",
               "Embrace Intelligent Living Instantly",

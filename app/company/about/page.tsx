@@ -100,7 +100,7 @@ export default function About() {
         </div>
       </div>
       {/* designer */}
-      <div className="font-custom bg-designers w-screen sm:bg-contain bg-cover bg-center bg-no-repeat md:min-h-[1000px] min-h-[300px] lg:bg-fixed flex items-end justify-end">
+      <div className="font-custom bg-designers w-screen  lg:bg-cover bg-contain md:bg-center bg-top bg-no-repeat md:min-h-[1000px] min-h-[300px] lg:bg-fixed flex items-end justify-end">
         <div className="pr-5 flex flex-col">
           <MaskText
             phrases={[" DESIGN AESTHETICS"]}

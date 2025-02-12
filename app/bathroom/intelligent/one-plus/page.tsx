@@ -96,31 +96,38 @@ export default function OnePlus() {
         </div>
 
         <div className="flex flex-col md:flex-row w-full justify-between md:items-end md:text-end">
-          <Image
-            src={"/products_img/one-plus-4.png"}
-            alt={onePlusData.name}
-            width={600}
-            height={600}
-          />
-          <MaskText
-            className="w-full md:ml-10  my-5  md:my-10 md:mx-0 mx-5"
-            phrases={[
-              " Always Clean, Freshness Abounds",
-              "Triple-Barrier Nanotechnology, Antibacterial Nozzle. Intelligent Deodorization with Pure Diatomaceous Earth. Rimfree Ceramic Design. Dual Antibacterial Protection",
-            ]}
-          />
+          <div className="md:w-2/3">
+            <Image
+              src={"/products_img/one-plus-4.png"}
+              alt={onePlusData.name}
+              width={600}
+              height={600}
+              className="w-full object-cover"
+            />
+          </div>
+          <div className="md:w-1/3">
+            <MaskText
+              className="w-full md:ml-10  my-5  md:my-10 md:mx-0 mx-5"
+              phrases={[
+                " Always Clean, Freshness Abounds",
+                "Triple-Barrier Nanotechnology, Antibacterial Nozzle. Intelligent Deodorization with Pure Diatomaceous Earth. Rimfree Ceramic Design. Dual Antibacterial Protection",
+              ]}
+            />
+          </div>
         </div>
 
         <div className="pt-10 flex flex-col md:flex-row-reverse w-full justify-between md:items-start">
-          <Image
-            src={"/products_img/one-c-plus-safe.png"}
-            alt={onePlusData.name}
-            width={600}
-            height={600}
-            className="md:w-screen"
-          />
+          <div className="md:w-screen">
+            <Image
+              src={"/products_img/one-c-plus-safe.png"}
+              alt={onePlusData.name}
+              width={500}
+              height={600}
+              className="object-cover w-full"
+            />
+          </div>
           <MaskText
-            className="w-full  my-5  md:my-10 md:mx-0 mx-5"
+            className=" my-5  md:my-10 md:mx-0 mx-5"
             phrases={[
               " Wireless Dual Controls, Thoughtful Care",
               "App control and a wireless multifunction remote control. A nighttime guard without disruption to sleep, it automatically turns on/off according to the ambient light.",

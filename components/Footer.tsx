@@ -2,7 +2,7 @@ export default function Footer() {
   const currentYear: string = new Date().getFullYear().toString();
   return (
     <div className=" mt-auto bg-black text-white font-custom font-thin text-sm flex items-center justify-center sm:py-20 py-5">
-      <div>Copyright © {currentYear} 2025 AXENT INTELLIGENCE INC</div>
+      <div>Copyright © {currentYear} AXENT INTELLIGENCE INC</div>
     </div>
   );
 }

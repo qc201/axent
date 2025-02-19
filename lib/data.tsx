@@ -777,7 +777,7 @@ export const data: ProductInfo[] = [
     unavailable: true,
     linkTo: "/bathroom/mint/mint-two",
     id: 19,
-    sku: " TS036-3-BK (White/Black); TS036-3-WT (All White)",
+    sku: " TS036-3-BK (White/Black)",
     collection: "mint",
     category: "intelligent",
     name: "Mint Two Intelligent Toilet",

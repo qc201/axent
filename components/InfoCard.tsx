@@ -52,7 +52,7 @@ export default function InfoCard({
         </Link>
       ) : (
         <div>
-          <div className="cursor-pointer relative flex flex-col md:my-6 sm:my-2 bg-white shadow-sm md:w-60 sm:w-48 w-40 group-hover:shadow-2xl transition-shadow duration-300 h-96">
+          <div className="relative flex flex-col md:my-6 sm:my-2 bg-white shadow-sm md:w-60 sm:w-48 w-40 group-hover:shadow-2xl transition-shadow duration-300 h-96">
             {unavailable && (
               <span className="bg-primary z-20 text-white px-2 py-1 absolute top-0 right-0 text-xs  md:tex t-sm rounded-bl-md font-custom">
                 coming soon
@@ -61,7 +61,7 @@ export default function InfoCard({
             <div className="h-3/5 ">
               <div className="relative m-2.5 overflow-hidden text-white">
                 <img
-                  className="object-contain w-full h-56  transition-transform  duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-90"
+                  className="object-contain w-full h-56  "
                   src={imgUrl}
                   alt={sku}
                 />

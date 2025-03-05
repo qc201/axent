@@ -1,11 +1,15 @@
 "use client";
-
+import { data } from "../../../lib/data";
+import { ProductInfo } from "@/types/global";
 import CollectionCover from "@/components/CollectionCover";
 import MaskText from "@/components/MaskText";
 import Image from "next/image";
+import InfoCard from "@/components/InfoCard";
+import { PHASE_PRODUCTION_BUILD } from "next/dist/shared/lib/constants";
 
 export default function Novia() {
   // category page will have x-axis margin of 40 for computer, 10 for cellphone
+  const noviaData = data.filter((d: ProductInfo) => d.category === "novia");
   return (
     <div>
       <div className="font-custom flex flex-col items-center justify-center md:bg-fixed bg-noviaHeader w-screen md:bg-cover bg-contain bg-center bg-no-repeat md:min-h-[1000px] min-h-[300px]">
@@ -71,16 +75,28 @@ export default function Novia() {
       </div>
 
       {/* view novia products section */}
-      <div className="mt-10 md:px-40 ">
+      <div>
         <div className="flex items-center justify-center py-10">
           <MaskText
-            phrases={["VIEW NOVIA SERIES"]}
+            phrases={["VIEW NOVIA COLLECTION"]}
             className="md:text-6xl text-xl text-primary font-extrabold"
           />
         </div>
+        <div className="grid md:grid-cols-4 grid-cols-2  gap-6 md:px-20 sm:px-10 px-5 py-10">
+          {noviaData.map((data, index) => (
+            <InfoCard
+              key={data.id}
+              name={data.name}
+              imgUrl={data.coverSrc}
+              linkTo={data.linkTo}
+              sku={data.sku}
+              unavailable={data.unavailable}
+            />
+          ))}
+        </div>
 
-        <div className="grid md:grid-cols-4 grid-cols-3 overflow-hidden">
-          {/*shower*/}
+        {/* <div className="grid md:grid-cols-4 grid-cols-3 overflow-hidden">
+        
           <CollectionCover
             imgUrl="/products_img/novia-shower-gun.png"
             imgAlt="novia shower product"
@@ -91,7 +107,7 @@ export default function Novia() {
             className="w-full md:h-[300px] h-[200px] object-cover"
           />
 
-          {/*mixer*/}
+         
 
           <CollectionCover
             imgUrl="/products_img/novia-mixer-gun.png"
@@ -103,7 +119,7 @@ export default function Novia() {
             className="w-full md:h-[300px] h-[200px] object-cover"
           />
 
-          {/*soap*/}
+       
 
           <CollectionCover
             imgUrl="/products_img/novia-soap-dish-gun.png"
@@ -115,7 +131,7 @@ export default function Novia() {
             className="w-full md:h-[300px] h-[200px] object-cover"
           />
 
-          {/*tissue holder*/}
+        
 
           <CollectionCover
             imgUrl="/products_img/novia-tissue-holder-gun.png"
@@ -127,7 +143,7 @@ export default function Novia() {
             className="w-full md:h-[300px] h-[200px] object-cover"
           />
 
-          {/*shelf*/}
+        
           <CollectionCover
             imgUrl="/products_img/novia-shelf-gun.png"
             imgAlt="novia shower product"
@@ -138,7 +154,7 @@ export default function Novia() {
             className="w-full md:h-[300px] h-[200px] object-cover"
           />
 
-          {/*couple*/}
+     
           <CollectionCover
             imgUrl="/products_img/novia-couple-gun.png"
             imgAlt="novia shower product"
@@ -149,7 +165,7 @@ export default function Novia() {
             className="w-full md:h-[300px] h-[200px] object-cover"
           />
 
-          {/*bath towel holder*/}
+     
           <CollectionCover
             imgUrl="/products_img/novia-bath-towel-gun.png"
             imgAlt="novia shower product"
@@ -160,7 +176,7 @@ export default function Novia() {
             className="w-full md:h-[300px] h-[200px] object-cover"
           />
 
-          {/* towel racks*/}
+        
           <CollectionCover
             imgUrl="/products_img/novia-towel-rack-gun.png"
             imgAlt="novia shower product"
@@ -171,7 +187,7 @@ export default function Novia() {
             className="w-full md:h-[300px] h-[200px] object-cover"
           />
 
-          {/* cabinet*/}
+         
           <CollectionCover
             imgUrl="/products_img/novia-bath-cabinet-gold.png"
             imgAlt="novia shower product"
@@ -182,7 +198,7 @@ export default function Novia() {
             className="w-full md:h-[300px] h-[200px] object-cover"
           />
 
-          {/* intelligent toilet*/}
+        
           <CollectionCover
             imgUrl="/products_img/novia-intelligent-toilet-gold.png"
             imgAlt="novia shower product"
@@ -193,7 +209,7 @@ export default function Novia() {
             className="w-full md:h-[300px] h-[200px] object-cover"
           />
 
-          {/* wall hang toilet*/}
+       
           <CollectionCover
             imgUrl="/products_img/novia-wall-hang-white.png"
             imgAlt="novia shower product"
@@ -203,7 +219,18 @@ export default function Novia() {
             model="NOVIA TOILET"
             className="w-full md:h-[300px] h-[200px] object-cover"
           />
-        </div>
+
+       
+          <CollectionCover
+            imgUrl="/products_img/novia-air-bathtub-cover.png"
+            imgAlt="novia air bathtub"
+            linkTo="/bathroom/novia/air-bathtub"
+            width={300}
+            height={300}
+            model="NOVIA AIR BATHTUB"
+            className="w-full md:h-[300px] h-[200px] object-cover"
+          />
+        </div> */}
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ export default function Intelligent() {
       <div className="grid md:grid-cols-4 grid-cols-2  gap-6 md:px-20 sm:px-10 px-5 py-10">
         {intelligentData.map((data, index) => (
           <InfoCard
-            key={data.name}
+            key={data.id}
             name={data.name}
             imgUrl={data.coverSrc}
             linkTo={data.linkTo}

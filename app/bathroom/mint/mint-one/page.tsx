@@ -7,7 +7,11 @@ import PageVideo from "@/components/PageVideo";
 import MaskText from "@/components/MaskText";
 
 export default function MintOne() {
-  const mintOneData = data[17];
+  const mintOneData = data.find((item) => item.id === 18);
+
+  if (!mintOneData) {
+    throw new Error("Product with ID 7 not found!");
+  }
   const combinedValues = [
     ...(mintOneData.configuration?.outlook ?? []),
     ...(mintOneData.configuration?.watertank ?? []),

@@ -4,7 +4,11 @@ import FeatureCard from "@/components/FeatureCard";
 import { data } from "../../../../lib/data"; //all product data in lib
 
 export default function Reuss() {
-  const reussData = data[15];
+  const reussData = data.find((item) => item.id === 16);
+
+  if (!reussData) {
+    throw new Error("Product with ID 7 not found!");
+  }
   const combinedValues = [
     ...(reussData.configuration?.outlook ?? []),
     ...(reussData.configuration?.watertank ?? []),

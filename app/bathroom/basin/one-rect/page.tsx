@@ -4,7 +4,11 @@ import FeatureCard from "@/components/FeatureCard";
 import { data } from "../../../../lib/data"; //all product data in lib
 
 export default function OneRect() {
-  const OneRect = data[12];
+  const OneRect = data.find((item) => item.id === 13);
+
+  if (!OneRect) {
+    throw new Error("Product with ID 7 not found!");
+  }
   const combinedValues = [
     ...(OneRect.configuration?.outlook ?? []),
     ...(OneRect.configuration?.watertank ?? []),

@@ -4,7 +4,11 @@ import FeatureCard from "@/components/FeatureCard";
 import { data } from "../../../../lib/data"; //all product data in lib
 
 export default function BidetSeatFb108() {
-  const bidentSeatData = data[22];
+  const bidentSeatData = data.find((item) => item.id === 23);
+
+  if (!bidentSeatData) {
+    throw new Error("Product with ID 7 not found!");
+  }
   const combinedValues = [
     ...(bidentSeatData.configuration?.outlook ?? []),
     ...(bidentSeatData.configuration?.watertank ?? []),

@@ -7,7 +7,11 @@ import PageVideo from "@/components/PageVideo";
 import MaskText from "@/components/MaskText";
 
 export default function Primus() {
-  const primusData = data[6];
+  const primusData = data.find((item) => item.id === 7);
+
+  if (!primusData) {
+    throw new Error("Product with ID 7 not found!");
+  }
   const combinedValues = [
     ...(primusData.configuration?.outlook ?? []),
     ...(primusData.configuration?.watertank ?? []),

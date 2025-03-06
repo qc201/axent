@@ -4,7 +4,11 @@ import FeatureCard from "@/components/FeatureCard";
 import { data } from "../../../../lib/data"; //all product data in lib
 
 export default function Peninsula() {
-  const peninsulaData = data[7];
+  const peninsulaData = data.find((item) => item.id === 8);
+
+  if (!peninsulaData) {
+    throw new Error("Product with ID 7 not found!");
+  }
   const combinedValues = [
     ...(peninsulaData.configuration?.outlook ?? []),
     ...(peninsulaData.configuration?.watertank ?? []),

@@ -4,7 +4,11 @@ import FeatureCard from "@/components/FeatureCard";
 import { data } from "../../../../lib/data"; //all product data in lib
 
 export default function OneRound() {
-  const oneRoundData = data[11];
+  const oneRoundData = data.find((item) => item.id === 12);
+
+  if (!oneRoundData) {
+    throw new Error("Product with ID 7 not found!");
+  }
   const combinedValues = [
     ...(oneRoundData.configuration?.outlook ?? []),
     ...(oneRoundData.configuration?.watertank ?? []),

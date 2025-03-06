@@ -6,7 +6,11 @@ import Image from "next/image";
 import MaskText from "@/components/MaskText";
 
 export default function Batik() {
-  const batikData = data[19];
+  const batikData = data.find((item) => item.id === 20);
+
+  if (!batikData) {
+    throw new Error("Product with ID 7 not found!");
+  }
   const combinedValues = [
     ...(batikData.configuration?.outlook ?? []),
     ...(batikData.configuration?.watertank ?? []),

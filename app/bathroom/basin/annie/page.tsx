@@ -5,7 +5,11 @@ import { data } from "../../../../lib/data"; //all product data in lib
 import Image from "next/image";
 
 export default function Annie() {
-  const annieData = data[13];
+  const annieData = data.find((item) => item.id === 14);
+
+  if (!annieData) {
+    throw new Error("Product with ID 7 not found!");
+  }
   const combinedValues = [
     ...(annieData.configuration?.outlook ?? []),
     ...(annieData.configuration?.watertank ?? []),

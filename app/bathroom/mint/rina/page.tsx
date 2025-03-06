@@ -6,7 +6,11 @@ import Image from "next/image";
 import MaskText from "@/components/MaskText";
 
 export default function Rina() {
-  const rinaData = data[20];
+  const rinaData = data.find((item) => item.id === 21);
+
+  if (!rinaData) {
+    throw new Error("Product with ID 7 not found!");
+  }
   const combinedValues = [
     ...(rinaData.configuration?.outlook ?? []),
     ...(rinaData.configuration?.watertank ?? []),

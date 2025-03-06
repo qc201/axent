@@ -6,7 +6,11 @@ import Image from "next/image";
 import MaskText from "@/components/MaskText";
 
 export default function ElectricSeat() {
-  const electricSeatData = data[3];
+  const electricSeatData = data.find((item) => item.id === 4);
+
+  if (!electricSeatData) {
+    throw new Error("Product with ID 7 not found!");
+  }
   const combinedValues = [
     ...(electricSeatData.configuration?.outlook ?? []),
     ...(electricSeatData.configuration?.watertank ?? []),

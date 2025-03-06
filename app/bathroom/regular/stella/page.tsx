@@ -7,7 +7,11 @@ import PageVideo from "@/components/PageVideo";
 import MaskText from "@/components/MaskText";
 
 export default function Stella() {
-  const stellaData = data[9];
+  const stellaData = data.find((item) => item.id === 10);
+
+  if (!stellaData) {
+    throw new Error("Product with ID 7 not found!");
+  }
   const combinedValues = [
     ...(stellaData.configuration?.outlook ?? []),
     ...(stellaData.configuration?.watertank ?? []),

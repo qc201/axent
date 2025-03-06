@@ -5,7 +5,11 @@ import { data } from "../../../../lib/data"; //all product data in lib
 import Image from "next/image";
 
 export default function BidetSeatFB106() {
-  const bidentSeatData = data[14];
+  const bidentSeatData = data.find((item) => item.id === 15);
+
+  if (!bidentSeatData) {
+    throw new Error("Product with ID 7 not found!");
+  }
   const combinedValues = [
     ...(bidentSeatData.configuration?.outlook ?? []),
     ...(bidentSeatData.configuration?.watertank ?? []),

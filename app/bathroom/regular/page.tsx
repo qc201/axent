@@ -21,47 +21,16 @@ export default function Regular() {
         />
       </div>
       <div className="grid md:grid-cols-4 grid-cols-2  gap-6 md:px-20 sm:px-10 px-5 py-10">
-        {/* primus */}
-        <InfoCard
-          name={regularData[0].name}
-          imgUrl={regularData[0].coverSrc}
-          linkTo="/bathroom/regular/primus"
-          sku={regularData[0].sku}
-        />
-
-        {/* stella */}
-        <InfoCard
-          unavailable={true}
-          name={regularData[3].name}
-          imgUrl={regularData[3].coverSrc}
-          linkTo="/bathroom/regular/stella"
-          sku={regularData[3].sku}
-        />
-
-        {/* peninsula */}
-        <InfoCard
-          name={regularData[1].name}
-          imgUrl={regularData[1].coverSrc}
-          linkTo="/bathroom/regular/peninsula"
-          sku={regularData[1].sku}
-        />
-
-        {/* alton */}
-        <InfoCard
-          name={regularData[2].name}
-          imgUrl={regularData[2].coverSrc}
-          linkTo="/bathroom/regular/alton"
-          sku={regularData[2].sku}
-        />
-
-        {/* reuss */}
-        <InfoCard
-          unavailable={true}
-          name={regularData[4].name}
-          imgUrl={regularData[4].coverSrc}
-          linkTo="/bathroom/regular/studio"
-          sku={regularData[4].sku}
-        />
+        {regularData.map((data, index) => (
+                    <InfoCard
+                      key={data.id}
+                      name={data.name}
+                      imgUrl={data.coverSrc}
+                      linkTo={data.linkTo}
+                      sku={data.sku}
+                      unavailable={data.unavailable}
+                    />
+                  ))}
       </div>
     </div>
   );

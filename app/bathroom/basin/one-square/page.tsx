@@ -8,7 +8,11 @@ import PageVideo from "@/components/PageVideo";
 import MaskText from "@/components/MaskText";
 
 export default function OneSquare() {
-  const oneSquareData = data[10];
+  const oneSquareData = data.find((item) => item.id === 11);
+
+  if (!oneSquareData) {
+    throw new Error("Product with ID 7 not found!");
+  }
   const combinedValues = [
     ...(oneSquareData.configuration?.outlook ?? []),
     ...(oneSquareData.configuration?.watertank ?? []),

@@ -4,7 +4,11 @@ import FeatureCard from "@/components/FeatureCard";
 import { data } from "../../../../lib/data"; //all product data in lib
 
 export default function Alton() {
-  const altonData = data[8];
+  const altonData = data.find((item) => item.id === 9);
+
+  if (!altonData) {
+    throw new Error("Product with ID 7 not found!");
+  }
   const combinedValues = [
     ...(altonData.configuration?.outlook ?? []),
     ...(altonData.configuration?.watertank ?? []),

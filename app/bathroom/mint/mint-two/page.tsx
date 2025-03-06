@@ -7,7 +7,11 @@ import PageVideo from "@/components/PageVideo";
 import MaskText from "@/components/MaskText";
 
 export default function MintTwo() {
-  const mintTwoData = data[18];
+  const mintTwoData = data.find((item) => item.id === 19);
+
+  if (!mintTwoData) {
+    throw new Error("Product with ID 7 not found!");
+  }
   const combinedValues = [
     ...(mintTwoData.configuration?.outlook ?? []),
     ...(mintTwoData.configuration?.watertank ?? []),

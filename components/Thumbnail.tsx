@@ -10,7 +10,7 @@ type Props = {
 
 export default function Thumbnail({ imgsrc, title, imgalt, pagelink }: Props) {
   return (
-    <div className="group flex flex-col items-center mt-5">
+    <div className="z-50 group flex flex-col items-center mt-5">
       <div className="overflow-hidden">
         <Image
           src={imgsrc}

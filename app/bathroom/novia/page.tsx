@@ -9,7 +9,7 @@ import { PHASE_PRODUCTION_BUILD } from "next/dist/shared/lib/constants";
 
 export default function Novia() {
   // category page will have x-axis margin of 40 for computer, 10 for cellphone
-  const noviaData = data.filter((d: ProductInfo) => d.category === "novia");
+  const noviaData = data.filter((d: ProductInfo) => d.collection === "novia");
   return (
     <div>
       <div className="font-custom flex flex-col items-center justify-center md:bg-fixed bg-noviaHeader w-screen md:bg-cover bg-contain bg-center bg-no-repeat md:min-h-[1000px] min-h-[300px]">

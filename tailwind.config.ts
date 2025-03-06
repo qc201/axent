@@ -43,6 +43,7 @@ const config: Config = {
         intelligentHeader: 'url("/live_img/one-c-plus-1240_600.png")',
         regularHeader: 'url("/live_img/regular-1240_600.png")',
         basinHeader: 'url("/live_img/basin-1240_600.png")',
+        tubHeader: 'url("/live_img/bathtub-1240_600.png")',
         partsHeader: 'url("/live_img/seat-1240_600.png")',
         mintHeader: 'url("/live_img/mint-header-1024_600.png")',
         mintHeaderM: 'url("/live_img/mint-header-9_16.png")',

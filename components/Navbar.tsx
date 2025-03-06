@@ -25,12 +25,12 @@ const productLinks = [
     pagelink: "/bathroom/regular",
   },
   {
-    href: "/bathroom/mint",
-    label: "mint line",
+    href: "/bathroom/bathtub",
+    label: "bathtub",
     imgsrc: "/nav_img/bathtub-200_100.png",
-    imgalt: "mint line",
+    imgalt: "bathtub",
     title: "Bathtub",
-    pagelink: "/bathroom/mint",
+    pagelink: "/bathroom/bathtub",
   },
   {
     href: "/bathroom/basin",
@@ -47,6 +47,30 @@ const productLinks = [
     imgalt: "parts",
     title: "Toilet Seats",
     pagelink: "/bathroom/parts",
+  },
+];
+
+const collectionLinks = [
+  {
+    label: "Mint",
+    imgsrc: "/nav_img/mint-200_100.png",
+    imgalt: "mint collection",
+    title: "MINT",
+    pagelink: "/bathroom/mint",
+  },
+  {
+    label: "Novia",
+    imgsrc: "/nav_img/novia-200_100.png",
+    imgalt: "movia collection",
+    title: "MOVIA",
+    pagelink: "/bathroom/novia",
+  },
+  {
+    label: "Meta",
+    imgsrc: "/nav_img/meta-200_100.png",
+    imgalt: "meta collection",
+    title: "META",
+    pagelink: "/bathroom/meta",
   },
 ];
 
@@ -137,9 +161,14 @@ export default function Navbar() {
   const [showInput, setShowInput] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [isProductLinksVisible, setIsProductLinksVisible] = useState(false);
+  const [isCollectionLinksVisible, setIsCollectionLinksVisible] =
+    useState(false);
 
   const handleProductClick = () => {
     setIsProductLinksVisible(!isProductLinksVisible);
+  };
+  const handleCollectionClick = () => {
+    setIsCollectionLinksVisible(!isCollectionLinksVisible);
   };
   const [isSupportLinksVisible, setIsSupportLinksVisible] = useState(false);
 
@@ -155,8 +184,8 @@ export default function Navbar() {
 
   return (
     <div ref={mobileMenuRef}>
-      <div className=" z-50 fixed top-0 left-0 bg-white w-screen h-12 px-5 pt-5 pb-12">
-        <div className="flex flex-row justify-around items-center text-sm text-primary font-custom font-extralight">
+      <div className="z-50 fixed top-0 left-0 bg-white w-screen h-12 px-5 pt-5 pb-12">
+        <div className="z-50 flex flex-row justify-around items-center text-sm text-primary font-custom font-extralight">
           <Link href="/" className="p-0 m-0 hover:scale-90 duration-500">
             <Image
               src="/icons/axent_switzerland_logo.svg"
@@ -180,7 +209,7 @@ export default function Navbar() {
                     onClick={() => handleMenuToggle(1)} // Toggle the products menu with id 1
                     className={`${
                       open ? "font-thin" : ""
-                      } data-[active]:underline`}
+                    } data-[active]:underline`}
                   >
                     PRODUCTS
                   </MenuButton>
@@ -188,13 +217,20 @@ export default function Navbar() {
                     {open && (
                       <Menu.Items
                         anchor="bottom"
-                        className="pt-5 px-[10vw] w-screen bg-white bg-opacity-70 flex flex-wrap justify-around"
+                        className="z-50 pt-5 px-[10vw] w-screen bg-white bg-opacity-70 flex flex-wrap justify-around"
                         static
                         as={motion.div}
                         initial={{ opacity: 0, y: -50 }}
-                        animate={{ opacity: 1, y: 0, transition: { type: "tween", duration: 0.5, ease: "easeOut" } }}
+                        animate={{
+                          opacity: 1,
+                          y: 0,
+                          transition: {
+                            type: "tween",
+                            duration: 0.5,
+                            ease: "easeOut",
+                          },
+                        }}
                         exit={{ opacity: 0, y: -50 }}
-
                       >
                         {productLinks.map((link) => (
                           <Menu.Item key={link.href}>
@@ -215,6 +251,59 @@ export default function Navbar() {
               )}
             </Menu>
 
+            {/* COLLECTION DROPDOWN */}
+            <Menu as="div">
+              {({ open }) => (
+                <div
+                  ref={(el) => {
+                    menuRefs.current[0] = el;
+                  }}
+                >
+                  <MenuButton
+                    onClick={() => handleMenuToggle(1)} // Toggle the products menu with id 1
+                    className={`${
+                      open ? "font-thin" : ""
+                    } data-[active]:underline`}
+                  >
+                    COLLECTION
+                  </MenuButton>
+                  <AnimatePresence>
+                    {open && (
+                      <Menu.Items
+                        anchor="bottom"
+                        className="z-50 pt-5 px-[10vw] w-screen bg-white bg-opacity-70 flex flex-wrap justify-around"
+                        static
+                        as={motion.div}
+                        initial={{ opacity: 0, y: -50 }}
+                        animate={{
+                          opacity: 1,
+                          y: 0,
+                          transition: {
+                            type: "tween",
+                            duration: 0.5,
+                            ease: "easeOut",
+                          },
+                        }}
+                        exit={{ opacity: 0, y: -50 }}
+                      >
+                        {collectionLinks.map((link) => (
+                          <Menu.Item key={link.label}>
+                            <Link href={link.pagelink}>
+                              <Thumbnail
+                                imgsrc={link.imgsrc}
+                                imgalt={link.imgalt}
+                                title={link.title}
+                                pagelink={link.pagelink}
+                              />
+                            </Link>
+                          </Menu.Item>
+                        ))}
+                      </Menu.Items>
+                    )}
+                  </AnimatePresence>
+                </div>
+              )}
+            </Menu>
             {/* SUPPORT DROPDOWN */}
             <Menu as="div">
               {({ open }) => (
@@ -227,7 +316,7 @@ export default function Navbar() {
                     onClick={() => handleMenuToggle(1)} // Toggle support menu with id 1
                     className={`${
                       open ? "font-thin" : ""
-                      } data-[active]:underline`}
+                    } data-[active]:underline`}
                   >
                     SUPPORT
                   </Menu.Button>
@@ -235,11 +324,19 @@ export default function Navbar() {
                     {open && (
                       <Menu.Items
                         anchor="bottom"
-                        className="pt-10 w-screen text-primary bg-white bg-opacity-70 flex flex-wrap justify-around py-5"
+                        className="z-50 pt-10 w-screen text-primary bg-white bg-opacity-70 flex flex-wrap justify-around py-5"
                         static
                         as={motion.div}
                         initial={{ opacity: 0, y: -50 }}
-                        animate={{ opacity: 1, y: 0, transition: { type: "tween", duration: 0.5, ease: "easeOut" } }}
+                        animate={{
+                          opacity: 1,
+                          y: 0,
+                          transition: {
+                            type: "tween",
+                            duration: 0.5,
+                            ease: "easeOut",
+                          },
+                        }}
                         exit={{ opacity: 0, y: -50 }}
                       >
                         {supportLinks.map((link) => (
@@ -270,7 +367,7 @@ export default function Navbar() {
                     onClick={() => handleMenuToggle(2)} // Toggle company menu with id 2
                     className={`${
                       open ? "font-thin" : ""
-                      } data-[active]:underline`}
+                    } data-[active]:underline`}
                   >
                     COMPANY
                   </Menu.Button>
@@ -278,11 +375,19 @@ export default function Navbar() {
                     {open && (
                       <Menu.Items
                         anchor="bottom"
-                        className="pt-10 w-screen text-primary bg-white bg-opacity-70 flex flex-wrap justify-around py-5"
+                        className="z-50 pt-10 w-screen text-primary bg-white bg-opacity-70 flex flex-wrap justify-around py-5"
                         static
                         as={motion.div}
                         initial={{ opacity: 0, y: -50 }}
-                        animate={{ opacity: 1, y: 0, transition: { type: "tween", duration: 0.5, ease: "easeOut" } }}
+                        animate={{
+                          opacity: 1,
+                          y: 0,
+                          transition: {
+                            type: "tween",
+                            duration: 0.5,
+                            ease: "easeOut",
+                          },
+                        }}
                         exit={{ opacity: 0, y: -50 }}
                       >
                         {companyLinks.map((link) => (
@@ -357,95 +462,129 @@ export default function Navbar() {
       </div>
       {/* Mobile View Menu */}
 
-      <AnimatePresence> {isOpen && (
-        <motion.div
-          initial={{ x: 200 }}
-          animate={{ x: 0 }}
-          exit={{ x: 200, opacity: 0 }}
-          transition={{ type: "tween" }}
-          className="fixed w-1/2 h-screen top-14 right-0 text-start bg-white  opacity-90 z-50"
-        >
-          <div className="flex flex-col pl-3 pt-5 font-custom text-primary text-lg">
-            <div
-              className="font-black pt-2"
-              onClick={handleProductClick}
-              style={{ cursor: "pointer" }}
-            >
-              Products
+      <AnimatePresence>
+        {" "}
+        {isOpen && (
+          <motion.div
+            initial={{ x: 200 }}
+            animate={{ x: 0 }}
+            exit={{ x: 200, opacity: 0 }}
+            transition={{ type: "tween" }}
+            className="fixed w-1/2 h-screen top-14 right-0 text-start bg-white  opacity-90 z-50"
+          >
+            <div className="flex flex-col pl-3 pt-5 font-custom text-primary text-lg">
+              <div
+                className="font-black pt-2"
+                onClick={handleProductClick}
+                style={{ cursor: "pointer" }}
+              >
+                Products
+              </div>
+              <AnimatePresence>
+                {isProductLinksVisible &&
+                  productLinks.map((link, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ y: -10, opacity: 0 }}
+                      animate={{ y: 0, opacity: 100 }}
+                      exit={{ y: -10, opacity: 0 }}
+                      transition={{ type: "tween" }}
+                    >
+                      <Link
+                        onClick={toggleMenu}
+                        className="font-thin py-2"
+                        href={link.pagelink}
+                      >
+                        {link.title}
+                      </Link>
+                    </motion.div>
+                  ))}
+              </AnimatePresence>
+              <div
+                className="font-black pt-2"
+                onClick={handleCollectionClick}
+                style={{ cursor: "pointer" }}
+              >
+                Collection
+              </div>
+              <AnimatePresence>
+                {isCollectionLinksVisible &&
+                  collectionLinks.map((link, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ y: -10, opacity: 0 }}
+                      animate={{ y: 0, opacity: 100 }}
+                      exit={{ y: -10, opacity: 0 }}
+                      transition={{ type: "tween" }}
+                    >
+                      <Link
+                        onClick={toggleMenu}
+                        className="font-thin py-2"
+                        href={link.pagelink}
+                      >
+                        {link.label}
+                      </Link>
+                    </motion.div>
+                  ))}
+              </AnimatePresence>
+              <div
+                className="font-black pt-2"
+                onClick={handleSupportClick}
+                style={{ cursor: "pointer" }}
+              >
+                Support
+              </div>
+              <AnimatePresence>
+                {isSupportLinksVisible &&
+                  supportLinks.map((link, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ y: -10, opacity: 0 }}
+                      animate={{ y: 0, opacity: 100 }}
+                      exit={{ y: -10, opacity: 0 }}
+                      transition={{ type: "tween" }}
+                    >
+                      <Link
+                        onClick={toggleMenu}
+                        className="font-thin py-2"
+                        href={link.pagelink}
+                      >
+                        {link.label}
+                      </Link>
+                    </motion.div>
+                  ))}
+              </AnimatePresence>
+              <div
+                className="font-black pt-2"
+                onClick={handleCompanyClick}
+                style={{ cursor: "pointer" }}
+              >
+                Company
+              </div>{" "}
+              <AnimatePresence>
+                {isCompanyLinksVisible &&
+                  companyLinks.map((link, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ y: -10, opacity: 0 }}
+                      animate={{ y: 0, opacity: 100 }}
+                      transition={{ type: "tween" }}
+                      exit={{ y: -10, opacity: 0 }}
+                    >
+                      <Link
+                        onClick={toggleMenu}
+                        className="font-thin py-2"
+                        href={link.pagelink}
+                      >
+                        {link.label}
+                      </Link>
+                    </motion.div>
+                  ))}
+              </AnimatePresence>
             </div>
-            <AnimatePresence>
-            {isProductLinksVisible &&
-              productLinks.map((link, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ y: -10, opacity: 0 }}
-                  animate={{ y: 0, opacity: 100 }}
-                  exit={{ y: -10, opacity: 0 }}
-                  transition={{ type: "tween" }}
-                >
-                  <Link
-                    onClick={toggleMenu}
-                    className="font-thin py-2"
-                    href={link.pagelink}
-                  >
-                    {link.title}
-                  </Link>
-                </motion.div>
-              ))}</AnimatePresence>
-            <div
-              className="font-black pt-2"
-              onClick={handleSupportClick}
-              style={{ cursor: "pointer" }}
-            >
-              Support
-            </div>
-            <AnimatePresence>
-            {isSupportLinksVisible &&
-              supportLinks.map((link, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ y: -10, opacity: 0 }}
-                  animate={{ y: 0, opacity: 100 }}
-                  exit={{ y: -10, opacity: 0 }}
-                  transition={{ type: "tween" }}
-                >
-                  <Link
-                    onClick={toggleMenu}
-                    className="font-thin py-2"
-                    href={link.pagelink}
-                  >
-                    {link.label}
-                  </Link>
-                </motion.div>
-              ))}</AnimatePresence>
-            <div
-              className="font-black pt-2"
-              onClick={handleCompanyClick}
-              style={{ cursor: "pointer" }}
-            >
-              Company
-            </div> <AnimatePresence>
-            {isCompanyLinksVisible &&
-              companyLinks.map((link, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ y: -10, opacity: 0 }}
-                  animate={{ y: 0, opacity: 100 }}
-                  transition={{ type: "tween" }}
-                  exit={{ y: -10, opacity: 0 }}
-                >
-                  <Link
-                    onClick={toggleMenu}
-                    className="font-thin py-2"
-                    href={link.pagelink}
-                  >
-                    {link.label}
-                  </Link>
-                </motion.div>
-              ))}</AnimatePresence>
-          </div> 
-        </motion.div>
-      )}</AnimatePresence>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

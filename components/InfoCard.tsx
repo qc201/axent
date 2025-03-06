@@ -22,7 +22,7 @@ export default function InfoCard({
         <Link href={linkTo}>
           <div className="cursor-pointer relative flex flex-col md:my-6 sm:my-2 bg-white shadow-sm md:w-60 sm:w-48 w-40 group-hover:shadow-2xl transition-shadow duration-300 h-96 ">
             {unavailable && (
-              <span className="bg-primary z-20 text-white px-2 py-1 absolute top-0 right-0 text-xs  md:tex t-sm rounded-bl-md font-custom">
+              <span className="z-10 bg-primary text-white px-2 py-1 absolute top-0 right-0 text-xs  md:tex t-sm rounded-bl-md font-custom">
                 coming soon
               </span>
             )}
@@ -54,7 +54,7 @@ export default function InfoCard({
         <div>
           <div className="relative flex flex-col md:my-6 sm:my-2 bg-white shadow-sm md:w-60 sm:w-48 w-40 group-hover:shadow-2xl transition-shadow duration-300 h-96">
             {unavailable && (
-              <span className="bg-primary z-20 text-white px-2 py-1 absolute top-0 right-0 text-xs  md:tex t-sm rounded-bl-md font-custom">
+              <span className="bg-primary z-10 text-white px-2 py-1 absolute top-0 right-0 text-xs  md:tex t-sm rounded-bl-md font-custom">
                 coming soon
               </span>
             )}
@@ -77,7 +77,7 @@ export default function InfoCard({
                 </p>
               </div>
               <div className="w-full rounded-md bg-gray-500  py-2 px-4 border border-transparent text-center text-white transition-all shadow-md group-hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 group-hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none sm:text-sm text-xs font-semibold ">
-                Details Coming Soon
+                Coming soon
               </div>
             </div>
           </div>

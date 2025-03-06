@@ -18,7 +18,7 @@ export const previewData: string = `<div className="news-container sm:px-60 px-5
       </div>
 
       <div className="cover-img pt-10 w-full flex flex-col items-center ">
-        <img src="/blog_img/kbis2025-1.jpg" alt="cover image" className="w-full h-full object-contain" />
+        <img src="/blog_img/kbis2025-1.png" alt="cover image" className="w-full h-full object-contain" />
         <div className="pt-5 font-thin text-sm ">Keith Dagarin, VP of Sales (US) of AXENT SWITZERLAND</div>
       </div>
 
@@ -32,7 +32,7 @@ export const previewData: string = `<div className="news-container sm:px-60 px-5
       </div>
 
       <div className="cover-img pt-10 w-full flex flex-col items-center ">
-        <img src="/blog_img/kbis2025-2.jpg" alt="cover image" className="w-full h-full object-contain" />
+        <img src="/blog_img/kbis2025-2.png" alt="cover image" className="w-full h-full object-contain" />
         <div className="pt-5 font-thin text-sm ">Jasmine Liu, General Manger of AXENT SWITZERLAND</div>
       </div>
 
@@ -41,7 +41,7 @@ export const previewData: string = `<div className="news-container sm:px-60 px-5
       </div>
 
       <div className="cover-img pt-10 w-full flex flex-col items-center ">
-        <img src="/blog_img/kbis2025-3.jpg" alt="cover image" className="w-full h-full object-contain" />
+        <img src="/blog_img/kbis2025-3.png" alt="cover image" className="w-full h-full object-contain" />
         <div className="pt-5 font-thin text-sm ">Arthur Eisenkrein, Chief Design Officer of AXENT SWITZERLAND</div>
       </div>
       <div className="news-content pt-10 font-thin text-lg">
@@ -52,7 +52,7 @@ export const previewData: string = `<div className="news-container sm:px-60 px-5
         A key trend highlighted by AXENT at KBIS 2025 is the growing demand for personalized design in bathroom aesthetics. “We’re starting to integrate color because designers are tired of white,” Dagarin observed. “They want to do something different, and this is great for our market and company.” This shift toward customization aligns with AXENT’s broader vision of combining technological sophistication with adaptable, stylish solutions for modern consumers.
       </div>
       <div className="cover-img pt-10 w-full flex flex-col items-center ">
-        <img src="/blog_img/kbis2025-4.jpg" alt="cover image" className="w-full h-full object-contain" />
+        <img src="/blog_img/kbis2025-4.png" alt="cover image" className="w-full h-full object-contain" />
         <div className="pt-5 font-thin text-sm ">AXENT SWITZERLAND booth at KBIS2025</div>
       </div>
 

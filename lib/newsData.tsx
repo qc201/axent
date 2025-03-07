@@ -13,7 +13,7 @@ export const newsData: BlogInfo[] = [
     ],
     pagelink:
       "kbis2025",
-    newsPage: `<div className="news-container sm:px-60 px-5 sm:pt-16 pt-20 font-custom text-primary flex flex-col justify-center items-center">
+    newsPage: `<div className="news-container md:px-60 px-5 md:pt-16 pt-20 font-custom text-primary flex flex-col justify-center items-center">
       <div className="title pt-20 font-extrabold text-3xl ">
         AXENT Showcases Cutting-Edge Innovations at KBIS 2025: Redefining Smart Bathroom Solutions
       </div>

@@ -2,8 +2,7 @@ import { BlogInfo } from "@/types/global";
 
 export const newsData: BlogInfo[] = [
   {
-    imgsrc:
-      "/blog_img/kbis2025-4.png",
+    imgsrc: "/blog_img/kbis2025-4.png",
     releaseDate: "Mar 6, 2025",
     title:
       "AXENT Showcases Cutting-Edge Innovations at KBIS 2025: Redefining Smart Bathroom Solutions",
@@ -11,8 +10,7 @@ export const newsData: BlogInfo[] = [
     content: [
       "The Kitchen & Bath Industry Show (KBIS) 2025 is abuzz with excitement as AXENT, a global leader in intelligent bathroom solutions, showcases its latest innovations designed to transform the industry. ",
     ],
-    pagelink:
-      "kbis2025",
+    pagelink: "kbis2025",
     newsPage: `<div className="news-container md:px-60 px-5 md:pt-16 pt-20 font-custom text-primary flex flex-col justify-center items-center">
       <div className="title pt-20 font-extrabold text-3xl ">
         AXENT Showcases Cutting-Edge Innovations at KBIS 2025: Redefining Smart Bathroom Solutions
@@ -20,7 +18,7 @@ export const newsData: BlogInfo[] = [
       <div className="relative w-full h-full overflow-hidden">
         <div className="aspect-w-16 aspect-h-9">
           <iframe
-            src="https://player.vimeo.com/video/1063322035"
+            src="https://player.vimeo.com/video/1065346218"
             frameBorder="0"
             allow="fullscreen"
             width="800"

@@ -62,7 +62,7 @@ const collectionLinks = [
     label: "Novia",
     imgsrc: "/nav_img/novia-200_100.png",
     imgalt: "movia collection",
-    title: "MOVIA",
+    title: "NOVIA",
     pagelink: "/bathroom/novia",
   },
   {

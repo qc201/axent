@@ -862,7 +862,7 @@ export const data: ProductInfo[] = [
       "/products_img/batik-s-2.png",
       "/products_img/batik-s-3.png",
     ],
-    specification: "/docs/batik_manual.pdf",
+    specification: "/docs/annie_spec.pdf",
     manual: "/docs/batik_manual.pdf",
     install: "/docs/batik_install.pdf",
   },
